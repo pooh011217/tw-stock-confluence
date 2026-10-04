@@ -1,0 +1,103 @@
+{
+  "version": "3.3.5-regression",
+  "rule": "D日收盤後資料產生D+1位點；D+1僅驗證，不參與計算",
+  "cases": [
+    {
+      "code": "1303",
+      "baseDate": "2026-10-01",
+      "expected": {
+        "support1": {
+          "price": 251.5,
+          "bandLow": 250,
+          "bandHigh": 251.5
+        },
+        "support2": {
+          "price": 245.5,
+          "bandLow": 242.5,
+          "bandHigh": 245.5
+        },
+        "breakout": null,
+        "resistance1": {
+          "price": 255.5
+        },
+        "resistance2": {
+          "price": 265
+        }
+      }
+    },
+    {
+      "code": "2408",
+      "baseDate": "2026-10-01",
+      "expected": {
+        "support1": {
+          "price": 516,
+          "bandLow": 511,
+          "bandHigh": 516
+        },
+        "support2": {
+          "price": 504,
+          "bandLow": 498,
+          "bandHigh": 504
+        },
+        "breakout": {
+          "price": 528
+        },
+        "resistance1": null,
+        "resistance2": {
+          "price": 543
+        }
+      }
+    },
+    {
+      "code": "8210",
+      "baseDate": "2026-10-01",
+      "expected": {
+        "support1": {
+          "price": 836,
+          "bandLow": 832,
+          "bandHigh": 836
+        },
+        "support2": {
+          "price": 822
+        },
+        "breakout": null,
+        "resistance1": {
+          "price": 874
+        },
+        "resistance2": {
+          "price": 887
+        }
+      }
+    },
+    {
+      "code": "6770",
+      "baseDate": "2026-10-01",
+      "expected": {
+        "support1": {
+          "price": 74.3,
+          "bandLow": 73.5,
+          "bandHigh": 74.3
+        },
+        "support2": {
+          "price": 72.7,
+          "bandLow": 71.9,
+          "bandHigh": 72.7
+        },
+        "breakout": {
+          "price": 75
+        },
+        "resistance1": null,
+        "resistance2": {
+          "price": 77.2
+        }
+      },
+      "actualNext": {
+        "date": "2026-10-02",
+        "open": 75,
+        "high": 77.9,
+        "low": 74.2,
+        "close": 76.5
+      }
+    }
+  ]
+}

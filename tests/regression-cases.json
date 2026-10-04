@@ -1,5 +1,5 @@
 {
-  "version": "3.3.5-regression",
+  "version": "3.3.6-regression",
   "rule": "D日收盤後資料產生D+1位點；D+1僅驗證，不參與計算",
   "cases": [
     {
@@ -97,6 +97,146 @@
         "high": 77.9,
         "low": 74.2,
         "close": 76.5
+      }
+    },
+    {
+      "code": "2303",
+      "baseDate": "2026-10-02",
+      "predictionFor": "2026-10-05",
+      "expected": {
+        "support1": {
+          "price": 160,
+          "bandLow": 158,
+          "bandHigh": 160
+        },
+        "support2": {
+          "price": 156,
+          "bandLow": 155.5,
+          "bandHigh": 156
+        },
+        "breakout": {
+          "price": 168
+        },
+        "resistance1": null,
+        "resistance2": {
+          "price": 185.5,
+          "role": "中期壓力"
+        }
+      }
+    },
+    {
+      "code": "6182",
+      "baseDate": "2026-10-02",
+      "predictionFor": "2026-10-05",
+      "expected": {
+        "support1": {
+          "price": 134.5,
+          "bandLow": 133,
+          "bandHigh": 134.5
+        },
+        "support2": {
+          "price": 131,
+          "bandLow": 130,
+          "bandHigh": 131
+        },
+        "breakout": {
+          "price": 141
+        },
+        "resistance1": null,
+        "resistance2": {
+          "price": 151.5,
+          "role": "中期壓力"
+        }
+      }
+    },
+    {
+      "code": "1303",
+      "baseDate": "2026-10-02",
+      "predictionFor": "2026-10-05",
+      "expected": {
+        "support1": {
+          "price": 251.5,
+          "bandLow": 250,
+          "bandHigh": 251.5
+        },
+        "support2": {
+          "price": 245.5,
+          "bandLow": 242.5,
+          "bandHigh": 245.5
+        },
+        "breakout": {
+          "price": 265
+        },
+        "resistance1": null,
+        "resistance2": null
+      }
+    },
+    {
+      "code": "6488",
+      "baseDate": "2026-10-02",
+      "predictionFor": "2026-10-05",
+      "expected": {
+        "support1": {
+          "price": 1170,
+          "bandLow": 1160,
+          "bandHigh": 1170
+        },
+        "support2": {
+          "price": 1135,
+          "bandLow": 1120,
+          "bandHigh": 1135
+        }
+      }
+    },
+    {
+      "code": "8046",
+      "baseDate": "2026-10-02",
+      "predictionFor": "2026-10-05",
+      "expected": {
+        "support1": {
+          "price": 1420,
+          "bandLow": 1415,
+          "bandHigh": 1420
+        },
+        "support2": {
+          "price": 1380,
+          "bandLow": 1370,
+          "bandHigh": 1380
+        }
+      }
+    },
+    {
+      "code": "3037",
+      "baseDate": "2026-10-02",
+      "predictionFor": "2026-10-05",
+      "expected": {
+        "support1": {
+          "price": 1230
+        },
+        "support2": {
+          "price": 1210,
+          "bandLow": 1200,
+          "bandHigh": 1210
+        }
+      }
+    },
+    {
+      "code": "2221",
+      "baseDate": "2026-10-02",
+      "predictionFor": "2026-10-05",
+      "expected": {
+        "support1": {
+          "price": 167.5,
+          "role": "中期支撐"
+        },
+        "support2": {
+          "price": 164.5,
+          "role": "第二支撐｜中期"
+        },
+        "breakout": {
+          "price": 198
+        },
+        "resistance1": null
       }
     }
   ]

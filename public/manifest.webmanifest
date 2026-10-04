@@ -1,0 +1,17 @@
+{
+  "name": "台股支撐壓力共振 V3.3.5",
+  "short_name": "台股共振",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

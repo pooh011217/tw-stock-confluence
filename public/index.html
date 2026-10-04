@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="台股共振">
+  <meta name="description" content="台股隔日支撐壓力共振與歷史回測工具">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg">
+  <title>台股支撐壓力共振 V3.3.5</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="page">
+  <header>
+    <div><div class="eyebrow">TW STOCK CONFLUENCE</div><h1>支撐壓力共振 <span>V3.3.5</span></h1><p>隔日位點預估 × 歷史回測｜手機與電腦共用</p></div>
+    <div class="status">● TWSE / TPEx 公開資料</div>
+  </header>
+
+  <section class="search">
+    <input id="query" value="2330" inputmode="search" placeholder="輸入股票代碼或名稱，例如 2330">
+    <button id="analyze">分析</button>
+  </section>
+  <section class="backtest">
+    <label>隔日預估歷史回測 <input id="asOf" type="date"></label>
+    <button id="clearDate" class="ghost">回到最新</button>
+    <small>選「預估基準日」；例如 10/1 會驗證下一交易日。</small>
+  </section>
+
+  <nav class="tabs">
+    <button data-tab="analysis" class="active">個股分析</button>
+    <button data-tab="watch">我的自選</button>
+    <button data-tab="scan">多檔掃描</button>
+  </nav>
+
+  <section id="error" class="error hidden"></section>
+  <section id="loading" class="empty hidden"><div class="spinner"></div><h2>正在整理官方資料</h2><p>首次分析會抓取多月份行情。</p></section>
+
+  <section id="analysisTab" class="tabpane">
+    <section id="welcome" class="empty"><h2>輸入股票代碼開始分析</h2><p>系統使用基準日收盤以前資料，預估下一交易日核心位點。</p></section>
+    <div id="analysisResult" class="hidden"></div>
+  </section>
+
+  <section id="watchTab" class="tabpane hidden">
+    <div class="panel"><div class="panelhead"><h2>我的自選股</h2><button id="scanWatch" class="ghost">掃描全部</button></div><div id="watchGrid" class="watchgrid"></div></div>
+  </section>
+
+  <section id="scanTab" class="tabpane hidden">
+    <div class="panel"><h2>多檔掃描器</h2><p>一次最多 12 檔，可用空格或逗號分隔。</p><textarea id="scanText" rows="4">2330 2317 2454 2382</textarea><button id="scanBtn">開始掃描</button></div>
+    <div id="scanResult" class="scangrid"></div>
+  </section>
+
+  <footer>V3.3.5｜隔日位點預估＋歷史日期誤差驗證｜20/60日結構低點＋支撐轉壓力校準｜突破共振區與第一壓力互斥｜僅供研究與結構觀察，不構成投資建議。</footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

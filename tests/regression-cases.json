@@ -1,6 +1,6 @@
 {
-  "version": "3.3.6-regression",
-  "rule": "D日收盤後資料產生D+1位點；D+1僅驗證，不參與計算",
+  "version": "3.3.30-regression",
+  "rule": "D日收盤後資料產生D+1位點；D+1僅驗證，不參與計算。關鍵突破代表突破後進入創高區，因此 breakout 非空時 resistance1/resistance2 必須同時為 null。",
   "cases": [
     {
       "code": "1303",
@@ -43,9 +43,7 @@
           "price": 528
         },
         "resistance1": null,
-        "resistance2": {
-          "price": 543
-        }
+        "resistance2": null
       }
     },
     {
@@ -87,9 +85,7 @@
           "price": 75
         },
         "resistance1": null,
-        "resistance2": {
-          "price": 77.2
-        }
+        "resistance2": null
       },
       "actualNext": {
         "date": "2026-10-02",
@@ -118,10 +114,7 @@
           "price": 168
         },
         "resistance1": null,
-        "resistance2": {
-          "price": 185.5,
-          "role": "中期壓力"
-        }
+        "resistance2": null
       }
     },
     {
@@ -143,10 +136,7 @@
           "price": 141
         },
         "resistance1": null,
-        "resistance2": {
-          "price": 151.5,
-          "role": "中期壓力"
-        }
+        "resistance2": null
       }
     },
     {
@@ -236,7 +226,8 @@
         "breakout": {
           "price": 198
         },
-        "resistance1": null
+        "resistance1": null,
+        "resistance2": null
       }
     }
   ]

@@ -1,0 +1,943 @@
+{
+  "baseDate": "2026-10-05",
+  "predictionFor": "2026-10-06",
+  "engineProfile": "extended-calendar",
+  "rules": {
+    "lookbackDays": 182,
+    "maxDistance": null,
+    "nullMeaning": "182日內無第二個更高獨立壓力",
+    "daggerMeaning": "最新K線觀察位，待確認",
+    "priceAdjustment": "歷史價已調整權息；圖中未提供調整公式",
+    "distanceNote": "少數遠端區間略逾±10%",
+    "lookbackUnitNote": "原圖未說明182日為日曆日或交易日"
+  },
+  "validationScope": "Four price bands per stock and dagger flags; revenue and gross margin not independently verified",
+  "validation": "reference comparison only; next-day close not available",
+  "engineVersion": "3.3.46",
+  "summary": {
+    "totalStocks": 6,
+    "comparedStocks": 6,
+    "missingStocks": [],
+    "comparedLevels": 24,
+    "priceMatches": 24,
+    "bandMatches": 24,
+    "numericLevels": 23,
+    "numericMatches": 23,
+    "nullLevels": 1,
+    "nullMatches": 1,
+    "gapLevels": 0,
+    "gapMatches": 0,
+    "observationLevels": 4,
+    "observationMatches": 4
+  },
+  "results": [
+    {
+      "code": "2368",
+      "name": "金像電",
+      "referenceFundamentals": {
+        "revenueMonth": "2026-08",
+        "revenueYoY": 0.7639,
+        "revenueMoM": 0.0369,
+        "grossMarginQuarter": "2026Q2",
+        "grossMargin": 0.3465,
+        "septemberStatus": "pending",
+        "septemberRevenueYoY": null,
+        "verification": "image transcription only; not independently checked against filings"
+      },
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 224,
+      "current": 1215,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "extended-calendar",
+        "lookbackDays": 182,
+        "lookbackSessions": null,
+        "maxDistance": null,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "modelStatus": "依参考圖推定，尚未證實原公式",
+        "adjustmentStatus": "verified-ex-rights",
+        "adjustmentMethod": "除權息參考價／前收盤價逐次累乘",
+        "adjustmentNote": "權息資料已驗證時才調整；減資、分割及原圖區間取整規則尚未驗證"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 1120,
+            "bandHigh": 1160,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 1160,
+            "bandLow": 1120,
+            "bandHigh": 1160,
+            "distance": -0.04526748971193416,
+            "sources": [
+              "未回補向上缺口區",
+              "前高轉支撐區"
+            ],
+            "gapBoundary": true,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "缺口區間，待回測確認",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 223
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 1070,
+            "bandHigh": 1085,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 1085,
+            "bandLow": 1070,
+            "bandHigh": 1085,
+            "distance": -0.10699588477366255,
+            "sources": [
+              "近期確認低點區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 220
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 1225,
+            "bandHigh": 1245,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 1245,
+            "bandLow": 1225,
+            "bandHigh": 1245,
+            "distance": 0.024691358024691357,
+            "sources": [
+              "歷史樞紐壓力區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 201,
+            "anchor": 1245
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 1305,
+            "bandHigh": 1335,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 1335,
+            "bandLow": 1305,
+            "bandHigh": 1335,
+            "distance": 0.09876543209876543,
+            "sources": [
+              "歷史樞紐壓力區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 161,
+            "anchor": 1335
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "3044",
+      "name": "健鼎",
+      "referenceFundamentals": {
+        "revenueMonth": "2026-08",
+        "revenueYoY": 0.6548,
+        "revenueMoM": 0.041,
+        "grossMarginQuarter": "2026Q2",
+        "grossMargin": 0.3009,
+        "septemberStatus": "pending",
+        "septemberRevenueYoY": null,
+        "verification": "image transcription only; not independently checked against filings"
+      },
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 224,
+      "current": 557,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "extended-calendar",
+        "lookbackDays": 182,
+        "lookbackSessions": null,
+        "maxDistance": null,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "modelStatus": "依参考圖推定，尚未證實原公式",
+        "adjustmentStatus": "verified-ex-rights",
+        "adjustmentMethod": "除權息參考價／前收盤價逐次累乘",
+        "adjustmentNote": "權息資料已驗證時才調整；減資、分割及原圖區間取整規則尚未驗證"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 543,
+            "bandHigh": 547,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 547,
+            "bandLow": 543,
+            "bandHigh": 547,
+            "distance": -0.017953321364452424,
+            "sources": [
+              "未回補向上缺口區",
+              "前高轉支撐區"
+            ],
+            "gapBoundary": true,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "缺口區間，待回測確認",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 223
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 520,
+            "bandHigh": 525,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 525,
+            "bandLow": 520,
+            "bandHigh": 525,
+            "distance": -0.05745062836624776,
+            "sources": [
+              "近期確認低點區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 219
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 564,
+            "bandHigh": 564,
+            "gapBoundary": false,
+            "latestCandleObservation": true
+          },
+          "actual": {
+            "price": 564,
+            "bandLow": 564,
+            "bandHigh": 564,
+            "distance": 0.012567324955116697,
+            "sources": [
+              "最新K線高點觀察位"
+            ],
+            "gapBoundary": false,
+            "marker": "†",
+            "latestCandleObservation": true,
+            "confirmation": "最新K線觀察位，待確認",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 223
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": true
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 574,
+            "bandHigh": 582,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 582,
+            "bandLow": 574,
+            "bandHigh": 582,
+            "distance": 0.04488330341113106,
+            "sources": [
+              "歷史樞紐壓力區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 151,
+            "anchor": 581.9097457627119
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "referenceFundamentals": {
+        "revenueMonth": "2026-08",
+        "revenueYoY": 0.7921,
+        "revenueMoM": 0.0679,
+        "grossMarginQuarter": "2026Q2",
+        "grossMargin": 0.3997,
+        "septemberStatus": "pending",
+        "septemberRevenueYoY": null,
+        "verification": "image transcription only; not independently checked against filings"
+      },
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 224,
+      "current": 128.5,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "extended-calendar",
+        "lookbackDays": 182,
+        "lookbackSessions": null,
+        "maxDistance": null,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "modelStatus": "依参考圖推定，尚未證實原公式",
+        "adjustmentStatus": "verified-ex-rights",
+        "adjustmentMethod": "除權息參考價／前收盤價逐次累乘",
+        "adjustmentNote": "權息資料已驗證時才調整；減資、分割及原圖區間取整規則尚未驗證"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 122,
+            "bandHigh": 123.5,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 123.5,
+            "bandLow": 122,
+            "bandHigh": 123.5,
+            "distance": -0.038910505836575876,
+            "sources": [
+              "未回補向上缺口區"
+            ],
+            "gapBoundary": true,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "缺口區間，待回測確認",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 223
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 119.5,
+            "bandHigh": 120,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 120,
+            "bandLow": 119.5,
+            "bandHigh": 120,
+            "distance": -0.06614785992217899,
+            "sources": [
+              "反覆回測低點區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 129,
+            "bandHigh": 129.5,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 129.5,
+            "bandLow": 129,
+            "bandHigh": 129.5,
+            "distance": 0.007782101167315175,
+            "sources": [
+              "歷史樞紐壓力區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 216,
+            "anchor": 129.5
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 132,
+            "bandHigh": 132.5,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 132.5,
+            "bandLow": 132,
+            "bandHigh": 132.5,
+            "distance": 0.0311284046692607,
+            "sources": [
+              "歷史樞紐壓力區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 203,
+            "anchor": 132.37
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "6672",
+      "name": "騰輝-KY",
+      "referenceFundamentals": {
+        "revenueMonth": "2026-08",
+        "revenueYoY": 1.3324,
+        "revenueMoM": 0.2113,
+        "grossMarginQuarter": "2026Q2",
+        "grossMargin": 0.3598,
+        "septemberStatus": "pending",
+        "septemberRevenueYoY": null,
+        "verification": "image transcription only; not independently checked against filings"
+      },
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 224,
+      "current": 451,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "extended-calendar",
+        "lookbackDays": 182,
+        "lookbackSessions": null,
+        "maxDistance": null,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "modelStatus": "依参考圖推定，尚未證實原公式",
+        "adjustmentStatus": "verified-ex-rights",
+        "adjustmentMethod": "除權息參考價／前收盤價逐次累乘",
+        "adjustmentNote": "權息資料已驗證時才調整；減資、分割及原圖區間取整規則尚未驗證"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 435,
+            "bandHigh": 439,
+            "gapBoundary": false,
+            "latestCandleObservation": true
+          },
+          "actual": {
+            "price": 439,
+            "bandLow": 435,
+            "bandHigh": 439,
+            "distance": -0.026607538802660754,
+            "sources": [
+              "最新K線與前高重疊觀察区"
+            ],
+            "gapBoundary": false,
+            "marker": "†",
+            "latestCandleObservation": true,
+            "confirmation": "最新K線觀察位，待確認",
+            "confidence": null,
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": true
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 404,
+            "bandHigh": 413,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 413,
+            "bandLow": 404,
+            "bandHigh": 413,
+            "distance": -0.08425720620842572,
+            "sources": [
+              "前一日K線下緣區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 457.5,
+            "bandHigh": 457.5,
+            "gapBoundary": false,
+            "latestCandleObservation": true
+          },
+          "actual": {
+            "price": 457.5,
+            "bandLow": 457.5,
+            "bandHigh": 457.5,
+            "distance": 0.014412416851441241,
+            "sources": [
+              "最新K線高點觀察位"
+            ],
+            "gapBoundary": false,
+            "marker": "†",
+            "latestCandleObservation": true,
+            "confirmation": "最新K線觀察位，待確認",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 223
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": true
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "referenceFundamentals": {
+        "revenueMonth": "2026-08",
+        "revenueYoY": 0.5971,
+        "revenueMoM": 0.0472,
+        "grossMarginQuarter": "2026Q2",
+        "grossMargin": 0.2739,
+        "septemberStatus": "pending",
+        "septemberRevenueYoY": null,
+        "verification": "image transcription only; not independently checked against filings"
+      },
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 224,
+      "current": 570,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "extended-calendar",
+        "lookbackDays": 182,
+        "lookbackSessions": null,
+        "maxDistance": null,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "modelStatus": "依参考圖推定，尚未證實原公式",
+        "adjustmentStatus": "verified-ex-rights",
+        "adjustmentMethod": "除權息參考價／前收盤價逐次累乘",
+        "adjustmentNote": "權息資料已驗證時才調整；減資、分割及原圖區間取整規則尚未驗證"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 549,
+            "bandHigh": 564,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 564,
+            "bandLow": 549,
+            "bandHigh": 564,
+            "distance": -0.010526315789473684,
+            "sources": [
+              "前高轉支撐區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 201,
+            "anchor": 564
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 530,
+            "bandHigh": 536,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 536,
+            "bandLow": 530,
+            "bandHigh": 536,
+            "distance": -0.05964912280701754,
+            "sources": [
+              "獨立前高區間共振"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 593,
+            "bandHigh": 606,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 606,
+            "bandLow": 593,
+            "bandHigh": 606,
+            "distance": 0.06315789473684211,
+            "sources": [
+              "歷史樞紐壓力區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 161,
+            "anchor": 605.2300683371299
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 623,
+            "bandHigh": 637,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 637,
+            "bandLow": 623,
+            "bandHigh": 637,
+            "distance": 0.11754385964912281,
+            "sources": [
+              "歷史樞紐壓力區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 158,
+            "anchor": 636.0888382687928
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "6197",
+      "name": "佳必琪",
+      "referenceFundamentals": {
+        "revenueMonth": "2026-08",
+        "revenueYoY": 0.2535,
+        "revenueMoM": 0.0092,
+        "grossMarginQuarter": "2026Q2",
+        "grossMargin": 0.3598,
+        "septemberStatus": "announced",
+        "septemberRevenueYoY": 0.2611,
+        "verification": "image transcription only; not independently checked against filings"
+      },
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 224,
+      "current": 345,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "extended-calendar",
+        "lookbackDays": 182,
+        "lookbackSessions": null,
+        "maxDistance": null,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "modelStatus": "依参考圖推定，尚未證實原公式",
+        "adjustmentStatus": "verified-ex-rights",
+        "adjustmentMethod": "除權息參考價／前收盤價逐次累乘",
+        "adjustmentNote": "權息資料已驗證時才調整；減資、分割及原圖區間取整規則尚未驗證"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 340,
+            "bandHigh": 342,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 342,
+            "bandLow": 340,
+            "bandHigh": 342,
+            "distance": -0.008695652173913044,
+            "sources": [
+              "未回補向上缺口區"
+            ],
+            "gapBoundary": true,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "缺口區間，待回測確認",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 223
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 330.5,
+            "bandHigh": 334.5,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 334.5,
+            "bandLow": 330.5,
+            "bandHigh": 334.5,
+            "distance": -0.030434782608695653,
+            "sources": [
+              "前一日低點與歷史前高共振"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 353.5,
+            "bandHigh": 353.5,
+            "gapBoundary": false,
+            "latestCandleObservation": true
+          },
+          "actual": {
+            "price": 353.5,
+            "bandLow": 353.5,
+            "bandHigh": 353.5,
+            "distance": 0.02463768115942029,
+            "sources": [
+              "最新K線高點觀察位"
+            ],
+            "gapBoundary": false,
+            "marker": "†",
+            "latestCandleObservation": true,
+            "confirmation": "最新K線觀察位，待確認",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 223
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": true
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 358,
+            "bandHigh": 364,
+            "gapBoundary": false,
+            "latestCandleObservation": false
+          },
+          "actual": {
+            "price": 364,
+            "bandLow": 358,
+            "bandHigh": 364,
+            "distance": 0.05507246376811594,
+            "sources": [
+              "跌破前低後的壓力區"
+            ],
+            "gapBoundary": false,
+            "marker": "",
+            "latestCandleObservation": false,
+            "confirmation": "歷史K線區間（推定）",
+            "confidence": null,
+            "strength": "歷史結構",
+            "index": 165
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    }
+  ],
+  "baseline": {
+    "engineVersion": "3.3.45",
+    "summary": {
+      "totalStocks": 6,
+      "comparedStocks": 6,
+      "missingStocks": [],
+      "comparedLevels": 24,
+      "priceMatches": 10,
+      "bandMatches": 1,
+      "numericLevels": 23,
+      "numericMatches": 9,
+      "nullLevels": 1,
+      "nullMatches": 1,
+      "gapLevels": 0,
+      "gapMatches": 0
+    }
+  },
+  "lookbackUnitSensitivity": {
+    "calendarDays": 182,
+    "tradingSessions": 182,
+    "sameBandsForSixCases": true
+  },
+  "remainingDifferences": []
+}

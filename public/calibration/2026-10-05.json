@@ -1,8 +1,16 @@
 {
   "baseDate": "2026-10-05",
   "predictionFor": "2026-10-06",
+  "engineProfile": "standard",
+  "rules": {
+    "lookbackSessions": 60,
+    "maxDistance": 0.1,
+    "nullMeaning": "近60日、現價±10%內未找到有效結構",
+    "asteriskMeaning": "缺口邊界，待回測確認"
+  },
+  "validationScope": "Four price bands and gap flags",
   "validation": "reference comparison only; next-day close not available",
-  "engineVersion": "3.3.45",
+  "engineVersion": "3.3.46",
   "summary": {
     "totalStocks": 25,
     "comparedStocks": 25,
@@ -15,18 +23,29 @@
     "nullLevels": 28,
     "nullMatches": 28,
     "gapLevels": 9,
-    "gapMatches": 9
+    "gapMatches": 9,
+    "observationLevels": 0,
+    "observationMatches": 0
   },
   "results": [
     {
       "code": "2383",
       "name": "台光電",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 5700,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -51,7 +70,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -76,7 +96,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -101,7 +122,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -126,19 +148,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "8996",
       "name": "高力",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 1595,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -163,7 +195,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -188,7 +221,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -213,7 +247,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -238,19 +273,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3443",
       "name": "創意",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 8600,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -275,7 +320,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -300,7 +346,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": null,
@@ -308,7 +355,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -316,19 +364,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "6213",
       "name": "聯茂",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 751,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": null,
@@ -336,7 +394,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": null,
@@ -344,7 +403,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": null,
@@ -352,7 +412,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -360,19 +421,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "2344",
       "name": "華邦電",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 181,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -397,7 +468,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -422,7 +494,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -447,7 +520,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -472,19 +546,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "2408",
       "name": "南亞科",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 530,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -509,7 +593,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -534,7 +619,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -559,7 +645,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -584,19 +671,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "6274",
       "name": "台燿",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 1780,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -621,7 +718,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": null,
@@ -629,7 +727,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": null,
@@ -637,7 +736,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -645,19 +745,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3081",
       "name": "聯亞",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 3000,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -682,7 +792,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -707,7 +818,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -732,7 +844,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -740,19 +853,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "5274",
       "name": "信驊",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 19520,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -777,7 +900,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -802,7 +926,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -827,7 +952,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -835,19 +961,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "6510",
       "name": "精測",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 3105,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -872,7 +1008,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -897,7 +1034,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -922,7 +1060,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -930,19 +1069,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "2317",
       "name": "鴻海",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 254,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -967,7 +1116,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -992,7 +1142,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -1017,7 +1168,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -1042,19 +1194,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "8046",
       "name": "南電",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 1495,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1079,7 +1241,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -1104,7 +1267,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": null,
@@ -1112,7 +1276,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -1120,19 +1285,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3006",
       "name": "晶豪科",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 282,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1157,7 +1332,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -1182,7 +1358,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -1207,7 +1384,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -1232,19 +1410,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3563",
       "name": "牧德",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 767,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1269,7 +1457,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -1294,7 +1483,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -1319,7 +1509,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -1327,19 +1518,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3564",
       "name": "其陽",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 61.7,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1364,7 +1565,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "support2": {
           "expected": null,
@@ -1372,7 +1574,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": null,
@@ -1380,7 +1583,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -1388,19 +1592,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "2486",
       "name": "一詮",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 247,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1425,7 +1639,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -1450,7 +1665,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -1475,7 +1691,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -1483,19 +1700,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3004",
       "name": "豐達科",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 120.5,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1520,7 +1747,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -1545,7 +1773,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -1570,7 +1799,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -1595,19 +1825,29 @@
           "priceMatch": true,
           "bandMatch": false,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "6830",
       "name": "汎銓",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 550,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1632,7 +1872,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -1657,7 +1898,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -1682,7 +1924,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -1690,19 +1933,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "1560",
       "name": "中砂",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 1040,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1727,7 +1980,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": null,
@@ -1735,7 +1989,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": null,
@@ -1743,7 +1998,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -1751,19 +2007,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3665",
       "name": "貿聯-KY",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 73,
       "current": 2485,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1788,7 +2054,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -1813,7 +2080,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -1838,7 +2106,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -1846,19 +2115,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "6739",
       "name": "竹陞科技",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 1125,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1883,7 +2162,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -1908,7 +2188,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -1933,7 +2214,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -1941,19 +2223,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "6257",
       "name": "矽格",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 260,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -1978,7 +2270,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -2003,7 +2296,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -2028,7 +2322,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -2036,19 +2331,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3030",
       "name": "德律",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 305.5,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -2073,7 +2378,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -2098,7 +2404,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -2123,7 +2430,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -2148,19 +2456,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "3105",
       "name": "穩懋",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 615,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -2185,7 +2503,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -2210,7 +2529,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": true
+          "gapMatch": true,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": null,
@@ -2218,7 +2538,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": null,
@@ -2226,19 +2547,29 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     },
     {
       "code": "8028",
       "name": "昇陽半導體",
+      "referenceFundamentals": null,
       "status": "compared",
       "latest": "2026-10-05",
       "usedRows": 87,
       "current": 281.5,
       "breakout": null,
       "mediumResistance": null,
+      "structurePolicy": {
+        "lookbackSessions": 60,
+        "maxDistance": 0.1,
+        "pivotLeft": 2,
+        "pivotRight": 2,
+        "clusterDistance": 0.003,
+        "breakoutStatus": "需獨立突破證據，單一前高不自動改列突破區"
+      },
       "checks": {
         "support1": {
           "expected": {
@@ -2263,7 +2594,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "support2": {
           "expected": {
@@ -2288,7 +2620,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance1": {
           "expected": {
@@ -2313,7 +2646,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         },
         "resistance2": {
           "expected": {
@@ -2338,7 +2672,8 @@
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
-          "gapMatch": null
+          "gapMatch": null,
+          "observationMatch": null
         }
       }
     }

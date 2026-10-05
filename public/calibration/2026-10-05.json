@@ -1,0 +1,2377 @@
+{
+  "baseDate": "2026-10-05",
+  "predictionFor": "2026-10-06",
+  "validation": "reference comparison only; next-day close not available",
+  "engineVersion": "3.3.45",
+  "summary": {
+    "totalStocks": 25,
+    "comparedStocks": 25,
+    "missingStocks": [],
+    "comparedLevels": 100,
+    "priceMatches": 100,
+    "bandMatches": 99,
+    "numericLevels": 72,
+    "numericMatches": 72,
+    "nullLevels": 28,
+    "nullMatches": 28,
+    "gapLevels": 9,
+    "gapMatches": 9
+  },
+  "results": [
+    {
+      "code": "2383",
+      "name": "台光電",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 5700,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 5645,
+            "bandHigh": 5645,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 5645,
+            "bandLow": 5645,
+            "bandHigh": 5645,
+            "score": 3,
+            "confidence": 58,
+            "distance": -0.009649122807017544,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 5600,
+            "bandHigh": 5600,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 5600,
+            "bandLow": 5600,
+            "bandHigh": 5600,
+            "score": 3,
+            "confidence": 57,
+            "distance": -0.017543859649122806,
+            "sources": [
+              "向上缺口上緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 5735,
+            "bandHigh": 5735,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 5735,
+            "bandLow": 5735,
+            "bandHigh": 5735,
+            "score": 3,
+            "confidence": 58,
+            "distance": 0.0061403508771929825,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 5960,
+            "bandHigh": 5960,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 5960,
+            "bandLow": 5960,
+            "bandHigh": 5960,
+            "score": 3,
+            "confidence": 54,
+            "distance": 0.0456140350877193,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "8996",
+      "name": "高力",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 1595,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 1480,
+            "bandHigh": 1480,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1480,
+            "bandLow": 1480,
+            "bandHigh": 1480,
+            "score": 3,
+            "confidence": 52,
+            "distance": -0.07210031347962383,
+            "sources": [
+              "已確認樞紐低點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 1470,
+            "bandHigh": 1470,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1470,
+            "bandLow": 1470,
+            "bandHigh": 1470,
+            "score": 3,
+            "confidence": 51,
+            "distance": -0.07836990595611286,
+            "sources": [
+              "已確認樞紐低點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 1655,
+            "bandHigh": 1655,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1655,
+            "bandLow": 1655,
+            "bandHigh": 1655,
+            "score": 3,
+            "confidence": 55,
+            "distance": 0.03761755485893417,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 1665,
+            "bandHigh": 1665,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1665,
+            "bandLow": 1665,
+            "bandHigh": 1665,
+            "score": 3,
+            "confidence": 55,
+            "distance": 0.0438871473354232,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 8600,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 8545,
+            "bandHigh": 8545,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 8545,
+            "bandLow": 8545,
+            "bandHigh": 8545,
+            "score": 3,
+            "confidence": 58,
+            "distance": -0.006395348837209302,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 8150,
+            "bandHigh": 8150,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 8150,
+            "bandLow": 8150,
+            "bandHigh": 8150,
+            "score": 3,
+            "confidence": 54,
+            "distance": -0.05232558139534884,
+            "sources": [
+              "向上缺口上緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 751,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 181,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 180,
+            "bandHigh": 180.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 180.5,
+            "bandLow": 180,
+            "bandHigh": 180.5,
+            "score": 3,
+            "confidence": 59,
+            "distance": -0.0027624309392265192,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 172,
+            "bandHigh": 172,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 172,
+            "bandLow": 172,
+            "bandHigh": 172,
+            "score": 3,
+            "confidence": 54,
+            "distance": -0.049723756906077346,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 192,
+            "bandHigh": 192,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 192,
+            "bandLow": 192,
+            "bandHigh": 192,
+            "score": 3,
+            "confidence": 53,
+            "distance": 0.06077348066298342,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 193,
+            "bandHigh": 193,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 193,
+            "bandLow": 193,
+            "bandHigh": 193,
+            "score": 3,
+            "confidence": 52,
+            "distance": 0.06629834254143646,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 530,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 489.5,
+            "bandHigh": 489.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 489.5,
+            "bandLow": 489.5,
+            "bandHigh": 489.5,
+            "score": 3,
+            "confidence": 51,
+            "distance": -0.07641509433962264,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 488,
+            "bandHigh": 488,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 488,
+            "bandLow": 488,
+            "bandHigh": 488,
+            "score": 3,
+            "confidence": 51,
+            "distance": -0.07924528301886792,
+            "sources": [
+              "已確認樞紐低點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 533,
+            "bandHigh": 533,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 533,
+            "bandLow": 533,
+            "bandHigh": 533,
+            "score": 3,
+            "confidence": 58,
+            "distance": 0.005660377358490566,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 540,
+            "bandHigh": 540,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 540,
+            "bandLow": 540,
+            "bandHigh": 540,
+            "score": 3,
+            "confidence": 57,
+            "distance": 0.018867924528301886,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 1780,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 1730,
+            "bandHigh": 1730,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1730,
+            "bandLow": 1730,
+            "bandHigh": 1730,
+            "score": 3,
+            "confidence": 56,
+            "distance": -0.028089887640449437,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 3000,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 2950,
+            "bandHigh": 2950,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 2950,
+            "bandLow": 2950,
+            "bandHigh": 2950,
+            "score": 3,
+            "confidence": 57,
+            "distance": -0.016666666666666666,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 2930,
+            "bandHigh": 2930,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 2930,
+            "bandLow": 2930,
+            "bandHigh": 2930,
+            "score": 3,
+            "confidence": 57,
+            "distance": -0.023333333333333334,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 3235,
+            "bandHigh": 3235,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 3235,
+            "bandLow": 3235,
+            "bandHigh": 3235,
+            "score": 3,
+            "confidence": 51,
+            "distance": 0.07833333333333334,
+            "sources": [
+              "前支撐轉壓力"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "5274",
+      "name": "信驊",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 19520,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 19100,
+            "bandHigh": 19100,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 19100,
+            "bandLow": 19100,
+            "bandHigh": 19100,
+            "score": 3,
+            "confidence": 57,
+            "distance": -0.02151639344262295,
+            "sources": [
+              "向上缺口上緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 18600,
+            "bandHigh": 18600,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 18600,
+            "bandLow": 18600,
+            "bandHigh": 18600,
+            "score": 3,
+            "confidence": 54,
+            "distance": -0.0471311475409836,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 20620,
+            "bandHigh": 20620,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 20620,
+            "bandLow": 20620,
+            "bandHigh": 20620,
+            "score": 3,
+            "confidence": 53,
+            "distance": 0.05635245901639344,
+            "sources": [
+              "向下缺口下緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "6510",
+      "name": "精測",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 3105,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 3100,
+            "bandHigh": 3100,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 3100,
+            "bandLow": 3100,
+            "bandHigh": 3100,
+            "score": 3,
+            "confidence": 59,
+            "distance": -0.001610305958132045,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 2975,
+            "bandHigh": 2975,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 2975,
+            "bandLow": 2975,
+            "bandHigh": 2975,
+            "score": 3,
+            "confidence": 55,
+            "distance": -0.04186795491143317,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 3165,
+            "bandHigh": 3165,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 3165,
+            "bandLow": 3165,
+            "bandHigh": 3165,
+            "score": 3,
+            "confidence": 57,
+            "distance": 0.01932367149758454,
+            "sources": [
+              "前支撐轉壓力"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 254,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 253.5,
+            "bandHigh": 253.5,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 253.5,
+            "bandLow": 253.5,
+            "bandHigh": 253.5,
+            "score": 3,
+            "confidence": 59,
+            "distance": -0.001968503937007874,
+            "sources": [
+              "向上缺口上緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 247,
+            "bandHigh": 247,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 247,
+            "bandLow": 247,
+            "bandHigh": 247,
+            "score": 3,
+            "confidence": 56,
+            "distance": -0.027559055118110236,
+            "sources": [
+              "已確認樞紐低點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 256.5,
+            "bandHigh": 257,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 256.5,
+            "bandLow": 256.5,
+            "bandHigh": 257,
+            "score": 3,
+            "confidence": 58,
+            "distance": 0.00984251968503937,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 259,
+            "bandHigh": 259,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 259,
+            "bandLow": 259,
+            "bandHigh": 259,
+            "score": 3,
+            "confidence": 57,
+            "distance": 0.01968503937007874,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 1495,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 1415,
+            "bandHigh": 1415,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1415,
+            "bandLow": 1415,
+            "bandHigh": 1415,
+            "score": 3,
+            "confidence": 54,
+            "distance": -0.05351170568561873,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 1380,
+            "bandHigh": 1380,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1380,
+            "bandLow": 1380,
+            "bandHigh": 1380,
+            "score": 3,
+            "confidence": 51,
+            "distance": -0.07692307692307693,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3006",
+      "name": "晶豪科",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 282,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 281.5,
+            "bandHigh": 282,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 281.5,
+            "bandLow": 281.5,
+            "bandHigh": 282,
+            "score": 3,
+            "confidence": 59,
+            "distance": -0.0017730496453900709,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 265.5,
+            "bandHigh": 265.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 265.5,
+            "bandLow": 265.5,
+            "bandHigh": 265.5,
+            "score": 3,
+            "confidence": 53,
+            "distance": -0.05851063829787234,
+            "sources": [
+              "已確認樞紐低點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 290,
+            "bandHigh": 290,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 290,
+            "bandLow": 290,
+            "bandHigh": 290,
+            "score": 3,
+            "confidence": 56,
+            "distance": 0.028368794326241134,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 296.5,
+            "bandHigh": 296.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 296.5,
+            "bandLow": 296.5,
+            "bandHigh": 296.5,
+            "score": 3,
+            "confidence": 54,
+            "distance": 0.051418439716312055,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3563",
+      "name": "牧德",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 767,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 733,
+            "bandHigh": 733,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 733,
+            "bandLow": 733,
+            "bandHigh": 733,
+            "score": 3,
+            "confidence": 55,
+            "distance": -0.04432855280312908,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 730,
+            "bandHigh": 730,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 730,
+            "bandLow": 730,
+            "bandHigh": 730,
+            "score": 3,
+            "confidence": 54,
+            "distance": -0.048239895697522815,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 825,
+            "bandHigh": 825,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 825,
+            "bandLow": 825,
+            "bandHigh": 825,
+            "score": 3,
+            "confidence": 51,
+            "distance": 0.07561929595827901,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3564",
+      "name": "其陽",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 61.7,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 61.7,
+            "bandHigh": 61.7,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 61.7,
+            "bandLow": 61.7,
+            "bandHigh": 61.7,
+            "score": 3,
+            "confidence": 59,
+            "distance": 0,
+            "sources": [
+              "向上缺口上緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "support2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "2486",
+      "name": "一詮",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 247,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 241.5,
+            "bandHigh": 241.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 241.5,
+            "bandLow": 241.5,
+            "bandHigh": 241.5,
+            "score": 3,
+            "confidence": 57,
+            "distance": -0.022267206477732792,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 239,
+            "bandHigh": 239,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 239,
+            "bandLow": 239,
+            "bandHigh": 239,
+            "score": 3,
+            "confidence": 56,
+            "distance": -0.032388663967611336,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 259,
+            "bandHigh": 259,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 259,
+            "bandLow": 259,
+            "bandHigh": 259,
+            "score": 3,
+            "confidence": 54,
+            "distance": 0.048582995951417005,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3004",
+      "name": "豐達科",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 120.5,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 119.5,
+            "bandHigh": 119.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 119.5,
+            "bandLow": 119.5,
+            "bandHigh": 119.5,
+            "score": 3,
+            "confidence": 58,
+            "distance": -0.008298755186721992,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 116.5,
+            "bandHigh": 116.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 116.5,
+            "bandLow": 116.5,
+            "bandHigh": 116.5,
+            "score": 3,
+            "confidence": 56,
+            "distance": -0.03319502074688797,
+            "sources": [
+              "已確認樞紐低點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 121,
+            "bandHigh": 121,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 121,
+            "bandLow": 121,
+            "bandHigh": 121,
+            "score": 3,
+            "confidence": 59,
+            "distance": 0.004149377593360996,
+            "sources": [
+              "前支撐轉壓力"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 124,
+            "bandHigh": 125,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 124,
+            "bandLow": 124,
+            "bandHigh": 124,
+            "score": 3,
+            "confidence": 56,
+            "distance": 0.029045643153526972,
+            "sources": [
+              "前支撐轉壓力"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": false,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "6830",
+      "name": "汎銓",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 550,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 544,
+            "bandHigh": 544,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 544,
+            "bandLow": 544,
+            "bandHigh": 544,
+            "score": 3,
+            "confidence": 58,
+            "distance": -0.01090909090909091,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 530,
+            "bandHigh": 530,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 530,
+            "bandLow": 530,
+            "bandHigh": 530,
+            "score": 3,
+            "confidence": 55,
+            "distance": -0.03636363636363636,
+            "sources": [
+              "已確認樞紐低點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 588,
+            "bandHigh": 588,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 588,
+            "bandLow": 588,
+            "bandHigh": 588,
+            "score": 3,
+            "confidence": 52,
+            "distance": 0.06909090909090909,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "1560",
+      "name": "中砂",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 1040,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 992,
+            "bandHigh": 992,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 992,
+            "bandLow": 992,
+            "bandHigh": 992,
+            "score": 3,
+            "confidence": 54,
+            "distance": -0.046153846153846156,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 73,
+      "current": 2485,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 2375,
+            "bandHigh": 2375,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 2375,
+            "bandLow": 2375,
+            "bandHigh": 2375,
+            "score": 3,
+            "confidence": 55,
+            "distance": -0.04426559356136821,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 2360,
+            "bandHigh": 2360,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 2360,
+            "bandLow": 2360,
+            "bandHigh": 2360,
+            "score": 3,
+            "confidence": 54,
+            "distance": -0.05030181086519115,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 2685,
+            "bandHigh": 2685,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 2685,
+            "bandLow": 2685,
+            "bandHigh": 2685,
+            "score": 3,
+            "confidence": 51,
+            "distance": 0.08048289738430583,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "6739",
+      "name": "竹陞科技",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 1125,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 1120,
+            "bandHigh": 1120,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1120,
+            "bandLow": 1120,
+            "bandHigh": 1120,
+            "score": 3,
+            "confidence": 59,
+            "distance": -0.0044444444444444444,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 1090,
+            "bandHigh": 1090,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1090,
+            "bandLow": 1090,
+            "bandHigh": 1090,
+            "score": 3,
+            "confidence": 56,
+            "distance": -0.03111111111111111,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 1180,
+            "bandHigh": 1180,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 1180,
+            "bandLow": 1180,
+            "bandHigh": 1180,
+            "score": 3,
+            "confidence": 54,
+            "distance": 0.04888888888888889,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "6257",
+      "name": "矽格",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 260,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 242.5,
+            "bandHigh": 242.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 242.5,
+            "bandLow": 242.5,
+            "bandHigh": 242.5,
+            "score": 3,
+            "confidence": 52,
+            "distance": -0.0673076923076923,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 235,
+            "bandHigh": 235,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 235,
+            "bandLow": 235,
+            "bandHigh": 235,
+            "score": 3,
+            "confidence": 49,
+            "distance": -0.09615384615384616,
+            "sources": [
+              "已確認樞紐低點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 263,
+            "bandHigh": 263,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 263,
+            "bandLow": 263,
+            "bandHigh": 263,
+            "score": 3,
+            "confidence": 58,
+            "distance": 0.011538461538461539,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3030",
+      "name": "德律",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 305.5,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 302,
+            "bandHigh": 302,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 302,
+            "bandLow": 302,
+            "bandHigh": 302,
+            "score": 3,
+            "confidence": 58,
+            "distance": -0.011456628477905073,
+            "sources": [
+              "向上缺口上緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 300.5,
+            "bandHigh": 300.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 300.5,
+            "bandLow": 300.5,
+            "bandHigh": 300.5,
+            "score": 3,
+            "confidence": 57,
+            "distance": -0.016366612111292964,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 306.5,
+            "bandHigh": 306.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 306.5,
+            "bandLow": 306.5,
+            "bandHigh": 306.5,
+            "score": 3,
+            "confidence": 59,
+            "distance": 0.0032733224222585926,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 309,
+            "bandHigh": 309,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 309,
+            "bandLow": 309,
+            "bandHigh": 309,
+            "score": 3,
+            "confidence": 58,
+            "distance": 0.011456628477905073,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 615,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 604,
+            "bandHigh": 604,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 604,
+            "bandLow": 604,
+            "bandHigh": 604,
+            "score": 3,
+            "confidence": 57,
+            "distance": -0.01788617886178862,
+            "sources": [
+              "向上缺口上緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 572,
+            "bandHigh": 572,
+            "gapBoundary": true
+          },
+          "actual": {
+            "price": 572,
+            "bandLow": 572,
+            "bandHigh": 572,
+            "score": 3,
+            "confidence": 52,
+            "distance": -0.06991869918699187,
+            "sources": [
+              "向上缺口上緣"
+            ],
+            "gapBoundary": true,
+            "confirmation": "缺口邊界，待回測確認",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": true
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": null,
+          "actual": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null
+        }
+      }
+    },
+    {
+      "code": "8028",
+      "name": "昇陽半導體",
+      "status": "compared",
+      "latest": "2026-10-05",
+      "usedRows": 87,
+      "current": 281.5,
+      "breakout": null,
+      "mediumResistance": null,
+      "checks": {
+        "support1": {
+          "expected": {
+            "bandLow": 276.5,
+            "bandHigh": 276.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 276.5,
+            "bandLow": 276.5,
+            "bandHigh": 276.5,
+            "score": 3,
+            "confidence": 57,
+            "distance": -0.017761989342806393,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "support2": {
+          "expected": {
+            "bandLow": 274,
+            "bandHigh": 274,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 274,
+            "bandLow": 274,
+            "bandHigh": 274,
+            "score": 3,
+            "confidence": 56,
+            "distance": -0.02664298401420959,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "bandLow": 293,
+            "bandHigh": 293,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 293,
+            "bandLow": 293,
+            "bandHigh": 293,
+            "score": 3,
+            "confidence": 55,
+            "distance": 0.04085257548845471,
+            "sources": [
+              "前支撐轉壓力"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "bandLow": 295.5,
+            "bandHigh": 295.5,
+            "gapBoundary": false
+          },
+          "actual": {
+            "price": 295.5,
+            "bandLow": 295.5,
+            "bandHigh": 295.5,
+            "score": 3,
+            "confidence": 54,
+            "distance": 0.0497335701598579,
+            "sources": [
+              "已確認樞紐高點"
+            ],
+            "gapBoundary": false,
+            "confirmation": "歷史樞紐結構",
+            "strength": "歷史結構"
+          },
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null
+        }
+      }
+    }
+  ],
+  "baseline": {
+    "engineVersion": "3.3.44",
+    "summary": {
+      "totalStocks": 25,
+      "comparedStocks": 25,
+      "missingStocks": [],
+      "comparedLevels": 100,
+      "priceMatches": 31,
+      "bandMatches": 23,
+      "numericLevels": 72,
+      "numericMatches": 11,
+      "nullLevels": 28,
+      "nullMatches": 20,
+      "gapLevels": 9,
+      "gapMatches": 0
+    }
+  },
+  "remainingDifferences": [
+    {
+      "code": "3004",
+      "field": "resistance2",
+      "expectedBand": [
+        124,
+        125
+      ],
+      "actualBand": [
+        124,
+        124
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "version": "3.3.34-regression",
-  "rule": "D日收盤後資料產生D+1位點；D+1僅驗證。關鍵突破存在時不顯示近端第一壓力；若突破區上方至少約10%存在下一個獨立真實結構壓力，可保留並標示為中期壓力。",
+  "version": "3.3.41-regression",
+  "rule": "D日收盤資料產生D+1位點。一般壓力須成對輸出；突破共振區存在時第一／第二壓力均為null，上方至少10%的独立歷史結構可列中期壓力。結構不足則標示待確認。",
   "cases": [
     {
       "code": "1303",
@@ -43,7 +43,9 @@
           "price": 528
         },
         "resistance1": null,
-        "resistance2": null
+        "resistance2": null,
+        "mediumResistance": null,
+        "resistance2Role": null
       }
     },
     {
@@ -85,7 +87,9 @@
           "price": 75
         },
         "resistance1": null,
-        "resistance2": null
+        "resistance2": null,
+        "mediumResistance": null,
+        "resistance2Role": null
       },
       "actualNext": {
         "date": "2026-10-02",
@@ -114,8 +118,11 @@
           "price": 168
         },
         "resistance1": null,
-        "resistance2": 185.5,
-        "resistance2Role": "medium"
+        "resistance2": null,
+        "resistance2Role": null,
+        "mediumResistance": {
+          "price": 185.5
+        }
       }
     },
     {
@@ -137,8 +144,11 @@
           "price": 141
         },
         "resistance1": null,
-        "resistance2": 151.5,
-        "resistance2Role": "medium"
+        "resistance2": null,
+        "resistance2Role": null,
+        "mediumResistance": {
+          "price": 151.5
+        }
       }
     },
     {
@@ -160,7 +170,9 @@
           "price": 265
         },
         "resistance1": null,
-        "resistance2": null
+        "resistance2": null,
+        "mediumResistance": null,
+        "resistance2Role": null
       }
     },
     {
@@ -229,7 +241,9 @@
           "price": 198
         },
         "resistance1": null,
-        "resistance2": null
+        "resistance2": null,
+        "mediumResistance": null,
+        "resistance2Role": null
       }
     }
   ]

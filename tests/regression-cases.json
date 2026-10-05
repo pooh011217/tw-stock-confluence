@@ -1,6 +1,6 @@
 {
-  "version": "3.3.30-regression",
-  "rule": "D日收盤後資料產生D+1位點；D+1僅驗證，不參與計算。關鍵突破代表突破後進入創高區，因此 breakout 非空時 resistance1/resistance2 必須同時為 null。",
+  "version": "3.3.34-regression",
+  "rule": "D日收盤後資料產生D+1位點；D+1僅驗證。關鍵突破存在時不顯示近端第一壓力；若突破區上方至少約10%存在下一個獨立真實結構壓力，可保留並標示為中期壓力。",
   "cases": [
     {
       "code": "1303",
@@ -114,7 +114,8 @@
           "price": 168
         },
         "resistance1": null,
-        "resistance2": null
+        "resistance2": 185.5,
+        "resistance2Role": "medium"
       }
     },
     {
@@ -136,7 +137,8 @@
           "price": 141
         },
         "resistance1": null,
-        "resistance2": null
+        "resistance2": 151.5,
+        "resistance2Role": "medium"
       }
     },
     {

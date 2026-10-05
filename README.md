@@ -58,3 +58,5 @@ V3.3.46：新增 IMG_6667 六檔區間參考的獨立模式。
 - 新圖比對：23/23非空價格帶、1/1空值、4/4†標記全部一致。此為校正樣本，尚未獨立驗證新股票／其他日期，亦非隔日行情正確率。8月營收與Q2毛利率只轉錄為參考資料，不計入價帶一致數，尚未逐筆核對公告。
 - 重現：`node scripts/calibrate-reference.cjs tests/references/2026-10-05-extended.json tests/fixtures/2026-10-05-extended public/calibration/2026-10-05-extended.json`。`ENGINE_PROFILE=extended-sessions` 可檢查交易日版本。測試：`node --test tests/*.test.cjs`。
 - 修復搜尋建議在切換頁面／分析完成後再次遮住畫面的競態。區間推定模式不顯示未校準的信心百分比。
+
+線上備援修正：官方權息查詢失敗時，透過Workers靜態資產绑定讀取覆蓋日期的事件快照，避免服務自我HTTP呼叫失敗。追蹤頁載入的參考股票簡稱可在官方名錄未取得時用作介面顯示備援；不參與價位公式。

@@ -1,0 +1,212 @@
+{
+  "baseDate": "2026-10-01",
+  "predictionFor": "2026-10-02",
+  "engineProfile": "confluence",
+  "validationScope": "Visible fields only; missing Nuvoton resistance2 is not scored",
+  "cases": [
+    {
+      "code": "1303",
+      "name": "南亞",
+      "expected": {
+        "support1": {
+          "price": 251.5,
+          "bandLow": 250,
+          "bandHigh": 251.5
+        },
+        "support2": {
+          "price": 245.5,
+          "bandLow": 242.5,
+          "bandHigh": 245.5
+        },
+        "resistance1": {
+          "price": 255.5
+        },
+        "resistance2": {
+          "price": 265
+        },
+        "breakout": null
+      }
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "expected": {
+        "support1": {
+          "price": 74.3,
+          "bandLow": 73.5,
+          "bandHigh": 74.3
+        },
+        "support2": {
+          "price": 72.7,
+          "bandLow": 71.9,
+          "bandHigh": 72.7
+        },
+        "breakout": {
+          "price": 75
+        },
+        "resistance2": {
+          "price": 77.2
+        },
+        "resistance1": null
+      }
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "expected": {
+        "support1": {
+          "price": 502,
+          "bandLow": 497,
+          "bandHigh": 502
+        },
+        "support2": {
+          "price": 484.5,
+          "bandLow": 477.5,
+          "bandHigh": 484.5
+        },
+        "resistance1": {
+          "price": 524
+        },
+        "resistance2": {
+          "price": 543
+        },
+        "breakout": null
+      }
+    },
+    {
+      "code": "3406",
+      "name": "玉晶光",
+      "expected": {
+        "support1": {
+          "price": 947,
+          "bandLow": 935,
+          "bandHigh": 947
+        },
+        "support2": {
+          "price": 917,
+          "bandLow": 906,
+          "bandHigh": 917
+        },
+        "resistance1": {
+          "price": 970
+        },
+        "resistance2": {
+          "price": 1000
+        },
+        "breakout": null
+      }
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "expected": {
+        "support1": {
+          "price": 842,
+          "bandLow": 839,
+          "bandHigh": 842
+        },
+        "support2": {
+          "price": 826,
+          "bandLow": 815,
+          "bandHigh": 826
+        },
+        "breakout": {
+          "price": 850
+        },
+        "resistance2": {
+          "price": 919
+        },
+        "resistance1": null
+      }
+    },
+    {
+      "code": "2371",
+      "name": "大同",
+      "expected": {
+        "support1": {
+          "price": 30.45,
+          "bandLow": 30.2,
+          "bandHigh": 30.45
+        },
+        "support2": {
+          "price": 29.9,
+          "bandLow": 29.7,
+          "bandHigh": 29.9
+        },
+        "breakout": {
+          "price": 30.9
+        },
+        "resistance2": {
+          "price": 31.65
+        },
+        "resistance1": null
+      }
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "expected": {
+        "support1": {
+          "price": 516,
+          "bandLow": 511,
+          "bandHigh": 516
+        },
+        "support2": {
+          "price": 504,
+          "bandLow": 498,
+          "bandHigh": 504
+        },
+        "breakout": {
+          "price": 528
+        },
+        "resistance2": {
+          "price": 543
+        },
+        "resistance1": null
+      }
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "expected": {
+        "support1": {
+          "price": 836,
+          "bandLow": 832,
+          "bandHigh": 836
+        },
+        "support2": {
+          "price": 822,
+          "bandLow": 822,
+          "bandHigh": 822
+        },
+        "resistance1": {
+          "price": 874
+        },
+        "resistance2": {
+          "price": 887
+        },
+        "breakout": null
+      }
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "expected": {
+        "support1": {
+          "price": 151.5,
+          "bandLow": 151.5,
+          "bandHigh": 151.5
+        },
+        "support2": {
+          "price": 148.5,
+          "bandLow": 148,
+          "bandHigh": 148.5
+        },
+        "resistance1": {
+          "price": 154.5
+        },
+        "breakout": null
+      }
+    }
+  ]
+}

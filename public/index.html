@@ -10,13 +10,13 @@
   <meta name="description" content="台股隔日支撐壓力共振與歷史回測工具">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="icon" href="/icon.svg">
-  <title>台股支撐壓力共振 V3.3.46</title>
+  <title>台股支撐壓力共振 V3.3.47</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <main class="page">
   <header>
-    <div><div class="eyebrow">TW STOCK CONFLUENCE</div><h1>支撐壓力共振 <span>V3.3.46</span></h1><p>隔日位點預估 × 歷史回測｜手機與電腦共用</p></div>
+    <div><div class="eyebrow">TW STOCK CONFLUENCE</div><h1>支撐壓力共振 <span>V3.3.47</span></h1><p>隔日位點預估 × 歷史回測｜手機與電腦共用</p></div>
     <div class="status">● TWSE / TPEx 公開資料</div>
   </header>
 
@@ -26,7 +26,7 @@
   </section>
   <section class="backtest">
     <label>隔日預估歷史回測 <input id="asOf" type="date"></label>
-    <label>位點模式 <select id="profile"><option value="standard">60交易日／±10%</option><option value="extended-calendar">182日曆日／區間（推定）</option><option value="extended-sessions">182交易日／區間（推定）</option></select></label>
+    <label>位點模式 <select id="profile"><option value="confluence">結構共振／均線與爆量K（推定）</option><option value="standard">60交易日／±10%</option><option value="extended-calendar">182日曆日／區間（推定）</option><option value="extended-sessions">182交易日／區間（推定）</option></select></label>
     <button id="clearDate" class="ghost">回到最新</button>
     <small>選「預估基準日」；例如 10/1 會驗證下一交易日。</small>
   </section>
@@ -55,9 +55,9 @@
     <div id="scanResult" class="scangrid"></div>
   </section>
 
-  <section id="calibrationTab" class="tabpane hidden"><div class="panel"><label>比對參考图 <select id="referenceReport"><option value="2026-10-05-extended">六檔營收與毛利強勢股｜182日區間</option><option value="2026-10-05">25檔營收強勢股｜60日位點</option></select></label></div><div id="calibrationResult"></div></section>
+  <section id="calibrationTab" class="tabpane hidden"><div class="panel"><label>比對參考圖 <select id="referenceReport"><option value="2026-10-01">10/1預估10/2｜九檔結構共振</option><option value="2026-10-05-extended">六檔營收與毛利強勢股｜182日區間</option><option value="2026-10-05">25檔營收強勢股｜60日位點</option></select></label></div><div id="calibrationResult"></div></section>
 
-  <footer>V3.3.46｜隔日位點預估＋歷史日期誤差驗證｜60日位點／182日區間（推定）｜†最新K線觀察位｜第二壓力可為無；突破區與一般壓力互斥，中期壓力獨立｜僅供研究與結構觀察，不構成投資建議。</footer>
+  <footer>V3.3.47｜隔日位點預估＋歷史日期誤差驗證｜60日位點／182日區間（推定）｜†最新K線觀察位｜第二壓力可為無；突破區取代第一壓力；共振模式可保留第二壓力，中期壓力獨立｜僅供研究與結構觀察，不構成投資建議。</footer>
 </main>
 <script src="/app.js"></script>
 </body>

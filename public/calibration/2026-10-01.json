@@ -1,0 +1,1352 @@
+{
+  "baseDate": "2026-10-01",
+  "predictionFor": "2026-10-02",
+  "engineProfile": "confluence",
+  "validationScope": "Visible fields only; missing Nuvoton resistance2 is not scored",
+  "validation": "reference comparison only; next-day close not available",
+  "engineVersion": "3.3.47",
+  "summary": {
+    "totalStocks": 9,
+    "comparedStocks": 9,
+    "missingStocks": [],
+    "comparedLevels": 44,
+    "priceMatches": 38,
+    "bandMatches": 23,
+    "comparedBands": 27,
+    "numericBandMatches": 14,
+    "numericBands": 18,
+    "numericAnchorLevels": 35,
+    "numericAnchorMatches": 28,
+    "numericLevels": 35,
+    "numericMatches": 29,
+    "nullLevels": 9,
+    "nullMatches": 9,
+    "gapLevels": 0,
+    "gapMatches": 0,
+    "observationLevels": 0,
+    "observationMatches": 0
+  },
+  "results": [
+    {
+      "code": "1303",
+      "name": "南亞",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 254,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 157,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 251.5,
+            "bandLow": 250,
+            "bandHigh": 251.5
+          },
+          "actual": {
+            "price": 251.5,
+            "bandLow": 250,
+            "bandHigh": 251.5,
+            "distance": -0.00984251968503937,
+            "sources": [
+              "前高轉支撐"
+            ],
+            "score": 3,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 245.5,
+            "bandLow": 242.5,
+            "bandHigh": 245.5
+          },
+          "actual": {
+            "price": 245.5,
+            "bandLow": 242.5,
+            "bandHigh": 245.5,
+            "distance": -0.03346456692913386,
+            "sources": [
+              "前高轉支撐",
+              "爆量K收盤",
+              "爆量K高點",
+              "爆量K低點",
+              "MA5"
+            ],
+            "score": 2,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "price": 255.5
+          },
+          "actual": {
+            "price": 255.5,
+            "bandLow": 255,
+            "bandHigh": 255.5,
+            "score": 3,
+            "confidence": 66,
+            "distance": 0.005905511811023622,
+            "sources": [
+              "爆量K收盤",
+              "5元整數關卡"
+            ],
+            "strength": "一般"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "price": 265
+          },
+          "actual": {
+            "price": 265,
+            "bandLow": 265,
+            "bandHigh": 265,
+            "score": 1,
+            "confidence": 43,
+            "distance": 0.04330708661417323,
+            "sources": [
+              "爆量K高點"
+            ],
+            "strength": "一般"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 74.5,
+      "breakout": {
+        "price": 75,
+        "bandLow": 74.7,
+        "bandHigh": 75.3,
+        "score": 7,
+        "confidence": 100,
+        "distance": 0.006711409395973154,
+        "sources": [
+          "前高／樞紐高",
+          "爆量K收盤",
+          "缺口下緣",
+          "爆量K低點",
+          "5元整數關卡"
+        ],
+        "strength": "高共振"
+      },
+      "mediumResistance": {
+        "price": 82.8,
+        "bandLow": 81.8,
+        "bandHigh": 83.2,
+        "score": 5,
+        "confidence": 81,
+        "distance": 0.11140939597315433,
+        "sources": [
+          "爆量K低點",
+          "前高／樞紐高",
+          "爆量K高點",
+          "爆量K收盤"
+        ],
+        "strength": "中共振"
+      },
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 67.6,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 74.3,
+            "bandLow": 73.5,
+            "bandHigh": 74.3
+          },
+          "actual": {
+            "price": 74.3,
+            "bandLow": 73.5,
+            "bandHigh": 74.3,
+            "distance": -0.0026845637583892998,
+            "sources": [
+              "前高轉支撐",
+              "爆量K高點",
+              "爆量K低點",
+              "缺口上緣",
+              "爆量K收盤",
+              "MA5"
+            ],
+            "score": 8,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 72.7,
+            "bandLow": 71.9,
+            "bandHigh": 72.7
+          },
+          "actual": {
+            "price": 72.7,
+            "bandLow": 71.9,
+            "bandHigh": 72.7,
+            "distance": -0.024161073825503317,
+            "sources": [
+              "缺口上緣",
+              "前高轉支撐",
+              "爆量K高點",
+              "爆量K低點",
+              "缺口下緣",
+              "MA5",
+              "MA10",
+              "MA13",
+              "成交量密集區"
+            ],
+            "score": 11,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": {
+            "price": 75
+          },
+          "actual": {
+            "price": 75,
+            "bandLow": 74.7,
+            "bandHigh": 75.3,
+            "score": 7,
+            "confidence": 100,
+            "distance": 0.006711409395973154,
+            "sources": [
+              "前高／樞紐高",
+              "爆量K收盤",
+              "缺口下緣",
+              "爆量K低點",
+              "5元整數關卡"
+            ],
+            "strength": "高共振"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "price": 77.2
+          },
+          "actual": {
+            "price": 77.2,
+            "bandLow": 76.3,
+            "bandHigh": 77.2,
+            "distance": 0.03624161073825507,
+            "sources": [
+              "爆量K低點",
+              "前低／樞紐低",
+              "爆量K高點",
+              "爆量K收盤"
+            ],
+            "score": 5,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 505,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 472,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 502,
+            "bandLow": 497,
+            "bandHigh": 502
+          },
+          "actual": {
+            "price": 502,
+            "bandLow": 497,
+            "bandHigh": 502,
+            "distance": -0.005940594059405941,
+            "sources": [
+              "缺口上緣",
+              "前高轉支撐",
+              "缺口下緣",
+              "爆量K低點",
+              "MA5",
+              "MA10",
+              "MA20",
+              "MA13"
+            ],
+            "score": 10,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 484.5,
+            "bandLow": 477.5,
+            "bandHigh": 484.5
+          },
+          "actual": {
+            "price": 478.5,
+            "bandLow": 477,
+            "bandHigh": 478.5,
+            "distance": -0.05247524752475247,
+            "sources": [
+              "爆量K收盤",
+              "前低／樞紐低",
+              "缺口上緣",
+              "爆量K低點"
+            ],
+            "score": 2,
+            "confidence": null
+          },
+          "anchorMatch": false,
+          "priceMatch": true,
+          "bandMatch": false,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "price": 524
+          },
+          "actual": {
+            "price": 507,
+            "bandLow": 507,
+            "bandHigh": 510,
+            "score": 3,
+            "confidence": 71,
+            "distance": 0.0039603960396039604,
+            "sources": [
+              "爆量K高點",
+              "前低／樞紐低",
+              "10元整數關卡"
+            ],
+            "strength": "一般"
+          },
+          "anchorMatch": false,
+          "priceMatch": false,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "price": 543
+          },
+          "actual": {
+            "price": 528,
+            "bandLow": 528,
+            "bandHigh": 530,
+            "score": 3,
+            "confidence": 66,
+            "distance": 0.04554455445544554,
+            "sources": [
+              "缺口下緣",
+              "前高／樞紐高",
+              "爆量K高點"
+            ],
+            "strength": "一般"
+          },
+          "anchorMatch": false,
+          "priceMatch": false,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "3406",
+      "name": "玉晶光",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 950,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 664,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 947,
+            "bandLow": 935,
+            "bandHigh": 947
+          },
+          "actual": {
+            "price": 947,
+            "bandLow": 935,
+            "bandHigh": 947,
+            "distance": -0.003157894736842105,
+            "sources": [
+              "成交量密集區",
+              "爆量K低點",
+              "MA13"
+            ],
+            "score": 5,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 917,
+            "bandLow": 906,
+            "bandHigh": 917
+          },
+          "actual": {
+            "price": 917,
+            "bandLow": 906,
+            "bandHigh": 917,
+            "distance": -0.034736842105263156,
+            "sources": [
+              "爆量K收盤",
+              "前低／樞紐低",
+              "爆量K高點",
+              "爆量K低點",
+              "MA5"
+            ],
+            "score": 2,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "price": 970
+          },
+          "actual": {
+            "price": 987,
+            "bandLow": 977.35,
+            "bandHigh": 993,
+            "score": 5,
+            "confidence": 83,
+            "distance": 0.03894736842105263,
+            "sources": [
+              "前支撐轉壓力",
+              "爆量K低點",
+              "MA20"
+            ],
+            "strength": "中共振"
+          },
+          "anchorMatch": false,
+          "priceMatch": false,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "price": 1000
+          },
+          "actual": {
+            "price": 1000,
+            "bandLow": 1000,
+            "bandHigh": 1000,
+            "score": 2,
+            "confidence": 50,
+            "distance": 0.05263157894736842,
+            "sources": [
+              "近20日壓力帶下緣"
+            ],
+            "strength": "一般"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 852,
+      "breakout": {
+        "price": 856,
+        "bandLow": 854,
+        "bandHigh": 865,
+        "score": 7,
+        "confidence": 100,
+        "distance": 0.004694835680751174,
+        "sources": [
+          "前高／樞紐高",
+          "缺口上緣",
+          "爆量K高點",
+          "5元整數關卡",
+          "10元整數關卡"
+        ],
+        "strength": "高共振"
+      },
+      "mediumResistance": {
+        "price": 948,
+        "bandLow": 948,
+        "bandHigh": 953,
+        "score": 3,
+        "confidence": 61,
+        "distance": 0.11267605633802817,
+        "sources": [
+          "爆量K低點",
+          "爆量K收盤",
+          "爆量K高點"
+        ],
+        "strength": "一般"
+      },
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 606,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 842,
+            "bandLow": 839,
+            "bandHigh": 842
+          },
+          "actual": {
+            "price": 842,
+            "bandLow": 838,
+            "bandHigh": 842,
+            "distance": -0.011737089201877934,
+            "sources": [
+              "缺口下緣",
+              "前低／樞紐低",
+              "缺口上緣",
+              "爆量K低點",
+              "爆量K收盤"
+            ],
+            "score": 7,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": false,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 826,
+            "bandLow": 815,
+            "bandHigh": 826
+          },
+          "actual": {
+            "price": 826,
+            "bandLow": 826,
+            "bandHigh": 826,
+            "distance": -0.03051643192488263,
+            "sources": [
+              "前高轉支撐",
+              "前低／樞紐低",
+              "爆量K低點",
+              "爆量K高點"
+            ],
+            "score": 2,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": false,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": {
+            "price": 850
+          },
+          "actual": {
+            "price": 856,
+            "bandLow": 854,
+            "bandHigh": 865,
+            "score": 7,
+            "confidence": 100,
+            "distance": 0.004694835680751174,
+            "sources": [
+              "前高／樞紐高",
+              "缺口上緣",
+              "爆量K高點",
+              "5元整數關卡",
+              "10元整數關卡"
+            ],
+            "strength": "高共振"
+          },
+          "anchorMatch": false,
+          "priceMatch": false,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "price": 919
+          },
+          "actual": {
+            "price": 870,
+            "bandLow": 867,
+            "bandHigh": 870,
+            "distance": 0.02112676056338028,
+            "sources": [
+              "爆量K收盤",
+              "爆量K低點",
+              "爆量K高點"
+            ],
+            "score": 7,
+            "confidence": null
+          },
+          "anchorMatch": false,
+          "priceMatch": false,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "2371",
+      "name": "大同",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 30.5,
+      "breakout": {
+        "price": 30.9,
+        "bandLow": 30.8,
+        "bandHigh": 31.45,
+        "score": 7,
+        "confidence": 100,
+        "distance": 0.013114754098360609,
+        "sources": [
+          "前高／樞紐高",
+          "前低／樞紐低",
+          "爆量K高點",
+          "爆量K低點"
+        ],
+        "strength": "高共振"
+      },
+      "mediumResistance": {
+        "price": 34.45,
+        "bandLow": 34.45,
+        "bandHigh": 34.45,
+        "score": 2,
+        "confidence": 45,
+        "distance": 0.12950819672131156,
+        "sources": [
+          "前高／樞紐高"
+        ],
+        "strength": "一般"
+      },
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 28.45,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 30.45,
+            "bandLow": 30.2,
+            "bandHigh": 30.45
+          },
+          "actual": {
+            "price": 30.45,
+            "bandLow": 30.2,
+            "bandHigh": 30.45,
+            "distance": -0.0016393442622951052,
+            "sources": [
+              "爆量K收盤",
+              "前低／樞紐低",
+              "前高轉支撐",
+              "爆量K高點",
+              "爆量K低點"
+            ],
+            "score": 7,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 29.9,
+            "bandLow": 29.7,
+            "bandHigh": 29.9
+          },
+          "actual": {
+            "price": 29.9,
+            "bandLow": 29.55,
+            "bandHigh": 29.9,
+            "distance": -0.01967213114754103,
+            "sources": [
+              "前高轉支撐",
+              "前低／樞紐低",
+              "爆量K低點",
+              "爆量K高點",
+              "爆量K收盤",
+              "MA5",
+              "5元整數關卡",
+              "10元整數關卡"
+            ],
+            "score": 2,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": false,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": {
+            "price": 30.9
+          },
+          "actual": {
+            "price": 30.9,
+            "bandLow": 30.8,
+            "bandHigh": 31.45,
+            "score": 7,
+            "confidence": 100,
+            "distance": 0.013114754098360609,
+            "sources": [
+              "前高／樞紐高",
+              "前低／樞紐低",
+              "爆量K高點",
+              "爆量K低點"
+            ],
+            "strength": "高共振"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "price": 31.65
+          },
+          "actual": {
+            "price": 31.8,
+            "bandLow": 31.6,
+            "bandHigh": 31.8,
+            "distance": 0.042622950819672156,
+            "sources": [
+              "爆量K高點",
+              "前高／樞紐高",
+              "爆量K低點",
+              "爆量K收盤"
+            ],
+            "score": 6,
+            "confidence": null
+          },
+          "anchorMatch": false,
+          "priceMatch": false,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 519,
+      "breakout": {
+        "price": 528,
+        "bandLow": 522,
+        "bandHigh": 533,
+        "score": 5,
+        "confidence": 89,
+        "distance": 0.017341040462427744,
+        "sources": [
+          "缺口上緣",
+          "前高／樞紐高",
+          "爆量K高點",
+          "缺口下緣",
+          "爆量K低點"
+        ],
+        "strength": "中共振"
+      },
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 399.5,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 516,
+            "bandLow": 511,
+            "bandHigh": 516
+          },
+          "actual": {
+            "price": 516,
+            "bandLow": 511,
+            "bandHigh": 516,
+            "distance": -0.005780346820809248,
+            "sources": [
+              "成交量密集區",
+              "爆量K收盤",
+              "MA5"
+            ],
+            "score": 5,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 504,
+            "bandLow": 498,
+            "bandHigh": 504
+          },
+          "actual": {
+            "price": 504,
+            "bandLow": 498,
+            "bandHigh": 504,
+            "distance": -0.028901734104046242,
+            "sources": [
+              "缺口下緣",
+              "前高轉支撐",
+              "缺口上緣",
+              "MA10",
+              "MA20",
+              "10元整數關卡",
+              "MA13"
+            ],
+            "score": 2,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": {
+            "price": 528
+          },
+          "actual": {
+            "price": 528,
+            "bandLow": 522,
+            "bandHigh": 533,
+            "score": 5,
+            "confidence": 89,
+            "distance": 0.017341040462427744,
+            "sources": [
+              "缺口上緣",
+              "前高／樞紐高",
+              "爆量K高點",
+              "缺口下緣",
+              "爆量K低點"
+            ],
+            "strength": "中共振"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "price": 543
+          },
+          "actual": {
+            "price": 543,
+            "bandLow": 538,
+            "bandHigh": 543,
+            "distance": 0.046242774566473986,
+            "sources": [
+              "前高／樞紐高",
+              "爆量K收盤"
+            ],
+            "score": 5,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 845,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 1150,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 836,
+            "bandLow": 832,
+            "bandHigh": 836
+          },
+          "actual": {
+            "price": 836,
+            "bandLow": 832,
+            "bandHigh": 836,
+            "distance": -0.010650887573964497,
+            "sources": [
+              "成交量密集區",
+              "前低／樞紐低",
+              "爆量K收盤",
+              "爆量K低點",
+              "近60日低點"
+            ],
+            "score": 7,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 822,
+            "bandLow": 822,
+            "bandHigh": 822
+          },
+          "actual": {
+            "price": 822,
+            "bandLow": 822,
+            "bandHigh": 822,
+            "distance": -0.027218934911242602,
+            "sources": [
+              "近20日低點",
+              "前低／樞紐低",
+              "爆量K低點",
+              "成交量密集區",
+              "近60日低點"
+            ],
+            "score": 2,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "price": 874
+          },
+          "actual": {
+            "price": 874,
+            "bandLow": 865,
+            "bandHigh": 883.1538461538462,
+            "score": 8,
+            "confidence": 100,
+            "distance": 0.03431952662721893,
+            "sources": [
+              "前支撐轉壓力",
+              "前低／樞紐低",
+              "爆量K高點",
+              "MA5",
+              "MA10",
+              "MA13"
+            ],
+            "strength": "高共振"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance2": {
+          "expected": {
+            "price": 887
+          },
+          "actual": {
+            "price": 887,
+            "bandLow": 887,
+            "bandHigh": 887,
+            "score": 2,
+            "confidence": 50,
+            "distance": 0.04970414201183432,
+            "sources": [
+              "近20日壓力帶下緣"
+            ],
+            "strength": "一般"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "referenceFundamentals": null,
+      "status": "compared",
+      "latest": "2026-10-01",
+      "usedRows": 147,
+      "current": 152,
+      "breakout": null,
+      "mediumResistance": null,
+      "structurePolicy": {
+        "profile": "confluence",
+        "modelStatus": "依共振圖推定，尚未證實原公式",
+        "clusterDistance": 0.0125,
+        "ma120": 148.5,
+        "breakoutStatus": "突破區取代第一壓力；獨立第二壓力可保留"
+      },
+      "checks": {
+        "support1": {
+          "expected": {
+            "price": 151.5,
+            "bandLow": 151.5,
+            "bandHigh": 151.5
+          },
+          "actual": {
+            "price": 151.5,
+            "bandLow": 151.5,
+            "bandHigh": 151.5,
+            "distance": -0.003289473684210526,
+            "sources": [
+              "前低／樞紐低",
+              "爆量K低點"
+            ],
+            "score": 4,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "support2": {
+          "expected": {
+            "price": 148.5,
+            "bandLow": 148,
+            "bandHigh": 148.5
+          },
+          "actual": {
+            "price": 148.5,
+            "bandLow": 148,
+            "bandHigh": 148.5,
+            "distance": -0.023026315789473683,
+            "sources": [
+              "MA120",
+              "前低／樞紐低",
+              "前高轉支撐"
+            ],
+            "score": 5,
+            "confidence": null
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": 0,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "resistance1": {
+          "expected": {
+            "price": 154.5
+          },
+          "actual": {
+            "price": 154.5,
+            "bandLow": 154.5,
+            "bandHigh": 156,
+            "score": 5,
+            "confidence": 89,
+            "distance": 0.01644736842105263,
+            "sources": [
+              "前低／樞紐低",
+              "爆量K高點",
+              "爆量K低點",
+              "5元整數關卡"
+            ],
+            "strength": "中共振"
+          },
+          "anchorMatch": true,
+          "priceMatch": true,
+          "bandMatch": null,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        },
+        "breakout": {
+          "expected": null,
+          "actual": null,
+          "anchorMatch": null,
+          "priceMatch": true,
+          "bandMatch": true,
+          "errorPct": null,
+          "gapMatch": null,
+          "observationMatch": null
+        }
+      }
+    }
+  ],
+  "baseline": {
+    "totalStocks": 9,
+    "comparedStocks": 9,
+    "missingStocks": [],
+    "comparedLevels": 44,
+    "priceMatches": 10,
+    "bandMatches": 6,
+    "comparedBands": 27,
+    "numericBandMatches": 0,
+    "numericBands": 18,
+    "numericAnchorLevels": 35,
+    "numericAnchorMatches": 3,
+    "numericLevels": 35,
+    "numericMatches": 4,
+    "nullLevels": 9,
+    "nullMatches": 6,
+    "gapLevels": 0,
+    "gapMatches": 0,
+    "observationLevels": 0,
+    "observationMatches": 0
+  },
+  "notes": [
+    "新唐第二壓力未提供；壓力價帶未提供，不能聲稱完整壓力價帶一致。",
+    "禾伸堂10/1收盤852，但圖中850標為距現價+0.7%，文字與价位不一致。",
+    "尚未恢復原始算法；金居趨勢線與玉晶光／禾伸堂／大同壓力仍有差異。"
+  ]
+}

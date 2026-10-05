@@ -15,6 +15,8 @@
     "comparedBands": 27,
     "numericBandMatches": 14,
     "numericBands": 18,
+    "distanceLevels": 35,
+    "distanceMatches": 28,
     "numericAnchorLevels": 35,
     "numericAnchorMatches": 28,
     "numericLevels": 35,
@@ -49,7 +51,8 @@
           "expected": {
             "price": 251.5,
             "bandLow": 250,
-            "bandHigh": 251.5
+            "bandHigh": 251.5,
+            "distancePct": -1
           },
           "actual": {
             "price": 251.5,
@@ -62,6 +65,7 @@
             "score": 3,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -73,7 +77,8 @@
           "expected": {
             "price": 245.5,
             "bandLow": 242.5,
-            "bandHigh": 245.5
+            "bandHigh": 245.5,
+            "distancePct": -3.3
           },
           "actual": {
             "price": 245.5,
@@ -90,6 +95,7 @@
             "score": 2,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -99,7 +105,8 @@
         },
         "resistance1": {
           "expected": {
-            "price": 255.5
+            "price": 255.5,
+            "distancePct": 0.6
           },
           "actual": {
             "price": 255.5,
@@ -114,6 +121,7 @@
             ],
             "strength": "一般"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -123,7 +131,8 @@
         },
         "resistance2": {
           "expected": {
-            "price": 265
+            "price": 265,
+            "distancePct": 4.3
           },
           "actual": {
             "price": 265,
@@ -137,6 +146,7 @@
             ],
             "strength": "一般"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -147,6 +157,7 @@
         "breakout": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -207,7 +218,8 @@
           "expected": {
             "price": 74.3,
             "bandLow": 73.5,
-            "bandHigh": 74.3
+            "bandHigh": 74.3,
+            "distancePct": -0.3
           },
           "actual": {
             "price": 74.3,
@@ -225,6 +237,7 @@
             "score": 8,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -236,7 +249,8 @@
           "expected": {
             "price": 72.7,
             "bandLow": 71.9,
-            "bandHigh": 72.7
+            "bandHigh": 72.7,
+            "distancePct": -2.4
           },
           "actual": {
             "price": 72.7,
@@ -257,6 +271,7 @@
             "score": 11,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -266,7 +281,8 @@
         },
         "breakout": {
           "expected": {
-            "price": 75
+            "price": 75,
+            "distancePct": 0.7
           },
           "actual": {
             "price": 75,
@@ -284,6 +300,7 @@
             ],
             "strength": "高共振"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -293,7 +310,8 @@
         },
         "resistance2": {
           "expected": {
-            "price": 77.2
+            "price": 77.2,
+            "distancePct": 3.6
           },
           "actual": {
             "price": 77.2,
@@ -309,6 +327,7 @@
             "score": 5,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -319,6 +338,7 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -350,7 +370,8 @@
           "expected": {
             "price": 502,
             "bandLow": 497,
-            "bandHigh": 502
+            "bandHigh": 502,
+            "distancePct": -0.6
           },
           "actual": {
             "price": 502,
@@ -370,6 +391,7 @@
             "score": 10,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -381,7 +403,8 @@
           "expected": {
             "price": 484.5,
             "bandLow": 477.5,
-            "bandHigh": 484.5
+            "bandHigh": 484.5,
+            "distancePct": -4.1
           },
           "actual": {
             "price": 478.5,
@@ -397,6 +420,7 @@
             "score": 2,
             "confidence": null
           },
+          "distanceMatch": false,
           "anchorMatch": false,
           "priceMatch": true,
           "bandMatch": false,
@@ -406,7 +430,8 @@
         },
         "resistance1": {
           "expected": {
-            "price": 524
+            "price": 524,
+            "distancePct": 3.8
           },
           "actual": {
             "price": 507,
@@ -422,6 +447,7 @@
             ],
             "strength": "一般"
           },
+          "distanceMatch": false,
           "anchorMatch": false,
           "priceMatch": false,
           "bandMatch": null,
@@ -431,7 +457,8 @@
         },
         "resistance2": {
           "expected": {
-            "price": 543
+            "price": 543,
+            "distancePct": 7.5
           },
           "actual": {
             "price": 528,
@@ -447,6 +474,7 @@
             ],
             "strength": "一般"
           },
+          "distanceMatch": false,
           "anchorMatch": false,
           "priceMatch": false,
           "bandMatch": null,
@@ -457,6 +485,7 @@
         "breakout": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -488,7 +517,8 @@
           "expected": {
             "price": 947,
             "bandLow": 935,
-            "bandHigh": 947
+            "bandHigh": 947,
+            "distancePct": -0.3
           },
           "actual": {
             "price": 947,
@@ -503,6 +533,7 @@
             "score": 5,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -514,7 +545,8 @@
           "expected": {
             "price": 917,
             "bandLow": 906,
-            "bandHigh": 917
+            "bandHigh": 917,
+            "distancePct": -3.5
           },
           "actual": {
             "price": 917,
@@ -531,6 +563,7 @@
             "score": 2,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -540,7 +573,8 @@
         },
         "resistance1": {
           "expected": {
-            "price": 970
+            "price": 970,
+            "distancePct": 2.1
           },
           "actual": {
             "price": 987,
@@ -556,6 +590,7 @@
             ],
             "strength": "中共振"
           },
+          "distanceMatch": false,
           "anchorMatch": false,
           "priceMatch": false,
           "bandMatch": null,
@@ -565,7 +600,8 @@
         },
         "resistance2": {
           "expected": {
-            "price": 1000
+            "price": 1000,
+            "distancePct": 5.3
           },
           "actual": {
             "price": 1000,
@@ -579,6 +615,7 @@
             ],
             "strength": "一般"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -589,6 +626,7 @@
         "breakout": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -648,7 +686,8 @@
           "expected": {
             "price": 842,
             "bandLow": 839,
-            "bandHigh": 842
+            "bandHigh": 842,
+            "distancePct": -1.2
           },
           "actual": {
             "price": 842,
@@ -665,6 +704,7 @@
             "score": 7,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": false,
@@ -676,7 +716,8 @@
           "expected": {
             "price": 826,
             "bandLow": 815,
-            "bandHigh": 826
+            "bandHigh": 826,
+            "distancePct": -3.1
           },
           "actual": {
             "price": 826,
@@ -692,6 +733,7 @@
             "score": 2,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": false,
@@ -701,7 +743,8 @@
         },
         "breakout": {
           "expected": {
-            "price": 850
+            "price": 850,
+            "distancePct": 0.7
           },
           "actual": {
             "price": 856,
@@ -719,6 +762,7 @@
             ],
             "strength": "高共振"
           },
+          "distanceMatch": false,
           "anchorMatch": false,
           "priceMatch": false,
           "bandMatch": null,
@@ -728,7 +772,8 @@
         },
         "resistance2": {
           "expected": {
-            "price": 919
+            "price": 919,
+            "distancePct": 7.9
           },
           "actual": {
             "price": 870,
@@ -743,6 +788,7 @@
             "score": 7,
             "confidence": null
           },
+          "distanceMatch": false,
           "anchorMatch": false,
           "priceMatch": false,
           "bandMatch": null,
@@ -753,6 +799,7 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -809,7 +856,8 @@
           "expected": {
             "price": 30.45,
             "bandLow": 30.2,
-            "bandHigh": 30.45
+            "bandHigh": 30.45,
+            "distancePct": -0.2
           },
           "actual": {
             "price": 30.45,
@@ -826,6 +874,7 @@
             "score": 7,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -837,7 +886,8 @@
           "expected": {
             "price": 29.9,
             "bandLow": 29.7,
-            "bandHigh": 29.9
+            "bandHigh": 29.9,
+            "distancePct": -2
           },
           "actual": {
             "price": 29.9,
@@ -857,6 +907,7 @@
             "score": 2,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": false,
@@ -866,7 +917,8 @@
         },
         "breakout": {
           "expected": {
-            "price": 30.9
+            "price": 30.9,
+            "distancePct": 1.3
           },
           "actual": {
             "price": 30.9,
@@ -883,6 +935,7 @@
             ],
             "strength": "高共振"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -892,7 +945,8 @@
         },
         "resistance2": {
           "expected": {
-            "price": 31.65
+            "price": 31.65,
+            "distancePct": 3.8
           },
           "actual": {
             "price": 31.8,
@@ -908,6 +962,7 @@
             "score": 6,
             "confidence": null
           },
+          "distanceMatch": false,
           "anchorMatch": false,
           "priceMatch": false,
           "bandMatch": null,
@@ -918,6 +973,7 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -964,7 +1020,8 @@
           "expected": {
             "price": 516,
             "bandLow": 511,
-            "bandHigh": 516
+            "bandHigh": 516,
+            "distancePct": -0.6
           },
           "actual": {
             "price": 516,
@@ -979,6 +1036,7 @@
             "score": 5,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -990,7 +1048,8 @@
           "expected": {
             "price": 504,
             "bandLow": 498,
-            "bandHigh": 504
+            "bandHigh": 504,
+            "distancePct": -2.9
           },
           "actual": {
             "price": 504,
@@ -1009,6 +1068,7 @@
             "score": 2,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -1018,7 +1078,8 @@
         },
         "breakout": {
           "expected": {
-            "price": 528
+            "price": 528,
+            "distancePct": 1.7
           },
           "actual": {
             "price": 528,
@@ -1036,6 +1097,7 @@
             ],
             "strength": "中共振"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -1045,7 +1107,8 @@
         },
         "resistance2": {
           "expected": {
-            "price": 543
+            "price": 543,
+            "distancePct": 4.6
           },
           "actual": {
             "price": 543,
@@ -1059,6 +1122,7 @@
             "score": 5,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -1069,6 +1133,7 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -1100,7 +1165,8 @@
           "expected": {
             "price": 836,
             "bandLow": 832,
-            "bandHigh": 836
+            "bandHigh": 836,
+            "distancePct": -1.1
           },
           "actual": {
             "price": 836,
@@ -1117,6 +1183,7 @@
             "score": 7,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -1128,7 +1195,8 @@
           "expected": {
             "price": 822,
             "bandLow": 822,
-            "bandHigh": 822
+            "bandHigh": 822,
+            "distancePct": -2.7
           },
           "actual": {
             "price": 822,
@@ -1145,6 +1213,7 @@
             "score": 2,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -1154,7 +1223,8 @@
         },
         "resistance1": {
           "expected": {
-            "price": 874
+            "price": 874,
+            "distancePct": 3.4
           },
           "actual": {
             "price": 874,
@@ -1173,6 +1243,7 @@
             ],
             "strength": "高共振"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -1182,7 +1253,8 @@
         },
         "resistance2": {
           "expected": {
-            "price": 887
+            "price": 887,
+            "distancePct": 5
           },
           "actual": {
             "price": 887,
@@ -1196,6 +1268,7 @@
             ],
             "strength": "一般"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -1206,6 +1279,7 @@
         "breakout": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -1237,7 +1311,8 @@
           "expected": {
             "price": 151.5,
             "bandLow": 151.5,
-            "bandHigh": 151.5
+            "bandHigh": 151.5,
+            "distancePct": -0.3
           },
           "actual": {
             "price": 151.5,
@@ -1251,6 +1326,7 @@
             "score": 4,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -1262,7 +1338,8 @@
           "expected": {
             "price": 148.5,
             "bandLow": 148,
-            "bandHigh": 148.5
+            "bandHigh": 148.5,
+            "distancePct": -2.3
           },
           "actual": {
             "price": 148.5,
@@ -1277,6 +1354,7 @@
             "score": 5,
             "confidence": null
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": true,
@@ -1286,7 +1364,8 @@
         },
         "resistance1": {
           "expected": {
-            "price": 154.5
+            "price": 154.5,
+            "distancePct": 1.6
           },
           "actual": {
             "price": 154.5,
@@ -1303,6 +1382,7 @@
             ],
             "strength": "中共振"
           },
+          "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
           "bandMatch": null,
@@ -1313,6 +1393,7 @@
         "breakout": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
           "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
@@ -1345,7 +1426,7 @@
     "observationMatches": 0
   },
   "notes": [
-    "新唐第二壓力未提供；壓力價帶未提供，不能聲稱完整壓力價帶一致。",
+    "新唐第二壓力未提供；壓力價帶未提供，不計入價格帶一致數。",
     "禾伸堂10/1收盤852，但圖中850標為距現價+0.7%，文字與价位不一致。",
     "尚未恢復原始算法；金居趨勢線與玉晶光／禾伸堂／大同壓力仍有差異。"
   ]

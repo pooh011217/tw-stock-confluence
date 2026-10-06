@@ -26,7 +26,18 @@ function renderWatch(){const g=$("#watchGrid");g.innerHTML=watch.length?watch.ma
 async function loadWatchNames(){await Promise.all(watch.filter(c=>!stockNames[c]&&!pendingNames.has(c)).map(async c=>{pendingNames.add(c);try{const d=await api({action:"search",q:c});rememberStocks((d.results||[]).filter(s=>s.code===c))}catch{}finally{pendingNames.delete(c)}}));renderWatch()}
 let scanRequest=0;
 const escapeText=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function renderScan(results,done,total){rememberStocks(results.filter(r=>r.ok).map(r=>r.stock));renderWatch();$("#scanResult").innerHTML=results.map(r=>r.ok?`<article class="scanitem"><div class="obs">${r.observation}</div><h3>${r.stock.name} <small>${r.stock.code}</small></h3><div class="price">${money(r.current)}</div><div class="muted">${r.date}・${r.stock.market}</div><div class="tags">${(r.tags||[]).map(t=>`<span class="tag">${t}</span>`).join("")}</div><p>支撐 ${money(r.support?.price)}・突破 ${money(r.breakout?.price)}・量比 ${fmt(r.volumeRatio)}x</p><button data-open="${r.stock.code}" class="ghost">完整分析</button></article>`:`<article class="scanitem"><b>${escapeText(r.query)}</b><p>${escapeText(r.error)}</p></article>`).join("");$("#scanResult").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{showTab("analysis");$("#query").value=b.dataset.open;analyze(b.dataset.open)});if(done<total)$("#scanResult").insertAdjacentHTML("afterbegin",`<div class="empty">掃描中…已完成 ${done}/${total} 檔</div>`)}
+function scanColumns(results){const ok=results.filter(r=>r.ok),cols=[["support1","第一支撐"],["support2","第二支撐"],["breakout","突破／壓力共振區"]];if(ok.some(r=>!r.levels?.breakout&&r.levels?.resistance1))cols.push(["resistance1","第一壓力"]);cols.push(["resistance2","第二壓力"]);if(ok.some(r=>!r.levels?.breakout&&r.levels?.mediumResistance))cols.push(["mediumResistance","中期壓力"]);return cols}
+function scanLevel(r,key){const levels=r.levels||{support1:r.support,breakout:r.breakout};return levels.breakout&&["resistance1","mediumResistance"].includes(key)?null:levels[key]}
+function renderScan(results,done,total){
+ rememberStocks(results.filter(r=>r.ok).map(r=>r.stock));renderWatch();const cols=scanColumns(results),dates=[...new Set(results.filter(r=>r.ok).map(r=>r.date))];
+ const rows=results.map(r=>{if(!r.ok)return `<tr class="scan-failed"><td>${escapeText(r.query)}</td><td colspan="${cols.length+1}">${escapeText(r.error)}</td></tr>`;
+ const main=cols.map(([key])=>{const l=scanLevel(r,key);return `<td class="${key.startsWith("support")?"scan-support":"scan-pressure"}">${l?money(l.price)+(key.startsWith("support")&&l.distance<=-.10?' <small>〔中期〕</small>':""):'<span class="scan-pending">待確認</span>'}</td>`}).join("");
+ const bands=cols.map(([key])=>{const l=scanLevel(r,key);return `<td>${l?`（${money(l.bandLow??l.price)}–${money(l.bandHigh??l.price)}）`:""}</td>`}).join("");
+ return `<tr class="scan-main"><td><button class="scan-name" data-open="${escapeText(r.stock.code)}" title="查看完整分析">${escapeText(r.stock.name)} <span>${escapeText(r.stock.code)}</span></button></td><td>${money(r.current)}</td>${main}</tr><tr class="scan-band"><td></td><td></td>${bands}</tr>`}).join("");
+ $("#scanResult").innerHTML=`<div class="scan-summary">${done<total?`掃描中…已完成 ${done}/${total} 檔`:`已完成 ${done}/${total} 檔`}${dates.length===1?`・基準日 ${dates[0]}`:""}</div><div class="scan-table-scroll"><table class="scan-table" aria-label="股票現價與隔日核心位點"><thead><tr><th scope="col">股票名稱</th><th scope="col">現價</th>${cols.map(([,name])=>`<th scope="col">${name}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+ $("#scanResult").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{showTab("analysis");$("#query").value=b.dataset.open;analyze(b.dataset.open)});
+}
+
 async function scan(raw=$("#scanText").value){
  const id=++scanRequest,codes=[...new Set(String(raw||"").split(/[\s,，;；]+/).map(q=>q.trim()).filter(Boolean))].slice(0,12);
  if(!codes.length){$("#scanResult").innerHTML='<div class="error">請輸入至少一檔股票代碼或名稱</div>';return}
@@ -46,7 +57,7 @@ $("#analyze").onclick=()=>{hideSuggestions();analyze()};
 $("#query").addEventListener("input",suggest);
 $("#query").addEventListener("focus",()=>{if($("#query").value.trim())suggest()});
 $("#query").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();hideSuggestions();analyze()}if(e.key==="Escape")hideSuggestions()});
-$("#clearDate").onclick=()=>{$("#asOf").value=""};$("#scanBtn").onclick=()=>scan();$("#scanWatch").onclick=()=>{showTab("scan");$("#scanText").value=watch.join(" ");scan(watch.join(" "))};document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));$("#asOf").max=new Date().toISOString().slice(0,10);renderWatch();loadWatchNames();if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js?v=3.3.44.6",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{}));
+$("#clearDate").onclick=()=>{$("#asOf").value=""};$("#scanBtn").onclick=()=>scan();$("#scanWatch").onclick=()=>{showTab("scan");$("#scanText").value=watch.join(" ");scan(watch.join(" "))};document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));$("#asOf").max=new Date().toISOString().slice(0,10);renderWatch();loadWatchNames();if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js?v=3.3.44.7",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{}));
 
 if(typeof location!=="undefined"){
  const start=new URLSearchParams(location.search);

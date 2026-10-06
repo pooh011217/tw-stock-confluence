@@ -68,6 +68,16 @@ test('single-stock scan uses selected date and the same verified history as full
  const c=boot();
  const r=await c.worker.fetch(new Request('https://test/api/stock',{method:'POST',body:JSON.stringify({action:'scan',codes:'金居',asOf:'2026-10-06'})}),{ASSETS:assets});
  assert.equal(r.status,200);const j=await r.json();assert.equal(j.results.length,1);assert.equal(j.results[0].ok,true);assert.equal(j.results[0].date,'2026-10-06');assert.equal(j.results[0].current,551);
+ assert.equal(j.results[0].levels.support1.price,549);assert.equal(j.results[0].levels.support1.bandLow,543);assert.equal(j.results[0].levels.support2.price,536);assert.equal(j.results[0].levels.resistance2.price,578);
+});
+test('scan table renders bands on a separate row with blank name and price cells',()=>{
+ const nodes=new Map(),node=()=>({value:'',innerHTML:'',textContent:'',classList:{add(){},remove(){},toggle(){}},querySelectorAll:()=>[]});
+ const ui=vm.createContext({console,localStorage:{getItem:()=>null,setItem(){}},document:{querySelector:s=>{if(!nodes.has(s))nodes.set(s,node());return nodes.get(s)}}});
+ const app=fs.readFileSync('public/app.js','utf8');vm.runInContext(app.slice(0,app.indexOf('$("#analyze").onclick')),ui);
+ ui.rows=[{ok:true,stock:{name:'金居',code:'8358'},date:'2026-10-06',current:551,levels:{support1:{price:549,bandLow:543,bandHigh:549},support2:{price:536,bandLow:530,bandHigh:536},breakout:{price:564,bandLow:560,bandHigh:570},resistance2:{price:578,bandLow:578,bandHigh:594}}}];
+ vm.runInContext('renderScan(rows,1,1)',ui);const html=nodes.get('#scanResult').innerHTML;
+ assert.match(html,/<table/);assert.match(html,/<tr class="scan-band"><td><\/td><td><\/td><td>（543–549）<\/td>/);assert.match(html,/（578–594）/);assert.doesNotMatch(html,/scanitem|>價格帶</);
+ ui.rows[0].levels.breakout=null;ui.rows[0].levels.resistance1={price:555,bandLow:555,bandHigh:557};vm.runInContext('renderScan(rows,1,1)',ui);assert.match(nodes.get('#scanResult').innerHTML,/第一壓力/);
 });
 test('seven-stock UI scan sends isolated requests with at most two in flight and retains partial success',async()=>{
  const nodes=new Map(),node=()=>({value:'',innerHTML:'',textContent:'',classList:{add(){},remove(){},toggle(){}},querySelectorAll:()=>[]});

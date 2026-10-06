@@ -10,13 +10,13 @@
   <meta name="description" content="台股隔日支撐壓力共振與歷史回測工具">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="icon" href="/icon.svg">
-  <title>台股支撐壓力共振 V3.3.44.2</title>
+  <title>台股支撐壓力共振 V3.3.44.3</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <main class="page">
   <header>
-    <div><div class="eyebrow">TW STOCK CONFLUENCE</div><h1>支撐壓力共振 <span>V3.3.44.2</span></h1><p>隔日位點預估 × 歷史回測｜手機與電腦共用</p></div>
+    <div><div class="eyebrow">TW STOCK CONFLUENCE</div><h1>支撐壓力共振 <span>V3.3.44.3</span></h1><p>隔日位點預估 × 歷史回測｜手機與電腦共用</p></div>
     <div class="status">● TWSE / TPEx 公開資料</div>
   </header>
 
@@ -25,6 +25,7 @@
     <button id="analyze">分析</button>
   </section>
   <section class="backtest">
+    <label>計算規則 <select id="model"><option value="standard">既有規則</option><option value="photo-inferred">照片校準（推定）</option></select></label>
     <label>隔日預估歷史回測 <input id="asOf" type="date"></label>
     <button id="clearDate" class="ghost">回到最新</button>
     <small>選「預估基準日」；例如 10/1 會驗證下一交易日。</small>
@@ -53,7 +54,7 @@
     <div id="scanResult" class="scangrid"></div>
   </section>
 
-  <footer>V3.3.44.2｜隔日位點預估＋歷史日期誤差驗證｜20/60日結構低點＋支撐轉壓力校準｜突破共振區取代第一壓力，保留上方獨立第二壓力｜僅供研究與結構觀察，不構成投資建議。</footer>
+  <footer>V3.3.44.3｜隔日位點預估＋歷史日期誤差驗證｜20/60日結構低點＋支撐轉壓力校準｜突破共振區取代第一壓力，保留上方獨立第二壓力｜僅供研究與結構觀察，不構成投資建議。</footer>
 </main>
 <script src="/app.js"></script>
 </body>

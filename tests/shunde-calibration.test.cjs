@@ -8,15 +8,16 @@ function boot(source=fs.readFileSync('src/worker.js','utf8')){
  const c=vm.createContext({Response,Request,URL,Headers,setTimeout,console});
  vm.runInContext(source.replace('export default','globalThis.worker='),c);return c;
 }
-test('Shunde retains V3.3.44 support and breakout, exposing the skipped independent pressure',()=>{
+test('Shunde merges touching pressure bands before selecting a separate second pressure',()=>{
  const old=boot(execFileSync('git',['show','026022d:src/worker.js'],{encoding:'utf8'})),next=boot();
  old.rows=structuredClone(fixture.rows);next.rows=structuredClone(fixture.rows);
  const before=JSON.parse(JSON.stringify(vm.runInContext('analyze(rows)',old))),after=JSON.parse(JSON.stringify(vm.runInContext('analyze(rows)',next)));
  assert.equal(after.date,'2026-10-05');assert.equal(after.current,222);
- for(const key of ['support1','support2','breakout'])assert.deepEqual(after[key],before[key]);
+ for(const key of ['support1','support2'])assert.deepEqual(after[key],before[key]);
  assert.equal(before.resistance2,null);assert.equal(before.mediumResistance.price,247);
  assert.equal(after.resistance1,null);assert.equal(after.mediumResistance,null);
- assert.equal(after.resistance2.price,235.5);assert.equal(after.resistance2.bandLow,233);assert.equal(after.resistance2.bandHigh,236);
+ assert.equal(after.breakout.price,before.breakout.price);assert.equal(after.breakout.bandLow,223.25);assert.equal(after.breakout.bandHigh,236);
+ assert.equal(after.resistance2.price,239.5);assert.equal(after.resistance2.bandLow,239.5);assert.equal(after.resistance2.bandHigh,240.5);
  assert.ok(after.resistance2.bandLow>after.breakout.bandHigh);
  assert.ok(fixture.rows.some(r=>r.close===after.resistance2.price));
  assert.ok(fixture.rows.every(r=>r.date<='2026-10-05'));
@@ -33,6 +34,6 @@ test('historical API uses snapshot without substituting stale history or future 
  vm.runInContext('resolve=async()=>({code:"2351",name:"順德",market:"TWSE"});history=async()=>{throw new Error("stale source must not be used")}',c);
  const d=await vm.runInContext('analyzeOne("2351","2026-10-05",assets)',c);
  assert.equal(d.stock.name,'順德');assert.equal(d.backtest.baseDate,'2026-10-05');assert.equal(d.backtest.noLookahead,true);
- assert.equal(d.analysis.resistance2.price,235.5);assert.equal(d.backtest.actual,null);assert.equal(d.backtest.checks,null);assert.equal(d.backtest.bandHitRate,null);
+ assert.equal(d.analysis.resistance2.price,239.5);assert.equal(d.backtest.actual,null);assert.equal(d.backtest.checks,null);assert.equal(d.backtest.bandHitRate,null);
  assert.match(d.source,/快照/);
 });

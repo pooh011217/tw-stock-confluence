@@ -1,1 +1,1090 @@
-{"code":"8358","name":"金居","market":"TPEX","baseDate":"2026-10-06","source":"TPEx official daily history via existing relay, nontrading days removed using official TWSE calendar","excludedNonTradingRows":4,"rows":[{"date":"2026-06-01","volume":9875000,"turnover":6504020000,"open":637,"high":668,"low":636,"close":668,"trades":4868},{"date":"2026-06-02","volume":39038000,"turnover":25457682000,"open":662,"high":687,"low":613,"close":627,"trades":27897},{"date":"2026-06-03","volume":16901000,"turnover":10542112000,"open":635,"high":654,"low":606,"close":615,"trades":13404},{"date":"2026-06-04","volume":17509000,"turnover":10538330000,"open":608,"high":626,"low":565,"close":565,"trades":13084},{"date":"2026-06-05","volume":3197000,"turnover":1776277000,"open":543,"high":596,"low":515,"close":596,"trades":2134},{"date":"2026-06-08","volume":2658000,"turnover":1480177000,"open":537,"high":590,"low":537,"close":586,"trades":1774},{"date":"2026-06-09","volume":1992000,"turnover":1186538000,"open":586,"high":613,"low":560,"close":610,"trades":1440},{"date":"2026-06-10","volume":1797000,"turnover":1043182000,"open":596,"high":605,"low":555,"close":555,"trades":1339},{"date":"2026-06-11","volume":3154000,"turnover":1664494000,"open":555,"high":564,"low":510,"close":540,"trades":1687},{"date":"2026-06-12","volume":1869000,"turnover":1074289000,"open":579,"high":584,"low":562,"close":574,"trades":1318},{"date":"2026-06-15","volume":1740000,"turnover":1059941000,"open":594,"high":625,"low":594,"close":624,"trades":1377},{"date":"2026-06-16","volume":2191000,"turnover":1377472000,"open":625,"high":638,"low":615,"close":632,"trades":1610},{"date":"2026-06-17","volume":1844000,"turnover":1170364000,"open":628,"high":640,"low":625,"close":640,"trades":1442},{"date":"2026-06-18","volume":5038000,"turnover":3458032000,"open":657,"high":700,"low":657,"close":700,"trades":3294},{"date":"2026-06-22","volume":25308000,"turnover":18147795000,"open":705,"high":758,"low":683,"close":691,"trades":18855},{"date":"2026-06-23","volume":17152000,"turnover":11675903000,"open":717,"high":718,"low":650,"close":657,"trades":13294},{"date":"2026-06-24","volume":9493000,"turnover":5947887000,"open":632,"high":640,"low":616,"close":638,"trades":7444},{"date":"2026-06-25","volume":8573000,"turnover":5442496000,"open":651,"high":651,"low":621,"close":630,"trades":6816},{"date":"2026-06-26","volume":15194000,"turnover":9214813000,"open":628,"high":650,"low":570,"close":570,"trades":11947},{"date":"2026-06-29","volume":9290000,"turnover":5173178000,"open":574,"high":578,"low":538,"close":546,"trades":6885},{"date":"2026-06-30","volume":9614000,"turnover":5727893000,"open":570,"high":600,"low":568,"close":600,"trades":5105},{"date":"2026-07-01","volume":12352000,"turnover":7541564000,"open":626,"high":639,"low":580,"close":587,"trades":9750},{"date":"2026-07-02","volume":7825000,"turnover":4496563000,"open":562,"high":592,"low":557,"close":570,"trades":6711},{"date":"2026-07-03","volume":7778000,"turnover":4455420000,"open":555,"high":594,"low":544,"close":590,"trades":6430},{"date":"2026-07-06","volume":9843000,"turnover":5709107000,"open":596,"high":608,"low":560,"close":563,"trades":7798},{"date":"2026-07-07","volume":10330000,"turnover":5523103000,"open":561,"high":568,"low":513,"close":523,"trades":8447},{"date":"2026-07-08","volume":6591000,"turnover":3444096000,"open":523,"high":534,"low":509,"close":523,"trades":5307},{"date":"2026-07-09","volume":8964000,"turnover":4902263000,"open":534,"high":563,"low":529,"close":533,"trades":7189},{"date":"2026-07-13","volume":9544000,"turnover":4913050000,"open":538,"high":543,"low":496,"close":498,"trades":7391},{"date":"2026-07-14","volume":11139000,"turnover":5177007000,"open":495.5,"high":504,"low":448.5,"close":460,"trades":8090},{"date":"2026-07-15","volume":5223000,"turnover":2446684000,"open":474,"high":479.5,"low":459.5,"close":462.5,"trades":3906},{"date":"2026-07-16","volume":4234000,"turnover":1891829000,"open":460,"high":461,"low":438,"close":439,"trades":3202},{"date":"2026-07-17","volume":7847000,"turnover":3190718500,"open":415.5,"high":420,"low":395,"close":398.5,"trades":5925},{"date":"2026-07-20","volume":7352000,"turnover":2755064500,"open":400,"high":400.5,"low":359,"close":371,"trades":5466},{"date":"2026-07-21","volume":8825000,"turnover":3394251000,"open":380,"high":396.5,"low":372.5,"close":394.5,"trades":6905},{"date":"2026-07-22","volume":12858000,"turnover":5397313000,"open":423.5,"high":433.5,"low":404.5,"close":412.5,"trades":9572},{"date":"2026-07-23","volume":7701000,"turnover":3124640500,"open":416,"high":417.5,"low":393.5,"close":406.5,"trades":6083},{"date":"2026-07-24","volume":8002000,"turnover":3044114000,"open":397,"high":397.5,"low":366,"close":367,"trades":5956},{"date":"2026-07-27","volume":8305000,"turnover":2991482500,"open":369,"high":375,"low":347,"close":371,"trades":6175},{"date":"2026-07-28","volume":9420000,"turnover":3238579000,"open":350,"high":360.5,"low":334,"close":334,"trades":6436},{"date":"2026-07-29","volume":9010000,"turnover":2757379500,"open":326,"high":326,"low":301,"close":301,"trades":5041},{"date":"2026-07-30","volume":19371000,"turnover":5516248000,"open":281,"high":299.5,"low":271,"close":271,"trades":13506},{"date":"2026-07-31","volume":5817000,"turnover":1731971000,"open":298,"high":298,"low":295,"close":298,"trades":2366},{"date":"2026-08-03","volume":7609000,"turnover":2458610000,"open":299,"high":327.5,"low":298,"close":327.5,"trades":4093},{"date":"2026-08-04","volume":24312000,"turnover":8168801500,"open":329.5,"high":350,"low":318,"close":341,"trades":17200},{"date":"2026-08-05","volume":24134000,"turnover":8826304000,"open":365,"high":375,"low":347.5,"close":349.5,"trades":14463},{"date":"2026-08-06","volume":20501000,"turnover":7465360500,"open":350.5,"high":384,"low":341.5,"close":384,"trades":13971},{"date":"2026-08-07","volume":30659000,"turnover":11315236500,"open":393,"high":397,"low":350,"close":352,"trades":21353},{"date":"2026-08-10","volume":36508000,"turnover":12917659500,"open":354.5,"high":369.5,"low":342.5,"close":346,"trades":26583},{"date":"2026-08-11","volume":27026000,"turnover":10043416000,"open":346,"high":380.5,"low":346,"close":380.5,"trades":18090},{"date":"2026-08-12","volume":10977000,"turnover":4528413000,"open":402.5,"high":418.5,"low":402,"close":418.5,"trades":6214},{"date":"2026-08-13","volume":47513000,"turnover":20339023000,"open":445,"high":445,"low":417,"close":421,"trades":32650},{"date":"2026-08-14","volume":44088000,"turnover":19267803000,"open":427,"high":462,"low":413,"close":428.5,"trades":33775},{"date":"2026-08-17","volume":19074000,"turnover":8106793500,"open":430.5,"high":434,"low":418.5,"close":419.5,"trades":14746},{"date":"2026-08-18","volume":32854000,"turnover":14133838500,"open":425.5,"high":441,"low":415,"close":416,"trades":25753},{"date":"2026-08-19","volume":14975000,"turnover":6074096500,"open":398,"high":413.5,"low":392,"close":410.5,"trades":11901},{"date":"2026-08-20","volume":18281000,"turnover":7604360000,"open":420,"high":428.5,"low":406,"close":413.5,"trades":14414},{"date":"2026-08-21","volume":30234000,"turnover":12981098500,"open":417,"high":444,"low":404.5,"close":436,"trades":23998},{"date":"2026-08-24","volume":13672000,"turnover":5827190500,"open":430,"high":435,"low":417,"close":417,"trades":10399},{"date":"2026-08-25","volume":11738000,"turnover":4798720500,"open":411,"high":429,"low":399,"close":429,"trades":9616},{"date":"2026-08-26","volume":31477000,"turnover":13913687000,"open":420,"high":456.5,"low":419,"close":449.5,"trades":25456},{"date":"2026-08-27","volume":37626000,"turnover":17464031000,"open":454,"high":494,"low":446,"close":494,"trades":28287},{"date":"2026-08-28","volume":39692000,"turnover":20902588000,"open":525,"high":543,"low":505,"close":543,"trades":27718},{"date":"2026-08-31","volume":48799000,"turnover":26072715000,"open":538,"high":549,"low":515,"close":540,"trades":32057},{"date":"2026-09-01","volume":30425000,"turnover":16398249000,"open":541,"high":564,"low":525,"close":526,"trades":23781},{"date":"2026-09-02","volume":5342000,"turnover":2739882000,"open":515,"high":521,"low":503,"close":503,"trades":4599},{"date":"2026-09-03","volume":7118000,"turnover":3478256500,"open":513,"high":514,"low":470,"close":470,"trades":5620},{"date":"2026-09-04","volume":4151000,"turnover":2014249500,"open":481,"high":500,"low":469.5,"close":500,"trades":3512},{"date":"2026-09-07","volume":3709000,"turnover":1901913000,"open":510,"high":524,"low":502,"close":515,"trades":3182},{"date":"2026-09-08","volume":3643000,"turnover":1899815000,"open":520,"high":528,"low":512,"close":520,"trades":2988},{"date":"2026-09-09","volume":3207000,"turnover":1689849000,"open":534,"high":535,"low":519,"close":526,"trades":2661},{"date":"2026-09-10","volume":3044000,"turnover":1580782000,"open":518,"high":525,"low":515,"close":521,"trades":2391},{"date":"2026-09-11","volume":13797000,"turnover":6759311000,"open":497.5,"high":505,"low":480.5,"close":485,"trades":10880},{"date":"2026-09-14","volume":33278000,"turnover":16914504500,"open":477,"high":530,"low":477,"close":518,"trades":25422},{"date":"2026-09-15","volume":26088000,"turnover":13025757000,"open":515,"high":516,"low":480,"close":482,"trades":20211},{"date":"2026-09-16","volume":19871000,"turnover":9880951000,"open":495.5,"high":510,"low":482.5,"close":510,"trades":15925},{"date":"2026-09-17","volume":29702000,"turnover":14606051000,"open":506,"high":507,"low":477.5,"close":478.5,"trades":23731},{"date":"2026-09-18","volume":4278000,"turnover":2112088000,"open":487.5,"high":499.5,"low":484,"close":499.5,"trades":3410},{"date":"2026-09-21","volume":2173000,"turnover":1063155500,"open":500,"high":500,"low":485,"close":491.5,"trades":1668},{"date":"2026-09-22","volume":2011000,"turnover":998720500,"open":501,"high":501,"low":490,"close":491.5,"trades":1653},{"date":"2026-09-23","volume":1893000,"turnover":939708500,"open":498,"high":502,"low":490,"close":497,"trades":1539},{"date":"2026-09-24","volume":2966000,"turnover":1498878000,"open":498,"high":511,"low":495,"close":511,"trades":2449},{"date":"2026-09-29","volume":13167000,"turnover":6625212000,"open":500,"high":519,"low":495.5,"close":498,"trades":10693},{"date":"2026-09-30","volume":8233000,"turnover":4113300500,"open":509,"high":515,"low":495,"close":495,"trades":6760},{"date":"2026-10-01","volume":17252000,"turnover":8804470000,"open":500,"high":521,"low":500,"close":505,"trades":14018},{"date":"2026-10-02","volume":19421000,"turnover":10141091000,"open":514,"high":536,"low":511,"close":519,"trades":15759},{"date":"2026-10-05","volume":40410000,"turnover":22746585000,"open":534,"high":570,"low":526,"close":570,"trades":23526},{"date":"2026-10-06","volume":25464000,"turnover":14322212000,"open":577,"high":578,"low":548,"close":551,"trades":19682}]}
+{
+  "code": "8358",
+  "name": "金居",
+  "market": "TPEX",
+  "baseDate": "2026-10-06",
+  "source": "TPEx官方月份行情；完整6個月2026/05–10，補齊原快照缺少的5月資料",
+  "excludedNonTradingRows": 4,
+  "rows": [
+    {
+      "date": "2026-05-04",
+      "volume": 6272000,
+      "turnover": 2525945000,
+      "open": 406,
+      "high": 406,
+      "low": 398,
+      "close": 402.5,
+      "trades": 9904
+    },
+    {
+      "date": "2026-05-05",
+      "volume": 9771000,
+      "turnover": 4131879000,
+      "open": 405,
+      "high": 433,
+      "low": 405,
+      "close": 433,
+      "trades": 13689
+    },
+    {
+      "date": "2026-05-06",
+      "volume": 10917000,
+      "turnover": 4762231000,
+      "open": 448.5,
+      "high": 458.5,
+      "low": 406.5,
+      "close": 458.5,
+      "trades": 16467
+    },
+    {
+      "date": "2026-05-07",
+      "volume": 34883000,
+      "turnover": 16537056000,
+      "open": 458.5,
+      "high": 500,
+      "low": 434,
+      "close": 469,
+      "trades": 38452
+    },
+    {
+      "date": "2026-05-08",
+      "volume": 29991000,
+      "turnover": 13755272000,
+      "open": 473,
+      "high": 487.5,
+      "low": 436.5,
+      "close": 454.5,
+      "trades": 33618
+    },
+    {
+      "date": "2026-05-11",
+      "volume": 29822000,
+      "turnover": 13916140000,
+      "open": 460,
+      "high": 488,
+      "low": 446,
+      "close": 462,
+      "trades": 29835
+    },
+    {
+      "date": "2026-05-12",
+      "volume": 27295000,
+      "turnover": 13310940000,
+      "open": 476,
+      "high": 500,
+      "low": 474.5,
+      "close": 477,
+      "trades": 29103
+    },
+    {
+      "date": "2026-05-13",
+      "volume": 19644000,
+      "turnover": 9042462000,
+      "open": 464,
+      "high": 475,
+      "low": 448,
+      "close": 456,
+      "trades": 24846
+    },
+    {
+      "date": "2026-05-14",
+      "volume": 31720000,
+      "turnover": 13746224000,
+      "open": 461,
+      "high": 461,
+      "low": 419.5,
+      "close": 427,
+      "trades": 41905
+    },
+    {
+      "date": "2026-05-15",
+      "volume": 3180000,
+      "turnover": 1291144000,
+      "open": 417,
+      "high": 417,
+      "low": 388,
+      "close": 389.5,
+      "trades": 7233
+    },
+    {
+      "date": "2026-05-18",
+      "volume": 3174000,
+      "turnover": 1289906000,
+      "open": 378.5,
+      "high": 428,
+      "low": 368,
+      "close": 428,
+      "trades": 4470
+    },
+    {
+      "date": "2026-05-19",
+      "volume": 2749000,
+      "turnover": 1160489000,
+      "open": 430,
+      "high": 430,
+      "low": 410,
+      "close": 429,
+      "trades": 3318
+    },
+    {
+      "date": "2026-05-20",
+      "volume": 7601000,
+      "turnover": 3459368000,
+      "open": 458,
+      "high": 460,
+      "low": 448,
+      "close": 460,
+      "trades": 9426
+    },
+    {
+      "date": "2026-05-21",
+      "volume": 4747000,
+      "turnover": 2317288000,
+      "open": 485,
+      "high": 498,
+      "low": 480,
+      "close": 498,
+      "trades": 7651
+    },
+    {
+      "date": "2026-05-22",
+      "volume": 4434000,
+      "turnover": 2296911000,
+      "open": 506,
+      "high": 528,
+      "low": 505,
+      "close": 522,
+      "trades": 7632
+    },
+    {
+      "date": "2026-05-25",
+      "volume": 2767000,
+      "turnover": 1523184000,
+      "open": 558,
+      "high": 558,
+      "low": 541,
+      "close": 545,
+      "trades": 4862
+    },
+    {
+      "date": "2026-05-26",
+      "volume": 2520000,
+      "turnover": 1323681000,
+      "open": 546,
+      "high": 546,
+      "low": 517,
+      "close": 533,
+      "trades": 4795
+    },
+    {
+      "date": "2026-05-27",
+      "volume": 4528000,
+      "turnover": 2503800000,
+      "open": 540,
+      "high": 566,
+      "low": 540,
+      "close": 560,
+      "trades": 6185
+    },
+    {
+      "date": "2026-05-28",
+      "volume": 4871000,
+      "turnover": 2724374000,
+      "open": 555,
+      "high": 578,
+      "low": 550,
+      "close": 553,
+      "trades": 6423
+    },
+    {
+      "date": "2026-05-29",
+      "volume": 20529000,
+      "turnover": 12242067000,
+      "open": 579,
+      "high": 608,
+      "low": 565,
+      "close": 608,
+      "trades": 22890
+    },
+    {
+      "date": "2026-06-01",
+      "volume": 9875000,
+      "turnover": 6504020000,
+      "open": 637,
+      "high": 668,
+      "low": 636,
+      "close": 668,
+      "trades": 4868
+    },
+    {
+      "date": "2026-06-02",
+      "volume": 39038000,
+      "turnover": 25457682000,
+      "open": 662,
+      "high": 687,
+      "low": 613,
+      "close": 627,
+      "trades": 27897
+    },
+    {
+      "date": "2026-06-03",
+      "volume": 16901000,
+      "turnover": 10542112000,
+      "open": 635,
+      "high": 654,
+      "low": 606,
+      "close": 615,
+      "trades": 13404
+    },
+    {
+      "date": "2026-06-04",
+      "volume": 17509000,
+      "turnover": 10538330000,
+      "open": 608,
+      "high": 626,
+      "low": 565,
+      "close": 565,
+      "trades": 13084
+    },
+    {
+      "date": "2026-06-05",
+      "volume": 3197000,
+      "turnover": 1776277000,
+      "open": 543,
+      "high": 596,
+      "low": 515,
+      "close": 596,
+      "trades": 2134
+    },
+    {
+      "date": "2026-06-08",
+      "volume": 2658000,
+      "turnover": 1480177000,
+      "open": 537,
+      "high": 590,
+      "low": 537,
+      "close": 586,
+      "trades": 1774
+    },
+    {
+      "date": "2026-06-09",
+      "volume": 1992000,
+      "turnover": 1186538000,
+      "open": 586,
+      "high": 613,
+      "low": 560,
+      "close": 610,
+      "trades": 1440
+    },
+    {
+      "date": "2026-06-10",
+      "volume": 1797000,
+      "turnover": 1043182000,
+      "open": 596,
+      "high": 605,
+      "low": 555,
+      "close": 555,
+      "trades": 1339
+    },
+    {
+      "date": "2026-06-11",
+      "volume": 3154000,
+      "turnover": 1664494000,
+      "open": 555,
+      "high": 564,
+      "low": 510,
+      "close": 540,
+      "trades": 1687
+    },
+    {
+      "date": "2026-06-12",
+      "volume": 1869000,
+      "turnover": 1074289000,
+      "open": 579,
+      "high": 584,
+      "low": 562,
+      "close": 574,
+      "trades": 1318
+    },
+    {
+      "date": "2026-06-15",
+      "volume": 1740000,
+      "turnover": 1059941000,
+      "open": 594,
+      "high": 625,
+      "low": 594,
+      "close": 624,
+      "trades": 1377
+    },
+    {
+      "date": "2026-06-16",
+      "volume": 2191000,
+      "turnover": 1377472000,
+      "open": 625,
+      "high": 638,
+      "low": 615,
+      "close": 632,
+      "trades": 1610
+    },
+    {
+      "date": "2026-06-17",
+      "volume": 1844000,
+      "turnover": 1170364000,
+      "open": 628,
+      "high": 640,
+      "low": 625,
+      "close": 640,
+      "trades": 1442
+    },
+    {
+      "date": "2026-06-18",
+      "volume": 5038000,
+      "turnover": 3458032000,
+      "open": 657,
+      "high": 700,
+      "low": 657,
+      "close": 700,
+      "trades": 3294
+    },
+    {
+      "date": "2026-06-22",
+      "volume": 25308000,
+      "turnover": 18147795000,
+      "open": 705,
+      "high": 758,
+      "low": 683,
+      "close": 691,
+      "trades": 18855
+    },
+    {
+      "date": "2026-06-23",
+      "volume": 17152000,
+      "turnover": 11675903000,
+      "open": 717,
+      "high": 718,
+      "low": 650,
+      "close": 657,
+      "trades": 13294
+    },
+    {
+      "date": "2026-06-24",
+      "volume": 9493000,
+      "turnover": 5947887000,
+      "open": 632,
+      "high": 640,
+      "low": 616,
+      "close": 638,
+      "trades": 7444
+    },
+    {
+      "date": "2026-06-25",
+      "volume": 8573000,
+      "turnover": 5442496000,
+      "open": 651,
+      "high": 651,
+      "low": 621,
+      "close": 630,
+      "trades": 6816
+    },
+    {
+      "date": "2026-06-26",
+      "volume": 15194000,
+      "turnover": 9214813000,
+      "open": 628,
+      "high": 650,
+      "low": 570,
+      "close": 570,
+      "trades": 11947
+    },
+    {
+      "date": "2026-06-29",
+      "volume": 9290000,
+      "turnover": 5173178000,
+      "open": 574,
+      "high": 578,
+      "low": 538,
+      "close": 546,
+      "trades": 6885
+    },
+    {
+      "date": "2026-06-30",
+      "volume": 9614000,
+      "turnover": 5727893000,
+      "open": 570,
+      "high": 600,
+      "low": 568,
+      "close": 600,
+      "trades": 5105
+    },
+    {
+      "date": "2026-07-01",
+      "volume": 12352000,
+      "turnover": 7541564000,
+      "open": 626,
+      "high": 639,
+      "low": 580,
+      "close": 587,
+      "trades": 9750
+    },
+    {
+      "date": "2026-07-02",
+      "volume": 7825000,
+      "turnover": 4496563000,
+      "open": 562,
+      "high": 592,
+      "low": 557,
+      "close": 570,
+      "trades": 6711
+    },
+    {
+      "date": "2026-07-03",
+      "volume": 7778000,
+      "turnover": 4455420000,
+      "open": 555,
+      "high": 594,
+      "low": 544,
+      "close": 590,
+      "trades": 6430
+    },
+    {
+      "date": "2026-07-06",
+      "volume": 9843000,
+      "turnover": 5709107000,
+      "open": 596,
+      "high": 608,
+      "low": 560,
+      "close": 563,
+      "trades": 7798
+    },
+    {
+      "date": "2026-07-07",
+      "volume": 10330000,
+      "turnover": 5523103000,
+      "open": 561,
+      "high": 568,
+      "low": 513,
+      "close": 523,
+      "trades": 8447
+    },
+    {
+      "date": "2026-07-08",
+      "volume": 6591000,
+      "turnover": 3444096000,
+      "open": 523,
+      "high": 534,
+      "low": 509,
+      "close": 523,
+      "trades": 5307
+    },
+    {
+      "date": "2026-07-09",
+      "volume": 8964000,
+      "turnover": 4902263000,
+      "open": 534,
+      "high": 563,
+      "low": 529,
+      "close": 533,
+      "trades": 7189
+    },
+    {
+      "date": "2026-07-13",
+      "volume": 9544000,
+      "turnover": 4913050000,
+      "open": 538,
+      "high": 543,
+      "low": 496,
+      "close": 498,
+      "trades": 7391
+    },
+    {
+      "date": "2026-07-14",
+      "volume": 11139000,
+      "turnover": 5177007000,
+      "open": 495.5,
+      "high": 504,
+      "low": 448.5,
+      "close": 460,
+      "trades": 8090
+    },
+    {
+      "date": "2026-07-15",
+      "volume": 5223000,
+      "turnover": 2446684000,
+      "open": 474,
+      "high": 479.5,
+      "low": 459.5,
+      "close": 462.5,
+      "trades": 3906
+    },
+    {
+      "date": "2026-07-16",
+      "volume": 4234000,
+      "turnover": 1891829000,
+      "open": 460,
+      "high": 461,
+      "low": 438,
+      "close": 439,
+      "trades": 3202
+    },
+    {
+      "date": "2026-07-17",
+      "volume": 7847000,
+      "turnover": 3190718500,
+      "open": 415.5,
+      "high": 420,
+      "low": 395,
+      "close": 398.5,
+      "trades": 5925
+    },
+    {
+      "date": "2026-07-20",
+      "volume": 7352000,
+      "turnover": 2755064500,
+      "open": 400,
+      "high": 400.5,
+      "low": 359,
+      "close": 371,
+      "trades": 5466
+    },
+    {
+      "date": "2026-07-21",
+      "volume": 8825000,
+      "turnover": 3394251000,
+      "open": 380,
+      "high": 396.5,
+      "low": 372.5,
+      "close": 394.5,
+      "trades": 6905
+    },
+    {
+      "date": "2026-07-22",
+      "volume": 12858000,
+      "turnover": 5397313000,
+      "open": 423.5,
+      "high": 433.5,
+      "low": 404.5,
+      "close": 412.5,
+      "trades": 9572
+    },
+    {
+      "date": "2026-07-23",
+      "volume": 7701000,
+      "turnover": 3124640500,
+      "open": 416,
+      "high": 417.5,
+      "low": 393.5,
+      "close": 406.5,
+      "trades": 6083
+    },
+    {
+      "date": "2026-07-24",
+      "volume": 8002000,
+      "turnover": 3044114000,
+      "open": 397,
+      "high": 397.5,
+      "low": 366,
+      "close": 367,
+      "trades": 5956
+    },
+    {
+      "date": "2026-07-27",
+      "volume": 8305000,
+      "turnover": 2991482500,
+      "open": 369,
+      "high": 375,
+      "low": 347,
+      "close": 371,
+      "trades": 6175
+    },
+    {
+      "date": "2026-07-28",
+      "volume": 9420000,
+      "turnover": 3238579000,
+      "open": 350,
+      "high": 360.5,
+      "low": 334,
+      "close": 334,
+      "trades": 6436
+    },
+    {
+      "date": "2026-07-29",
+      "volume": 9010000,
+      "turnover": 2757379500,
+      "open": 326,
+      "high": 326,
+      "low": 301,
+      "close": 301,
+      "trades": 5041
+    },
+    {
+      "date": "2026-07-30",
+      "volume": 19371000,
+      "turnover": 5516248000,
+      "open": 281,
+      "high": 299.5,
+      "low": 271,
+      "close": 271,
+      "trades": 13506
+    },
+    {
+      "date": "2026-07-31",
+      "volume": 5817000,
+      "turnover": 1731971000,
+      "open": 298,
+      "high": 298,
+      "low": 295,
+      "close": 298,
+      "trades": 2366
+    },
+    {
+      "date": "2026-08-03",
+      "volume": 7609000,
+      "turnover": 2458610000,
+      "open": 299,
+      "high": 327.5,
+      "low": 298,
+      "close": 327.5,
+      "trades": 4093
+    },
+    {
+      "date": "2026-08-04",
+      "volume": 24312000,
+      "turnover": 8168801500,
+      "open": 329.5,
+      "high": 350,
+      "low": 318,
+      "close": 341,
+      "trades": 17200
+    },
+    {
+      "date": "2026-08-05",
+      "volume": 24134000,
+      "turnover": 8826304000,
+      "open": 365,
+      "high": 375,
+      "low": 347.5,
+      "close": 349.5,
+      "trades": 14463
+    },
+    {
+      "date": "2026-08-06",
+      "volume": 20501000,
+      "turnover": 7465360500,
+      "open": 350.5,
+      "high": 384,
+      "low": 341.5,
+      "close": 384,
+      "trades": 13971
+    },
+    {
+      "date": "2026-08-07",
+      "volume": 30659000,
+      "turnover": 11315236500,
+      "open": 393,
+      "high": 397,
+      "low": 350,
+      "close": 352,
+      "trades": 21353
+    },
+    {
+      "date": "2026-08-10",
+      "volume": 36508000,
+      "turnover": 12917659500,
+      "open": 354.5,
+      "high": 369.5,
+      "low": 342.5,
+      "close": 346,
+      "trades": 26583
+    },
+    {
+      "date": "2026-08-11",
+      "volume": 27026000,
+      "turnover": 10043416000,
+      "open": 346,
+      "high": 380.5,
+      "low": 346,
+      "close": 380.5,
+      "trades": 18090
+    },
+    {
+      "date": "2026-08-12",
+      "volume": 10977000,
+      "turnover": 4528413000,
+      "open": 402.5,
+      "high": 418.5,
+      "low": 402,
+      "close": 418.5,
+      "trades": 6214
+    },
+    {
+      "date": "2026-08-13",
+      "volume": 47513000,
+      "turnover": 20339023000,
+      "open": 445,
+      "high": 445,
+      "low": 417,
+      "close": 421,
+      "trades": 32650
+    },
+    {
+      "date": "2026-08-14",
+      "volume": 44088000,
+      "turnover": 19267803000,
+      "open": 427,
+      "high": 462,
+      "low": 413,
+      "close": 428.5,
+      "trades": 33775
+    },
+    {
+      "date": "2026-08-17",
+      "volume": 19074000,
+      "turnover": 8106793500,
+      "open": 430.5,
+      "high": 434,
+      "low": 418.5,
+      "close": 419.5,
+      "trades": 14746
+    },
+    {
+      "date": "2026-08-18",
+      "volume": 32854000,
+      "turnover": 14133838500,
+      "open": 425.5,
+      "high": 441,
+      "low": 415,
+      "close": 416,
+      "trades": 25753
+    },
+    {
+      "date": "2026-08-19",
+      "volume": 14975000,
+      "turnover": 6074096500,
+      "open": 398,
+      "high": 413.5,
+      "low": 392,
+      "close": 410.5,
+      "trades": 11901
+    },
+    {
+      "date": "2026-08-20",
+      "volume": 18281000,
+      "turnover": 7604360000,
+      "open": 420,
+      "high": 428.5,
+      "low": 406,
+      "close": 413.5,
+      "trades": 14414
+    },
+    {
+      "date": "2026-08-21",
+      "volume": 30234000,
+      "turnover": 12981098500,
+      "open": 417,
+      "high": 444,
+      "low": 404.5,
+      "close": 436,
+      "trades": 23998
+    },
+    {
+      "date": "2026-08-24",
+      "volume": 13672000,
+      "turnover": 5827190500,
+      "open": 430,
+      "high": 435,
+      "low": 417,
+      "close": 417,
+      "trades": 10399
+    },
+    {
+      "date": "2026-08-25",
+      "volume": 11738000,
+      "turnover": 4798720500,
+      "open": 411,
+      "high": 429,
+      "low": 399,
+      "close": 429,
+      "trades": 9616
+    },
+    {
+      "date": "2026-08-26",
+      "volume": 31477000,
+      "turnover": 13913687000,
+      "open": 420,
+      "high": 456.5,
+      "low": 419,
+      "close": 449.5,
+      "trades": 25456
+    },
+    {
+      "date": "2026-08-27",
+      "volume": 37626000,
+      "turnover": 17464031000,
+      "open": 454,
+      "high": 494,
+      "low": 446,
+      "close": 494,
+      "trades": 28287
+    },
+    {
+      "date": "2026-08-28",
+      "volume": 39692000,
+      "turnover": 20902588000,
+      "open": 525,
+      "high": 543,
+      "low": 505,
+      "close": 543,
+      "trades": 27718
+    },
+    {
+      "date": "2026-08-31",
+      "volume": 48799000,
+      "turnover": 26072715000,
+      "open": 538,
+      "high": 549,
+      "low": 515,
+      "close": 540,
+      "trades": 32057
+    },
+    {
+      "date": "2026-09-01",
+      "volume": 30425000,
+      "turnover": 16398249000,
+      "open": 541,
+      "high": 564,
+      "low": 525,
+      "close": 526,
+      "trades": 23781
+    },
+    {
+      "date": "2026-09-02",
+      "volume": 5342000,
+      "turnover": 2739882000,
+      "open": 515,
+      "high": 521,
+      "low": 503,
+      "close": 503,
+      "trades": 4599
+    },
+    {
+      "date": "2026-09-03",
+      "volume": 7118000,
+      "turnover": 3478256500,
+      "open": 513,
+      "high": 514,
+      "low": 470,
+      "close": 470,
+      "trades": 5620
+    },
+    {
+      "date": "2026-09-04",
+      "volume": 4151000,
+      "turnover": 2014249500,
+      "open": 481,
+      "high": 500,
+      "low": 469.5,
+      "close": 500,
+      "trades": 3512
+    },
+    {
+      "date": "2026-09-07",
+      "volume": 3709000,
+      "turnover": 1901913000,
+      "open": 510,
+      "high": 524,
+      "low": 502,
+      "close": 515,
+      "trades": 3182
+    },
+    {
+      "date": "2026-09-08",
+      "volume": 3643000,
+      "turnover": 1899815000,
+      "open": 520,
+      "high": 528,
+      "low": 512,
+      "close": 520,
+      "trades": 2988
+    },
+    {
+      "date": "2026-09-09",
+      "volume": 3207000,
+      "turnover": 1689849000,
+      "open": 534,
+      "high": 535,
+      "low": 519,
+      "close": 526,
+      "trades": 2661
+    },
+    {
+      "date": "2026-09-10",
+      "volume": 3044000,
+      "turnover": 1580782000,
+      "open": 518,
+      "high": 525,
+      "low": 515,
+      "close": 521,
+      "trades": 2391
+    },
+    {
+      "date": "2026-09-11",
+      "volume": 13797000,
+      "turnover": 6759311000,
+      "open": 497.5,
+      "high": 505,
+      "low": 480.5,
+      "close": 485,
+      "trades": 10880
+    },
+    {
+      "date": "2026-09-14",
+      "volume": 33278000,
+      "turnover": 16914504500,
+      "open": 477,
+      "high": 530,
+      "low": 477,
+      "close": 518,
+      "trades": 25422
+    },
+    {
+      "date": "2026-09-15",
+      "volume": 26088000,
+      "turnover": 13025757000,
+      "open": 515,
+      "high": 516,
+      "low": 480,
+      "close": 482,
+      "trades": 20211
+    },
+    {
+      "date": "2026-09-16",
+      "volume": 19871000,
+      "turnover": 9880951000,
+      "open": 495.5,
+      "high": 510,
+      "low": 482.5,
+      "close": 510,
+      "trades": 15925
+    },
+    {
+      "date": "2026-09-17",
+      "volume": 29702000,
+      "turnover": 14606051000,
+      "open": 506,
+      "high": 507,
+      "low": 477.5,
+      "close": 478.5,
+      "trades": 23731
+    },
+    {
+      "date": "2026-09-18",
+      "volume": 4278000,
+      "turnover": 2112088000,
+      "open": 487.5,
+      "high": 499.5,
+      "low": 484,
+      "close": 499.5,
+      "trades": 3410
+    },
+    {
+      "date": "2026-09-21",
+      "volume": 2173000,
+      "turnover": 1063155500,
+      "open": 500,
+      "high": 500,
+      "low": 485,
+      "close": 491.5,
+      "trades": 1668
+    },
+    {
+      "date": "2026-09-22",
+      "volume": 2011000,
+      "turnover": 998720500,
+      "open": 501,
+      "high": 501,
+      "low": 490,
+      "close": 491.5,
+      "trades": 1653
+    },
+    {
+      "date": "2026-09-23",
+      "volume": 1893000,
+      "turnover": 939708500,
+      "open": 498,
+      "high": 502,
+      "low": 490,
+      "close": 497,
+      "trades": 1539
+    },
+    {
+      "date": "2026-09-24",
+      "volume": 2966000,
+      "turnover": 1498878000,
+      "open": 498,
+      "high": 511,
+      "low": 495,
+      "close": 511,
+      "trades": 2449
+    },
+    {
+      "date": "2026-09-29",
+      "volume": 13167000,
+      "turnover": 6625212000,
+      "open": 500,
+      "high": 519,
+      "low": 495.5,
+      "close": 498,
+      "trades": 10693
+    },
+    {
+      "date": "2026-09-30",
+      "volume": 8233000,
+      "turnover": 4113300500,
+      "open": 509,
+      "high": 515,
+      "low": 495,
+      "close": 495,
+      "trades": 6760
+    },
+    {
+      "date": "2026-10-01",
+      "volume": 17252000,
+      "turnover": 8804470000,
+      "open": 500,
+      "high": 521,
+      "low": 500,
+      "close": 505,
+      "trades": 14018
+    },
+    {
+      "date": "2026-10-02",
+      "volume": 19421000,
+      "turnover": 10141091000,
+      "open": 514,
+      "high": 536,
+      "low": 511,
+      "close": 519,
+      "trades": 15759
+    },
+    {
+      "date": "2026-10-05",
+      "volume": 40410000,
+      "turnover": 22746585000,
+      "open": 534,
+      "high": 570,
+      "low": 526,
+      "close": 570,
+      "trades": 23526
+    },
+    {
+      "date": "2026-10-06",
+      "volume": 25464000,
+      "turnover": 14322212000,
+      "open": 577,
+      "high": 578,
+      "low": 548,
+      "close": 551,
+      "trades": 19682
+    }
+  ]
+}

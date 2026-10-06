@@ -20,11 +20,11 @@ test('bundled search resolves Jinju promptly without requiring six remote direct
 test('TPEX monthly history never accepts the unreliable range relay',async()=>{
  const c=boot();c.assets=assets;c.calls=[];c.rows=fixture.rows;
  vm.runInContext('tpexRange=async()=>{throw new Error("Range must not be used")};tpexMonth=async(code,d)=>{calls.push(code);const prefix=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-`;return rows.filter(r=>r.date.startsWith(prefix))}',c);
- const rows=await vm.runInContext('history({code:"8358",market:"TPEX"},14,"2026-10-06",assets)',c);assert.equal(c.calls.length,6);assert.equal(rows.length,88);assert.equal(rows.at(-1).close,551);
+ const rows=await vm.runInContext('history({code:"8358",market:"TPEX"},14,"2026-10-06",assets)',c);assert.equal(c.calls.length,6);assert.equal(rows.length,108);assert.equal(rows.at(-1).close,551);
 });
 test('range excludes known closed dates, but rejects wrong identity, duplicate dates and invalid OHLC',()=>{
  const c=boot();c.calendar=calendar;c.j=rawRange();const get=()=>vm.runInContext('parseTpexRange(j,{code:"8358",market:"TPEX"},"2026-10-06",calendar)',c);
- c.j.rows.push(['115/09/25',100,100,10,11,9,10,0,1]);assert.equal(get().length,88);
+ c.j.rows.push(['115/09/25',100,100,10,11,9,10,0,1]);assert.equal(get().length,108);
  c.j=rawRange();c.j.code='3211';assert.equal(get().length,0);
  c.j=rawRange();c.j.rows.push(c.j.rows[0]);assert.equal(get().length,0);
  c.j=rawRange();c.j.rows[0][6]=9999;assert.equal(get().length,0);

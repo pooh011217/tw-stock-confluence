@@ -59,3 +59,24 @@ test('switching stocks ignores an older failure and an older successful response
  requests[3].resolve({code:'8358'});await fourth;requests[2].resolve({code:'8150'});await third;
  assert.equal(ui.rendered.length,2);assert.equal(ui.rendered[1].code,'8358');
 });
+test('a multi-stock server invocation is rejected before any history fetch',async()=>{
+ const c=boot();let calls=0;c.fetch=async()=>{calls++;throw new Error('Must not request history')};
+ const r=await c.worker.fetch(new Request('https://test/api/stock',{method:'POST',body:JSON.stringify({action:'scan',codes:'合晶 穩懋 統新 中美晶 鼎元 聯茂 金居'})}),{ASSETS:assets});
+ assert.equal(r.status,400);assert.match((await r.json()).error,/逐檔/);assert.equal(calls,0);
+});
+test('single-stock scan uses selected date and the same verified history as full analysis',async()=>{
+ const c=boot();
+ const r=await c.worker.fetch(new Request('https://test/api/stock',{method:'POST',body:JSON.stringify({action:'scan',codes:'金居',asOf:'2026-10-06'})}),{ASSETS:assets});
+ assert.equal(r.status,200);const j=await r.json();assert.equal(j.results.length,1);assert.equal(j.results[0].ok,true);assert.equal(j.results[0].date,'2026-10-06');assert.equal(j.results[0].current,551);
+});
+test('seven-stock UI scan sends isolated requests with at most two in flight and retains partial success',async()=>{
+ const nodes=new Map(),node=()=>({value:'',innerHTML:'',textContent:'',classList:{add(){},remove(){},toggle(){}},querySelectorAll:()=>[]});
+ const ui=vm.createContext({console,localStorage:{getItem:()=>null,setItem(){}},document:{querySelector:s=>{if(!nodes.has(s))nodes.set(s,node());return nodes.get(s)}}});
+ const app=fs.readFileSync('public/app.js','utf8');vm.runInContext(app.slice(0,app.indexOf('$("#analyze").onclick')),ui);
+ ui.date='2026-10-06';vm.runInContext('$("#asOf").value=date',ui);
+ let active=0,peak=0;const requests=[];ui.request=async body=>{requests.push(body);active++;peak=Math.max(peak,active);await new Promise(r=>setTimeout(r,2));active--;if(body.codes==='統新')throw new Error('Temporary individual failure');return {results:[{ok:true,query:body.codes,stock:{code:body.codes,name:body.codes},observation:50}]}};
+ let latest;ui.paint=(results,done,total)=>{latest={results:[...results],done,total}};vm.runInContext('api=body=>request(body);renderScan=(rows,done,total)=>paint(rows,done,total)',ui);
+ await vm.runInContext('scan("合晶 穩懋 統新 中美晶 鼎元 聯茂 金居")',ui);
+ assert.equal(requests.length,7);assert.equal(peak,2);assert.ok(requests.every(r=>!r.codes.includes(' ')&&r.asOf==='2026-10-06'));
+ assert.equal(latest.done,7);assert.equal(latest.total,7);assert.equal(latest.results.filter(r=>r.ok).length,6);assert.equal(latest.results.filter(r=>!r.ok).length,1);
+});

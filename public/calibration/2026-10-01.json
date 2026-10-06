@@ -4,23 +4,23 @@
   "engineProfile": "confluence",
   "validationScope": "Visible fields only; missing Nuvoton resistance2 is not scored",
   "validation": "reference comparison only; next-day close not available",
-  "engineVersion": "3.3.47",
+  "engineVersion": "3.3.48",
   "summary": {
     "totalStocks": 9,
     "comparedStocks": 9,
     "missingStocks": [],
     "comparedLevels": 44,
-    "priceMatches": 38,
-    "bandMatches": 23,
+    "priceMatches": 39,
+    "bandMatches": 24,
     "comparedBands": 27,
-    "numericBandMatches": 14,
+    "numericBandMatches": 15,
     "numericBands": 18,
     "distanceLevels": 35,
-    "distanceMatches": 28,
+    "distanceMatches": 29,
     "numericAnchorLevels": 35,
-    "numericAnchorMatches": 28,
+    "numericAnchorMatches": 29,
     "numericLevels": 35,
-    "numericMatches": 29,
+    "numericMatches": 30,
     "nullLevels": 9,
     "nullMatches": 9,
     "gapLevels": 0,
@@ -691,10 +691,11 @@
           },
           "actual": {
             "price": 842,
-            "bandLow": 838,
+            "bandLow": 839,
             "bandHigh": 842,
             "distance": -0.011737089201877934,
             "sources": [
+              "樞紐低點確認價帶下緣",
               "缺口下緣",
               "前低／樞紐低",
               "缺口上緣",
@@ -707,7 +708,7 @@
           "distanceMatch": true,
           "anchorMatch": true,
           "priceMatch": true,
-          "bandMatch": false,
+          "bandMatch": true,
           "errorPct": 0,
           "gapMatch": null,
           "observationMatch": null
@@ -949,11 +950,12 @@
             "distancePct": 3.8
           },
           "actual": {
-            "price": 31.8,
+            "price": 31.65,
             "bandLow": 31.6,
             "bandHigh": 31.8,
-            "distance": 0.042622950819672156,
+            "distance": 0.03770491803278684,
             "sources": [
+              "歷史爆量K收盤主價",
               "爆量K高點",
               "前高／樞紐高",
               "爆量K低點",
@@ -962,9 +964,9 @@
             "score": 6,
             "confidence": null
           },
-          "distanceMatch": false,
-          "anchorMatch": false,
-          "priceMatch": false,
+          "distanceMatch": true,
+          "anchorMatch": true,
+          "priceMatch": true,
           "bandMatch": null,
           "errorPct": null,
           "gapMatch": null,
@@ -1404,30 +1406,213 @@
       }
     }
   ],
-  "baseline": {
-    "totalStocks": 9,
-    "comparedStocks": 9,
-    "missingStocks": [],
-    "comparedLevels": 44,
-    "priceMatches": 10,
-    "bandMatches": 6,
-    "comparedBands": 27,
-    "numericBandMatches": 0,
-    "numericBands": 18,
-    "numericAnchorLevels": 35,
-    "numericAnchorMatches": 3,
-    "numericLevels": 35,
-    "numericMatches": 4,
-    "nullLevels": 9,
-    "nullMatches": 6,
-    "gapLevels": 0,
-    "gapMatches": 0,
-    "observationLevels": 0,
-    "observationMatches": 0
-  },
-  "notes": [
-    "新唐第二壓力未提供；壓力價帶未提供，不計入價格帶一致數。",
-    "禾伸堂10/1收盤852，但圖中850標為距現價+0.7%，文字與价位不一致。",
-    "尚未恢復原始算法；金居趨勢線與玉晶光／禾伸堂／大同壓力仍有差異。"
-  ]
+  "sourceAudit": {
+    "status": "hypotheses-only",
+    "scope": "僅查核 2026-10-01 收盤以前行情；同價紀錄只能提供線索，不能證明原公式或選取理由。",
+    "methods": [
+      "日K開高低收精確同價",
+      "當日收盤SMA／EMA：5、10、13、20、30、60、120日",
+      "已驗證除權息比例調整後的日K同價"
+    ],
+    "corrections": [
+      "大同第二壓力：當日高點加入已確認樞紐區時，優先採區內最近歷史爆量K收盤作主價，保留整個價帶。",
+      "禾伸堂第一支撐：缺口區內已有確認樞紐低點時，以樞紐低點界定下緣。兩條規則仍為推定。"
+    ],
+    "unresolved": [
+      {
+        "code": "8358",
+        "name": "金居",
+        "key": "support2",
+        "price": 484.5,
+        "roles": [
+          "主價",
+          "價帶上緣"
+        ],
+        "direct": [],
+        "adjusted": [],
+        "movingAverages": [],
+        "finding": "在本次檢查的日K、權息調整及指定均線中未找到同價來源；不能唯一反推。"
+      },
+      {
+        "code": "8358",
+        "name": "金居",
+        "key": "support2",
+        "price": 477.5,
+        "roles": [
+          "價帶下緣"
+        ],
+        "direct": [
+          {
+            "date": "2026-09-17",
+            "field": "最低"
+          }
+        ],
+        "adjusted": [
+          {
+            "date": "2026-07-15",
+            "field": "最高"
+          }
+        ],
+        "movingAverages": [],
+        "finding": "存在同價日K，仍需確認其被選為位點的條件。"
+      },
+      {
+        "code": "8358",
+        "name": "金居",
+        "key": "resistance1",
+        "price": 524,
+        "roles": [
+          "主價"
+        ],
+        "direct": [
+          {
+            "date": "2026-09-07",
+            "field": "最高"
+          }
+        ],
+        "adjusted": [],
+        "movingAverages": [],
+        "finding": "存在同價日K，仍需確認其被選為位點的條件。"
+      },
+      {
+        "code": "8358",
+        "name": "金居",
+        "key": "resistance2",
+        "price": 543,
+        "roles": [
+          "主價"
+        ],
+        "direct": [
+          {
+            "date": "2026-06-05",
+            "field": "開盤"
+          },
+          {
+            "date": "2026-07-13",
+            "field": "最高"
+          },
+          {
+            "date": "2026-08-28",
+            "field": "最高"
+          },
+          {
+            "date": "2026-08-28",
+            "field": "收盤"
+          }
+        ],
+        "adjusted": [
+          {
+            "date": "2026-05-25",
+            "field": "收盤"
+          }
+        ],
+        "movingAverages": [],
+        "finding": "存在同價日K，仍需確認其被選為位點的條件。"
+      },
+      {
+        "code": "3406",
+        "name": "玉晶光",
+        "key": "resistance1",
+        "price": 970,
+        "roles": [
+          "主價"
+        ],
+        "direct": [
+          {
+            "date": "2026-09-02",
+            "field": "開盤"
+          },
+          {
+            "date": "2026-09-02",
+            "field": "最低"
+          },
+          {
+            "date": "2026-09-08",
+            "field": "最低"
+          }
+        ],
+        "adjusted": [],
+        "movingAverages": [],
+        "finding": "存在同價日K，仍需確認其被選為位點的條件。"
+      },
+      {
+        "code": "3026",
+        "name": "禾伸堂",
+        "key": "support2",
+        "price": 815,
+        "roles": [
+          "價帶下緣"
+        ],
+        "direct": [
+          {
+            "date": "2026-06-16",
+            "field": "收盤"
+          },
+          {
+            "date": "2026-07-14",
+            "field": "最低"
+          },
+          {
+            "date": "2026-07-14",
+            "field": "收盤"
+          },
+          {
+            "date": "2026-09-30",
+            "field": "開盤"
+          }
+        ],
+        "adjusted": [],
+        "movingAverages": [],
+        "finding": "存在同價日K，仍需確認其被選為位點的條件。"
+      },
+      {
+        "code": "3026",
+        "name": "禾伸堂",
+        "key": "breakout",
+        "price": 850,
+        "roles": [
+          "主價"
+        ],
+        "direct": [],
+        "adjusted": [],
+        "movingAverages": [],
+        "finding": "在本次檢查的日K、權息調整及指定均線中未找到同價來源；不能唯一反推。"
+      },
+      {
+        "code": "3026",
+        "name": "禾伸堂",
+        "key": "resistance2",
+        "price": 919,
+        "roles": [
+          "主價"
+        ],
+        "direct": [],
+        "adjusted": [],
+        "movingAverages": [],
+        "finding": "在本次檢查的日K、權息調整及指定均線中未找到同價來源；不能唯一反推。"
+      },
+      {
+        "code": "2371",
+        "name": "大同",
+        "key": "support2",
+        "price": 29.7,
+        "roles": [
+          "價帶下緣"
+        ],
+        "direct": [
+          {
+            "date": "2026-09-17",
+            "field": "收盤"
+          },
+          {
+            "date": "2026-09-23",
+            "field": "開盤"
+          }
+        ],
+        "adjusted": [],
+        "movingAverages": [],
+        "finding": "存在同價日K，仍需確認其被選為位點的條件。"
+      }
+    ]
+  }
 }

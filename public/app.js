@@ -35,7 +35,7 @@ function renderScan(results,done,total){
  const main=cols.map(([key])=>{const l=scanLevel(r,key);return `<td class="${key.startsWith("support")?"scan-support":"scan-pressure"}">${l?money(l.price)+(key.startsWith("support")&&l.distance<-.10?' <small>〔中期〕</small>':""):'<span class="scan-pending">尚未形成</span>'}</td>`}).join("");
  const bands=cols.map(([key])=>{const l=scanLevel(r,key);return `<td>${l?`（${money(l.bandLow??l.price)}–${money(l.bandHigh??l.price)}）`:""}</td>`}).join("");
  return `<tr class="scan-main"><td><button class="scan-name" data-open="${escapeText(r.stock.code)}" title="查看完整分析">${escapeText(r.stock.name)} <span>${escapeText(r.stock.code)}</span></button></td><td>${money(r.current)}</td>${main}</tr><tr class="scan-band"><td></td><td></td>${bands}</tr>`}).join("");
- $("#scanResult").innerHTML=`<div class="scan-summary">${done<total?`掃描中…已完成 ${done}/${total} 檔`:`已完成 ${done}/${total} 檔`}${dates.length===1?`・基準日 ${dates[0]}`:""}</div><div class="scan-table-scroll"><table class="scan-table" aria-label="股票現價與隔日核心位點"><thead><tr><th scope="col">股票名稱</th><th scope="col">現價</th>${cols.map(([,name])=>`<th scope="col">${name}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+ $("#scanResult").innerHTML=`<div class="scan-summary">${done<total?`掃描中…已完成 ${done}/${total} 檔`:`已完成 ${done}/${total} 檔・成功 ${results.filter(r=>r.ok).length}・失敗 ${results.filter(r=>!r.ok).length}`}${dates.length===1?`・基準日 ${dates[0]}`:""}</div><div class="scan-table-scroll"><table class="scan-table" aria-label="股票現價與隔日核心位點"><thead><tr><th scope="col">股票名稱</th><th scope="col">現價</th>${cols.map(([,name])=>`<th scope="col">${name}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
  $("#scanResult").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{showTab("analysis");$("#query").value=b.dataset.open;analyze(b.dataset.open)});
 }
 
@@ -58,7 +58,7 @@ $("#analyze").onclick=()=>{hideSuggestions();analyze()};
 $("#query").addEventListener("input",suggest);
 $("#query").addEventListener("focus",()=>{if($("#query").value.trim())suggest()});
 $("#query").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();hideSuggestions();analyze()}if(e.key==="Escape")hideSuggestions()});
-$("#clearDate").onclick=()=>{$("#asOf").value=""};$("#scanBtn").onclick=()=>scan();$("#scanWatch").onclick=()=>{showTab("scan");$("#scanText").value=watch.join(" ");scan(watch.join(" "))};document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));$("#asOf").max=new Date().toISOString().slice(0,10);renderWatch();loadWatchNames();if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js?v=3.3.44.8",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{}));
+$("#clearDate").onclick=()=>{$("#asOf").value=""};$("#scanBtn").onclick=()=>scan();$("#scanWatch").onclick=()=>{showTab("scan");$("#scanText").value=watch.join(" ");scan(watch.join(" "))};document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));$("#asOf").max=new Date().toISOString().slice(0,10);renderWatch();loadWatchNames();if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js?v=3.3.44.9",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{}));
 
 if(typeof location!=="undefined"){
  const start=new URLSearchParams(location.search);

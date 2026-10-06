@@ -17,9 +17,10 @@ test('latest Jinju analysis works by both short name and code while external dir
 test('bundled search resolves Jinju promptly without requiring six remote directory calls',async()=>{
  const c=boot();const r=await c.worker.fetch(new Request('https://test/api/stock',{method:'POST',body:JSON.stringify({action:'search',q:'金居'})}),{ASSETS:assets});const j=await r.json();assert.equal(j.results[0].code,'8358');assert.equal(j.results[0].name,'金居');
 });
-test('TPEX history reads one validated range before attempting monthly retries',async()=>{
- const c=boot();let calls=0;c.fetch=async url=>{calls++;assert.match(url,/tpex\/range/);return new Response(JSON.stringify(rawRange()))};c.assets=assets;
- const rows=await vm.runInContext('history({code:"8358",market:"TPEX"},14,"2026-10-06",assets)',c);assert.equal(calls,1);assert.equal(rows.length,88);assert.equal(rows.at(-1).close,551);
+test('TPEX monthly history never accepts the unreliable range relay',async()=>{
+ const c=boot();c.assets=assets;c.calls=[];c.rows=fixture.rows;
+ vm.runInContext('tpexRange=async()=>{throw new Error("Range must not be used")};tpexMonth=async(code,d)=>{calls.push(code);const prefix=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-`;return rows.filter(r=>r.date.startsWith(prefix))}',c);
+ const rows=await vm.runInContext('history({code:"8358",market:"TPEX"},14,"2026-10-06",assets)',c);assert.equal(c.calls.length,6);assert.equal(rows.length,88);assert.equal(rows.at(-1).close,551);
 });
 test('range excludes known closed dates, but rejects wrong identity, duplicate dates and invalid OHLC',()=>{
  const c=boot();c.calendar=calendar;c.j=rawRange();const get=()=>vm.runInContext('parseTpexRange(j,{code:"8358",market:"TPEX"},"2026-10-06",calendar)',c);
@@ -89,4 +90,24 @@ test('seven-stock UI scan sends isolated requests with at most two in flight and
  await vm.runInContext('scan("合晶 穩懋 統新 中美晶 鼎元 聯茂 金居")',ui);
  assert.equal(requests.length,7);assert.equal(peak,2);assert.ok(requests.every(r=>!r.codes.includes(' ')&&r.asOf==='2026-10-06'));
  assert.equal(latest.done,7);assert.equal(latest.total,7);assert.equal(latest.results.filter(r=>r.ok).length,6);assert.equal(latest.results.filter(r=>!r.ok).length,1);
+});
+
+test('current month with a stale partial response continues to the next source',async()=>{
+ const c=boot();let calls=0;const raw=rawRange().rows.filter(r=>r[0].startsWith('115/10/'));
+ c.fetch=async()=>{calls++;return new Response(JSON.stringify({rows:calls===1?raw.slice(0,1):raw}))};
+ const rows=await vm.runInContext('tpexMonth("8358",new Date("2026-10-01T12:00:00Z"),"2026-10-06")',c);
+ assert.equal(calls,2);assert.equal(rows.at(-1).date,'2026-10-06');
+});
+test('a missing final session or an interior trading day cannot silently change calculations',async()=>{
+ const c=boot();c.assets=assets;c.rows=fixture.rows.filter(r=>r.date!=='2026-10-05');
+ vm.runInContext('tpexMonth=async(code,d)=>{const prefix=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-`;return rows.filter(r=>r.date.startsWith(prefix))}',c);
+ await assert.rejects(vm.runInContext('history({code:"8358",market:"TPEX"},14,"2026-10-06",assets)',c),/2026-10-05/);
+ c.calendar=calendar;c.rows=[{date:'2026-09-30'}];assert.throws(()=>vm.runInContext('validateHistoryDates(rows,"2026-10-06",taipeiDate(),calendar)',c),/日期不完整/);
+});
+test('Sino-American Silicon uses verified 10/6 monthly data through both analysis and scan',async()=>{
+ const c=boot(),sino=JSON.parse(fs.readFileSync('public/data/history/2026-10-06/5483.json'));
+ const sinoAssets={fetch:async request=>{if(new URL(request.url).pathname.endsWith('/history/2026-10-06/5483.json'))return new Response(JSON.stringify(sino));return assets.fetch(request)}};
+ for(const input of [{action:'analyze',q:'中美晶',asOf:'2026-10-06'},{action:'scan',codes:'中美晶',asOf:'2026-10-06'}]){
+ const response=await c.worker.fetch(new Request('https://test/api/stock',{method:'POST',body:JSON.stringify(input)}),{ASSETS:sinoAssets});assert.equal(response.status,200);const out=await response.json(),a=out.analysis||out.results[0];assert.equal(a.date,'2026-10-06');assert.equal(a.current,215);if(out.results)assert.equal(a.ok,true);
+ }
 });

@@ -1,6 +1,6 @@
 {
   "version": "3.3.43-regression",
-  "rule": "10/1共振圖使用confluence模式：突破區取代第一壓力，保留上方獨立第二壓力；其他歷史參考依原模式驗證。",
+  "rule": "D日收盤資料產生D+1位點。一般壓力須成對輸出；突破共振區存在時第一／第二壓力均為null，上方至少10%的独立歷史結構可列中期壓力。結構不足則標示待確認。",
   "cases": [
     {
       "code": "1303",
@@ -23,8 +23,7 @@
         "resistance2": {
           "price": 265
         }
-      },
-      "engineProfile": "confluence"
+      }
     },
     {
       "code": "2408",
@@ -44,13 +43,10 @@
           "price": 528
         },
         "resistance1": null,
-        "resistance2": {
-          "price": 543
-        },
+        "resistance2": null,
         "mediumResistance": null,
-        "resistance2Role": "second"
-      },
-      "engineProfile": "confluence"
+        "resistance2Role": null
+      }
     },
     {
       "code": "8210",
@@ -71,8 +67,7 @@
         "resistance2": {
           "price": 887
         }
-      },
-      "engineProfile": "confluence"
+      }
     },
     {
       "code": "6770",
@@ -92,11 +87,9 @@
           "price": 75
         },
         "resistance1": null,
-        "resistance2": {
-          "price": 77.2
-        },
+        "resistance2": null,
         "mediumResistance": null,
-        "resistance2Role": "second"
+        "resistance2Role": null
       },
       "actualNext": {
         "date": "2026-10-02",
@@ -104,8 +97,7 @@
         "high": 77.9,
         "low": 74.2,
         "close": 76.5
-      },
-      "engineProfile": "confluence"
+      }
     },
     {
       "code": "2303",

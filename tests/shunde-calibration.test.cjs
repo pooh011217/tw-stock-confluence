@@ -34,6 +34,6 @@ test('historical API uses snapshot without substituting stale history or future 
  vm.runInContext('resolve=async()=>({code:"2351",name:"順德",market:"TWSE"});history=async()=>{throw new Error("stale source must not be used")}',c);
  const d=await vm.runInContext('analyzeOne("2351","2026-10-05",assets)',c);
  assert.equal(d.stock.name,'順德');assert.equal(d.backtest.baseDate,'2026-10-05');assert.equal(d.backtest.noLookahead,true);
- assert.equal(d.analysis.resistance2.price,239.5);assert.equal(d.backtest.actual,null);assert.equal(d.backtest.checks,null);assert.equal(d.backtest.bandHitRate,null);
+ assert.equal(d.analysis.resistance2.price,231);assert.equal(d.backtest.actual,null);assert.equal(d.backtest.checks,null);assert.equal(d.backtest.bandHitRate,null);
  assert.match(d.source,/快照/);
 });

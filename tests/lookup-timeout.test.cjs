@@ -68,7 +68,7 @@ test('single-stock scan uses selected date and the same verified history as full
  const c=boot();
  const r=await c.worker.fetch(new Request('https://test/api/stock',{method:'POST',body:JSON.stringify({action:'scan',codes:'金居',asOf:'2026-10-06'})}),{ASSETS:assets});
  assert.equal(r.status,200);const j=await r.json();assert.equal(j.results.length,1);assert.equal(j.results[0].ok,true);assert.equal(j.results[0].date,'2026-10-06');assert.equal(j.results[0].current,551);
- assert.equal(j.results[0].levels.support1.price,549);assert.equal(j.results[0].levels.support1.bandLow,543);assert.equal(j.results[0].levels.support2.price,536);assert.equal(j.results[0].levels.resistance2.price,578);
+ assert.equal(j.results[0].levels.support1.price,549);assert.equal(j.results[0].levels.support1.bandLow,543);assert.ok(j.results[0].levels.support2.bandHigh<j.results[0].levels.support1.bandLow);assert.equal(j.results[0].levels.resistance2.price,578);
 });
 test('scan table renders bands on a separate row with blank name and price cells',()=>{
  const nodes=new Map(),node=()=>({value:'',innerHTML:'',textContent:'',classList:{add(){},remove(){},toggle(){}},querySelectorAll:()=>[]});

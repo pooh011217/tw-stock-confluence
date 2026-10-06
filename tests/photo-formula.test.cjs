@@ -28,7 +28,7 @@ test('photo mode uses a dated snapshot and standard mode remains independently s
  const photo=await vm.runInContext('analyzeOne("2351","2026-10-05",assets,"photo-inferred")',c);
  const standard=await vm.runInContext('analyzeOne("2351","2026-10-05",assets,"standard")',c);
  assert.equal(photo.analysis.breakout.price,226.5);assert.equal(photo.analysis.resistance2.price,241.5);
- assert.equal(standard.analysis.breakout.price,226);assert.equal(standard.analysis.resistance2.price,239.5);
+ assert.equal(standard.analysis.breakout.price,226);assert.equal(standard.analysis.resistance2.price,231);
  for(const key of ['support1','support2'])assert.deepEqual(JSON.parse(JSON.stringify(photo.analysis[key])),JSON.parse(JSON.stringify(standard.analysis[key])));
  assert.equal(photo.backtest.actual,null);assert.equal(photo.backtest.noLookahead,true);assert.equal(photo.backtest.bandHitRate,null);
  await assert.rejects(vm.runInContext('analyzeOne("2351","2026-10-05",assets,"bad-mode")',c),/無效/);

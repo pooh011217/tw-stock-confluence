@@ -33,5 +33,29 @@ test('latest completed day uses Taipei midnight and waits for closing data avail
  const c=boot();assert.equal(vm.runInContext('taipeiDate()',c),'2026-10-07');assert.equal(vm.runInContext('latestCompletedDate()',c),'2026-10-06');assert.equal(vm.runInContext('latestCompletedDate(new Date("2026-10-07T06:45:00Z"))',c),'2026-10-07');assert.equal(vm.runInContext('latestCompletedDate(new Date("2026-10-11T06:45:00Z"))',c),'2026-10-09');
 });
 test('all ordinary JSON requests attach a deadline; range deadline is separately bounded',async()=>{
- const c=boot(),deadlines=[];c.AbortSignal={timeout:ms=>{deadlines.push(ms);return {deadline:ms}}};c.fetch=async(url,opts)=>{assert.ok(opts.signal);return new Response('{}')};await vm.runInContext('getJson("https://test/a");',c);await vm.runInContext('getJson("https://test/b",0,25000);',c);assert.deepEqual(deadlines,[15000,25000]);
+ const c=boot(),deadlines=[];c.AbortSignal={timeout:ms=>{deadlines.push(ms);return {deadline:ms}}};c.fetch=async(url,opts)=>{assert.ok(opts.signal);return new Response('{}')};await vm.runInContext('getJson("https://test/a");',c);await vm.runInContext('getJson("https://test/b",0,18000);',c);assert.deepEqual(deadlines,[15000,18000]);
+});
+test('optional data cannot delay core analysis by fifteen seconds per request',async()=>{
+ const c=boot(),deadlines=[];c.AbortSignal={timeout:ms=>{deadlines.push(ms);return {deadline:ms}}};c.fetch=async()=>{throw new Error('Unavailable optional source')};
+ const extra=await vm.runInContext('extras({code:"2351",market:"TWSE"},"2026-10-06")',c);
+ assert.deepEqual(deadlines,[5000,5000,5000,5000]);assert.equal(extra.status.institutional,false);assert.equal(extra.status.revenue,false);
+});
+test('monthly fallback attempts each source within eight seconds',async()=>{
+ const c=boot(),deadlines=[];c.AbortSignal={timeout:ms=>{deadlines.push(ms);return {deadline:ms}}};c.fetch=async()=>{throw new Error('Unavailable history source')};
+ assert.equal((await vm.runInContext('tpexMonth("6223",new Date("2026-10-01T12:00:00Z"))',c)).length,0);
+ assert.deepEqual(deadlines,[8000,8000,8000]);deadlines.length=0;
+ assert.equal((await vm.runInContext('twseMonth("2351",new Date("2026-10-01T12:00:00Z"))',c)).length,0);assert.deepEqual(deadlines,[8000,8000]);
+});
+test('switching stocks ignores an older failure and an older successful response',async()=>{
+ const nodes=new Map(),node=()=>({value:'',innerHTML:'',textContent:'',classList:{add(){},remove(){},toggle(){}},querySelectorAll:()=>[]});
+ const ui=vm.createContext({console,localStorage:{getItem:()=>null,setItem(){}},document:{querySelector:s=>{if(!nodes.has(s))nodes.set(s,node());return nodes.get(s)}}});
+ const app=fs.readFileSync('public/app.js','utf8');vm.runInContext(app.slice(0,app.indexOf('$("#analyze").onclick')),ui);
+ const requests=[];ui.request=()=>new Promise((resolve,reject)=>requests.push({resolve,reject}));ui.rendered=[];
+ vm.runInContext('api=()=>request();render=d=>rendered.push(d);',ui);
+ const first=vm.runInContext('analyze("2351")',ui),second=vm.runInContext('analyze("2330")',ui);
+ requests[1].resolve({code:'2330'});await second;requests[0].reject(new Error('Old request failed'));await first;
+ assert.equal(ui.rendered.length,1);assert.equal(ui.rendered[0].code,'2330');assert.equal(nodes.get('#error').textContent,'');
+ const third=vm.runInContext('analyze("8150")',ui),fourth=vm.runInContext('analyze("8358")',ui);
+ requests[3].resolve({code:'8358'});await fourth;requests[2].resolve({code:'8150'});await third;
+ assert.equal(ui.rendered.length,2);assert.equal(ui.rendered[1].code,'8358');
 });

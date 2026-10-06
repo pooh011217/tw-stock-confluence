@@ -13,7 +13,7 @@
   },
   "validationScope": "Four price bands per stock and dagger flags; revenue and gross margin not independently verified",
   "validation": "reference comparison only; next-day close not available",
-  "engineVersion": "3.3.46",
+  "engineVersion": "3.3.49",
   "summary": {
     "totalStocks": 6,
     "comparedStocks": 6,
@@ -21,6 +21,13 @@
     "comparedLevels": 24,
     "priceMatches": 24,
     "bandMatches": 24,
+    "comparedBands": 24,
+    "numericBandMatches": 23,
+    "numericBands": 23,
+    "distanceLevels": 0,
+    "distanceMatches": 0,
+    "numericAnchorLevels": 0,
+    "numericAnchorMatches": 0,
     "numericLevels": 23,
     "numericMatches": 23,
     "nullLevels": 1,
@@ -87,6 +94,8 @@
             "strength": "歷史結構",
             "index": 223
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -116,6 +125,8 @@
             "strength": "歷史結構",
             "index": 220
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -146,6 +157,8 @@
             "index": 201,
             "anchor": 1245
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -176,6 +189,8 @@
             "index": 161,
             "anchor": 1335
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -240,6 +255,8 @@
             "strength": "歷史結構",
             "index": 223
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -269,6 +286,8 @@
             "strength": "歷史結構",
             "index": 219
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -298,6 +317,8 @@
             "strength": "歷史結構",
             "index": 223
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -328,6 +349,8 @@
             "index": 151,
             "anchor": 581.9097457627119
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -391,6 +414,8 @@
             "strength": "歷史結構",
             "index": 223
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -419,6 +444,8 @@
             "confidence": null,
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -449,6 +476,8 @@
             "index": 216,
             "anchor": 129.5
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -479,6 +508,8 @@
             "index": 203,
             "anchor": 132.37
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -541,6 +572,8 @@
             "confidence": null,
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -569,6 +602,8 @@
             "confidence": null,
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -598,6 +633,8 @@
             "strength": "歷史結構",
             "index": 223
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -607,6 +644,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -671,6 +710,8 @@
             "index": 201,
             "anchor": 564
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -699,6 +740,8 @@
             "confidence": null,
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -729,6 +772,8 @@
             "index": 161,
             "anchor": 605.2300683371299
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -759,6 +804,8 @@
             "index": 158,
             "anchor": 636.0888382687928
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -822,6 +869,8 @@
             "strength": "歷史結構",
             "index": 223
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -850,6 +899,8 @@
             "confidence": null,
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -879,6 +930,8 @@
             "strength": "歷史結構",
             "index": 223
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -908,6 +961,8 @@
             "strength": "歷史結構",
             "index": 165
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -916,28 +971,5 @@
         }
       }
     }
-  ],
-  "baseline": {
-    "engineVersion": "3.3.45",
-    "summary": {
-      "totalStocks": 6,
-      "comparedStocks": 6,
-      "missingStocks": [],
-      "comparedLevels": 24,
-      "priceMatches": 10,
-      "bandMatches": 1,
-      "numericLevels": 23,
-      "numericMatches": 9,
-      "nullLevels": 1,
-      "nullMatches": 1,
-      "gapLevels": 0,
-      "gapMatches": 0
-    }
-  },
-  "lookbackUnitSensitivity": {
-    "calendarDays": 182,
-    "tradingSessions": 182,
-    "sameBandsForSixCases": true
-  },
-  "remainingDifferences": []
+  ]
 }

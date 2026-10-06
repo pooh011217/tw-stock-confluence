@@ -4,7 +4,7 @@
   "engineProfile": "confluence",
   "validationScope": "Visible fields only; missing Nuvoton resistance2 is not scored",
   "validation": "reference comparison only; next-day close not available",
-  "engineVersion": "3.3.48",
+  "engineVersion": "3.3.49",
   "summary": {
     "totalStocks": 9,
     "comparedStocks": 9,

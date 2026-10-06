@@ -10,7 +10,7 @@
   },
   "validationScope": "Four price bands and gap flags",
   "validation": "reference comparison only; next-day close not available",
-  "engineVersion": "3.3.46",
+  "engineVersion": "3.3.49",
   "summary": {
     "totalStocks": 25,
     "comparedStocks": 25,
@@ -18,6 +18,13 @@
     "comparedLevels": 100,
     "priceMatches": 100,
     "bandMatches": 99,
+    "comparedBands": 100,
+    "numericBandMatches": 71,
+    "numericBands": 72,
+    "distanceLevels": 0,
+    "distanceMatches": 0,
+    "numericAnchorLevels": 0,
+    "numericAnchorMatches": 0,
     "numericLevels": 72,
     "numericMatches": 72,
     "nullLevels": 28,
@@ -67,6 +74,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -93,6 +102,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -119,6 +130,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -145,6 +158,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -192,6 +207,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -218,6 +235,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -244,6 +263,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -270,6 +291,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -317,6 +340,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -343,6 +368,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -352,6 +379,8 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -361,6 +390,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -391,6 +422,8 @@
         "support1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -400,6 +433,8 @@
         "support2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -409,6 +444,8 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -418,6 +455,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -465,6 +504,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -491,6 +532,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -517,6 +560,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -543,6 +588,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -590,6 +637,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -616,6 +665,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -642,6 +693,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -668,6 +721,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -715,6 +770,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -724,6 +781,8 @@
         "support2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -733,6 +792,8 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -742,6 +803,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -789,6 +852,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -815,6 +880,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -841,6 +908,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -850,6 +919,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -897,6 +968,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -923,6 +996,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -949,6 +1024,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -958,6 +1035,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1005,6 +1084,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1031,6 +1112,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1057,6 +1140,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1066,6 +1151,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1113,6 +1200,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1139,6 +1228,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1165,6 +1256,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1191,6 +1284,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1238,6 +1333,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1264,6 +1361,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1273,6 +1372,8 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1282,6 +1383,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1329,6 +1432,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1355,6 +1460,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1381,6 +1488,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1407,6 +1516,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1454,6 +1565,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1480,6 +1593,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1506,6 +1621,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1515,6 +1632,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1562,6 +1681,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1571,6 +1692,8 @@
         "support2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1580,6 +1703,8 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1589,6 +1714,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1636,6 +1763,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1662,6 +1791,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1688,6 +1819,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1697,6 +1830,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1744,6 +1879,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1770,6 +1907,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1796,6 +1935,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1822,6 +1963,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": false,
           "errorPct": 0,
@@ -1869,6 +2012,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1895,6 +2040,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1921,6 +2068,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1930,6 +2079,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1977,6 +2128,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -1986,6 +2139,8 @@
         "support2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -1995,6 +2150,8 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -2004,6 +2161,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -2051,6 +2210,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2077,6 +2238,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2103,6 +2266,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2112,6 +2277,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -2159,6 +2326,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2185,6 +2354,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2211,6 +2382,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2220,6 +2393,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -2267,6 +2442,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2293,6 +2470,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2319,6 +2498,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2328,6 +2509,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -2375,6 +2558,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2401,6 +2586,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2427,6 +2614,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2453,6 +2642,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2500,6 +2691,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2526,6 +2719,8 @@
             "confirmation": "缺口邊界，待回測確認",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2535,6 +2730,8 @@
         "resistance1": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -2544,6 +2741,8 @@
         "resistance2": {
           "expected": null,
           "actual": null,
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": null,
@@ -2591,6 +2790,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2617,6 +2818,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2643,6 +2846,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2669,6 +2874,8 @@
             "confirmation": "歷史樞紐結構",
             "strength": "歷史結構"
           },
+          "distanceMatch": null,
+          "anchorMatch": null,
           "priceMatch": true,
           "bandMatch": true,
           "errorPct": 0,
@@ -2676,37 +2883,6 @@
           "observationMatch": null
         }
       }
-    }
-  ],
-  "baseline": {
-    "engineVersion": "3.3.44",
-    "summary": {
-      "totalStocks": 25,
-      "comparedStocks": 25,
-      "missingStocks": [],
-      "comparedLevels": 100,
-      "priceMatches": 31,
-      "bandMatches": 23,
-      "numericLevels": 72,
-      "numericMatches": 11,
-      "nullLevels": 28,
-      "nullMatches": 20,
-      "gapLevels": 9,
-      "gapMatches": 0
-    }
-  },
-  "remainingDifferences": [
-    {
-      "code": "3004",
-      "field": "resistance2",
-      "expectedBand": [
-        124,
-        125
-      ],
-      "actualBand": [
-        124,
-        124
-      ]
     }
   ]
 }

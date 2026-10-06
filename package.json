@@ -1,6 +1,6 @@
 {
   "name": "tw-stock-confluence",
-  "version": "3.3.48",
+  "version": "3.3.49",
   "private": true,
   "scripts": {
     "dev": "wrangler dev",

@@ -1,0 +1,4294 @@
+{
+  "status": "研究假設，不是原公式；未套用正式系統。歷史對照並非盲測，僅比較提供的主價，不評估未提供欄位、命名或價格帶。",
+  "inputSource": "V3.3.44.12正式API回傳日線；研究固定使用最後120日或全部較短資料，再限制候選100日。不能等同正式完整14／6個月模型。",
+  "variants": [
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 8,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            764,
+            777
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 3,
+          "prices": [
+            353.5,
+            345,
+            371,
+            384.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            564,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 8,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            764,
+            777
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 3,
+          "prices": [
+            353.5,
+            345,
+            371,
+            384.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            564,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            764,
+            777
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 2,
+          "prices": [
+            360,
+            353.5,
+            371,
+            384.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            564,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            764,
+            777
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 2,
+          "prices": [
+            360,
+            353.5,
+            371,
+            384.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            564,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            764,
+            777
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 2,
+          "prices": [
+            360,
+            353.5,
+            371,
+            384.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            764,
+            777
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 2,
+          "prices": [
+            358,
+            351.5,
+            371,
+            384.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            764,
+            777
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 2,
+          "prices": [
+            360,
+            353.5,
+            371,
+            384.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 16,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 2,
+          "prices": [
+            353.5,
+            345,
+            371,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 19,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 2,
+          "prices": [
+            759,
+            745,
+            771,
+            782
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 1,
+          "prices": [
+            353.5,
+            345,
+            384.5,
+            405
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            564,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            764,
+            777
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 2,
+          "prices": [
+            358,
+            351.5,
+            371,
+            384.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 7,
+      "total": 20,
+      "hold": 16,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 2,
+          "prices": [
+            353.5,
+            345,
+            371,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 19,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 2,
+          "prices": [
+            759,
+            745,
+            771,
+            782
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            360,
+            351.5,
+            384.5,
+            405
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            564,
+            580
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 16,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 1,
+          "prices": [
+            360,
+            353.5,
+            371,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 19,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 2,
+          "prices": [
+            759,
+            745,
+            771,
+            782
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            351.5,
+            345,
+            384.5,
+            405
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            564,
+            584
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 19,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 2,
+          "prices": [
+            759,
+            745,
+            771,
+            782
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            360,
+            353.5,
+            384.5,
+            405
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            564,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 18,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 2,
+          "prices": [
+            759,
+            745,
+            771,
+            782
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            360,
+            351.5,
+            384.5,
+            405
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 16,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 1,
+          "prices": [
+            360,
+            353.5,
+            371,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 16,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 1,
+          "prices": [
+            360,
+            353.5,
+            371,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 18,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 2,
+          "prices": [
+            759,
+            745,
+            771,
+            782
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            358,
+            351.5,
+            384.5,
+            405
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 18,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 2,
+          "prices": [
+            759,
+            745,
+            771,
+            782
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            360,
+            353.5,
+            384.5,
+            405
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 16,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 1,
+          "prices": [
+            358,
+            351.5,
+            371,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 16,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 1,
+          "prices": [
+            360,
+            353.5,
+            371,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 18,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 2,
+          "prices": [
+            759,
+            745,
+            771,
+            782
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            358,
+            351.5,
+            384.5,
+            405
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 18,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            775
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 1,
+          "prices": [
+            353.5,
+            345,
+            373.5,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 6,
+      "total": 20,
+      "hold": 16,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 1,
+          "prices": [
+            358,
+            351.5,
+            371,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 18,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            775
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            360,
+            351.5,
+            373.5,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            358,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 18,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            775
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            351.5,
+            345,
+            373.5,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 18,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            775
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            360,
+            353.5,
+            373.5,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            775
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            360,
+            351.5,
+            373.5,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            358,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            358,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            358,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            775
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            358,
+            351.5,
+            373.5,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            775
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            360,
+            353.5,
+            373.5,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            358,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            358,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            358,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": false,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            263
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            229,
+            232
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            775
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            358,
+            351.5,
+            373.5,
+            388.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            560,
+            570
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": false,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": false,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": false,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            358,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            541,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": false,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": false,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            549,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": {
+        "companions": true,
+        "transform": true,
+        "bodyPivots": true,
+        "breakRetest": true,
+        "volume15": true,
+        "excludeHigh": true,
+        "requireVolume": true
+      },
+      "train": 5,
+      "total": 20,
+      "hold": 17,
+      "holdTotal": 34,
+      "detail": [
+        {
+          "code": "6285",
+          "match": 2,
+          "prices": [
+            255.5,
+            250.5,
+            258,
+            261.5
+          ]
+        },
+        {
+          "code": "2472",
+          "match": 2,
+          "prices": [
+            227.5,
+            221,
+            228.5,
+            231.5
+          ]
+        },
+        {
+          "code": "3583",
+          "match": 1,
+          "prices": [
+            759,
+            745,
+            763,
+            773
+          ]
+        },
+        {
+          "code": "6197",
+          "match": 0,
+          "prices": [
+            363.5,
+            353.5,
+            368.5,
+            373.5
+          ]
+        },
+        {
+          "code": "8358",
+          "match": 0,
+          "prices": [
+            548,
+            536,
+            555,
+            563
+          ]
+        }
+      ]
+    }
+  ]
+}

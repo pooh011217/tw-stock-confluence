@@ -1,0 +1,5834 @@
+{
+  "cutoff": "2026-10-06",
+  "methodStatus": "Public rolling buy-VWAP proxy; no evidence original photo uses this same window or formula",
+  "results": [
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 225.9853298745866,
+            "buyShares": 3931413,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 228.63723484512525,
+            "buyShares": 9000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 226.35085049012258,
+            "buyShares": 267183,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 226.01421288506472,
+            "buyShares": 4207596,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 221.86439585605518,
+            "buyShares": 7338382,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 224.61984343084902,
+            "buyShares": 15000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 223.69957153465137,
+            "buyShares": 383563,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 221.96071775086398,
+            "buyShares": 7736945,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 217.08033163724912,
+            "buyShares": 21996857,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 219.96343426025703,
+            "buyShares": 98000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 221.84352712629274,
+            "buyShares": 608064,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 217.22035202312387,
+            "buyShares": 22702921,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 224.51368259397546,
+            "buyShares": 42448369,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 226.99410261161526,
+            "buyShares": 227405,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 232.04640041130025,
+            "buyShares": 1731254,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 224.82005544482757,
+            "buyShares": 44407028,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 249.9201296344165,
+            "buyShares": 88625134,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 248.05396794957804,
+            "buyShares": 814865,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 249.41964903114277,
+            "buyShares": 2861855,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 249.88813707272655,
+            "buyShares": 92301854,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [
+            {
+              "date": "2026-10-02",
+              "candidates": [
+                {
+                  "price": 229,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 2,
+                  "date": "2026-10-02"
+                },
+                {
+                  "price": 231.5,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 2,
+                  "date": "2026-10-02"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [
+            {
+              "date": "2026-05-13",
+              "candidates": [
+                {
+                  "price": 233.5,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 100,
+                  "date": "2026-05-13"
+                },
+                {
+                  "price": 234,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 100,
+                  "date": "2026-05-13"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 224,
+          "bandLow": 221.5,
+          "bandHigh": 224,
+          "distance": -0.017543859649122806,
+          "sources": [
+            "前低／樞紐低",
+            "爆量K收盤",
+            "爆量K高點"
+          ],
+          "score": 4,
+          "strength": "中共振",
+          "confidence": 67
+        }
+      ]
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 735.4303611761587,
+            "buyShares": 1806465,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 736.3572448303504,
+            "buyShares": 200339,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 735.5228918589743,
+            "buyShares": 2006804,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 727.1906209889739,
+            "buyShares": 2558276,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 726.8007935355116,
+            "buyShares": 298889,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 727.1498410068104,
+            "buyShares": 2857165,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 720.9052012369104,
+            "buyShares": 5563249,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 675.2662878098195,
+            "buyShares": 16000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 717.855968046869,
+            "buyShares": 622910,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 720.4812165468627,
+            "buyShares": 6202159,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 726.3131223156392,
+            "buyShares": 13853371,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 703.0835964290005,
+            "buyShares": 75400,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 727.5698118714994,
+            "buyShares": 1428574,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 726.3159722726931,
+            "buyShares": 15357345,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 730.9555195803032,
+            "buyShares": 24127841,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 705.0227888074613,
+            "buyShares": 643400,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 724.7619797855364,
+            "buyShares": 2323192,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 729.8086455681354,
+            "buyShares": 27094433,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 9,
+          "uniqueHistoricalSessions": 8,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-30",
+              "candidates": [
+                {
+                  "price": 744,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 4,
+                  "date": "2026-09-30"
+                },
+                {
+                  "price": 744,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 4,
+                  "date": "2026-09-30"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 749,
+          "bandLow": 740,
+          "bandHigh": 749,
+          "distance": -0.01706036745406824,
+          "sources": [
+            "爆量K收盤",
+            "爆量K高點",
+            "爆量K低點",
+            "前高轉支撐",
+            "前低／樞紐低"
+          ],
+          "score": 7,
+          "strength": "高共振",
+          "confidence": 91
+        }
+      ]
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "market": "TPEX",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 542.9063321383697,
+            "buyShares": 24385619,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 555.1289911328672,
+            "buyShares": 219100,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 554.4297701483385,
+            "buyShares": 3205130,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 544.330723240047,
+            "buyShares": 27809849,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 536.519761063488,
+            "buyShares": 28654847,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 555.1289911328672,
+            "buyShares": 219100,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 535.1417950862248,
+            "buyShares": 4910567,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 536.4401591504082,
+            "buyShares": 33784514,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 518.7087354380383,
+            "buyShares": 58349773,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 531.7128213206416,
+            "buyShares": 418200,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 518.4077435947839,
+            "buyShares": 8979664,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 518.7491132758208,
+            "buyShares": 67747637,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 470.3541739266648,
+            "buyShares": 192807427,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 484.0993872008522,
+            "buyShares": 1617700,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 472.2605549563362,
+            "buyShares": 24187218,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 470.6668080785437,
+            "buyShares": 218612345,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 439.45491564836885,
+            "buyShares": 280819703,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 393.79087181854464,
+            "buyShares": 4205000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 446.51658125242506,
+            "buyShares": 32442048,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 439.57170769057655,
+            "buyShares": 317466751,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": [
+        526,
+        530
+      ],
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [
+            {
+              "date": "2026-08-28",
+              "candidates": [
+                {
+                  "price": 543,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 25,
+                  "date": "2026-08-28"
+                },
+                {
+                  "price": 543,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 25,
+                  "date": "2026-08-28"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-14",
+              "candidates": [
+                {
+                  "price": 530,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 14,
+                  "date": "2026-09-14"
+                },
+                {
+                  "price": 530,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 14,
+                  "date": "2026-09-14"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "breakout": {
+          "historicalCandidateCount": 6,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [
+            {
+              "date": "2026-06-26",
+              "candidates": [
+                {
+                  "price": 570,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 69,
+                  "date": "2026-06-26"
+                },
+                {
+                  "price": 570,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 69,
+                  "date": "2026-06-26"
+                }
+              ]
+            },
+            {
+              "date": "2026-10-05",
+              "candidates": [
+                {
+                  "price": 570,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 1,
+                  "date": "2026-10-05"
+                },
+                {
+                  "price": 570,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 1,
+                  "date": "2026-10-05"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 541,
+          "bandLow": 535,
+          "bandHigh": 541,
+          "distance": -0.018148820326678767,
+          "sources": [
+            "缺口上緣",
+            "爆量K收盤",
+            "前低／樞紐低",
+            "爆量K高點",
+            "前高轉支撐"
+          ],
+          "score": 6,
+          "strength": "高共振",
+          "confidence": 83
+        }
+      ]
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 522.3475207939497,
+            "buyShares": 71822980,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 525.5482635711081,
+            "buyShares": 1553481,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 523.433420394108,
+            "buyShares": 3907669,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 522.4667642828116,
+            "buyShares": 77284130,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 518.1804773881294,
+            "buyShares": 148195758,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 522.0444665567621,
+            "buyShares": 3009481,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 517.7939381756726,
+            "buyShares": 7943854,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 518.2342508074863,
+            "buyShares": 159149093,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 514.8486363228079,
+            "buyShares": 351438570,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 515.1445817208767,
+            "buyShares": 11089808,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 510.0393476907467,
+            "buyShares": 18678360,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 514.621600339067,
+            "buyShares": 381206738,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 517.7743347743867,
+            "buyShares": 1064794850,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 513.5432843692602,
+            "buyShares": 22897758,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 511.40362183953744,
+            "buyShares": 52469971,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 517.3961845884883,
+            "buyShares": 1140162579,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 487.7741091752944,
+            "buyShares": 1577271001,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 471.09945583514667,
+            "buyShares": 48843834,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 472.9042543351262,
+            "buyShares": 92221761,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 486.50207772114476,
+            "buyShares": 1718336596,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": [
+        521,
+        524
+      ],
+      "costBandMatches": [
+        {
+          "group": "foreign",
+          "sessions": 5,
+          "value": 522.3475207939497
+        },
+        {
+          "group": "dealer",
+          "sessions": 5,
+          "value": 523.433420394108
+        },
+        {
+          "group": "total",
+          "sessions": 5,
+          "value": 522.4667642828116
+        },
+        {
+          "group": "trust",
+          "sessions": 10,
+          "value": 522.0444665567621
+        }
+      ],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "breakout": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 514,
+          "bandLow": 508,
+          "bandHigh": 514,
+          "distance": -0.02095238095238095,
+          "sources": [
+            "爆量K收盤",
+            "缺口上緣"
+          ],
+          "score": 3,
+          "strength": "一般",
+          "confidence": 59
+        }
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 153.01811944391108,
+            "buyShares": 31248363,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 137.68147708714656,
+            "buyShares": 30000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 152.19289784124365,
+            "buyShares": 2957251,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 152.93339811598594,
+            "buyShares": 34235614,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 144.56255526465,
+            "buyShares": 57774996,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 136.3340549046758,
+            "buyShares": 63000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 144.05538532691267,
+            "buyShares": 5532582,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 144.51009630189373,
+            "buyShares": 63370578,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 140.52999202131065,
+            "buyShares": 67760305,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 122.47394477246667,
+            "buyShares": 148000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 139.37286990515622,
+            "buyShares": 6739644,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 140.3897217759723,
+            "buyShares": 74647949,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 135.75529003089457,
+            "buyShares": 90484669,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 122.46579614556221,
+            "buyShares": 170000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 133.42857309718948,
+            "buyShares": 9913233,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 135.50347508252895,
+            "buyShares": 100567902,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 134.32474547644358,
+            "buyShares": 149859172,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 124.77382715670902,
+            "buyShares": 485000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 137.62724529475562,
+            "buyShares": 13767297,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 134.57356599279686,
+            "buyShares": 164111469,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-23",
+              "candidates": [
+                {
+                  "price": 144,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 7,
+                  "date": "2026-09-23"
+                },
+                {
+                  "price": 144,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 7,
+                  "date": "2026-09-23"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [
+            {
+              "date": "2026-05-07",
+              "candidates": [
+                {
+                  "price": 151.5,
+                  "type": "pivotLow",
+                  "label": "前低／樞紐低",
+                  "age": 104,
+                  "date": "2026-05-07"
+                },
+                {
+                  "price": 151.5,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 104,
+                  "date": "2026-05-07"
+                }
+              ]
+            },
+            {
+              "date": "2026-10-01",
+              "candidates": [
+                {
+                  "price": 152,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 3,
+                  "date": "2026-10-01"
+                },
+                {
+                  "price": 152,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 3,
+                  "date": "2026-10-01"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [
+            {
+              "date": "2026-10-05",
+              "candidates": [
+                {
+                  "price": 155.5,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 1,
+                  "date": "2026-10-05"
+                },
+                {
+                  "price": 154,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 1,
+                  "date": "2026-10-05"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 145.5,
+          "bandLow": 144,
+          "bandHigh": 145.5,
+          "distance": -0.03322259136212625,
+          "sources": [
+            "爆量K低點",
+            "爆量K收盤",
+            "前高轉支撐",
+            "爆量K高點"
+          ],
+          "score": 4,
+          "strength": "中共振",
+          "confidence": 67
+        }
+      ]
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 296.7964014493004,
+            "buyShares": 24366151,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 297.0351893895687,
+            "buyShares": 248000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 296.6489862601467,
+            "buyShares": 2251037,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 296.7862538323933,
+            "buyShares": 26865188,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 308.2757221622191,
+            "buyShares": 101103499,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 308.95422154785837,
+            "buyShares": 7992549,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 307.2546740653537,
+            "buyShares": 8061947,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 308.25174858657715,
+            "buyShares": 117157995,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 292.5128197196489,
+            "buyShares": 185295275,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 300.4046791644878,
+            "buyShares": 10757549,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 292.1080518726336,
+            "buyShares": 15440974,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 292.88468431152296,
+            "buyShares": 211493798,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 274.2536550778915,
+            "buyShares": 346573498,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 282.5371981595579,
+            "buyShares": 20398957,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 272.3449007303919,
+            "buyShares": 32392742,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 274.5219454868093,
+            "buyShares": 399365197,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 271.24739913163074,
+            "buyShares": 507601900,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 270.29217996119803,
+            "buyShares": 39385135,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 269.1490411423015,
+            "buyShares": 51028974,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 271.00543488805755,
+            "buyShares": 598016009,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-21",
+              "candidates": [
+                {
+                  "price": 296.5,
+                  "type": "gap",
+                  "label": "缺口上緣",
+                  "age": 9,
+                  "date": "2026-09-21"
+                },
+                {
+                  "price": 296.5,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 9,
+                  "date": "2026-09-21"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 10,
+          "uniqueHistoricalSessions": 9,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-02",
+              "candidates": [
+                {
+                  "price": 283.5,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 22,
+                  "date": "2026-09-02"
+                },
+                {
+                  "price": 283.5,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 22,
+                  "date": "2026-09-02"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "breakout": {
+          "historicalCandidateCount": 11,
+          "uniqueHistoricalSessions": 10,
+          "sameSessionGroups": [
+            {
+              "date": "2026-03-18",
+              "candidates": [
+                {
+                  "price": 302,
+                  "type": "gap",
+                  "label": "缺口上緣",
+                  "age": 137,
+                  "date": "2026-03-18"
+                },
+                {
+                  "price": 302,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 137,
+                  "date": "2026-03-18"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [
+            {
+              "date": "2026-04-23",
+              "candidates": [
+                {
+                  "price": 303,
+                  "type": "pivotHigh",
+                  "label": "前高／樞紐高",
+                  "age": 113,
+                  "date": "2026-04-23"
+                },
+                {
+                  "price": 303,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 113,
+                  "date": "2026-04-23"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 292,
+          "bandLow": 291,
+          "bandHigh": 292,
+          "distance": -0.020134228187919462,
+          "sources": [
+            "爆量K高點",
+            "缺口下緣",
+            "爆量K收盤",
+            "爆量K低點"
+          ],
+          "score": 3,
+          "strength": "一般",
+          "confidence": 59
+        },
+        {
+          "price": 288,
+          "bandLow": 286,
+          "bandHigh": 288,
+          "distance": -0.03355704697986577,
+          "sources": [
+            "前低／樞紐低",
+            "缺口上緣",
+            "爆量K低點",
+            "前高轉支撐",
+            "爆量K收盤"
+          ],
+          "score": 5,
+          "strength": "中共振",
+          "confidence": 75
+        }
+      ]
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1171.719474175379,
+            "buyShares": 18944559,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1208.2349076543724,
+            "buyShares": 3934523,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1169.6754732306279,
+            "buyShares": 2512531,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1177.1754173303236,
+            "buyShares": 25391613,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1135.3243060542782,
+            "buyShares": 32514040,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1156.5464187365767,
+            "buyShares": 7027523,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1126.0512289691526,
+            "buyShares": 4784146,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1137.6880613715127,
+            "buyShares": 44325709,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1091.3605316254236,
+            "buyShares": 56432049,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1125.9223981009918,
+            "buyShares": 10140776,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1086.6793203614095,
+            "buyShares": 7793784,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1095.582853993525,
+            "buyShares": 74366609,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1070.145830782057,
+            "buyShares": 125979031,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1095.2278037280455,
+            "buyShares": 27157783,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1077.1326749320801,
+            "buyShares": 16443899,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1074.840124867321,
+            "buyShares": 169580713,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1016.5516858114797,
+            "buyShares": 192530062,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1070.9340935158486,
+            "buyShares": 31183062,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1043.179605839877,
+            "buyShares": 21046652,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1025.7698612582333,
+            "buyShares": 244759776,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 1215,
+          "bandLow": 1200,
+          "bandHigh": 1215,
+          "distance": -0.03571428571428571,
+          "sources": [
+            "前低／樞紐低",
+            "前高轉支撐",
+            "爆量K低點"
+          ],
+          "score": 4,
+          "strength": "中共振",
+          "confidence": 67
+        }
+      ]
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 862.6935573102967,
+            "buyShares": 2891706,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 861.7747850705598,
+            "buyShares": 407632,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 862.5800433370001,
+            "buyShares": 3299338,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 875.3364053918359,
+            "buyShares": 4449891,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 874.1185763631603,
+            "buyShares": 652699,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 875.1806265051946,
+            "buyShares": 5102590,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 891.1867699360729,
+            "buyShares": 8761672,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 894.2277211939067,
+            "buyShares": 33000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 885.7171953980618,
+            "buyShares": 1052927,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 890.6121414080349,
+            "buyShares": 9847599,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 950.1732835822455,
+            "buyShares": 20111337,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 989.5962544987775,
+            "buyShares": 241000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 926.2644785944285,
+            "buyShares": 1644095,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 948.8181815027101,
+            "buyShares": 21996432,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1006.3146380001039,
+            "buyShares": 30248632,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1075.3082182963788,
+            "buyShares": 1718000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 973.9877648982839,
+            "buyShares": 2192452,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1007.7097530846646,
+            "buyShares": 34159084,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 6,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [
+            {
+              "date": "2026-04-02",
+              "candidates": [
+                {
+                  "price": 841,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 126,
+                  "date": "2026-04-02"
+                },
+                {
+                  "price": 840,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 126,
+                  "date": "2026-04-02"
+                }
+              ]
+            },
+            {
+              "date": "2026-10-01",
+              "candidates": [
+                {
+                  "price": 845,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 3,
+                  "date": "2026-10-01"
+                },
+                {
+                  "price": 846,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 3,
+                  "date": "2026-10-01"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 9,
+          "uniqueHistoricalSessions": 8,
+          "sameSessionGroups": [
+            {
+              "date": "2026-02-23",
+              "candidates": [
+                {
+                  "price": 890,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 153,
+                  "date": "2026-02-23"
+                },
+                {
+                  "price": 890,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 153,
+                  "date": "2026-02-23"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 14,
+          "uniqueHistoricalSessions": 13,
+          "sameSessionGroups": [
+            {
+              "date": "2026-04-14",
+              "candidates": [
+                {
+                  "price": 911,
+                  "type": "gap",
+                  "label": "缺口上緣",
+                  "age": 120,
+                  "date": "2026-04-14"
+                },
+                {
+                  "price": 911,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 120,
+                  "date": "2026-04-14"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 872,
+          "bandLow": 861,
+          "bandHigh": 872,
+          "distance": -0.014689265536723164,
+          "sources": [
+            "前低／樞紐低",
+            "爆量K高點",
+            "爆量K收盤",
+            "爆量K低點"
+          ],
+          "score": 8,
+          "strength": "高共振",
+          "confidence": 99
+        },
+        {
+          "price": 860,
+          "bandLow": 860,
+          "bandHigh": 860,
+          "distance": -0.02824858757062147,
+          "sources": [
+            "前低／樞紐低"
+          ],
+          "score": 2,
+          "strength": "一般",
+          "confidence": 51
+        }
+      ]
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 178.53576968969946,
+            "buyShares": 185104667,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 179.3354443700898,
+            "buyShares": 386833,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 178.64850176720105,
+            "buyShares": 8900556,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 178.54252263398874,
+            "buyShares": 194392056,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 176.68170730025392,
+            "buyShares": 293005201,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 176.7811760251081,
+            "buyShares": 792833,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 176.78564328785524,
+            "buyShares": 13712698,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 176.6865985275846,
+            "buyShares": 307510732,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 177.9131725475089,
+            "buyShares": 741604306,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 184.6047780065914,
+            "buyShares": 5742947,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 176.50839346911468,
+            "buyShares": 37076762,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 177.89576471221233,
+            "buyShares": 784424015,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 179.4320375068971,
+            "buyShares": 2079551235,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 182.60267579936576,
+            "buyShares": 15335216,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 178.09435182004458,
+            "buyShares": 85085586,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 179.40213100058867,
+            "buyShares": 2179972037,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 173.07653665634172,
+            "buyShares": 2897907299,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 171.01486988045957,
+            "buyShares": 41552461,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 171.774081555052,
+            "buyShares": 130171425,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 172.9933964517203,
+            "buyShares": 3069631185,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 9,
+          "uniqueHistoricalSessions": 7,
+          "sameSessionGroups": [
+            {
+              "date": "2026-08-12",
+              "candidates": [
+                {
+                  "price": 177,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 37,
+                  "date": "2026-08-12"
+                },
+                {
+                  "price": 174.5,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 37,
+                  "date": "2026-08-12"
+                }
+              ]
+            },
+            {
+              "date": "2026-08-13",
+              "candidates": [
+                {
+                  "price": 177,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 36,
+                  "date": "2026-08-13"
+                },
+                {
+                  "price": 177,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 36,
+                  "date": "2026-08-13"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 7,
+          "uniqueHistoricalSessions": 7,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "breakout": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 174,
+          "bandLow": 172,
+          "bandHigh": 174,
+          "distance": -0.01971830985915493,
+          "sources": [
+            "缺口下緣",
+            "缺口上緣",
+            "爆量K高點",
+            "爆量K低點",
+            "前高轉支撐"
+          ],
+          "score": 5,
+          "strength": "中共振",
+          "confidence": 75
+        }
+      ]
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1024.3182760896802,
+            "buyShares": 38982833,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1023.4270640563304,
+            "buyShares": 4132500,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1026.750959582739,
+            "buyShares": 1864990,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 1024.3372620951811,
+            "buyShares": 44980323,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 964.331418810977,
+            "buyShares": 90714737,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 997.3366827637277,
+            "buyShares": 6089501,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 940.8449078517851,
+            "buyShares": 6724486,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 964.7472538763411,
+            "buyShares": 103528724,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 916.2718043637984,
+            "buyShares": 134592428,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 942.2428367533633,
+            "buyShares": 8679001,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 909.27890018338,
+            "buyShares": 8971988,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 917.3402404702227,
+            "buyShares": 152243417,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 891.4101328919788,
+            "buyShares": 245885750,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 910.333165886928,
+            "buyShares": 15614388,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 878.8105469209067,
+            "buyShares": 21254383,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 891.5080098537741,
+            "buyShares": 282754521,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 849.4993072015951,
+            "buyShares": 336205296,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 840.2273668326752,
+            "buyShares": 26669249,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 839.750632475814,
+            "buyShares": 30214355,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 848.1209278951427,
+            "buyShares": 393088900,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": []
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 120.26246742729468,
+            "buyShares": 151731019,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 124.3300197474347,
+            "buyShares": 840000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 119.22278159246872,
+            "buyShares": 5394925,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 120.24858922609499,
+            "buyShares": 157965944,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 113.5521971696574,
+            "buyShares": 314696557,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 124.1150745480367,
+            "buyShares": 853000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 111.35536155903151,
+            "buyShares": 13597089,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 113.48881984175264,
+            "buyShares": 329146646,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 109.01210877854324,
+            "buyShares": 392790670,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 117.01208723580346,
+            "buyShares": 1074000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 106.17871262786359,
+            "buyShares": 18257346,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 108.90743512525574,
+            "buyShares": 412122016,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 102.79413274328746,
+            "buyShares": 624109463,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 98.73144489011648,
+            "buyShares": 3253000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 101.48603024853156,
+            "buyShares": 28855111,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 102.71647349079095,
+            "buyShares": 656217574,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 102.16499380624039,
+            "buyShares": 1027568492,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 107.42343241714325,
+            "buyShares": 6987000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 100.63740277427799,
+            "buyShares": 43586680,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 102.13731479350749,
+            "buyShares": 1078142172,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [
+            {
+              "date": "2026-10-02",
+              "candidates": [
+                {
+                  "price": 127,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 2,
+                  "date": "2026-10-02"
+                },
+                {
+                  "price": 127,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 2,
+                  "date": "2026-10-02"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [
+            {
+              "date": "2026-07-13",
+              "candidates": [
+                {
+                  "price": 123,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 59,
+                  "date": "2026-07-13"
+                },
+                {
+                  "price": 123,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 59,
+                  "date": "2026-07-13"
+                }
+              ]
+            },
+            {
+              "date": "2026-10-05",
+              "candidates": [
+                {
+                  "price": 124,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 1,
+                  "date": "2026-10-05"
+                },
+                {
+                  "price": 123,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 1,
+                  "date": "2026-10-05"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 125,
+          "bandLow": 124,
+          "bandHigh": 125,
+          "distance": -0.0196078431372549,
+          "sources": [
+            "前高轉支撐",
+            "爆量K高點",
+            "爆量K收盤"
+          ],
+          "score": 3,
+          "strength": "一般",
+          "confidence": 59
+        }
+      ]
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 301.8405369501138,
+            "buyShares": 29131484,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 303.0343768124706,
+            "buyShares": 715591,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 302.9730805975129,
+            "buyShares": 5669264,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 302.04537196955584,
+            "buyShares": 35516339,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 298.0030557445474,
+            "buyShares": 48903456,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 298.3240200728023,
+            "buyShares": 1067591,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 300.1339103115151,
+            "buyShares": 7471284,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 298.28617235868126,
+            "buyShares": 57442331,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 289.0522661677764,
+            "buyShares": 96516301,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 295.04066403913373,
+            "buyShares": 1288756,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 292.8887340979391,
+            "buyShares": 11295328,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 289.5201998723162,
+            "buyShares": 109100385,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 284.86094166755566,
+            "buyShares": 180572149,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 282.7139388831956,
+            "buyShares": 4141579,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 286.7588374759649,
+            "buyShares": 22215918,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 285.0217282761962,
+            "buyShares": 206929646,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 279.77660540591177,
+            "buyShares": 321969504,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 263.340387477796,
+            "buyShares": 17963662,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 280.4937832459458,
+            "buyShares": 36162950,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 279.0605134666673,
+            "buyShares": 376096116,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "breakout": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [
+            {
+              "date": "2026-05-25",
+              "candidates": [
+                {
+                  "price": 311,
+                  "type": "gap",
+                  "label": "缺口上緣",
+                  "age": 92,
+                  "date": "2026-05-25"
+                },
+                {
+                  "price": 311,
+                  "type": "gap",
+                  "label": "缺口下緣",
+                  "age": 91,
+                  "date": "2026-05-25"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [
+            {
+              "date": "2026-10-02",
+              "candidates": [
+                {
+                  "price": 316,
+                  "type": "pivotHigh",
+                  "label": "前高／樞紐高",
+                  "age": 2,
+                  "date": "2026-10-02"
+                },
+                {
+                  "price": 316,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 2,
+                  "date": "2026-10-02"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 303.5,
+          "bandLow": 302,
+          "bandHigh": 303.5,
+          "distance": -0.02254428341384863,
+          "sources": [
+            "前低／樞紐低",
+            "前高轉支撐"
+          ],
+          "score": 3,
+          "strength": "一般",
+          "confidence": 59
+        }
+      ]
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 5006.3171247163755,
+            "buyShares": 12578409,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4968.198067958341,
+            "buyShares": 752898,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4976.469777590173,
+            "buyShares": 1577920,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 5001.233260370331,
+            "buyShares": 14909227,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 5095.482554418453,
+            "buyShares": 35224442,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 5070.932452463134,
+            "buyShares": 1764246,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 5063.145259347874,
+            "buyShares": 3348644,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 5091.724286313647,
+            "buyShares": 40337332,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4857.135557840303,
+            "buyShares": 73540301,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4831.722299901375,
+            "buyShares": 4264262,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4875.53544275668,
+            "buyShares": 6244936,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4857.213337168706,
+            "buyShares": 84049499,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4418.849010348308,
+            "buyShares": 162655937,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4555.533499356862,
+            "buyShares": 7510053,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4490.919518064538,
+            "buyShares": 11852677,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4429.181665986967,
+            "buyShares": 182018667,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4133.039167760613,
+            "buyShares": 262649911,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4181.125188584945,
+            "buyShares": 13213627,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4078.076286305993,
+            "buyShares": 22387351,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 4131.043926177245,
+            "buyShares": 298250889,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-07",
+              "candidates": [
+                {
+                  "price": 4855,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 19,
+                  "date": "2026-09-07"
+                },
+                {
+                  "price": 4855,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 19,
+                  "date": "2026-09-07"
+                }
+              ]
+            },
+            {
+              "date": "2026-09-29",
+              "candidates": [
+                {
+                  "price": 4910,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 5,
+                  "date": "2026-09-29"
+                },
+                {
+                  "price": 4890,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 5,
+                  "date": "2026-09-29"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "breakout": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 4785,
+          "bandLow": 4735,
+          "bandHigh": 4785,
+          "distance": -0.027439024390243903,
+          "sources": [
+            "前高轉支撐",
+            "缺口上緣",
+            "爆量K收盤",
+            "缺口下緣"
+          ],
+          "score": 5,
+          "strength": "中共振",
+          "confidence": 75
+        }
+      ]
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 377.00357467451937,
+            "buyShares": 17551817,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 379.06985022579886,
+            "buyShares": 683281,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 375.3761189900295,
+            "buyShares": 1016232,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 376.99100277843695,
+            "buyShares": 19251330,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 371.05450752109107,
+            "buyShares": 36525127,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 378.13644718081605,
+            "buyShares": 748281,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 371.2275600271016,
+            "buyShares": 2147824,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 371.1983631777633,
+            "buyShares": 39421232,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 366.5783336578647,
+            "buyShares": 50221732,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 354.08408399803403,
+            "buyShares": 6924281,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 363.13237956660464,
+            "buyShares": 4061634,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 364.93622021690317,
+            "buyShares": 61207647,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 366.52435131068387,
+            "buyShares": 125325017,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 354.6942565707766,
+            "buyShares": 12273281,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 363.9654103992167,
+            "buyShares": 8791325,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 365.37884280556256,
+            "buyShares": 146389623,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 356.23812522748636,
+            "buyShares": 186506991,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 347.8225557983266,
+            "buyShares": 19871976,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 353.23263323612116,
+            "buyShares": 14465907,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 355.2840113395682,
+            "buyShares": 220844874,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 7,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-21",
+              "candidates": [
+                {
+                  "price": 376,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 9,
+                  "date": "2026-09-21"
+                },
+                {
+                  "price": 376,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 9,
+                  "date": "2026-09-21"
+                }
+              ]
+            },
+            {
+              "date": "2026-06-01",
+              "candidates": [
+                {
+                  "price": 376.5,
+                  "type": "gap",
+                  "label": "缺口上緣",
+                  "age": 87,
+                  "date": "2026-06-01"
+                },
+                {
+                  "price": 376.5,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 87,
+                  "date": "2026-06-01"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 7,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [
+            {
+              "date": "2026-05-29",
+              "candidates": [
+                {
+                  "price": 370,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 88,
+                  "date": "2026-05-29"
+                },
+                {
+                  "price": 371,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 88,
+                  "date": "2026-05-29"
+                },
+                {
+                  "price": 371,
+                  "type": "gap",
+                  "label": "缺口下緣",
+                  "age": 87,
+                  "date": "2026-05-29"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 373.5,
+          "bandLow": 370,
+          "bandHigh": 373.5,
+          "distance": -0.017105263157894738,
+          "sources": [
+            "爆量K收盤",
+            "前高轉支撐",
+            "缺口下緣",
+            "爆量K高點"
+          ],
+          "score": 4,
+          "strength": "中共振",
+          "confidence": 67
+        }
+      ]
+    },
+    {
+      "code": "1569",
+      "name": "濱川",
+      "market": "TPEX",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 66.96520931532133,
+            "buyShares": 6318938,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 66.53397549129778,
+            "buyShares": 742216,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 66.91988122250088,
+            "buyShares": 7061154,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 65.04489578944269,
+            "buyShares": 15832010,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 65.92548647282385,
+            "buyShares": 890304,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 65.09177885884188,
+            "buyShares": 16722314,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 62.10833339494031,
+            "buyShares": 20410316,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 64.14764528987168,
+            "buyShares": 1017333,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 62.2051549962278,
+            "buyShares": 21427649,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 59.77897124770379,
+            "buyShares": 23559975,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 63.07416643800977,
+            "buyShares": 1078195,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 59.92317282510227,
+            "buyShares": 24638170,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 57.320862039431695,
+            "buyShares": 27234724,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "no-buys",
+            "value": null,
+            "buyShares": 0,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 61.789379040619835,
+            "buyShares": 1152471,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 57.5022760980196,
+            "buyShares": 28387195,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-24",
+              "candidates": [
+                {
+                  "price": 68,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 6,
+                  "date": "2026-09-24"
+                },
+                {
+                  "price": 68,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 6,
+                  "date": "2026-09-24"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 67.5,
+          "bandLow": 67.5,
+          "bandHigh": 67.5,
+          "distance": -0.03571428571428571,
+          "sources": [
+            "爆量K低點"
+          ],
+          "score": 1,
+          "strength": "一般",
+          "confidence": 43
+        }
+      ]
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "market": "TPEX",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 186.69727688913963,
+            "buyShares": 52907027,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 183.6070059920407,
+            "buyShares": 3827607,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 186.8725601276609,
+            "buyShares": 2276487,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 186.50359623521985,
+            "buyShares": 59011121,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 181.09009540203903,
+            "buyShares": 104394403,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 179.7617384588432,
+            "buyShares": 7830607,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 181.10471913735842,
+            "buyShares": 4904669,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 181.0019015583881,
+            "buyShares": 117129679,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 172.39092532178898,
+            "buyShares": 187496165,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 168.568111634959,
+            "buyShares": 17219742,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 171.83130012837137,
+            "buyShares": 10289920,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 172.05797451356952,
+            "buyShares": 215005827,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 164.9285445277625,
+            "buyShares": 327264784,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 163.664176170979,
+            "buyShares": 25705033,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 166.69045979165884,
+            "buyShares": 15032655,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 164.91220125158506,
+            "buyShares": 368002472,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 162.54438153125594,
+            "buyShares": 556739008,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 161.88611497652292,
+            "buyShares": 57008018,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 164.13893236180192,
+            "buyShares": 25633187,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 162.549616206886,
+            "buyShares": 639380213,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 6,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [
+            {
+              "date": "2026-06-01",
+              "candidates": [
+                {
+                  "price": 184.5,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 87,
+                  "date": "2026-06-01"
+                },
+                {
+                  "price": 184.5,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 87,
+                  "date": "2026-06-01"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-22",
+              "candidates": [
+                {
+                  "price": 181.5,
+                  "type": "pivotHigh",
+                  "label": "前高轉支撐",
+                  "age": 8,
+                  "date": "2026-09-22"
+                },
+                {
+                  "price": 181.5,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 8,
+                  "date": "2026-09-22"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "breakout": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 2,
+          "uniqueHistoricalSessions": 2,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 183.5,
+          "bandLow": 181.5,
+          "bandHigh": 183.5,
+          "distance": -0.03926701570680628,
+          "sources": [
+            "爆量K低點",
+            "前高轉支撐",
+            "爆量K高點"
+          ],
+          "score": 4,
+          "strength": "中共振",
+          "confidence": 67
+        }
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 153.56692049560925,
+            "buyShares": 290269309,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 156.52512436418115,
+            "buyShares": 14965018,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 153.07228720670614,
+            "buyShares": 20755931,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 153.67122729279603,
+            "buyShares": 325990258,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 156.72114319986966,
+            "buyShares": 587760508,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 157.2454979041244,
+            "buyShares": 48108612,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 154.98436059425038,
+            "buyShares": 34441448,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 156.6695382686143,
+            "buyShares": 670310568,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 150.09848986015245,
+            "buyShares": 1261094638,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 148.7339368466147,
+            "buyShares": 162133547,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 148.223702541633,
+            "buyShares": 83640922,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 149.84760625103667,
+            "buyShares": 1506869107,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 138.3173753249763,
+            "buyShares": 2296737536,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 142.27614670858446,
+            "buyShares": 225104662,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 137.09840369746374,
+            "buyShares": 154248548,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 138.58011428167887,
+            "buyShares": 2676090746,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 133.9493320652937,
+            "buyShares": 3523258683,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 138.2284786259593,
+            "buyShares": 339945583,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 135.78599242857956,
+            "buyShares": 251202879,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 134.4150252443557,
+            "buyShares": 4114407145,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [
+            {
+              "date": "2026-09-07",
+              "candidates": [
+                {
+                  "price": 143,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 19,
+                  "date": "2026-09-07"
+                },
+                {
+                  "price": 143,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 19,
+                  "date": "2026-09-07"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [
+            {
+              "date": "2026-10-05",
+              "candidates": [
+                {
+                  "price": 152.5,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 1,
+                  "date": "2026-10-05"
+                },
+                {
+                  "price": 152,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 1,
+                  "date": "2026-10-05"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": []
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "market": "TPEX",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 124.13996349160381,
+            "buyShares": 79714349,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 125.15148783642594,
+            "buyShares": 40000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 123.9188707354007,
+            "buyShares": 2973051,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 124.13250696491338,
+            "buyShares": 82727400,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 123.07538691940081,
+            "buyShares": 149349433,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 122.3898886588491,
+            "buyShares": 1225000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 122.49048778608488,
+            "buyShares": 5731400,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 123.0485675347278,
+            "buyShares": 156305833,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 124.19445654536194,
+            "buyShares": 310213045,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 127.74897146585496,
+            "buyShares": 60424000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 124.21107956362664,
+            "buyShares": 14484156,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 124.75277112110405,
+            "buyShares": 385121201,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 119.04144496248269,
+            "buyShares": 751365243,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 121.0090838064298,
+            "buyShares": 88664185,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 118.15644007406127,
+            "buyShares": 32046564,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 119.20897362972734,
+            "buyShares": 872075992,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 114.03458849033632,
+            "buyShares": 856752571,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 117.34115022232301,
+            "buyShares": 98116285,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 111.9197527085265,
+            "buyShares": 38477556,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 114.27927034361947,
+            "buyShares": 993346412,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": [
+        125.5,
+        126.5
+      ],
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "breakout": {
+          "historicalCandidateCount": 3,
+          "uniqueHistoricalSessions": 3,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 1,
+          "uniqueHistoricalSessions": 1,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": []
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "market": "TWSE",
+      "flowCount": 60,
+      "invalidDates": [],
+      "cost": {
+        "value": null,
+        "status": "estimated",
+        "method": "rolling-gross-buy-vwap",
+        "formula": "Σ(當日法人買進股數 × 當日成交金額 ÷ 當日成交股數) ÷ Σ法人買進股數",
+        "priceBasis": "market-vwap-proxy",
+        "referenceSource": "https://www.xq.com.tw/xstrader/外資成本線/",
+        "estimates": [
+          {
+            "group": "foreign",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 193.96306379625742,
+            "buyShares": 14888216,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 192.2361140054927,
+            "buyShares": 79000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 193.4700504315768,
+            "buyShares": 1072513,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 5,
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 193.9215922554188,
+            "buyShares": 16039729,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 194.0751795415367,
+            "buyShares": 30713262,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 192.26948842825104,
+            "buyShares": 85000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 193.6919668453619,
+            "buyShares": 1798486,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 10,
+            "startDate": "2026-09-21",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 194.04932768620068,
+            "buyShares": 32596748,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 192.68287281461988,
+            "buyShares": 73020429,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 196.61576519978166,
+            "buyShares": 363000,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 193.23473450510645,
+            "buyShares": 4143234,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 20,
+            "startDate": "2026-09-07",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 192.73078061706377,
+            "buyShares": 77526663,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 193.71576995846814,
+            "buyShares": 194608722,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 192.44094418464667,
+            "buyShares": 1726539,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 194.1545553371548,
+            "buyShares": 9564583,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 40,
+            "startDate": "2026-08-10",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 193.7254628398135,
+            "buyShares": 205899844,
+            "missingDates": []
+          },
+          {
+            "group": "foreign",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 185.56554879325347,
+            "buyShares": 250037209,
+            "missingDates": []
+          },
+          {
+            "group": "trust",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 175.74566851781174,
+            "buyShares": 2562539,
+            "missingDates": []
+          },
+          {
+            "group": "dealer",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 183.72890472568974,
+            "buyShares": 12881640,
+            "missingDates": []
+          },
+          {
+            "group": "total",
+            "sessions": 60,
+            "startDate": "2026-07-13",
+            "endDate": "2026-10-06",
+            "status": "estimated",
+            "value": 185.38164583027947,
+            "buyShares": 265481388,
+            "missingDates": []
+          }
+        ],
+        "note": "公開成本線算法的區間買進均價估算；外資含外資自營商。不是實際持股成本，也尚未驗證為照片法人成本區。"
+      },
+      "photoCostBand": null,
+      "costBandMatches": [],
+      "confluenceIndependence": {
+        "support1": {
+          "historicalCandidateCount": 5,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "support2": {
+          "historicalCandidateCount": 4,
+          "uniqueHistoricalSessions": 4,
+          "sameSessionGroups": [],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance1": {
+          "historicalCandidateCount": 6,
+          "uniqueHistoricalSessions": 5,
+          "sameSessionGroups": [
+            {
+              "date": "2026-07-02",
+              "candidates": [
+                {
+                  "price": 183.5,
+                  "type": "volume",
+                  "label": "爆量K收盤",
+                  "age": 65,
+                  "date": "2026-07-02"
+                },
+                {
+                  "price": 183,
+                  "type": "volume",
+                  "label": "爆量K低點",
+                  "age": 65,
+                  "date": "2026-07-02"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        },
+        "resistance2": {
+          "historicalCandidateCount": 7,
+          "uniqueHistoricalSessions": 6,
+          "sameSessionGroups": [
+            {
+              "date": "2026-06-22",
+              "candidates": [
+                {
+                  "price": 186.5,
+                  "type": "pivotHigh",
+                  "label": "前高／樞紐高",
+                  "age": 73,
+                  "date": "2026-06-22"
+                },
+                {
+                  "price": 186.5,
+                  "type": "volume",
+                  "label": "爆量K高點",
+                  "age": 73,
+                  "date": "2026-06-22"
+                }
+              ]
+            }
+          ],
+          "status": "diagnostic-only",
+          "note": "同日多個K棒邊界或訊號不等於多筆獨立證據；現行分數未經獨立性校準，不是機率。"
+        }
+      },
+      "skippedSupportBands": [
+        {
+          "price": 178,
+          "bandLow": 176,
+          "bandHigh": 178,
+          "distance": -0.024657534246575342,
+          "sources": [
+            "爆量K收盤",
+            "爆量K低點",
+            "爆量K高點",
+            "前高轉支撐"
+          ],
+          "score": 3,
+          "strength": "一般",
+          "confidence": 59
+        }
+      ]
+    }
+  ]
+}

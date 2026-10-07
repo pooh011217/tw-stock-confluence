@@ -1,0 +1,1793 @@
+{
+  "stats": {
+    "photos": 40,
+    "stocks": 19,
+    "prices": 65,
+    "matchedPrices": 21,
+    "bands": 36,
+    "matchedBands": 8,
+    "basis": "V3.3.44.14 正式系統10/6歷史多檔掃描，19檔成功；2026/10/8台北時間核對",
+    "formulaRecovery": "未恢復原圖唯一主價、容差、法人成本與有效結構權重公式"
+  },
+  "records": [
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 227.5,
+        "bandLow": 225.5,
+        "bandHigh": 227.5,
+        "sources": [
+          "爆量K低點",
+          "成交量密集區",
+          "前高轉支撐"
+        ]
+      },
+      "baseline": {
+        "price": 227.5,
+        "bandLow": 225,
+        "bandHigh": 227.5
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6758.jpeg",
+        "IMG_6759.jpeg"
+      ]
+    },
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 221,
+        "bandLow": 220,
+        "bandHigh": 221,
+        "sources": [
+          "前高轉支撐",
+          "MA10",
+          "爆量K收盤"
+        ]
+      },
+      "baseline": {
+        "price": 221,
+        "bandLow": 220,
+        "bandHigh": 221
+      },
+      "actualKey": "support2",
+      "priceMatches": true,
+      "bandMatches": true,
+      "nameMatches": true,
+      "files": [
+        "IMG_6758.jpeg",
+        "IMG_6759.jpeg"
+      ]
+    },
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "key": "resistance1",
+      "reference": {
+        "key": "resistance1",
+        "price": 231,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 229,
+        "bandLow": 229,
+        "bandHigh": 231.5
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6758.jpeg",
+        "IMG_6759.jpeg"
+      ]
+    },
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 236.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 232,
+        "bandLow": 232,
+        "bandHigh": 234
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6758.jpeg",
+        "IMG_6759.jpeg"
+      ]
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 759,
+        "bandLow": 756,
+        "bandHigh": 759,
+        "sources": [
+          "前高轉支撐",
+          "波段低點",
+          "爆量K收盤"
+        ]
+      },
+      "baseline": {
+        "price": 759,
+        "bandLow": 756,
+        "bandHigh": 759
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": true,
+      "nameMatches": true,
+      "files": [
+        "IMG_6762.jpeg",
+        "IMG_6763.jpeg"
+      ]
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 747,
+        "bandLow": 740,
+        "bandHigh": 747,
+        "sources": [
+          "爆量K低點",
+          "前高轉支撐",
+          "波段低點"
+        ]
+      },
+      "baseline": {
+        "price": 745,
+        "bandLow": 739,
+        "bandHigh": 745
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6762.jpeg",
+        "IMG_6763.jpeg"
+      ]
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 771,
+        "bandLow": 771,
+        "bandHigh": 784,
+        "sources": []
+      },
+      "baseline": {
+        "price": 764,
+        "bandLow": 764,
+        "bandHigh": 773
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": false,
+      "files": [
+        "IMG_6762.jpeg",
+        "IMG_6763.jpeg"
+      ]
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 807,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 774,
+        "bandLow": 774,
+        "bandHigh": 782
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6762.jpeg",
+        "IMG_6763.jpeg"
+      ]
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 543,
+        "bandLow": 538,
+        "bandHigh": 543,
+        "sources": [
+          "爆量K收盤",
+          "缺口上緣",
+          "波段低點"
+        ]
+      },
+      "baseline": {
+        "price": 549,
+        "bandLow": 543,
+        "bandHigh": 549
+      },
+      "actualKey": "support1",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6760.jpeg",
+        "IMG_6761.jpeg"
+      ]
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 530,
+        "bandLow": 526,
+        "bandHigh": 530,
+        "sources": [
+          "前高轉支撐",
+          "法人估計成本區",
+          "缺口下緣"
+        ]
+      },
+      "baseline": {
+        "price": 536,
+        "bandLow": 530,
+        "bandHigh": 536
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6760.jpeg",
+        "IMG_6761.jpeg"
+      ]
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 570,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 564,
+        "bandLow": 564,
+        "bandHigh": 570
+      },
+      "actualKey": "breakout",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6760.jpeg",
+        "IMG_6761.jpeg"
+      ]
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 524,
+        "bandLow": 521,
+        "bandHigh": 524,
+        "sources": [
+          "MA5",
+          "缺口下緣",
+          "法人估計成本區"
+        ]
+      },
+      "baseline": {
+        "price": 522,
+        "bandLow": 521,
+        "bandHigh": 522
+      },
+      "actualKey": "support1",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6732(1).jpeg",
+        "IMG_6733(1).jpeg"
+      ]
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 514,
+        "bandLow": 508,
+        "bandHigh": 514,
+        "sources": [
+          "爆量K收盤",
+          "MA13",
+          "成交量密集區",
+          "缺口下緣"
+        ]
+      },
+      "baseline": {
+        "price": 508,
+        "bandLow": 504,
+        "bandHigh": 508
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6732(1).jpeg",
+        "IMG_6733(1).jpeg"
+      ]
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 533,
+        "bandLow": 533,
+        "bandHigh": 541,
+        "sources": []
+      },
+      "baseline": {
+        "price": 528,
+        "bandLow": 528,
+        "bandHigh": 533
+      },
+      "actualKey": "breakout",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6732(1).jpeg",
+        "IMG_6733(1).jpeg"
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 150,
+        "bandLow": 148,
+        "bandHigh": 150,
+        "sources": [
+          "MA120",
+          "爆量K低點",
+          "波段低點"
+        ]
+      },
+      "baseline": {
+        "price": 148,
+        "bandLow": 148,
+        "bandHigh": 148
+      },
+      "actualKey": "support1",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6735(1).jpeg",
+        "IMG_6737(1).jpeg",
+        "IMG_6749.jpeg"
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 145.5,
+        "bandLow": 144,
+        "bandHigh": 145.5,
+        "sources": [
+          "爆量K低點",
+          "前高轉支撐",
+          "MA10"
+        ]
+      },
+      "baseline": {
+        "price": 144,
+        "bandLow": 142.5,
+        "bandHigh": 144
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6735(1).jpeg",
+        "IMG_6737(1).jpeg",
+        "IMG_6749.jpeg"
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "key": "resistance1",
+      "reference": {
+        "key": "resistance1",
+        "price": 153.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 151.5,
+        "bandLow": 151.5,
+        "bandHigh": 152
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6735(1).jpeg",
+        "IMG_6737(1).jpeg",
+        "IMG_6749.jpeg"
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 160,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 154,
+        "bandLow": 154,
+        "bandHigh": 155.5
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6735(1).jpeg",
+        "IMG_6737(1).jpeg",
+        "IMG_6749.jpeg"
+      ]
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 296.5,
+        "bandLow": 293.5,
+        "bandHigh": 296.5,
+        "sources": [
+          "缺口上緣",
+          "爆量K低點",
+          "MA5"
+        ]
+      },
+      "baseline": {
+        "price": 296.5,
+        "bandLow": 294,
+        "bandHigh": 296.5
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6739(1).jpeg",
+        "IMG_6740(1).jpeg",
+        "IMG_6750.jpeg"
+      ]
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 287,
+        "bandLow": 283.5,
+        "bandHigh": 287,
+        "sources": [
+          "缺口上緣",
+          "爆量K低點",
+          "爆量K收盤"
+        ]
+      },
+      "baseline": {
+        "price": 283.5,
+        "bandLow": 280,
+        "bandHigh": 283.5
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6739(1).jpeg",
+        "IMG_6740(1).jpeg",
+        "IMG_6750.jpeg"
+      ]
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "key": "resistance1",
+      "reference": {
+        "key": "resistance1",
+        "price": 302.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 298.5,
+        "bandLow": 298.5,
+        "bandHigh": 302
+      },
+      "actualKey": "breakout",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": false,
+      "files": [
+        "IMG_6739(1).jpeg",
+        "IMG_6740(1).jpeg",
+        "IMG_6750.jpeg"
+      ]
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 315,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 302.5,
+        "bandLow": 302.5,
+        "bandHigh": 304
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6739(1).jpeg",
+        "IMG_6740(1).jpeg",
+        "IMG_6750.jpeg"
+      ]
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 1245,
+        "bandLow": 1235,
+        "bandHigh": 1245,
+        "sources": [
+          "前高轉支撐",
+          "波段低點"
+        ]
+      },
+      "baseline": {
+        "price": 1250,
+        "bandLow": 1235,
+        "bandHigh": 1250
+      },
+      "actualKey": "support1",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6741(1).jpeg",
+        "IMG_6751.jpeg"
+      ]
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 1215,
+        "bandLow": 1200,
+        "bandHigh": 1215,
+        "sources": [
+          "波段低點",
+          "突破後回測位置",
+          "爆量K低點"
+        ]
+      },
+      "baseline": {
+        "price": 1200,
+        "bandLow": 1185,
+        "bandHigh": 1200
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6741(1).jpeg",
+        "IMG_6751.jpeg"
+      ]
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "key": "resistance1",
+      "reference": {
+        "key": "resistance1",
+        "price": 1285,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 1265,
+        "bandLow": 1265,
+        "bandHigh": 1265
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6741(1).jpeg",
+        "IMG_6751.jpeg"
+      ]
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 880,
+        "bandLow": 873,
+        "bandHigh": 880,
+        "sources": [
+          "MA13",
+          "MA10",
+          "爆量K低點"
+        ]
+      },
+      "baseline": {
+        "price": 884,
+        "bandLow": 873,
+        "bandHigh": 884
+      },
+      "actualKey": "support1",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6743(1).jpeg",
+        "IMG_6744(1).jpeg"
+      ]
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 845,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": [
+          "爆量K低點"
+        ]
+      },
+      "baseline": {
+        "price": 846,
+        "bandLow": 836,
+        "bandHigh": 846
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6743(1).jpeg",
+        "IMG_6744(1).jpeg"
+      ]
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "key": "resistance1",
+      "reference": {
+        "key": "resistance1",
+        "price": 892,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 890,
+        "bandLow": 890,
+        "bandHigh": 901
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6743(1).jpeg",
+        "IMG_6744(1).jpeg"
+      ]
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 912,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 902,
+        "bandLow": 902,
+        "bandHigh": 913
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6743(1).jpeg",
+        "IMG_6744(1).jpeg"
+      ]
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 177,
+        "bandLow": 175,
+        "bandHigh": 177,
+        "sources": [
+          "爆量K低點",
+          "爆量K收盤",
+          "波段低點"
+        ]
+      },
+      "baseline": {
+        "price": 177,
+        "bandLow": 174.5,
+        "bandHigh": 177
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6745(2).jpeg",
+        "IMG_6746.jpeg"
+      ]
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 172.5,
+        "bandLow": 170.5,
+        "bandHigh": 172.5,
+        "sources": [
+          "缺口下緣",
+          "爆量K低點",
+          "前高轉支撐"
+        ]
+      },
+      "baseline": {
+        "price": 172.5,
+        "bandLow": 171,
+        "bandHigh": 172.5
+      },
+      "actualKey": "support2",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6745(2).jpeg",
+        "IMG_6746.jpeg"
+      ]
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 180,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 178,
+        "bandLow": 178,
+        "bandHigh": 178
+      },
+      "actualKey": "breakout",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6745(2).jpeg",
+        "IMG_6746.jpeg"
+      ]
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "key": "resistance1",
+      "reference": {
+        "key": "resistance1",
+        "price": 1095,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 1095,
+        "bandLow": 1095,
+        "bandHigh": 1095
+      },
+      "actualKey": "resistance1",
+      "priceMatches": true,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6747.jpeg"
+      ]
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 1150,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 1150,
+        "bandLow": 1150,
+        "bandHigh": 1150
+      },
+      "actualKey": "resistance2",
+      "priceMatches": true,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6747.jpeg"
+      ]
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 125,
+        "bandLow": 124,
+        "bandHigh": 125,
+        "sources": [
+          "前高轉支撐",
+          "爆量K收盤",
+          "爆量K低點"
+        ]
+      },
+      "baseline": {
+        "price": 127,
+        "bandLow": 127,
+        "bandHigh": 127
+      },
+      "actualKey": "support1",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6752.jpeg"
+      ]
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 118.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": [
+          "前高轉支撐"
+        ]
+      },
+      "baseline": {
+        "price": 124,
+        "bandLow": 122.5,
+        "bandHigh": 124
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6752.jpeg"
+      ]
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 133,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 133,
+        "bandLow": 133,
+        "bandHigh": 133
+      },
+      "actualKey": "resistance1",
+      "priceMatches": true,
+      "bandMatches": null,
+      "nameMatches": false,
+      "files": [
+        "IMG_6752.jpeg"
+      ]
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 309,
+        "bandLow": 308,
+        "bandHigh": 309,
+        "sources": [
+          "波段低點",
+          "爆量K收盤"
+        ]
+      },
+      "baseline": {
+        "price": 309,
+        "bandLow": 308,
+        "bandHigh": 309
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": true,
+      "nameMatches": true,
+      "files": [
+        "IMG_6753.jpeg",
+        "IMG_6754.jpeg"
+      ]
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 303.5,
+        "bandLow": 302,
+        "bandHigh": 303.5,
+        "sources": [
+          "波段低點",
+          "前高轉支撐",
+          "MA5"
+        ]
+      },
+      "baseline": {
+        "price": 302,
+        "bandLow": 299.5,
+        "bandHigh": 302
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6753.jpeg",
+        "IMG_6754.jpeg"
+      ]
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 315,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 311,
+        "bandLow": 311,
+        "bandHigh": 312
+      },
+      "actualKey": "breakout",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6753.jpeg",
+        "IMG_6754.jpeg"
+      ]
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 324.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 315,
+        "bandLow": 315,
+        "bandHigh": 316
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6753.jpeg",
+        "IMG_6754.jpeg"
+      ]
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 4910,
+        "bandLow": 4850,
+        "bandHigh": 4910,
+        "sources": [
+          "爆量K收盤",
+          "爆量K低點",
+          "波段低點"
+        ]
+      },
+      "baseline": {
+        "price": 4910,
+        "bandLow": 4855,
+        "bandHigh": 4910
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6755.jpeg",
+        "IMG_6756.jpeg",
+        "IMG_6757.jpeg"
+      ]
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 4780,
+        "bandLow": 4735,
+        "bandHigh": 4780,
+        "sources": [
+          "缺口上緣",
+          "爆量K收盤",
+          "缺口下緣"
+        ]
+      },
+      "baseline": {
+        "price": 4780,
+        "bandLow": 4735,
+        "bandHigh": 4780
+      },
+      "actualKey": "support2",
+      "priceMatches": true,
+      "bandMatches": true,
+      "nameMatches": true,
+      "files": [
+        "IMG_6755.jpeg",
+        "IMG_6756.jpeg",
+        "IMG_6757.jpeg"
+      ]
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 379.5,
+        "bandLow": 376,
+        "bandHigh": 379.5,
+        "sources": [
+          "爆量K低點",
+          "缺口上緣",
+          "前高轉支撐"
+        ]
+      },
+      "baseline": {
+        "price": 379.5,
+        "bandLow": 375.5,
+        "bandHigh": 379.5
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6765.jpeg",
+        "IMG_6766.jpeg"
+      ]
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 371,
+        "bandLow": 368,
+        "bandHigh": 371,
+        "sources": [
+          "爆量K收盤",
+          "缺口下緣",
+          "MA10"
+        ]
+      },
+      "baseline": {
+        "price": 371,
+        "bandLow": 368,
+        "bandHigh": 371
+      },
+      "actualKey": "support2",
+      "priceMatches": true,
+      "bandMatches": true,
+      "nameMatches": true,
+      "files": [
+        "IMG_6765.jpeg",
+        "IMG_6766.jpeg"
+      ]
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "key": "resistance1",
+      "reference": {
+        "key": "resistance1",
+        "price": 383,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 381,
+        "bandLow": 381,
+        "bandHigh": 381.5
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6765.jpeg",
+        "IMG_6766.jpeg"
+      ]
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 392.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 386.5,
+        "bandLow": 386.5,
+        "bandHigh": 388.5
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6765.jpeg",
+        "IMG_6766.jpeg"
+      ]
+    },
+    {
+      "code": "1569",
+      "name": "濱川",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 68.6,
+        "bandLow": 68,
+        "bandHigh": 68.6,
+        "sources": [
+          "爆量K低點",
+          "爆量K收盤",
+          "前高轉支撐"
+        ]
+      },
+      "baseline": {
+        "price": 68.6,
+        "bandLow": 68,
+        "bandHigh": 68.6
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": true,
+      "nameMatches": true,
+      "files": [
+        "IMG_6767.jpeg",
+        "IMG_6768.jpeg"
+      ]
+    },
+    {
+      "code": "1569",
+      "name": "濱川",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 66.5,
+        "bandLow": 66.3,
+        "bandHigh": 66.5,
+        "sources": [
+          "爆量K收盤",
+          "MA5"
+        ]
+      },
+      "baseline": {
+        "price": 66.5,
+        "bandLow": 66.3,
+        "bandHigh": 66.5
+      },
+      "actualKey": "support2",
+      "priceMatches": true,
+      "bandMatches": true,
+      "nameMatches": true,
+      "files": [
+        "IMG_6767.jpeg",
+        "IMG_6768.jpeg"
+      ]
+    },
+    {
+      "code": "1569",
+      "name": "濱川",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 71.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 71,
+        "bandLow": 71,
+        "bandHigh": 71
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": false,
+      "files": [
+        "IMG_6767.jpeg",
+        "IMG_6768.jpeg"
+      ]
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 189,
+        "bandLow": 187.5,
+        "bandHigh": 189,
+        "sources": []
+      },
+      "baseline": {
+        "price": 186.5,
+        "bandLow": 184.5,
+        "bandHigh": 186.5
+      },
+      "actualKey": "support1",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6769.jpeg",
+        "IMG_6770.jpeg",
+        "IMG_6771.jpeg"
+      ]
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 184.5,
+        "bandLow": 183,
+        "bandHigh": 184.5,
+        "sources": []
+      },
+      "baseline": {
+        "price": 182.5,
+        "bandLow": 181,
+        "bandHigh": 182.5
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6769.jpeg",
+        "IMG_6770.jpeg",
+        "IMG_6771.jpeg"
+      ]
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 202,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 195,
+        "bandLow": 195,
+        "bandHigh": 195
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6769.jpeg",
+        "IMG_6770.jpeg",
+        "IMG_6771.jpeg"
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 146,
+        "bandLow": 145,
+        "bandHigh": 146,
+        "sources": [
+          "缺口下緣",
+          "爆量K低點",
+          "前高轉支撐"
+        ]
+      },
+      "baseline": {
+        "price": 146,
+        "bandLow": 144.5,
+        "bandHigh": 146
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6772.jpeg",
+        "IMG_6773.jpeg"
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 140,
+        "bandLow": 138.5,
+        "bandHigh": 140,
+        "sources": [
+          "波段低點",
+          "整理平台",
+          "缺口上緣"
+        ]
+      },
+      "baseline": {
+        "price": 143,
+        "bandLow": 141.5,
+        "bandHigh": 143
+      },
+      "actualKey": "support2",
+      "priceMatches": false,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6772.jpeg",
+        "IMG_6773.jpeg"
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 150.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 149,
+        "bandLow": 149,
+        "bandHigh": 150
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": false,
+      "files": [
+        "IMG_6772.jpeg",
+        "IMG_6773.jpeg"
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 155,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 151,
+        "bandLow": 151,
+        "bandHigh": 152.5
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6772.jpeg",
+        "IMG_6773.jpeg"
+      ]
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 126.5,
+        "bandLow": 125.5,
+        "bandHigh": 126.5,
+        "sources": [
+          "法人估計成本區",
+          "爆量K收盤",
+          "爆量K低點"
+        ]
+      },
+      "baseline": {
+        "price": 126.5,
+        "bandLow": 124,
+        "bandHigh": 126.5
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6774.jpeg",
+        "IMG_6775.jpeg"
+      ]
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 123.5,
+        "bandLow": 121.5,
+        "bandHigh": 123.5,
+        "sources": [
+          "缺口上緣",
+          "爆量K低點",
+          "前高轉支撐"
+        ]
+      },
+      "baseline": {
+        "price": 123.5,
+        "bandLow": 122,
+        "bandHigh": 123.5
+      },
+      "actualKey": "support2",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6774.jpeg",
+        "IMG_6775.jpeg"
+      ]
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "key": "resistance1",
+      "reference": {
+        "key": "resistance1",
+        "price": 129.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 128,
+        "bandLow": 128,
+        "bandHigh": 129.5
+      },
+      "actualKey": "breakout",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": false,
+      "files": [
+        "IMG_6774.jpeg",
+        "IMG_6775.jpeg"
+      ]
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 134.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 131,
+        "bandLow": 131,
+        "bandHigh": 131
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6774.jpeg",
+        "IMG_6775.jpeg"
+      ]
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "key": "support1",
+      "reference": {
+        "key": "support1",
+        "price": 181.5,
+        "bandLow": 179,
+        "bandHigh": 181.5,
+        "sources": []
+      },
+      "baseline": {
+        "price": 181.5,
+        "bandLow": 179,
+        "bandHigh": 181.5
+      },
+      "actualKey": "support1",
+      "priceMatches": true,
+      "bandMatches": true,
+      "nameMatches": true,
+      "files": [
+        "IMG_6776.jpeg",
+        "IMG_6777.jpeg"
+      ]
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "key": "support2",
+      "reference": {
+        "key": "support2",
+        "price": 176,
+        "bandLow": 173.5,
+        "bandHigh": 176,
+        "sources": []
+      },
+      "baseline": {
+        "price": 176,
+        "bandLow": 175,
+        "bandHigh": 176
+      },
+      "actualKey": "support2",
+      "priceMatches": true,
+      "bandMatches": false,
+      "nameMatches": true,
+      "files": [
+        "IMG_6776.jpeg",
+        "IMG_6777.jpeg"
+      ]
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "key": "breakout",
+      "reference": {
+        "key": "breakout",
+        "price": 185.5,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 183,
+        "bandLow": 183,
+        "bandHigh": 185
+      },
+      "actualKey": "resistance1",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": false,
+      "files": [
+        "IMG_6776.jpeg",
+        "IMG_6777.jpeg"
+      ]
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "key": "resistance2",
+      "reference": {
+        "key": "resistance2",
+        "price": 192,
+        "bandLow": null,
+        "bandHigh": null,
+        "sources": []
+      },
+      "baseline": {
+        "price": 185.5,
+        "bandLow": 185.5,
+        "bandHigh": 187.5
+      },
+      "actualKey": "resistance2",
+      "priceMatches": false,
+      "bandMatches": null,
+      "nameMatches": true,
+      "files": [
+        "IMG_6776.jpeg",
+        "IMG_6777.jpeg"
+      ]
+    }
+  ],
+  "uncertain": [
+    {
+      "code": "2454",
+      "field": "pressure",
+      "note": "IMG_6756、6757壓力數字模糊，可能4975／5260，未納入命中統計"
+    },
+    {
+      "code": "5347",
+      "field": "breakout",
+      "note": "IMG_6771突破數字模糊，未納入命中統計"
+    },
+    {
+      "code": "2368",
+      "field": "mediumResistance",
+      "note": "右側中期壓力數字裁切，未推算"
+    }
+  ],
+  "changes": [
+    "新增四價逐點是否在價格帶內、對應極值命中指標",
+    "移除誤差倒推的偽正確率百分比；信心改標結構分數",
+    "MA120採120筆收盤簡單平均；不足120筆回傳null；均線只列共振佐證，不單獨創造或移動主價",
+    "月份統一UTC，防止跨時區送錯行情月份",
+    "40張照片19檔參考資料僅用比對，未作計算輸入"
+  ]
+}

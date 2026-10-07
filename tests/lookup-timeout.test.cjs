@@ -19,7 +19,7 @@ test('bundled search resolves Jinju promptly without requiring six remote direct
 });
 test('TPEX monthly history never accepts the unreliable range relay',async()=>{
  const c=boot();c.assets=assets;c.calls=[];c.rows=fixture.rows;
- vm.runInContext('tpexRange=async()=>{throw new Error("Range must not be used")};tpexMonth=async(code,d)=>{calls.push(code);const prefix=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-`;return rows.filter(r=>r.date.startsWith(prefix))}',c);
+ vm.runInContext('tpexRange=async()=>{throw new Error("Range must not be used")};tpexMonth=async(code,d)=>{calls.push(code);const prefix=`${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,"0")}-`;return rows.filter(r=>r.date.startsWith(prefix))}',c);
  const rows=await vm.runInContext('history({code:"8358",market:"TPEX"},14,"2026-10-06",assets)',c);assert.equal(c.calls.length,6);assert.equal(rows.length,108);assert.equal(rows.at(-1).close,551);
 });
 test('range excludes known closed dates, but rejects wrong identity, duplicate dates and invalid OHLC',()=>{
@@ -100,7 +100,7 @@ test('current month with a stale partial response continues to the next source',
 });
 test('a missing final session or an interior trading day cannot silently change calculations',async()=>{
  const c=boot();c.assets=assets;c.rows=fixture.rows.filter(r=>r.date!=='2026-10-05');
- vm.runInContext('tpexMonth=async(code,d)=>{const prefix=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-`;return rows.filter(r=>r.date.startsWith(prefix))}',c);
+ vm.runInContext('tpexMonth=async(code,d)=>{const prefix=`${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,"0")}-`;return rows.filter(r=>r.date.startsWith(prefix))}',c);
  await assert.rejects(vm.runInContext('history({code:"8358",market:"TPEX"},14,"2026-10-06",assets)',c),/2026-10-05/);
  c.calendar=calendar;c.rows=[{date:'2026-09-30'}];assert.throws(()=>vm.runInContext('validateHistoryDates(rows,"2026-10-06",taipeiDate(),calendar)',c),/日期不完整/);
 });

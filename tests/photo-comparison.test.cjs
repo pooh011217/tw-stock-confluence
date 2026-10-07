@@ -13,7 +13,7 @@ test('unknown photograph band is not treated as a zero-width band; off-date phot
  c.a.date='2026-10-05';assert.equal(await vm.runInContext('comparePhotoReference(a,{code:"8358"},assets)',c),null);
 });
 test('the five photograph records contain 20 primary prices and exactly 12 visible bands',()=>{
- assert.equal(refs.items.length,5);assert.equal(refs.items.flatMap(x=>x.levels).length,20);assert.equal(refs.items.flatMap(x=>x.levels).filter(x=>x.bandLow!=null).length,12);
+ const prior=refs.items.filter(x=>['6285','2472','3583','6197','8358'].includes(x.code));assert.equal(prior.length,5);assert.equal(prior.flatMap(x=>x.levels).length,20);assert.equal(prior.flatMap(x=>x.levels).filter(x=>x.bandLow!=null).length,12);
  const support=refs.items.find(x=>x.code==='8358').levels[0];assert.equal(Number(((support.price-551)/551*100).toFixed(1)),-1.5);
  const medium=refs.items.find(x=>x.code==='8358').levels.at(-1);assert.equal(Number(((medium.price-551)/551*100).toFixed(1)),10.9);
 });

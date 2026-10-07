@@ -1,1 +1,962 @@
-{"source":"使用者提供的10/6預估10/7五張照片；僅供核對，絕不作計算輸入","formulaStatus":"未確認原圖主價、容差、權重與法人估計成本區公式","items":[{"code":"6285","name":"啟碁","date":"2026-10-06","predictionFor":"2026-10-07","current":256,"levels":[{"key":"support1","price":255.5,"bandLow":253.5,"bandHigh":255.5},{"key":"support2","price":250.5,"bandLow":248.5,"bandHigh":250.5},{"key":"resistance1","price":260,"bandLow":260,"bandHigh":263.5},{"key":"resistance2","price":269,"bandLow":null,"bandHigh":null}]},{"code":"2472","name":"立隆電","date":"2026-10-06","predictionFor":"2026-10-07","current":228,"levels":[{"key":"support1","price":227.5,"bandLow":225.5,"bandHigh":227.5},{"key":"support2","price":221,"bandLow":220,"bandHigh":221},{"key":"resistance1","price":231,"bandLow":null,"bandHigh":null},{"key":"resistance2","price":236.5,"bandLow":null,"bandHigh":null}]},{"code":"3583","name":"辛耘","date":"2026-10-06","predictionFor":"2026-10-07","current":762,"levels":[{"key":"support1","price":759,"bandLow":756,"bandHigh":759},{"key":"support2","price":747,"bandLow":740,"bandHigh":747},{"key":"breakout","price":771,"bandLow":771,"bandHigh":784},{"key":"resistance2","price":807,"bandLow":null,"bandHigh":null}]},{"code":"6197","name":"佳必琪","date":"2026-10-06","predictionFor":"2026-10-07","current":365,"levels":[{"key":"support1","price":353.5,"bandLow":351,"bandHigh":353.5},{"key":"support2","price":344,"bandLow":341,"bandHigh":344},{"key":"resistance1","price":371,"bandLow":null,"bandHigh":null},{"key":"resistance2","price":384.5,"bandLow":null,"bandHigh":null}]},{"code":"8358","name":"金居","date":"2026-10-06","predictionFor":"2026-10-07","current":551,"levels":[{"key":"support1","price":543,"bandLow":538,"bandHigh":543},{"key":"support2","price":530,"bandLow":526,"bandHigh":530},{"key":"breakout","price":570,"bandLow":null,"bandHigh":null},{"key":"mediumResistance","price":611,"bandLow":null,"bandHigh":null}]}]}
+{
+  "source": "使用者提供10/6預估10/7的40張照片（19檔，重複畫面合併），另保留先前啟碁、佳必琪及金居中期壓力參考；僅供核對，不參與計算",
+  "formulaStatus": "未確認原圖主價、容差、權重與法人估計成本區公式",
+  "items": [
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 256,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 255.5,
+          "bandLow": 253.5,
+          "bandHigh": 255.5
+        },
+        {
+          "key": "support2",
+          "price": 250.5,
+          "bandLow": 248.5,
+          "bandHigh": 250.5
+        },
+        {
+          "key": "resistance1",
+          "price": 260,
+          "bandLow": 260,
+          "bandHigh": 263.5
+        },
+        {
+          "key": "resistance2",
+          "price": 269,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ]
+    },
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 228,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 227.5,
+          "bandLow": 225.5,
+          "bandHigh": 227.5,
+          "sources": [
+            "爆量K低點",
+            "成交量密集區",
+            "前高轉支撐"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 221,
+          "bandLow": 220,
+          "bandHigh": 221,
+          "sources": [
+            "前高轉支撐",
+            "MA10",
+            "爆量K收盤"
+          ]
+        },
+        {
+          "key": "resistance1",
+          "price": 231,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 236.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6758.jpeg",
+        "IMG_6759.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 762,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 759,
+          "bandLow": 756,
+          "bandHigh": 759,
+          "sources": [
+            "前高轉支撐",
+            "波段低點",
+            "爆量K收盤"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 747,
+          "bandLow": 740,
+          "bandHigh": 747,
+          "sources": [
+            "爆量K低點",
+            "前高轉支撐",
+            "波段低點"
+          ]
+        },
+        {
+          "key": "breakout",
+          "price": 771,
+          "bandLow": 771,
+          "bandHigh": 784,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 807,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6762.jpeg",
+        "IMG_6763.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "6197",
+      "name": "佳必琪",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 365,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 353.5,
+          "bandLow": 351,
+          "bandHigh": 353.5
+        },
+        {
+          "key": "support2",
+          "price": 344,
+          "bandLow": 341,
+          "bandHigh": 344
+        },
+        {
+          "key": "resistance1",
+          "price": 371,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 384.5,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ]
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 551,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 543,
+          "bandLow": 538,
+          "bandHigh": 543,
+          "sources": [
+            "爆量K收盤",
+            "缺口上緣",
+            "波段低點"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 530,
+          "bandLow": 526,
+          "bandHigh": 530,
+          "sources": [
+            "前高轉支撐",
+            "法人估計成本區",
+            "缺口下緣"
+          ]
+        },
+        {
+          "key": "breakout",
+          "price": 570,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "mediumResistance",
+          "price": 611,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6760.jpeg",
+        "IMG_6761.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 525,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 524,
+          "bandLow": 521,
+          "bandHigh": 524,
+          "sources": [
+            "MA5",
+            "缺口下緣",
+            "法人估計成本區"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 514,
+          "bandLow": 508,
+          "bandHigh": 514,
+          "sources": [
+            "爆量K收盤",
+            "MA13",
+            "成交量密集區",
+            "缺口下緣"
+          ]
+        },
+        {
+          "key": "breakout",
+          "price": 533,
+          "bandLow": 533,
+          "bandHigh": 541,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6732(1).jpeg",
+        "IMG_6733(1).jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 150.5,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 150,
+          "bandLow": 148,
+          "bandHigh": 150,
+          "sources": [
+            "MA120",
+            "爆量K低點",
+            "波段低點"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 145.5,
+          "bandLow": 144,
+          "bandHigh": 145.5,
+          "sources": [
+            "爆量K低點",
+            "前高轉支撐",
+            "MA10"
+          ]
+        },
+        {
+          "key": "resistance1",
+          "price": 153.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 160,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6735(1).jpeg",
+        "IMG_6737(1).jpeg",
+        "IMG_6749.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 298,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 296.5,
+          "bandLow": 293.5,
+          "bandHigh": 296.5,
+          "sources": [
+            "缺口上緣",
+            "爆量K低點",
+            "MA5"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 287,
+          "bandLow": 283.5,
+          "bandHigh": 287,
+          "sources": [
+            "缺口上緣",
+            "爆量K低點",
+            "爆量K收盤"
+          ]
+        },
+        {
+          "key": "resistance1",
+          "price": 302.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 315,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6739(1).jpeg",
+        "IMG_6740(1).jpeg",
+        "IMG_6750.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 1260,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 1245,
+          "bandLow": 1235,
+          "bandHigh": 1245,
+          "sources": [
+            "前高轉支撐",
+            "波段低點"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 1215,
+          "bandLow": 1200,
+          "bandHigh": 1215,
+          "sources": [
+            "波段低點",
+            "突破後回測位置",
+            "爆量K低點"
+          ]
+        },
+        {
+          "key": "resistance1",
+          "price": 1285,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6741(1).jpeg",
+        "IMG_6751.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 885,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 880,
+          "bandLow": 873,
+          "bandHigh": 880,
+          "sources": [
+            "MA13",
+            "MA10",
+            "爆量K低點"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 845,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [
+            "爆量K低點"
+          ]
+        },
+        {
+          "key": "resistance1",
+          "price": 892,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 912,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6743(1).jpeg",
+        "IMG_6744(1).jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 177.5,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 177,
+          "bandLow": 175,
+          "bandHigh": 177,
+          "sources": [
+            "爆量K低點",
+            "爆量K收盤",
+            "波段低點"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 172.5,
+          "bandLow": 170.5,
+          "bandHigh": 172.5,
+          "sources": [
+            "缺口下緣",
+            "爆量K低點",
+            "前高轉支撐"
+          ]
+        },
+        {
+          "key": "breakout",
+          "price": 180,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6745(2).jpeg",
+        "IMG_6746.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 1070,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "resistance1",
+          "price": 1095,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 1150,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6747.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 127.5,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 125,
+          "bandLow": 124,
+          "bandHigh": 125,
+          "sources": [
+            "前高轉支撐",
+            "爆量K收盤",
+            "爆量K低點"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 118.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [
+            "前高轉支撐"
+          ]
+        },
+        {
+          "key": "breakout",
+          "price": 133,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6752.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 310.5,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 309,
+          "bandLow": 308,
+          "bandHigh": 309,
+          "sources": [
+            "波段低點",
+            "爆量K收盤"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 303.5,
+          "bandLow": 302,
+          "bandHigh": 303.5,
+          "sources": [
+            "波段低點",
+            "前高轉支撐",
+            "MA5"
+          ]
+        },
+        {
+          "key": "breakout",
+          "price": 315,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 324.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6753.jpeg",
+        "IMG_6754.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 4920,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 4910,
+          "bandLow": 4850,
+          "bandHigh": 4910,
+          "sources": [
+            "爆量K收盤",
+            "爆量K低點",
+            "波段低點"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 4780,
+          "bandLow": 4735,
+          "bandHigh": 4780,
+          "sources": [
+            "缺口上緣",
+            "爆量K收盤",
+            "缺口下緣"
+          ]
+        }
+      ],
+      "photoFiles": [
+        "IMG_6755.jpeg",
+        "IMG_6756.jpeg",
+        "IMG_6757.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 380,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 379.5,
+          "bandLow": 376,
+          "bandHigh": 379.5,
+          "sources": [
+            "爆量K低點",
+            "缺口上緣",
+            "前高轉支撐"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 371,
+          "bandLow": 368,
+          "bandHigh": 371,
+          "sources": [
+            "爆量K收盤",
+            "缺口下緣",
+            "MA10"
+          ]
+        },
+        {
+          "key": "resistance1",
+          "price": 383,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 392.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6765.jpeg",
+        "IMG_6766.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "1569",
+      "name": "濱川",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 70,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 68.6,
+          "bandLow": 68,
+          "bandHigh": 68.6,
+          "sources": [
+            "爆量K低點",
+            "爆量K收盤",
+            "前高轉支撐"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 66.5,
+          "bandLow": 66.3,
+          "bandHigh": 66.5,
+          "sources": [
+            "爆量K收盤",
+            "MA5"
+          ]
+        },
+        {
+          "key": "breakout",
+          "price": 71.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6767.jpeg",
+        "IMG_6768.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 191,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 189,
+          "bandLow": 187.5,
+          "bandHigh": 189,
+          "sources": []
+        },
+        {
+          "key": "support2",
+          "price": 184.5,
+          "bandLow": 183,
+          "bandHigh": 184.5,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 202,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6769.jpeg",
+        "IMG_6770.jpeg",
+        "IMG_6771.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 147.5,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 146,
+          "bandLow": 145,
+          "bandHigh": 146,
+          "sources": [
+            "缺口下緣",
+            "爆量K低點",
+            "前高轉支撐"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 140,
+          "bandLow": 138.5,
+          "bandHigh": 140,
+          "sources": [
+            "波段低點",
+            "整理平台",
+            "缺口上緣"
+          ]
+        },
+        {
+          "key": "breakout",
+          "price": 150.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 155,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6772.jpeg",
+        "IMG_6773.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 127,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 126.5,
+          "bandLow": 125.5,
+          "bandHigh": 126.5,
+          "sources": [
+            "法人估計成本區",
+            "爆量K收盤",
+            "爆量K低點"
+          ]
+        },
+        {
+          "key": "support2",
+          "price": 123.5,
+          "bandLow": 121.5,
+          "bandHigh": 123.5,
+          "sources": [
+            "缺口上緣",
+            "爆量K低點",
+            "前高轉支撐"
+          ]
+        },
+        {
+          "key": "resistance1",
+          "price": 129.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 134.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6774.jpeg",
+        "IMG_6775.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "date": "2026-10-06",
+      "predictionFor": "2026-10-07",
+      "current": 182.5,
+      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 181.5,
+          "bandLow": 179,
+          "bandHigh": 181.5,
+          "sources": []
+        },
+        {
+          "key": "support2",
+          "price": 176,
+          "bandLow": 173.5,
+          "bandHigh": 176,
+          "sources": []
+        },
+        {
+          "key": "breakout",
+          "price": 185.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        },
+        {
+          "key": "resistance2",
+          "price": 192,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": []
+        }
+      ],
+      "photoFiles": [
+        "IMG_6776.jpeg",
+        "IMG_6777.jpeg"
+      ],
+      "batch": "40-photo-oct6"
+    }
+  ],
+  "photoCount": 40,
+  "photoStockCount": 19,
+  "uncertain": [
+    {
+      "code": "2454",
+      "field": "pressure",
+      "note": "IMG_6756、6757壓力數字模糊，可能4975／5260，未納入命中統計"
+    },
+    {
+      "code": "5347",
+      "field": "breakout",
+      "note": "IMG_6771突破數字模糊，未納入命中統計"
+    },
+    {
+      "code": "2368",
+      "field": "mediumResistance",
+      "note": "右側中期壓力數字裁切，未推算"
+    }
+  ]
+}

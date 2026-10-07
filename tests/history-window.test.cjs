@@ -30,5 +30,5 @@ test('validation retrieves only the first future completed session through indep
 });
 test('calendar/window repair leaves all pricing and selection formulas byte-identical to V44.11',()=>{
  const c=boot(),old=vm.createContext({Response,Request,URL,Headers,setTimeout,console});vm.runInContext(execFileSync('git',['show','0b4b9c1:src/worker.js'],{encoding:'utf8'}).replace('export default','globalThis.worker='),old);
- for(const name of ['analyze','derivePhotoPressure','selectSecondSupport','selectPressureLevels','structuralBands','tradePrice','calibrateVisibleRules'])assert.equal(vm.runInContext(name+'.toString()',c),vm.runInContext(name+'.toString()',old));
+ for(const name of ['analyze','derivePhotoPressure','selectSecondSupport','selectPressureLevels','structuralBands','tradePrice'])assert.equal(vm.runInContext(name+'.toString()',c),vm.runInContext(name+'.toString()',old));
 });

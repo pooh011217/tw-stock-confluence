@@ -74,7 +74,7 @@ $("#analyze").onclick=()=>{hideSuggestions();analyze()};
 $("#query").addEventListener("input",suggest);
 $("#query").addEventListener("focus",()=>{if($("#query").value.trim())suggest()});
 $("#query").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();hideSuggestions();analyze()}if(e.key==="Escape")hideSuggestions()});
-$("#clearDate").onclick=()=>{$("#asOf").value=""};$("#scanBtn").onclick=()=>scan();$("#scanWatch").onclick=()=>{showTab("scan");$("#scanText").value=watch.join(" ");scan(watch.join(" "))};document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));$("#asOf").max=new Date().toISOString().slice(0,10);renderWatch();loadWatchNames();if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js?v=3.3.44.13",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{}));
+$("#clearDate").onclick=()=>{$("#asOf").value=""};$("#scanBtn").onclick=()=>scan();$("#scanWatch").onclick=()=>{showTab("scan");$("#scanText").value=watch.join(" ");scan(watch.join(" "))};document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));$("#asOf").max=new Date().toISOString().slice(0,10);renderWatch();loadWatchNames();if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js?v=3.3.44.14",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{}));
 
 if(typeof location!=="undefined"){
  const start=new URLSearchParams(location.search);

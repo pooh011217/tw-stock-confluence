@@ -52,7 +52,9 @@
             "爆量K低點",
             "成交量密集區",
             "前高轉支撐"
-          ]
+          ],
+          "observedDistancePct": -0.2,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -63,21 +65,26 @@
             "前高轉支撐",
             "MA10",
             "爆量K收盤"
-          ]
+          ],
+          "observedDistancePct": -3.1,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance1",
           "price": 231,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 236.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 3.7,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -88,6 +95,15 @@
       "visibleMetrics": {
         "foreignNetLots": 151,
         "volumeRatio": 0.63
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6758.jpeg",
+          "IMG_6759.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 13,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -96,7 +112,7 @@
       "date": "2026-10-06",
       "predictionFor": "2026-10-07",
       "current": 762,
-      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "currentSource": "照片可辨識收盤價；另以同日官方行情核對",
       "levels": [
         {
           "key": "support1",
@@ -107,7 +123,9 @@
             "前高轉支撐",
             "波段低點",
             "爆量K收盤"
-          ]
+          ],
+          "observedDistancePct": -0.4,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -118,21 +136,27 @@
             "爆量K低點",
             "前高轉支撐",
             "波段低點"
-          ]
+          ],
+          "observedDistancePct": -2.0,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 771,
           "bandLow": 771,
           "bandHigh": 784,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 1.2,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 807,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 5.9,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -142,7 +166,18 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": -241,
-        "volumeRatio": 2.05
+        "volumeRatio": 2.05,
+        "close": 762,
+        "changePct": 2.42
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6762.jpeg",
+          "IMG_6763.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 18,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -195,7 +230,9 @@
             "爆量K收盤",
             "缺口上緣",
             "波段低點"
-          ]
+          ],
+          "observedDistancePct": -1.5,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -206,21 +243,27 @@
             "前高轉支撐",
             "法人估計成本區",
             "缺口下緣"
-          ]
+          ],
+          "observedDistancePct": -3.8,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 570,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 3.4,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "mediumResistance",
           "price": 611,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "earlier-photo",
+          "provenanceNote": "611為先前照片參考；本次40張圖片中數字裁切，另列補充，不納入本批統計。"
         }
       ],
       "photoFiles": [
@@ -231,6 +274,15 @@
       "visibleMetrics": {
         "foreignNetLots": -1157,
         "volumeRatio": 1.86
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6760.jpeg",
+          "IMG_6761.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 12,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -250,7 +302,9 @@
             "MA5",
             "缺口下緣",
             "法人估計成本區"
-          ]
+          ],
+          "observedDistancePct": -0.2,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -262,14 +316,18 @@
             "MA13",
             "成交量密集區",
             "缺口下緣"
-          ]
+          ],
+          "observedDistancePct": -2.1,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 533,
           "bandLow": 533,
           "bandHigh": 541,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 1.5,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -277,7 +335,16 @@
         "IMG_6733(1).jpeg"
       ],
       "batch": "40-photo-oct6",
-      "visibleMetrics": {}
+      "visibleMetrics": {},
+      "photoCoverage": {
+        "files": [
+          "IMG_6732(1).jpeg",
+          "IMG_6733(1).jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 12,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
+      }
     },
     {
       "code": "4919",
@@ -296,7 +363,9 @@
             "MA120",
             "爆量K低點",
             "波段低點"
-          ]
+          ],
+          "observedDistancePct": -0.3,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -307,21 +376,27 @@
             "爆量K低點",
             "前高轉支撐",
             "MA10"
-          ]
+          ],
+          "observedDistancePct": -3.3,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance1",
           "price": 153.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 2.0,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 160,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 6.3,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -330,7 +405,17 @@
         "IMG_6749.jpeg"
       ],
       "batch": "40-photo-oct6",
-      "visibleMetrics": {}
+      "visibleMetrics": {},
+      "photoCoverage": {
+        "files": [
+          "IMG_6735(1).jpeg",
+          "IMG_6737(1).jpeg",
+          "IMG_6749.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 12,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
+      }
     },
     {
       "code": "2449",
@@ -349,7 +434,9 @@
             "缺口上緣",
             "爆量K低點",
             "MA5"
-          ]
+          ],
+          "observedDistancePct": -0.5,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -360,21 +447,26 @@
             "缺口上緣",
             "爆量K低點",
             "爆量K收盤"
-          ]
+          ],
+          "observedDistancePct": -3.7,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance1",
           "price": 302.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 1.5,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 315,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -385,6 +477,16 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": -2700
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6739(1).jpeg",
+          "IMG_6740(1).jpeg",
+          "IMG_6750.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 12,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -403,7 +505,9 @@
           "sources": [
             "前高轉支撐",
             "波段低點"
-          ]
+          ],
+          "observedDistancePct": -1.2,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -414,14 +518,18 @@
             "波段低點",
             "突破後回測位置",
             "爆量K低點"
-          ]
+          ],
+          "observedDistancePct": -3.6,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance1",
           "price": 1285,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 2.0,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -431,6 +539,15 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": -173
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6741(1).jpeg",
+          "IMG_6751.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 11,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -439,7 +556,7 @@
       "date": "2026-10-06",
       "predictionFor": "2026-10-07",
       "current": 885,
-      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "currentSource": "照片可辨識收盤價；另以同日官方行情核對",
       "levels": [
         {
           "key": "support1",
@@ -450,7 +567,9 @@
             "MA13",
             "MA10",
             "爆量K低點"
-          ]
+          ],
+          "observedDistancePct": -0.6,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -459,21 +578,27 @@
           "bandHigh": null,
           "sources": [
             "爆量K低點"
-          ]
+          ],
+          "observedDistancePct": -4.5,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance1",
           "price": 892,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 0.8,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 912,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 3.1,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -483,7 +608,18 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": -556,
-        "volumeRatio": 1.5
+        "volumeRatio": 1.5,
+        "close": 885,
+        "changePct": -0.56
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6743(1).jpeg",
+          "IMG_6744(1).jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 14,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -503,7 +639,9 @@
             "爆量K低點",
             "爆量K收盤",
             "波段低點"
-          ]
+          ],
+          "observedDistancePct": -0.3,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -514,14 +652,18 @@
             "缺口下緣",
             "爆量K低點",
             "前高轉支撐"
-          ]
+          ],
+          "observedDistancePct": -2.8,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 180,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 1.4,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -531,6 +673,15 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": 7287
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6745(2).jpeg",
+          "IMG_6746.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 11,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -546,14 +697,18 @@
           "price": 1095,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 2.3,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 1150,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 7.5,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -562,6 +717,14 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "volumeRatio": 0.52
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6747.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 5,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -581,7 +744,9 @@
             "前高轉支撐",
             "爆量K收盤",
             "爆量K低點"
-          ]
+          ],
+          "observedDistancePct": -2.0,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -590,21 +755,33 @@
           "bandHigh": null,
           "sources": [
             "前高轉支撐"
-          ]
+          ],
+          "observedDistancePct": -7.1,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 133,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 4.3,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
         "IMG_6752.jpeg"
       ],
       "batch": "40-photo-oct6",
-      "visibleMetrics": {}
+      "visibleMetrics": {},
+      "photoCoverage": {
+        "files": [
+          "IMG_6752.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 8,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
+      }
     },
     {
       "code": "6239",
@@ -622,7 +799,9 @@
           "sources": [
             "波段低點",
             "爆量K收盤"
-          ]
+          ],
+          "observedDistancePct": -0.5,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -633,21 +812,26 @@
             "波段低點",
             "前高轉支撐",
             "MA5"
-          ]
+          ],
+          "observedDistancePct": -2.3,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 315,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 1.4,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 324.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -658,6 +842,15 @@
       "visibleMetrics": {
         "foreignNetLots": 6904,
         "volumeRatio": 1.89
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6753.jpeg",
+          "IMG_6754.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 13,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -677,7 +870,9 @@
             "爆量K收盤",
             "爆量K低點",
             "波段低點"
-          ]
+          ],
+          "observedDistancePct": -0.2,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -688,7 +883,9 @@
             "缺口上緣",
             "爆量K收盤",
             "缺口下緣"
-          ]
+          ],
+          "observedDistancePct": -2.8,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -697,7 +894,17 @@
         "IMG_6757.jpeg"
       ],
       "batch": "40-photo-oct6",
-      "visibleMetrics": {}
+      "visibleMetrics": {},
+      "photoCoverage": {
+        "files": [
+          "IMG_6755.jpeg",
+          "IMG_6756.jpeg",
+          "IMG_6757.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 8,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
+      }
     },
     {
       "code": "2376",
@@ -716,7 +923,9 @@
             "爆量K低點",
             "缺口上緣",
             "前高轉支撐"
-          ]
+          ],
+          "observedDistancePct": -0.1,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -727,21 +936,26 @@
             "爆量K收盤",
             "缺口下緣",
             "MA10"
-          ]
+          ],
+          "observedDistancePct": -2.4,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance1",
           "price": 383,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 0.8,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 392.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -751,6 +965,15 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": -832
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6765.jpeg",
+          "IMG_6766.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 12,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -770,7 +993,9 @@
             "爆量K低點",
             "爆量K收盤",
             "前高轉支撐"
-          ]
+          ],
+          "observedDistancePct": -2.0,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -780,14 +1005,18 @@
           "sources": [
             "爆量K收盤",
             "MA5"
-          ]
+          ],
+          "observedDistancePct": -5.0,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 71.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 2.1,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -798,6 +1027,15 @@
       "visibleMetrics": {
         "foreignNetLots": -456,
         "volumeRatio": 1.8
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6767.jpeg",
+          "IMG_6768.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 12,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -813,21 +1051,26 @@
           "price": 189,
           "bandLow": 187.5,
           "bandHigh": 189,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": -1.0,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
           "price": 184.5,
           "bandLow": 183,
           "bandHigh": 184.5,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": -3.4,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 202,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -836,7 +1079,17 @@
         "IMG_6771.jpeg"
       ],
       "batch": "40-photo-oct6",
-      "visibleMetrics": {}
+      "visibleMetrics": {},
+      "photoCoverage": {
+        "files": [
+          "IMG_6769.jpeg",
+          "IMG_6770.jpeg",
+          "IMG_6771.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 9,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
+      }
     },
     {
       "code": "2303",
@@ -844,7 +1097,7 @@
       "date": "2026-10-06",
       "predictionFor": "2026-10-07",
       "current": 147.5,
-      "currentSource": "10/6系統收盤資料；照片距離交叉檢查",
+      "currentSource": "照片可辨識收盤價；另以同日官方行情核對",
       "levels": [
         {
           "key": "support1",
@@ -855,7 +1108,9 @@
             "缺口下緣",
             "爆量K低點",
             "前高轉支撐"
-          ]
+          ],
+          "observedDistancePct": -1.0,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -866,21 +1121,25 @@
             "波段低點",
             "整理平台",
             "缺口上緣"
-          ]
+          ],
+          "observedDistancePct": -5.1,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 150.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 155,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -890,7 +1149,18 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": 4720,
-        "volumeRatio": 1.61
+        "volumeRatio": 1.61,
+        "close": 147.5,
+        "changePct": -3.28
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6772.jpeg",
+          "IMG_6773.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 14,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -910,7 +1180,9 @@
             "法人估計成本區",
             "爆量K收盤",
             "爆量K低點"
-          ]
+          ],
+          "observedDistancePct": -0.4,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
@@ -921,21 +1193,25 @@
             "缺口上緣",
             "爆量K低點",
             "前高轉支撐"
-          ]
+          ],
+          "observedDistancePct": -2.8,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance1",
           "price": 129.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 134.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -945,6 +1221,15 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": -1456
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6774.jpeg",
+          "IMG_6775.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 11,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     },
     {
@@ -960,28 +1245,36 @@
           "price": 181.5,
           "bandLow": 179,
           "bandHigh": 181.5,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": -0.5,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "support2",
           "price": 176,
           "bandLow": 173.5,
           "bandHigh": 176,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": -3.6,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "breakout",
           "price": 185.5,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 1.6,
+          "comparisonScope": "40-photo-oct6"
         },
         {
           "key": "resistance2",
           "price": 192,
           "bandLow": null,
           "bandHigh": null,
-          "sources": []
+          "sources": [],
+          "observedDistancePct": 5.2,
+          "comparisonScope": "40-photo-oct6"
         }
       ],
       "photoFiles": [
@@ -991,6 +1284,15 @@
       "batch": "40-photo-oct6",
       "visibleMetrics": {
         "foreignNetLots": -1275
+      },
+      "photoCoverage": {
+        "files": [
+          "IMG_6776.jpeg",
+          "IMG_6777.jpeg"
+        ],
+        "distanceDigits": 1,
+        "fieldCount": 13,
+        "missingPolicy": "裁切、模糊或未出現的欄位不猜值，不算一致；系統推導的基準收盤價不當成照片抄錄值。"
       }
     }
   ],
@@ -1012,5 +1314,6 @@
       "field": "mediumResistance",
       "note": "右側中期壓力數字裁切，未推算"
     }
-  ]
+  ],
+  "coverageNote": "逐張重新讀取40張原圖；包含65個主價、36個完整價帶、56個可辨識距離百分比及27個行情/量比/外資數字。先前照片金居611另列。手機時間、電量、股票代碼及頁尾固定規則數字不是行情欄位。模糊欄位維持未確認。"
 }

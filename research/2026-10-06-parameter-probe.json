@@ -1,0 +1,581 @@
+{
+  "status": "同一批照片上的參數敏感度研究，非盲測；保留既有第二支撐優先序。未套用正式主價公式。",
+  "variants": [
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 23,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 23,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 12,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 11,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 8,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 6,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 22,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 11,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 10,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 8,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 8,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 8,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 8,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 21,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 21,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 6,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 6,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 21,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.45,
+      "matches": 21,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 20,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 2,
+      "matches": 20,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 2,
+      "matches": 20,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 20,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 20,
+      "bands": 7,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 20,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 20,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 20,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 2,
+      "matches": 19,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 2,
+      "matches": 19,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 19,
+      "bands": 8,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 19,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 19,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 1.5,
+      "matches": 19,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 2,
+      "matches": 18,
+      "bands": 10,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 2,
+      "matches": 18,
+      "bands": 9,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 2,
+      "matches": 18,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 2,
+      "matches": 18,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 2,
+      "matches": 18,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 2,
+      "matches": 18,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 100,
+      "explosiveVolumeMinimum": 2,
+      "matches": 18,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 1000,
+      "explosiveVolumeMinimum": 2,
+      "matches": 17,
+      "bands": 4,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 2,
+      "matches": 16,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 2,
+      "matches": 16,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 2,
+      "matches": 16,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 2,
+      "matches": 16,
+      "bands": 2,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 2,
+      "matches": 16,
+      "bands": 2,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 60,
+      "explosiveVolumeMinimum": 2,
+      "matches": 15,
+      "bands": 6,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0125,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 2,
+      "matches": 14,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.015,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 2,
+      "matches": 14,
+      "bands": 5,
+      "total": 65
+    },
+    {
+      "tolerance": 0.0075,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 2,
+      "matches": 14,
+      "bands": 3,
+      "total": 65
+    },
+    {
+      "tolerance": 0.005,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 2,
+      "matches": 14,
+      "bands": 2,
+      "total": 65
+    },
+    {
+      "tolerance": 0.01,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 2,
+      "matches": 13,
+      "bands": 6,
+      "total": 65
+    },
+    {
+      "tolerance": 0.02,
+      "maxCandidateAge": 40,
+      "explosiveVolumeMinimum": 2,
+      "matches": 13,
+      "bands": 4,
+      "total": 65
+    }
+  ]
+}

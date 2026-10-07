@@ -84,7 +84,11 @@
         "IMG_6758.jpeg",
         "IMG_6759.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": 151,
+        "volumeRatio": 0.63
+      }
     },
     {
       "code": "3583",
@@ -135,7 +139,11 @@
         "IMG_6762.jpeg",
         "IMG_6763.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -241,
+        "volumeRatio": 2.05
+      }
     },
     {
       "code": "6197",
@@ -219,7 +227,11 @@
         "IMG_6760.jpeg",
         "IMG_6761.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -1157,
+        "volumeRatio": 1.86
+      }
     },
     {
       "code": "2408",
@@ -264,7 +276,8 @@
         "IMG_6732(1).jpeg",
         "IMG_6733(1).jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {}
     },
     {
       "code": "4919",
@@ -316,7 +329,8 @@
         "IMG_6737(1).jpeg",
         "IMG_6749.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {}
     },
     {
       "code": "2449",
@@ -368,7 +382,10 @@
         "IMG_6740(1).jpeg",
         "IMG_6750.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -2700
+      }
     },
     {
       "code": "2368",
@@ -411,7 +428,10 @@
         "IMG_6741(1).jpeg",
         "IMG_6751.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -173
+      }
     },
     {
       "code": "8210",
@@ -460,7 +480,11 @@
         "IMG_6743(1).jpeg",
         "IMG_6744(1).jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -556,
+        "volumeRatio": 1.5
+      }
     },
     {
       "code": "2344",
@@ -504,7 +528,10 @@
         "IMG_6745(2).jpeg",
         "IMG_6746.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": 7287
+      }
     },
     {
       "code": "3189",
@@ -532,7 +559,10 @@
       "photoFiles": [
         "IMG_6747.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "volumeRatio": 0.52
+      }
     },
     {
       "code": "8150",
@@ -573,7 +603,8 @@
       "photoFiles": [
         "IMG_6752.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {}
     },
     {
       "code": "6239",
@@ -623,7 +654,11 @@
         "IMG_6753.jpeg",
         "IMG_6754.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": 6904,
+        "volumeRatio": 1.89
+      }
     },
     {
       "code": "2454",
@@ -661,7 +696,8 @@
         "IMG_6756.jpeg",
         "IMG_6757.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {}
     },
     {
       "code": "2376",
@@ -712,7 +748,10 @@
         "IMG_6765.jpeg",
         "IMG_6766.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -832
+      }
     },
     {
       "code": "1569",
@@ -755,7 +794,11 @@
         "IMG_6767.jpeg",
         "IMG_6768.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -456,
+        "volumeRatio": 1.8
+      }
     },
     {
       "code": "5347",
@@ -792,7 +835,8 @@
         "IMG_6770.jpeg",
         "IMG_6771.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {}
     },
     {
       "code": "2303",
@@ -843,7 +887,11 @@
         "IMG_6772.jpeg",
         "IMG_6773.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": 4720,
+        "volumeRatio": 1.61
+      }
     },
     {
       "code": "1815",
@@ -894,7 +942,10 @@
         "IMG_6774.jpeg",
         "IMG_6775.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -1456
+      }
     },
     {
       "code": "2464",
@@ -937,7 +988,10 @@
         "IMG_6776.jpeg",
         "IMG_6777.jpeg"
       ],
-      "batch": "40-photo-oct6"
+      "batch": "40-photo-oct6",
+      "visibleMetrics": {
+        "foreignNetLots": -1275
+      }
     }
   ],
   "photoCount": 40,

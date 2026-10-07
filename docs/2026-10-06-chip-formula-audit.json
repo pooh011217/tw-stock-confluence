@@ -1,0 +1,4794 @@
+{
+  "date": "2026-10-06",
+  "status": "公式研究：不將照片或成本假設當作主價輸入",
+  "results": [
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 228,
+      "currentMatches": true,
+      "volumeRatio": 0.6260784119437411,
+      "volumePrior20": 0.6037179204677058,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 227.5,
+          "bandLow": 225.5,
+          "bandHigh": 227.5,
+          "sources": [
+            "爆量K低點",
+            "成交量密集區",
+            "前高轉支撐"
+          ],
+          "distancePct": -0.2,
+          "system": {
+            "price": 227.5,
+            "bandLow": 225,
+            "bandHigh": 227.5
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 227.5,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 25,
+                "date": "2026-08-28"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-08-28",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 2.272144321787345,
+                "age": 25,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "support2",
+          "price": 221,
+          "bandLow": 220,
+          "bandHigh": 221,
+          "sources": [
+            "前高轉支撐",
+            "MA10",
+            "爆量K收盤"
+          ],
+          "distancePct": -3.1,
+          "system": {
+            "price": 221,
+            "bandLow": 220,
+            "bandHigh": 221
+          },
+          "priceMatches": true,
+          "bandMatches": true,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 221,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 15,
+                "date": "2026-09-11"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-23",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.9446414363481884,
+                "age": 7,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-11",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.0260441278921721,
+                "age": 15,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-24",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.7514507125224493,
+                "age": 6,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-27",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.7734680098396192,
+                "age": 26,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-26",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.3488611375758669,
+                "age": 27,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 5
+          }
+        },
+        {
+          "key": "resistance1",
+          "price": 231,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 1.3,
+          "system": {
+            "price": 229,
+            "bandLow": 229,
+            "bandHigh": 231.5
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "not-qualified-by-current-rules",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-08-27",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.7734680098396192,
+                "age": 26,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 236.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 3.7,
+          "system": {
+            "price": 232,
+            "bandLow": 232,
+            "bandHigh": 234
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "pivot-candle-boundary-not-used",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-08-31",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 1.0334939019283174,
+                "age": 24,
+                "exclusion": "現行樞紐低點規則未取該K棒高點"
+              },
+              {
+                "date": "2026-08-11",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.4229994221984945,
+                "age": 38,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 762,
+      "currentMatches": true,
+      "volumeRatio": 2.0431636304333347,
+      "volumePrior20": 1.9964688193318674,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 759,
+          "bandLow": 756,
+          "bandHigh": 759,
+          "sources": [
+            "前高轉支撐",
+            "波段低點",
+            "爆量K收盤"
+          ],
+          "distancePct": -0.4,
+          "system": {
+            "price": 759,
+            "bandLow": 756,
+            "bandHigh": 759
+          },
+          "priceMatches": true,
+          "bandMatches": true,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 759,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 36,
+                "date": "2026-08-13"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-08-13",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.1831977897873371,
+                "age": 36,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-23",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.46386645143846156,
+                "age": 51,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "support2",
+          "price": 747,
+          "bandLow": 740,
+          "bandHigh": 747,
+          "sources": [
+            "爆量K低點",
+            "前高轉支撐",
+            "波段低點"
+          ],
+          "distancePct": -2,
+          "system": {
+            "price": 745,
+            "bandLow": 739,
+            "bandHigh": 745
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "not-qualified-by-current-rules",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-07-17",
+                "fields": [
+                  "low",
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.8248857338160991,
+                "age": 55,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-15",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.2283754600589416,
+                "age": 57,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 771,
+          "bandLow": 771,
+          "bandHigh": 784,
+          "sources": [],
+          "distancePct": 1.2,
+          "system": {
+            "price": 764,
+            "bandLow": 764,
+            "bandHigh": 773
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 771,
+                "label": "前低／樞紐低",
+                "type": "pivotLow",
+                "age": 61,
+                "date": "2026-07-08"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-07-08",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.6327870571117494,
+                "age": 61,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 807,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 5.9,
+          "system": {
+            "price": 774,
+            "bandLow": 774,
+            "bandHigh": 782
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "pivot-candle-boundary-not-used",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-06-08",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.5682752996666173,
+                "age": 82,
+                "exclusion": "前支撐轉壓力收盤候選限近20日；此K棒距基準日82日"
+              }
+            ],
+            "directMatchCount": 1
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "market": "TPEX",
+      "rows": 108,
+      "current": 551,
+      "currentMatches": true,
+      "volumeRatio": 1.8557970913061128,
+      "volumePrior20": 2.011042684221703,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 543,
+          "bandLow": 538,
+          "bandHigh": 543,
+          "sources": [
+            "爆量K收盤",
+            "缺口上緣",
+            "波段低點"
+          ],
+          "distancePct": -1.5,
+          "system": {
+            "price": 549,
+            "bandLow": 543,
+            "bandHigh": 549
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 543,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 25,
+                "date": "2026-08-28"
+              },
+              {
+                "price": 543,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 25,
+                "date": "2026-08-28"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-06-05",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.2580808837944117,
+                "age": 83,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-28",
+                "fields": [
+                  "high",
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.5269269179746308,
+                "age": 25,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-13",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.0593807459077282,
+                "age": 59,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "support2",
+          "price": 530,
+          "bandLow": 526,
+          "bandHigh": 530,
+          "sources": [
+            "前高轉支撐",
+            "法人估計成本區",
+            "缺口下緣"
+          ],
+          "distancePct": -3.8,
+          "system": {
+            "price": 536,
+            "bandLow": 530,
+            "bandHigh": 536
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 530,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 14,
+                "date": "2026-09-14"
+              },
+              {
+                "price": 530,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 14,
+                "date": "2026-09-14"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-14",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": true,
+                "volumeRatio": 1.7026893251938624,
+                "age": 14,
+                "exclusion": "現行樞紐低點規則未取該K棒高點"
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 570,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 3.4,
+          "system": {
+            "price": 564,
+            "bandLow": 564,
+            "bandHigh": 570
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 570,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 69,
+                "date": "2026-06-26"
+              },
+              {
+                "price": 570,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 69,
+                "date": "2026-06-26"
+              },
+              {
+                "price": 570,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 1,
+                "date": "2026-10-05"
+              },
+              {
+                "price": 570,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 1,
+                "date": "2026-10-05"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-05",
+                "fields": [
+                  "high",
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 3.1985862937232654,
+                "age": 1,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-02",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9901596431294616,
+                "age": 65,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-30",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9706043848295878,
+                "age": 67,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-26",
+                "fields": [
+                  "low",
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.5222644918257209,
+                "age": 69,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 4
+          }
+        },
+        {
+          "key": "mediumResistance",
+          "price": 611,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 10.9,
+          "system": {
+            "price": 578,
+            "bandLow": 578,
+            "bandHigh": 584
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "no-direct-ohlc-match",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [],
+            "directMatchCount": 0
+          }
+        }
+      ],
+      "costHypotheses": [
+        {
+          "window": 5,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 5,
+          "value": 541.8231751672984,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 5,
+          "value": 543.3798639108037,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 5,
+          "value": 542.9063321383697,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 5,
+          "value": 544.330723240047,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 10,
+          "value": 535.2574671747506,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 10,
+          "value": 535.4566486142141,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 10,
+          "value": 536.519761063488,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 10,
+          "value": 536.4401591504082,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 20,
+          "value": 518.424090450189,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 20,
+          "value": 518.3430177424491,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 20,
+          "value": 518.7087354380383,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 20,
+          "value": 518.7491132758208,
+          "insidePhotoBand": false,
+          "photoBand": [
+            526,
+            530
+          ]
+        }
+      ]
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 525,
+      "currentMatches": true,
+      "volumeRatio": 0.6888030874526722,
+      "volumePrior20": 0.6562817303904136,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 524,
+          "bandLow": 521,
+          "bandHigh": 524,
+          "sources": [
+            "MA5",
+            "缺口下緣",
+            "法人估計成本區"
+          ],
+          "distancePct": -0.2,
+          "system": {
+            "price": 522,
+            "bandLow": 521,
+            "bandHigh": 522
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "pivot-candle-boundary-not-used",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-09-08",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.8857566269562848,
+                "age": 18,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              },
+              {
+                "date": "2026-10-06",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.6888030874526722,
+                "age": 0,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-02",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.5935856493032541,
+                "age": 22,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-17",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.7167064890340208,
+                "age": 34,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 4
+          }
+        },
+        {
+          "key": "support2",
+          "price": 514,
+          "bandLow": 508,
+          "bandHigh": 514,
+          "sources": [
+            "爆量K收盤",
+            "MA13",
+            "成交量密集區",
+            "缺口下緣"
+          ],
+          "distancePct": -2.1,
+          "system": {
+            "price": 508,
+            "bandLow": 504,
+            "bandHigh": 508
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 514,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 36,
+                "date": "2026-08-13"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-23",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9312059425363006,
+                "age": 7,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-13",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.4895509803005322,
+                "age": 36,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 533,
+          "bandLow": 533,
+          "bandHigh": 541,
+          "sources": [],
+          "distancePct": 1.5,
+          "system": {
+            "price": 528,
+            "bandLow": 528,
+            "bandHigh": 533
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 533,
+                "label": "前高／樞紐高",
+                "type": "pivotHigh",
+                "age": 8,
+                "date": "2026-09-22"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-22",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.9433782659936945,
+                "age": 8,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-03",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.375852886615714,
+                "age": 21,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        }
+      ],
+      "costHypotheses": [
+        {
+          "window": 5,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 5,
+          "value": 523.7170406880917,
+          "insidePhotoBand": true,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 5,
+          "value": 523.8087536341549,
+          "insidePhotoBand": true,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 5,
+          "value": 522.3475207939497,
+          "insidePhotoBand": true,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 5,
+          "value": 522.4667642828116,
+          "insidePhotoBand": true,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 10,
+          "value": 517.03784426812,
+          "insidePhotoBand": false,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 10,
+          "value": 517.0454968788292,
+          "insidePhotoBand": false,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 10,
+          "value": 518.1804773881294,
+          "insidePhotoBand": false,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 10,
+          "value": 518.2342508074863,
+          "insidePhotoBand": false,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 20,
+          "value": 514.40096508616,
+          "insidePhotoBand": false,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 20,
+          "value": 514.2422439867786,
+          "insidePhotoBand": false,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 20,
+          "value": 514.8486363228079,
+          "insidePhotoBand": false,
+          "photoBand": [
+            521,
+            524
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 20,
+          "value": 514.621600339067,
+          "insidePhotoBand": false,
+          "photoBand": [
+            521,
+            524
+          ]
+        }
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 150.5,
+      "currentMatches": true,
+      "volumeRatio": 0.8013811204249903,
+      "volumePrior20": 0.8289187768933286,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 150,
+          "bandLow": 148,
+          "bandHigh": 150,
+          "sources": [
+            "MA120",
+            "爆量K低點",
+            "波段低點"
+          ],
+          "distancePct": -0.3,
+          "system": {
+            "price": 148,
+            "bandLow": 148,
+            "bandHigh": 148
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "pivot-candle-boundary-not-used",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-05-18",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.753059411515722,
+                "age": 97,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-20",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.3244365045886015,
+                "age": 95,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-19",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.820555298169813,
+                "age": 96,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "support2",
+          "price": 145.5,
+          "bandLow": 144,
+          "bandHigh": 145.5,
+          "sources": [
+            "爆量K低點",
+            "前高轉支撐",
+            "MA10"
+          ],
+          "distancePct": -3.3,
+          "system": {
+            "price": 144,
+            "bandLow": 142.5,
+            "bandHigh": 144
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 145.5,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 2,
+                "date": "2026-10-02"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-02",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 4.673785758789225,
+                "age": 2,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              },
+              {
+                "date": "2026-07-22",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.4599158112503638,
+                "age": 52,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-23",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.3403936479989084,
+                "age": 51,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "resistance1",
+          "price": 153.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 2,
+          "system": {
+            "price": 151.5,
+            "bandLow": 151.5,
+            "bandHigh": 152
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "no-direct-ohlc-match",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [],
+            "directMatchCount": 0
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 160,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 6.3,
+          "system": {
+            "price": 154,
+            "bandLow": 154,
+            "bandHigh": 155.5
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "not-qualified-by-current-rules",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-05-14",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.0778904515987753,
+                "age": 99,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-05",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.4888674431235566,
+                "age": 106,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 298,
+      "currentMatches": true,
+      "volumeRatio": 0.9307195369222396,
+      "volumePrior20": 0.9450748825490285,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 296.5,
+          "bandLow": 293.5,
+          "bandHigh": 296.5,
+          "sources": [
+            "缺口上緣",
+            "爆量K低點",
+            "MA5"
+          ],
+          "distancePct": -0.5,
+          "system": {
+            "price": 296.5,
+            "bandLow": 294,
+            "bandHigh": 296.5
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 296.5,
+                "label": "缺口上緣",
+                "type": "gap",
+                "age": 9,
+                "date": "2026-09-21"
+              },
+              {
+                "price": 296.5,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 9,
+                "date": "2026-09-21"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-03-24",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.7857347596336715,
+                "age": 133,
+                "exclusion": "現行樞紐低點規則未取該K棒高點"
+              },
+              {
+                "date": "2026-03-04",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 1.0548238216854375,
+                "age": 147,
+                "exclusion": "現行樞紐低點規則未取該K棒高點"
+              },
+              {
+                "date": "2026-09-21",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 2.2228222896395486,
+                "age": 9,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "support2",
+          "price": 287,
+          "bandLow": 283.5,
+          "bandHigh": 287,
+          "sources": [
+            "缺口上緣",
+            "爆量K低點",
+            "爆量K收盤"
+          ],
+          "distancePct": -3.7,
+          "system": {
+            "price": 283.5,
+            "bandLow": 280,
+            "bandHigh": 283.5
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 287,
+                "label": "缺口上緣",
+                "type": "gap",
+                "age": 143,
+                "date": "2026-03-10"
+              },
+              {
+                "price": 287,
+                "label": "缺口上緣",
+                "type": "gap",
+                "age": 74,
+                "date": "2026-06-18"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-06-18",
+                "fields": [
+                  "open",
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.2186975569608856,
+                "age": 74,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-12",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.377388558497977,
+                "age": 78,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-10",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.6853442250749673,
+                "age": 80,
+                "exclusion": null
+              },
+              {
+                "date": "2026-04-30",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 2.416478505983199,
+                "age": 108,
+                "exclusion": null
+              },
+              {
+                "date": "2026-03-10",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.3106743507312142,
+                "age": 143,
+                "exclusion": null
+              },
+              {
+                "date": "2026-02-04",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.5727134439613922,
+                "age": 159,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 6
+          }
+        },
+        {
+          "key": "resistance1",
+          "price": 302.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 1.5,
+          "system": {
+            "price": 298.5,
+            "bandLow": 298.5,
+            "bandHigh": 302
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 302.5,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 108,
+                "date": "2026-04-30"
+              },
+              {
+                "price": 302.5,
+                "label": "缺口上緣",
+                "type": "gap",
+                "age": 92,
+                "date": "2026-05-25"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-07-16",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.8150468104337508,
+                "age": 56,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              },
+              {
+                "date": "2026-09-23",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.2749965831755286,
+                "age": 7,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-25",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.359660988835043,
+                "age": 92,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-12",
+                "fields": [
+                  "open",
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.0820007700697887,
+                "age": 101,
+                "exclusion": null
+              },
+              {
+                "date": "2026-04-30",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 2.416478505983199,
+                "age": 108,
+                "exclusion": null
+              },
+              {
+                "date": "2026-01-28",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.7799828663225739,
+                "age": 164,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 6
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 315,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 5.7,
+          "system": {
+            "price": 302.5,
+            "bandLow": 302.5,
+            "bandHigh": 304
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "pivot-candle-boundary-not-used",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-07-13",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.5395954895810848,
+                "age": 59,
+                "exclusion": null
+              },
+              {
+                "date": "2026-03-19",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.1844611692349063,
+                "age": 136,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              },
+              {
+                "date": "2026-01-29",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.056299866348995,
+                "age": 163,
+                "exclusion": null
+              },
+              {
+                "date": "2026-02-24",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9150571297653063,
+                "age": 152,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 4
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 1260,
+      "currentMatches": true,
+      "volumeRatio": 2.319951777345212,
+      "volumePrior20": 2.4820587937409724,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 1245,
+          "bandLow": 1235,
+          "bandHigh": 1245,
+          "sources": [
+            "前高轉支撐",
+            "波段低點"
+          ],
+          "distancePct": -1.2,
+          "system": {
+            "price": 1250,
+            "bandLow": 1235,
+            "bandHigh": 1250
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 1245,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 23,
+                "date": "2026-09-01"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-01",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.1332871283176211,
+                "age": 23,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-01",
+                "fields": [
+                  "open",
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.7123142943419836,
+                "age": 66,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-19",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.0263743025370136,
+                "age": 96,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "support2",
+          "price": 1215,
+          "bandLow": 1200,
+          "bandHigh": 1215,
+          "sources": [
+            "波段低點",
+            "突破後回測位置",
+            "爆量K低點"
+          ],
+          "distancePct": -3.6,
+          "system": {
+            "price": 1200,
+            "bandLow": 1185,
+            "bandHigh": 1200
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 1215,
+                "label": "前低／樞紐低",
+                "type": "pivotLow",
+                "age": 97,
+                "date": "2026-05-18"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-05-18",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 1.275588219934994,
+                "age": 97,
+                "exclusion": null
+              },
+              {
+                "date": "2026-10-05",
+                "fields": [
+                  "high",
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.8219945663915676,
+                "age": 1,
+                "exclusion": null
+              },
+              {
+                "date": "2026-04-21",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.5958237435003682,
+                "age": 115,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "resistance1",
+          "price": 1285,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 2,
+          "system": {
+            "price": 1265,
+            "bandLow": 1265,
+            "bandHigh": 1265
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 1285,
+                "label": "前低／樞紐低",
+                "type": "pivotLow",
+                "age": 79,
+                "date": "2026-06-11"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-06-11",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 1.1899713813941286,
+                "age": 79,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-21",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.8117853107741607,
+                "age": 94,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-19",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.0263743025370136,
+                "age": 96,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 885,
+      "currentMatches": true,
+      "volumeRatio": 1.5006947382684586,
+      "volumePrior20": 1.5756403851651017,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 880,
+          "bandLow": 873,
+          "bandHigh": 880,
+          "sources": [
+            "MA13",
+            "MA10",
+            "爆量K低點"
+          ],
+          "distancePct": -0.6,
+          "system": {
+            "price": 884,
+            "bandLow": 873,
+            "bandHigh": 884
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "pivot-candle-boundary-not-used",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-03-04",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.6890479691165251,
+                "age": 147,
+                "exclusion": null
+              },
+              {
+                "date": "2025-11-24",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.8383527951047645,
+                "age": 209,
+                "exclusion": null
+              },
+              {
+                "date": "2026-04-09",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9592653106152873,
+                "age": 123,
+                "exclusion": null
+              },
+              {
+                "date": "2026-02-25",
+                "fields": [
+                  "open",
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.1540483485846982,
+                "age": 151,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 4
+          }
+        },
+        {
+          "key": "support2",
+          "price": 845,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [
+            "爆量K低點"
+          ],
+          "distancePct": -4.5,
+          "system": {
+            "price": 846,
+            "bandLow": 836,
+            "bandHigh": 846
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 845,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 3,
+                "date": "2026-10-01"
+              },
+              {
+                "price": 845,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 1,
+                "date": "2026-10-05"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-01",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 1.4829273803203453,
+                "age": 3,
+                "exclusion": null
+              },
+              {
+                "date": "2026-10-05",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 3.191337651125915,
+                "age": 1,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "resistance1",
+          "price": 892,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 0.8,
+          "system": {
+            "price": 890,
+            "bandLow": 890,
+            "bandHigh": 901
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 892,
+                "label": "前低／樞紐低",
+                "type": "pivotLow",
+                "age": 170,
+                "date": "2026-01-20"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-01-20",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.6283917049571609,
+                "age": 170,
+                "exclusion": null
+              },
+              {
+                "date": "2025-12-04",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.5505134484711006,
+                "age": 201,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-23",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.963229380841651,
+                "age": 7,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-17",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.6825733787788723,
+                "age": 11,
+                "exclusion": null
+              },
+              {
+                "date": "2026-03-19",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.8937909965963978,
+                "age": 136,
+                "exclusion": null
+              },
+              {
+                "date": "2026-01-30",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9658352203850998,
+                "age": 162,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 8
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 912,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 3.1,
+          "system": {
+            "price": 902,
+            "bandLow": 902,
+            "bandHigh": 913
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 912,
+                "label": "前高／樞紐高",
+                "type": "pivotHigh",
+                "age": 141,
+                "date": "2026-03-12"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-03-12",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.8164022051355881,
+                "age": 141,
+                "exclusion": null
+              },
+              {
+                "date": "2026-03-03",
+                "fields": [
+                  "low",
+                  "close"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.8947435343779754,
+                "age": 148,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              },
+              {
+                "date": "2025-12-04",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.5505134484711006,
+                "age": 201,
+                "exclusion": "現行樞紐低點規則未取該K棒高點"
+              },
+              {
+                "date": "2026-09-23",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.963229380841651,
+                "age": 7,
+                "exclusion": null
+              },
+              {
+                "date": "2026-03-27",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.5980797664207064,
+                "age": 130,
+                "exclusion": null
+              },
+              {
+                "date": "2026-03-20",
+                "fields": [
+                  "high",
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.8466502151317168,
+                "age": 135,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 7
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 177.5,
+      "currentMatches": true,
+      "volumeRatio": 0.6251064082499906,
+      "volumePrior20": 0.6114639831272198,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 177,
+          "bandLow": 175,
+          "bandHigh": 177,
+          "sources": [
+            "爆量K低點",
+            "爆量K收盤",
+            "波段低點"
+          ],
+          "distancePct": -0.3,
+          "system": {
+            "price": 177,
+            "bandLow": 174.5,
+            "bandHigh": 177
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 177,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 37,
+                "date": "2026-08-12"
+              },
+              {
+                "price": 177,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 36,
+                "date": "2026-08-13"
+              },
+              {
+                "price": 177,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 36,
+                "date": "2026-08-13"
+              },
+              {
+                "price": 177,
+                "label": "成交量密集區",
+                "type": "volumeProfile",
+                "age": 0,
+                "date": null
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-08-24",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.6635877122973203,
+                "age": 29,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-12",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.5287065191432865,
+                "age": 37,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-03",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.214812171802824,
+                "age": 85,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              },
+              {
+                "date": "2026-09-23",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.547385713906001,
+                "age": 7,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-18",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.0608396330024483,
+                "age": 10,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-17",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9273075051384855,
+                "age": 11,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 8
+          }
+        },
+        {
+          "key": "support2",
+          "price": 172.5,
+          "bandLow": 170.5,
+          "bandHigh": 172.5,
+          "sources": [
+            "缺口下緣",
+            "爆量K低點",
+            "前高轉支撐"
+          ],
+          "distancePct": -2.8,
+          "system": {
+            "price": 172.5,
+            "bandLow": 171,
+            "bandHigh": 172.5
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 172.5,
+                "label": "缺口下緣",
+                "type": "gap",
+                "age": 57,
+                "date": "2026-07-15"
+              },
+              {
+                "price": 172.5,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 42,
+                "date": "2026-08-05"
+              },
+              {
+                "price": 172.5,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 38,
+                "date": "2026-08-11"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-07-14",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.6218975580576271,
+                "age": 58,
+                "exclusion": "現行樞紐低點規則未取該K棒高點"
+              },
+              {
+                "date": "2026-09-23",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.547385713906001,
+                "age": 7,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-11",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.497237359564145,
+                "age": 38,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-05",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.8758413568857073,
+                "age": 42,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-05",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.8443345916660188,
+                "age": 83,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 5
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 180,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 1.4,
+          "system": {
+            "price": 178,
+            "bandLow": 178,
+            "bandHigh": 178
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "not-qualified-by-current-rules",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-10-01",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.648608913169743,
+                "age": 3,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-21",
+                "fields": [
+                  "open",
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.591785533216443,
+                "age": 9,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-17",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9273075051384855,
+                "age": 11,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-07",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.7597744442715141,
+                "age": 19,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-02",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.5116130386234191,
+                "age": 22,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 5
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 1070,
+      "currentMatches": true,
+      "volumeRatio": 0.5181311532513266,
+      "volumePrior20": 0.5053971570344497,
+      "levels": [
+        {
+          "key": "resistance1",
+          "price": 1095,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 2.3,
+          "system": {
+            "price": 1095,
+            "bandLow": 1095,
+            "bandHigh": 1095
+          },
+          "priceMatches": true,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 1095,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 1,
+                "date": "2026-10-05"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-06",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.5181311532513266,
+                "age": 0,
+                "exclusion": null
+              },
+              {
+                "date": "2026-10-05",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.515987989108567,
+                "age": 1,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 1150,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 7.5,
+          "system": {
+            "price": 1150,
+            "bandLow": 1150,
+            "bandHigh": 1150
+          },
+          "priceMatches": true,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 1150,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 1,
+                "date": "2026-10-05"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-05",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.515987989108567,
+                "age": 1,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 127.5,
+      "currentMatches": true,
+      "volumeRatio": 1.4577904502597856,
+      "volumePrior20": 1.545663826696688,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 125,
+          "bandLow": 124,
+          "bandHigh": 125,
+          "sources": [
+            "前高轉支撐",
+            "爆量K收盤",
+            "爆量K低點"
+          ],
+          "distancePct": -2,
+          "system": {
+            "price": 127,
+            "bandLow": 127,
+            "bandHigh": 127
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 125,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 56,
+                "date": "2026-07-16"
+              },
+              {
+                "price": 125,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 56,
+                "date": "2026-07-16"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-07-16",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 2.6003791297307206,
+                "age": 56,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "support2",
+          "price": 118.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [
+            "前高轉支撐"
+          ],
+          "distancePct": -7.1,
+          "system": {
+            "price": 124,
+            "bandLow": 122.5,
+            "bandHigh": 124
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 118.5,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 62,
+                "date": "2026-07-07"
+              },
+              {
+                "price": 118.5,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 62,
+                "date": "2026-07-07"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-07-07",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.5136520772607274,
+                "age": 62,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 133,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 4.3,
+          "system": {
+            "price": 133,
+            "bandLow": 133,
+            "bandHigh": 133
+          },
+          "priceMatches": true,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 133,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 1,
+                "date": "2026-10-05"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-05",
+                "fields": [
+                  "open",
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.9610984937941085,
+                "age": 1,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 310.5,
+      "currentMatches": true,
+      "volumeRatio": 1.8878712760560492,
+      "volumePrior20": 2.011558160589381,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 309,
+          "bandLow": 308,
+          "bandHigh": 309,
+          "sources": [
+            "波段低點",
+            "爆量K收盤"
+          ],
+          "distancePct": -0.5,
+          "system": {
+            "price": 309,
+            "bandLow": 308,
+            "bandHigh": 309
+          },
+          "priceMatches": true,
+          "bandMatches": true,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 309,
+                "label": "前低／樞紐低",
+                "type": "pivotLow",
+                "age": 61,
+                "date": "2026-07-08"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-07-08",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.46006768079568416,
+                "age": 61,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-26",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.019475817985875,
+                "age": 69,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-08",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.49614421444535156,
+                "age": 82,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "support2",
+          "price": 303.5,
+          "bandLow": 302,
+          "bandHigh": 303.5,
+          "sources": [
+            "波段低點",
+            "前高轉支撐",
+            "MA5"
+          ],
+          "distancePct": -2.3,
+          "system": {
+            "price": 302,
+            "bandLow": 299.5,
+            "bandHigh": 302
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 303.5,
+                "label": "前低／樞紐低",
+                "type": "pivotLow",
+                "age": 68,
+                "date": "2026-06-29"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-06-29",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.6367172301999762,
+                "age": 68,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 315,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 1.4,
+          "system": {
+            "price": 311,
+            "bandLow": 311,
+            "bandHigh": 312
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 315,
+                "label": "前高／樞紐高",
+                "type": "pivotHigh",
+                "age": 51,
+                "date": "2026-07-23"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-07-23",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.0531312887726354,
+                "age": 51,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-29",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.6367172301999762,
+                "age": 68,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-02",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.6399488903026379,
+                "age": 65,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-09",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.40388641875101516,
+                "age": 81,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 4
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 324.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 4.5,
+          "system": {
+            "price": 315,
+            "bandLow": 315,
+            "bandHigh": 316
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "no-direct-ohlc-match",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [],
+            "directMatchCount": 0
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 4920,
+      "currentMatches": true,
+      "volumeRatio": 1.2084927029748196,
+      "volumePrior20": 1.2153777378048536,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 4910,
+          "bandLow": 4850,
+          "bandHigh": 4910,
+          "sources": [
+            "爆量K收盤",
+            "爆量K低點",
+            "波段低點"
+          ],
+          "distancePct": -0.2,
+          "system": {
+            "price": 4910,
+            "bandLow": 4855,
+            "bandHigh": 4910
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 4910,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 5,
+                "date": "2026-09-29"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-29",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.4886968196835442,
+                "age": 5,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "support2",
+          "price": 4780,
+          "bandLow": 4735,
+          "bandHigh": 4780,
+          "sources": [
+            "缺口上緣",
+            "爆量K收盤",
+            "缺口下緣"
+          ],
+          "distancePct": -2.8,
+          "system": {
+            "price": 4780,
+            "bandLow": 4735,
+            "bandHigh": 4780
+          },
+          "priceMatches": true,
+          "bandMatches": true,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 4780,
+                "label": "缺口上緣",
+                "type": "gap",
+                "age": 9,
+                "date": "2026-09-21"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-21",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.3279575379374067,
+                "age": 9,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-09",
+                "fields": [
+                  "open",
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.5968125139550028,
+                "age": 17,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 380,
+      "currentMatches": true,
+      "volumeRatio": 1.1483184230506254,
+      "volumePrior20": 1.1407460922168495,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 379.5,
+          "bandLow": 376,
+          "bandHigh": 379.5,
+          "sources": [
+            "爆量K低點",
+            "缺口上緣",
+            "前高轉支撐"
+          ],
+          "distancePct": -0.1,
+          "system": {
+            "price": 379.5,
+            "bandLow": 375.5,
+            "bandHigh": 379.5
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 379.5,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 36,
+                "date": "2026-08-13"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-08-13",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 2.1545191933849277,
+                "age": 36,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-02",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.2140830490124224,
+                "age": 86,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "support2",
+          "price": 371,
+          "bandLow": 368,
+          "bandHigh": 371,
+          "sources": [
+            "爆量K收盤",
+            "缺口下緣",
+            "MA10"
+          ],
+          "distancePct": -2.4,
+          "system": {
+            "price": 371,
+            "bandLow": 368,
+            "bandHigh": 371
+          },
+          "priceMatches": true,
+          "bandMatches": true,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 371,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 19,
+                "date": "2026-09-07"
+              },
+              {
+                "price": 371,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 88,
+                "date": "2026-05-29"
+              },
+              {
+                "price": 371,
+                "label": "缺口下緣",
+                "type": "gap",
+                "age": 87,
+                "date": "2026-06-01"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-07",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.6475337339202407,
+                "age": 19,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-29",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.8150815227717634,
+                "age": 88,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "resistance1",
+          "price": 383,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 0.8,
+          "system": {
+            "price": 381,
+            "bandLow": 381,
+            "bandHigh": 381.5
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "no-direct-ohlc-match",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [],
+            "directMatchCount": 0
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 392.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 3.3,
+          "system": {
+            "price": 386.5,
+            "bandLow": 386.5,
+            "bandHigh": 388.5
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "not-qualified-by-current-rules",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-06-04",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.0836471466015904,
+                "age": 84,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "1569",
+      "name": "濱川",
+      "market": "TPEX",
+      "rows": 108,
+      "current": 70,
+      "currentMatches": true,
+      "volumeRatio": 1.8024731608486062,
+      "volumePrior20": 1.9661636945587564,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 68.6,
+          "bandLow": 68,
+          "bandHigh": 68.6,
+          "sources": [
+            "爆量K低點",
+            "爆量K收盤",
+            "前高轉支撐"
+          ],
+          "distancePct": -2,
+          "system": {
+            "price": 68.6,
+            "bandLow": 68,
+            "bandHigh": 68.6
+          },
+          "priceMatches": true,
+          "bandMatches": true,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 68.6,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 2,
+                "date": "2026-10-02"
+              },
+              {
+                "price": 68.6,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 0,
+                "date": "2026-10-06"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-06",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.8024731608486062,
+                "age": 0,
+                "exclusion": null
+              },
+              {
+                "date": "2026-10-02",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.969928999025477,
+                "age": 2,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "support2",
+          "price": 66.5,
+          "bandLow": 66.3,
+          "bandHigh": 66.5,
+          "sources": [
+            "爆量K收盤",
+            "MA5"
+          ],
+          "distancePct": -5,
+          "system": {
+            "price": 66.5,
+            "bandLow": 66.3,
+            "bandHigh": 66.5
+          },
+          "priceMatches": true,
+          "bandMatches": true,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 66.5,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 2,
+                "date": "2026-10-02"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-02",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.969928999025477,
+                "age": 2,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 71.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 2.1,
+          "system": {
+            "price": 71,
+            "bandLow": 71,
+            "bandHigh": 71
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "no-direct-ohlc-match",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [],
+            "directMatchCount": 0
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "market": "TPEX",
+      "rows": 108,
+      "current": 191,
+      "currentMatches": true,
+      "volumeRatio": 1.8076559167374955,
+      "volumePrior20": 1.9594618085735145,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 189,
+          "bandLow": 187.5,
+          "bandHigh": 189,
+          "sources": [],
+          "distancePct": -1,
+          "system": {
+            "price": 186.5,
+            "bandLow": 184.5,
+            "bandHigh": 186.5
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "not-qualified-by-current-rules",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-10-05",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.899940896290373,
+                "age": 1,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "support2",
+          "price": 184.5,
+          "bandLow": 183,
+          "bandHigh": 184.5,
+          "sources": [],
+          "distancePct": -3.4,
+          "system": {
+            "price": 182.5,
+            "bandLow": 181,
+            "bandHigh": 182.5
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 184.5,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 87,
+                "date": "2026-06-01"
+              },
+              {
+                "price": 184.5,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 87,
+                "date": "2026-06-01"
+              },
+              {
+                "price": 184.5,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 0,
+                "date": "2026-10-06"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-06-01",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 1.5959448013813693,
+                "age": 87,
+                "exclusion": null
+              },
+              {
+                "date": "2026-10-06",
+                "fields": [
+                  "open",
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.8076559167374955,
+                "age": 0,
+                "exclusion": null
+              },
+              {
+                "date": "2026-10-02",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.825155099360758,
+                "age": 2,
+                "exclusion": null
+              },
+              {
+                "date": "2026-10-01",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.4177610349847665,
+                "age": 3,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-30",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.492507379807843,
+                "age": 4,
+                "exclusion": null
+              },
+              {
+                "date": "2026-05-08",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": null,
+                "age": 103,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 6
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 202,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 5.8,
+          "system": {
+            "price": 195,
+            "bandLow": 195,
+            "bandHigh": 195
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 202,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 69,
+                "date": "2026-06-26"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-06-25",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 2.054818724791971,
+                "age": 70,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-26",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.639374476627014,
+                "age": 69,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 147.5,
+      "currentMatches": true,
+      "volumeRatio": 1.6083315480078233,
+      "volumePrior20": 1.6813521666065334,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 146,
+          "bandLow": 145,
+          "bandHigh": 146,
+          "sources": [
+            "缺口下緣",
+            "爆量K低點",
+            "前高轉支撐"
+          ],
+          "distancePct": -1,
+          "system": {
+            "price": 146,
+            "bandLow": 144.5,
+            "bandHigh": 146
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 146,
+                "label": "缺口下緣",
+                "type": "gap",
+                "age": 73,
+                "date": "2026-06-22"
+              },
+              {
+                "price": 146,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 0,
+                "date": "2026-10-06"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-06-01",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.9986894261726054,
+                "age": 87,
+                "exclusion": null
+              },
+              {
+                "date": "2026-10-06",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.6083315480078233,
+                "age": 0,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-18",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9374570685741878,
+                "age": 74,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "support2",
+          "price": 140,
+          "bandLow": 138.5,
+          "bandHigh": 140,
+          "sources": [
+            "波段低點",
+            "整理平台",
+            "缺口上緣"
+          ],
+          "distancePct": -5.1,
+          "system": {
+            "price": 143,
+            "bandLow": 141.5,
+            "bandHigh": 143
+          },
+          "priceMatches": false,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 140,
+                "label": "前低／樞紐低",
+                "type": "pivotLow",
+                "age": 58,
+                "date": "2026-07-14"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-07-14",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.3982876054195586,
+                "age": 58,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-17",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.5316019779812959,
+                "age": 75,
+                "exclusion": null
+              },
+              {
+                "date": "2026-06-01",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.9986894261726054,
+                "age": 87,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 150.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 2,
+          "system": {
+            "price": 149,
+            "bandLow": 149,
+            "bandHigh": 150
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "pivot-candle-boundary-not-used",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-07-14",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.3982876054195586,
+                "age": 58,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 155,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 5.1,
+          "system": {
+            "price": 151,
+            "bandLow": 151,
+            "bandHigh": 152.5
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "not-qualified-by-current-rules",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [
+              {
+                "date": "2026-09-18",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.5962709080869373,
+                "age": 10,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-07",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.32790503698283874,
+                "age": 62,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        }
+      ],
+      "costHypotheses": []
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "market": "TPEX",
+      "rows": 108,
+      "current": 127,
+      "currentMatches": true,
+      "volumeRatio": 1.3699972664781541,
+      "volumePrior20": 1.4011227382546318,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 126.5,
+          "bandLow": 125.5,
+          "bandHigh": 126.5,
+          "sources": [
+            "法人估計成本區",
+            "爆量K收盤",
+            "爆量K低點"
+          ],
+          "distancePct": -0.4,
+          "system": {
+            "price": 126.5,
+            "bandLow": 124,
+            "bandHigh": 126.5
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 126.5,
+                "label": "爆量K收盤",
+                "type": "volume",
+                "age": 24,
+                "date": "2026-08-31"
+              },
+              {
+                "price": 126.5,
+                "label": "成交量密集區",
+                "type": "volumeProfile",
+                "age": 0,
+                "date": null
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-06",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.3699972664781541,
+                "age": 0,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-01",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.229175602985019,
+                "age": 23,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-31",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.5004094882280268,
+                "age": 24,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 3
+          }
+        },
+        {
+          "key": "support2",
+          "price": 123.5,
+          "bandLow": 121.5,
+          "bandHigh": 123.5,
+          "sources": [
+            "缺口上緣",
+            "爆量K低點",
+            "前高轉支撐"
+          ],
+          "distancePct": -2.8,
+          "system": {
+            "price": 123.5,
+            "bandLow": 122,
+            "bandHigh": 123.5
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 123.5,
+                "label": "缺口上緣",
+                "type": "gap",
+                "age": 1,
+                "date": "2026-10-05"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-10-05",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.3745876685790368,
+                "age": 1,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-07",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.070483215464333,
+                "age": 19,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 2
+          }
+        },
+        {
+          "key": "resistance1",
+          "price": 129.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 2,
+          "system": {
+            "price": 128,
+            "bandLow": 128,
+            "bandHigh": 129.5
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 129.5,
+                "label": "前高／樞紐高",
+                "type": "pivotHigh",
+                "age": 8,
+                "date": "2026-09-22"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-22",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.9208094232927595,
+                "age": 8,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 134.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 5.9,
+          "system": {
+            "price": 131,
+            "bandLow": 131,
+            "bandHigh": 131
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "no-direct-ohlc-match",
+            "rangeStart": "2026-05-04",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [],
+            "directMatches": [],
+            "directMatchCount": 0
+          }
+        }
+      ],
+      "costHypotheses": [
+        {
+          "window": 5,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 5,
+          "value": 124.46472732907849,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 5,
+          "value": 124.4615055954859,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 5,
+          "value": 124.13996349160381,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 5,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 5,
+          "value": 124.13250696491338,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 10,
+          "value": 122.56239930619623,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 10,
+          "value": 122.53476653043396,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 10,
+          "value": 123.07538691940081,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 10,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 10,
+          "value": 123.0485675347278,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "close",
+          "group": "foreign",
+          "valid": 20,
+          "value": 123.56310204653063,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "close",
+          "group": "total",
+          "valid": 20,
+          "value": 124.1024840554026,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "vwap",
+          "group": "foreign",
+          "valid": 20,
+          "value": 124.19445654536194,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        },
+        {
+          "window": 20,
+          "priceBasis": "vwap",
+          "group": "total",
+          "valid": 20,
+          "value": 124.75277112110405,
+          "insidePhotoBand": false,
+          "photoBand": [
+            125.5,
+            126.5
+          ]
+        }
+      ]
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "market": "TWSE",
+      "rows": 266,
+      "current": 182.5,
+      "currentMatches": true,
+      "volumeRatio": 0.9060598465780625,
+      "volumePrior20": 0.7705313673162739,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 181.5,
+          "bandLow": 179,
+          "bandHigh": 181.5,
+          "sources": [],
+          "distancePct": -0.5,
+          "system": {
+            "price": 181.5,
+            "bandLow": 179,
+            "bandHigh": 181.5
+          },
+          "priceMatches": true,
+          "bandMatches": true,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 181.5,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 22,
+                "date": "2026-09-02"
+              },
+              {
+                "price": 181.5,
+                "label": "成交量密集區",
+                "type": "volumeProfile",
+                "age": 0,
+                "date": null
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-15",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.39243966202930786,
+                "age": 13,
+                "exclusion": "現行樞紐低點規則未取該K棒高點"
+              },
+              {
+                "date": "2026-08-19",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 1.2122023073774297,
+                "age": 32,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-02",
+                "fields": [
+                  "open",
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 1.5461359119014004,
+                "age": 22,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-21",
+                "fields": [
+                  "open",
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.3874297764828558,
+                "age": 30,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 4
+          }
+        },
+        {
+          "key": "support2",
+          "price": 176,
+          "bandLow": 173.5,
+          "bandHigh": 176,
+          "sources": [],
+          "distancePct": -3.6,
+          "system": {
+            "price": 176,
+            "bandLow": 175,
+            "bandHigh": 176
+          },
+          "priceMatches": true,
+          "bandMatches": false,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 176,
+                "label": "前高轉支撐",
+                "type": "pivotHigh",
+                "age": 59,
+                "date": "2026-07-13"
+              },
+              {
+                "price": 176,
+                "label": "爆量K高點",
+                "type": "volume",
+                "age": 42,
+                "date": "2026-08-05"
+              },
+              {
+                "price": 176,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 38,
+                "date": "2026-08-11"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-15",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 0.39243966202930786,
+                "age": 13,
+                "exclusion": null
+              },
+              {
+                "date": "2026-07-13",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 0.8789404049418518,
+                "age": 59,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-16",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.5030206920414234,
+                "age": 12,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-20",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.868905706830507,
+                "age": 31,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-11",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 2.6815623481060524,
+                "age": 38,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-05",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 2.3013517242845047,
+                "age": 42,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 6
+          }
+        },
+        {
+          "key": "breakout",
+          "price": 185.5,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 1.6,
+          "system": {
+            "price": 183,
+            "bandLow": 183,
+            "bandHigh": 185
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 185.5,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 37,
+                "date": "2026-08-12"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-08-12",
+                "fields": [
+                  "open",
+                  "low"
+                ],
+                "pivotHigh": true,
+                "pivotLow": false,
+                "volumeRatio": 2.5996111092544556,
+                "age": 37,
+                "exclusion": "現行樞紐高點規則未取該K棒低點"
+              }
+            ],
+            "directMatchCount": 1
+          }
+        },
+        {
+          "key": "resistance2",
+          "price": 192,
+          "bandLow": null,
+          "bandHigh": null,
+          "sources": [],
+          "distancePct": 5.2,
+          "system": {
+            "price": 185.5,
+            "bandLow": 185.5,
+            "bandHigh": 187.5
+          },
+          "priceMatches": false,
+          "bandMatches": null,
+          "evidence": {
+            "reason": "candidate-but-not-selected",
+            "rangeStart": "2025-09-01",
+            "rangeEnd": "2026-10-06",
+            "exactCandidates": [
+              {
+                "price": 192,
+                "label": "爆量K低點",
+                "type": "volume",
+                "age": 36,
+                "date": "2026-08-13"
+              }
+            ],
+            "directMatches": [
+              {
+                "date": "2026-09-23",
+                "fields": [
+                  "open"
+                ],
+                "pivotHigh": false,
+                "pivotLow": true,
+                "volumeRatio": 1.1365112749614337,
+                "age": 7,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-29",
+                "fields": [
+                  "low",
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.588931617564834,
+                "age": 5,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-11",
+                "fields": [
+                  "high"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.6345046333497463,
+                "age": 15,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-09",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.44339783217824763,
+                "age": 17,
+                "exclusion": null
+              },
+              {
+                "date": "2026-09-08",
+                "fields": [
+                  "low"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.9051894886142868,
+                "age": 18,
+                "exclusion": null
+              },
+              {
+                "date": "2026-08-26",
+                "fields": [
+                  "close"
+                ],
+                "pivotHigh": false,
+                "pivotLow": false,
+                "volumeRatio": 0.6692628732731223,
+                "age": 27,
+                "exclusion": null
+              }
+            ],
+            "directMatchCount": 8
+          }
+        }
+      ],
+      "costHypotheses": []
+    }
+  ]
+}

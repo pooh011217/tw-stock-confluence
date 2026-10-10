@@ -1,4 +1,6 @@
-# AV 方程式 1.12
+# AV 方程式 1.13
+
+多檔掃描上限 30 檔，31 檔以上會顯示超量提示並停止查詢。已驗證 30／31 檔邊界。
 
 操作入口：https://av-stock-levels.peachygenet4.chatgpt.site
 

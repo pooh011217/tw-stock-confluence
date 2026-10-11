@@ -5,7 +5,7 @@ function assets(reference){return {fetch:async req=>{const p=new URL(req.url).pa
 test('reference prices never enter calculations: arbitrary photo edits only change comparison results',async()=>{
  const c=boot();c.assets=assets(refs);const before=await vm.runInContext('analyzeOne("8358","2026-10-06",assets)',c);
  const edited=structuredClone(refs);edited.items.find(x=>x.code==='8358').levels.forEach(x=>x.price=9999);c.assets=assets(edited);const after=await vm.runInContext('analyzeOne("8358","2026-10-06",assets)',c);
- assert.deepEqual(JSON.parse(JSON.stringify(before.analysis)),JSON.parse(JSON.stringify(after.analysis)));assert.equal(after.analysis.current,551);assert.equal(after.analysis.breakout.price,564);assert.equal(after.analysis.resistance2.price,578);assert.equal(before.photoComparison.comparisons.at(-1).key,'mediumResistance');assert.equal(before.photoComparison.comparisons.at(-1).actualKey,'resistance2');assert.equal(before.photoComparison.comparisons.at(-1).nameMatches,false);
+ assert.deepEqual(JSON.parse(JSON.stringify(before.analysis)),JSON.parse(JSON.stringify(after.analysis)));assert.equal(after.analysis.current,551);assert.equal(after.analysis.breakout.price,564);assert.equal(after.analysis.resistance2,null);assert.equal(after.analysis.mediumResistance.price,608);assert.equal(before.photoComparison.comparisons.at(-1).key,'mediumResistance');assert.equal(before.photoComparison.comparisons.at(-1).actualKey,'mediumResistance');assert.equal(before.photoComparison.comparisons.at(-1).nameMatches,true);
 });
 test('unknown photograph band is not treated as a zero-width band; off-date photos do not apply',async()=>{
  const c=boot();c.assets=assets(refs);c.a={date:'2026-10-06',current:551,breakout:{price:570,bandLow:570,bandHigh:578}};

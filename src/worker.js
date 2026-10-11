@@ -334,7 +334,179 @@ async function comparePhotoReference(a,stock,assets,candidates=analysisCandidate
  const primary=reference.batch?comparisons.filter(x=>x.comparisonScope===reference.batch):comparisons,fields=[...primary.flatMap(x=>x.fields),...metrics],summary={matched:fields.filter(f=>f.matches===true).length,different:fields.filter(f=>f.matches===false).length,unavailable:fields.filter(f=>f.matches==null).length,total:fields.length};
  return {metrics,numericSummary:summary,coverageNote:data.coverageNote,photoFiles:reference.photoFiles||[],date:reference.date,predictionFor:reference.predictionFor,source:data.source,formulaStatus:data.formulaStatus,currentMatches:a.current===reference.current,currentSource:reference.currentSource||"未註明",matchedPrices:primary.filter(x=>x.priceMatches).length,totalPrices:primary.length,matchedBands:primary.filter(x=>x.bandMatches===true).length,totalBands:primary.filter(x=>x.bandProvided).length,matchedFullLevels:primary.filter(x=>x.allVisibleFieldsMatch).length,comparisons};
 }
-async function analyzeOne(q,asOf,assets,model="standard"){if(!["standard","photo-inferred"].includes(model))throw new Error("無效的位點模式");if(asOf&&asOf>taipeiDate())throw new Error("回測日期不能晚於今天");const stock=await resolve(q,assets);const baseDate=asOf||latestCompletedDate(),windowStart=historyStartDate(stock,baseDate),archive=await archivedHistory(stock,baseDate,assets);let rows=archive?archive.rows:await history(stock,stock.market==="TPEX"?6:14,baseDate,assets),actualNext=null;rows=rows.filter(r=>r.date>=windowStart&&r.date<=baseDate);if(asOf)actualNext=await nextActualSession(stock,baseDate);if(rows.length<65)throw new Error(`${stock.market} ${stock.code} 資料不足：歷史行情僅取得 ${rows.length} 個交易日（基準日 ${asOf||"最新"}），未達 65 日；請稍後重試`);validateHistoryDates(rows,asOf||latestCompletedDate(),taipeiDate(),await tradingCalendar(asOf||latestCompletedDate(),assets));let analysis,candidatePool=[];try{analysis=analyze(rows);const candidates=analysisCandidates.get(analysis);candidatePool=candidates;if(model==="photo-inferred")analysis=derivePhotoPressure(rows,analysis);analysis=calibrateVisibleRules(analysis,rows,candidates)}catch(e){throw new Error(`位點計算失敗 ${stock.code}：${e?.message||e}`)}if(analysis.breakout)analysis.resistance1=null;const historical=!!asOf,extra=await extras(stock,analysis.date,historical,assets,rows),score=composite(analysis,extra),checks=historical&&actualNext?{support1:levelCheck(analysis.support1,actualNext,"support"),support2:levelCheck(analysis.support2,actualNext,"support"),breakout:levelCheck(analysis.breakout,actualNext,"breakout"),resistance1:levelCheck(analysis.resistance1,actualNext,"resistance"),resistance2:levelCheck(analysis.resistance2,actualNext,"resistance"),mediumResistance:levelCheck(analysis.mediumResistance,actualNext,"resistance")}:null,checkList=checks?Object.values(checks).filter(Boolean):[],maePct=checkList.length?checkList.reduce((s,x)=>s+x.absErrorPct,0)/checkList.length:null,bandHitRate=checkList.length?checkList.filter(x=>x.bandTouched).length/checkList.length:null;return{stock,analysis,extra,score,historyWindow:{months:stock.market==="TPEX"?6:14,startDate:windowStart,endDate:baseDate,usedRows:rows.length},photoComparison:await comparePhotoReference(analysis,stock,assets,candidatePool,rows,extra),backtest:historical?{requestedDate:asOf,baseDate:analysis.date,predictionFor:actualNext?.date||null,usedRows:rows.length,noLookahead:true,validationStatus:actualNext?"available":baseDate>=latestCompletedDate()?"not-yet-completed":"unavailable",actual:actualNext?{date:actualNext.date,open:actualNext.open,high:actualNext.high,low:actualNext.low,close:actualNext.close}:null,checks,maePct,bandHitRate,ohlc:actualNext?ohlcBandChecks(actualNext,analysis):null,referenceInBandRate:checkList.length?checkList.filter(x=>x.referenceInBand).length/checkList.length:null}:null,source:archive?`${stock.market=== "TPEX"?"TPEx":"TWSE"}歷史行情快照（截至 ${archive.baseDate}；${actualNext?"隔日實績已驗證":"隔日實績尚未載入"}）`:stock.market==="TWSE"?"臺灣證券交易所 TWSE":"證券櫃檯買賣中心 TPEx",version:"3.3.44.18"}}
+async function analyzeOne(q,asOf,assets,model="standard"){if(!["standard","photo-inferred"].includes(model))throw new Error("無效的位點模式");if(asOf&&asOf>taipeiDate())throw new Error("回測日期不能晚於今天");const stock=await resolve(q,assets);const baseDate=asOf||latestCompletedDate(),windowStart=historyStartDate(stock,baseDate),archive=await archivedHistory(stock,baseDate,assets);let rows=archive?archive.rows:await history(stock,stock.market==="TPEX"?6:14,baseDate,assets),actualNext=null;rows=rows.filter(r=>r.date>=windowStart&&r.date<=baseDate);if(asOf)actualNext=await nextActualSession(stock,baseDate);if(rows.length<65)throw new Error(`${stock.market} ${stock.code} 資料不足：歷史行情僅取得 ${rows.length} 個交易日（基準日 ${asOf||"最新"}），未達 65 日；請稍後重試`);validateHistoryDates(rows,asOf||latestCompletedDate(),taipeiDate(),await tradingCalendar(asOf||latestCompletedDate(),assets));let analysis,candidatePool=[];try{analysis=analyze(rows);const candidates=analysisCandidates.get(analysis);candidatePool=candidates;if(model==="photo-inferred"){analysis=derivePhotoPressure(rows,analysis);analysis=calibrateVisibleRules(analysis,rows,candidates)}else{analysis=calibrateAvReview(rows,"guarded-breakout")}}catch(e){throw new Error(`位點計算失敗 ${stock.code}：${e?.message||e}`)}if(analysis.breakout)analysis.resistance1=null;const historical=!!asOf,extra=await extras(stock,analysis.date,historical,assets,rows),score=composite(analysis,extra),checks=historical&&actualNext?{support1:levelCheck(analysis.support1,actualNext,"support"),support2:levelCheck(analysis.support2,actualNext,"support"),breakout:levelCheck(analysis.breakout,actualNext,"breakout"),resistance1:levelCheck(analysis.resistance1,actualNext,"resistance"),resistance2:levelCheck(analysis.resistance2,actualNext,"resistance"),mediumResistance:levelCheck(analysis.mediumResistance,actualNext,"resistance")}:null,checkList=checks?Object.values(checks).filter(Boolean):[],maePct=checkList.length?checkList.reduce((s,x)=>s+x.absErrorPct,0)/checkList.length:null,bandHitRate=checkList.length?checkList.filter(x=>x.bandTouched).length/checkList.length:null;return{stock,analysis,extra,score,historyWindow:{months:stock.market==="TPEX"?6:14,startDate:windowStart,endDate:baseDate,usedRows:rows.length},photoComparison:await comparePhotoReference(analysis,stock,assets,candidatePool,rows,extra),backtest:historical?{requestedDate:asOf,baseDate:analysis.date,predictionFor:actualNext?.date||null,usedRows:rows.length,noLookahead:true,validationStatus:actualNext?"available":baseDate>=latestCompletedDate()?"not-yet-completed":"unavailable",actual:actualNext?{date:actualNext.date,open:actualNext.open,high:actualNext.high,low:actualNext.low,close:actualNext.close}:null,checks,maePct,bandHitRate,ohlc:actualNext?ohlcBandChecks(actualNext,analysis):null,referenceInBandRate:checkList.length?checkList.filter(x=>x.referenceInBand).length/checkList.length:null}:null,source:archive?`${stock.market=== "TPEX"?"TPEx":"TWSE"}歷史行情快照（截至 ${archive.baseDate}；${actualNext?"隔日實績已驗證":"隔日實績尚未載入"}）`:stock.market==="TWSE"?"臺灣證券交易所 TWSE":"證券櫃檯買賣中心 TPEx",version:"3.3.44.19"}}
 async function scanStocks(raw,assets,asOf,model="standard"){const codes=[...new Set(String(raw||"").split(/[\s,，;；]+/).map(x=>x.trim()).filter(Boolean))].slice(0,12);if(!codes.length)throw new Error("請輸入至少一檔股票代碼或名稱");if(codes.length>1)throw new Error("掃描已改為逐檔獨立請求；請重新整理至最新版後再開始掃描。");const jobs=codes.map(async q=>{try{const {stock,analysis,extra,score}=await analyzeOne(q,asOf,assets,model),supportGap=analysis.support1?Math.abs(analysis.support1.distance):null,breakoutGap=analysis.breakout?analysis.breakout.distance:null,inst=extra.institutional||{},tags=[];if(supportGap!=null&&supportGap<=.015)tags.push("接近支撐");if(breakoutGap!=null&&breakoutGap>=0&&breakoutGap<=.02)tags.push("接近突破");if(analysis.volumeBreakout)tags.push("量價突破");if((inst.foreign||0)>0&&(inst.trust||0)>0)tags.push("外投同買");if((inst.total||0)>0)tags.push("法人偏多");if(analysis.trend==="偏多")tags.push("技術偏多");if(score.structure>=70)tags.push("高共振");let observation=score.structure+(tags.includes("接近支撐")?6:0)+(tags.includes("接近突破")?6:0)+(tags.includes("量價突破")?8:0)+(tags.includes("外投同買")?5:0);observation=Math.max(0,Math.min(100,Math.round(observation)));return{ok:true,stock,date:analysis.date,current:analysis.current,changePct:analysis.changePct,trend:analysis.trend,structure:score.structure,observation,levelStatus:analysis.levelStatus,rulePolicy:analysis.rulePolicy,levels:Object.fromEntries(["support1","support2","breakout","resistance1","resistance2","mediumResistance","limitUpReference"].map(k=>[k,analysis[k]?{price:analysis[k].price,bandLow:analysis[k].bandLow,bandHigh:analysis[k].bandHigh,distance:analysis[k].distance,isStructural:analysis[k].isStructural}:null])),support:analysis.support1?{price:analysis.support1.price,distance:analysis.support1.distance,confidence:analysis.support1.confidence}:null,breakout:analysis.breakout?{price:analysis.breakout.price,distance:analysis.breakout.distance,confidence:analysis.breakout.confidence}:null,volumeRatio:analysis.volumeRatio,tags}}catch(e){return{ok:false,query:q,error:e.message||String(e)}}});const results=await Promise.all(jobs);return results.sort((a,b)=>(b.ok?b.observation:-1)-(a.ok?a.observation:-1))}
-async function engine(input,assets){if(input.action==="analyze")return analyzeOne(input.q||"",input.asOf,assets,input.model||"standard");if(input.action==="scan")return{results:await scanStocks(input.codes||"",assets,input.asOf,input.model||"standard"),version:"3.3.44.18"};return{results:await searchStocks(input.q||"",20,assets),version:"3.3.44.18"}}
+async function engine(input,assets){if(input.action==="analyze")return analyzeOne(input.q||"",input.asOf,assets,input.model||"standard");if(input.action==="scan")return{results:await scanStocks(input.codes||"",assets,input.asOf,input.model||"standard"),version:"3.3.44.19"};return{results:await searchStocks(input.q||"",20,assets),version:"3.3.44.19"}}
 export default{async fetch(request,env){const u=new URL(request.url);if(u.pathname==="/api/stock"){if(request.method!=="POST")return new Response(JSON.stringify({error:"Method not allowed"}),{status:405,headers:{"content-type":"application/json"}});try{const input=await request.json();if(!["analyze","scan","search"].includes(input.action))throw new Error("無效操作");if(input.asOf&&!/^\d{4}-\d{2}-\d{2}$/.test(input.asOf))throw new Error("日期格式錯誤");const out=await engine(input,env.ASSETS);return new Response(JSON.stringify(out),{headers:{"content-type":"application/json;charset=UTF-8","cache-control":"no-store"}})}catch(e){return new Response(JSON.stringify({error:e?.message||"分析失敗"}),{status:400,headers:{"content-type":"application/json;charset=UTF-8"}})}}const asset=await env.ASSETS.fetch(request);const headers=new Headers(asset.headers);if(["/","/index.html","/app.js","/styles.css","/sw.js"].includes(u.pathname))headers.set("cache-control","no-store, no-cache, must-revalidate, max-age=0");return new Response(asset.body,{status:asset.status,statusText:asset.statusText,headers})}};
+
+
+// OFFLINE REVIEW ONLY: not wired into the production engine.
+function calibrateReviewRules(a,rows,candidates=analysisCandidates.get(a)||[]){
+ const preferredSecond=a.support2,breakoutAnchor=a.breakout?.price;
+ const upstreamPressure=Object.fromEntries(["breakout","resistance1","resistance2","mediumResistance"].map(k=>[k,a[k]?{...a[k],sources:[...(a[k].sources||[])]}:null]));
+ a.ma120=sma(rows,120,rows.length-1);
+ candidates=[...candidates];if(a.ma120!=null)candidates.push({price:a.ma120,type:"ma",label:"MA120",base:1,age:0});
+ const cur=a.current,tol=a.tolerance||.0125,pack=g=>g?{price:tradePrice(g.price),bandLow:tradePrice(g.low,"floor"),bandHigh:tradePrice(g.high,"ceil"),distance:(tradePrice(g.price)-cur)/cur,sources:g.sources,score:g.score,strength:g.score>=6?"高共振":g.score>=4?"中共振":"一般",confidence:Math.max(1,Math.min(100,35+g.score*8))}:null;
+ const support=structuralBands(candidates,cur,"support",tol),eligible=support.filter(g=>(cur-g.price)/cur<=.20+1e-8);
+ a.support1=expandSupportConfluence(pack(eligible[0]),candidates,cur,tol);
+ // Naming/range calibration must not erase the calculator's support priority.
+ // Keep its selected price and bounded band only when a real candidate backs it
+ // and the entire band stays below the first support. Otherwise use a valid fallback.
+ const preferredPrice=tradePrice(preferredSecond?.price),preferredLow=preferredPrice?tradePrice(Math.max(preferredSecond.bandLow??preferredPrice,preferredPrice-cur*tol),"ceil"):null;
+ const preferredValid=preferredPrice&&a.support1&&preferredPrice<cur&&preferredPrice<a.support1.bandLow&&preferredLow<=preferredPrice&&(cur-preferredPrice)/cur<=.20+1e-8&&candidates.some(c=>c.type!=="ma"&&c.type!=="round"&&tradePrice(c.price)===preferredPrice);
+ a.support2=preferredValid?{...preferredSecond,price:preferredPrice,bandLow:preferredLow,bandHigh:preferredPrice,distance:(preferredPrice-cur)/cur}:pack(eligible.find(g=>a.support1&&g.high<a.support1.bandLow));
+  a.remoteSupports=support.filter(g=>(cur-g.price)/cur>.20+1e-8).map(pack);a.support2Note=a.support2?"":"尚未形成：20% 範圍內沒有下一個獨立支撐結構。";
+ for(const level of [a.support1,a.support2])if(level)level.sources=[...new Set([...level.sources,...candidates.filter(c=>c.type==="ma"&&tradePrice(c.price)>=level.bandLow&&tradePrice(c.price)<=level.bandHigh).map(c=>c.label)])];
+ // Review correction: normalization classifies the upstream pressure result,
+ // without running a second selector or splitting its merged price band.
+ const normalize=l=>{if(!l)return null;const price=tradePrice(l.price),bandLow=tradePrice(l.bandLow??price,"floor"),bandHigh=tradePrice(l.bandHigh??price,"ceil");return {...l,price,bandLow,bandHigh,distance:(price-cur)/cur}};
+ const breakout=normalize(upstreamPressure.breakout),first=breakout||normalize(upstreamPressure.resistance1);
+ let second=normalize(upstreamPressure.resistance2);
+ if(second&&first&&second.bandLow<=first.bandHigh)second=null;
+ a.breakout=breakout;a.resistance1=breakout?null:first&&first.distance<=.10+1e-8?first:null;
+ a.resistance2=second&&second.distance<=.10+1e-8?second:null;
+ a.mediumResistance=first&&first.distance>.10+1e-8?first:second&&second.distance>.10+1e-8?second:null;
+ a.resistance2Role=a.resistance2?"second":null;a.pressureMode=breakout?"breakout":a.resistance1?"ordinary":a.mediumResistance?"medium":"unconfirmed";
+ a.pressureNote=a.mediumResistance?(a.resistance1||a.breakout?"第一壓力帶保留；下一個獨立結構超過 +10%，另列中期壓力。":"上方獨立結構超過 +10%，另列中期壓力。") :!second?"尚未形成：上方沒有下一個獨立壓力結構。":"";
+ a.pressureNormalizationAudit={status:"review-only",upstream:upstreamPressure,note:"保留上游主價與合併帶；此為覆蓋問題的校正試算，並未證明上游選價符合照片。"};
+ const historicHigh=rows.length>1?Math.max(...rows.slice(0,-1).map(r=>r.high)):Infinity;
+ a.limitUpReference=!first&&cur>historicHigh?normalize({price:tradePrice(cur*1.10,"floor"),sources:["收盤價 × 1.10，向下校準至合法升降單位"],confidence:null,isStructural:false,note:"非結構價位；以收盤價作為基準的10%理論參考，實際隔日漲停以交易所開盤競價基準及適用限制為準。"}):null;
+ a.levelStatus=Object.fromEntries(["support1","support2","breakout","resistance1","resistance2","mediumResistance"].map(k=>[k,a[k]?"已形成":"尚未形成"]));
+ a.rulePolicy={version:"seven-visible-rules-v4",movingAverages:"均線不能單獨建立結構；第一支撐容差內的均線可參與上緣，第二支撐保留結構優先序",supportConfluenceFormulaStatus:"photo-supported-inference",institutionalCostFormula:"unknown",supportNearMax:.10,supportMediumMax:.20,secondResistanceNearMax:.10,tolerance:tol,limitReferenceStructural:false,note:"波動容差沿用本系統設定；均線共振為照片支持的推定校正，尚未證實通用原公式。"};
+ a.selectionAudit={support2Priority:preferredValid?"保留既有公式選出的獨立第二支撐":"既有第二支撐不適用，選下一個獨立價帶",breakoutAnchor:breakoutAnchor??null,breakoutSharesFirstBand:Boolean(breakout),levels:Object.fromEntries(["support1","support2","breakout","resistance1","resistance2","mediumResistance"].map(k=>{const l=a[k];return [k,l?{price:l.price,bandLow:l.bandLow,bandHigh:l.bandHigh,candidates:candidates.filter(c=>c.type!=="round"&&tradePrice(c.price)>=l.bandLow-1e-8&&tradePrice(c.price)<=l.bandHigh+1e-8).map(c=>({price:c.price,type:c.type,label:c.label,age:c.age,date:candidateSourceDate(c,rows)}))}:null]}))};
+ a.selectionAudit.confluenceIndependence=confluenceIndependenceAudit(a.selectionAudit.levels);a.selectionAudit.support1Confluence=a.support1?.confluenceAdjustment??null;a.selectionAudit.gaps=gapStructures(rows);
+ a.selectionAudit.support2Policy={rangeLowPriorityWithin:.03,minimumPreferredSeparation:.018,recentPrioritySessions:40,status:"existing-system-assumption-not-verified-original"};
+ a.selectionAudit.skippedSupportBands=eligible.filter(g=>a.support1&&a.support2&&g.high<a.support1.bandLow&&g.price>a.support2.price).map(pack);
+ for(const k of ["support1","support2","breakout","resistance1","resistance2","mediumResistance"]){const l=a[k];if(!l)continue;const inside=candidates.filter(c=>c.type!=="round"&&tradePrice(c.price)>=l.bandLow-1e-8&&tradePrice(c.price)<=l.bandHigh+1e-8);const labels=[...new Set(inside.map(c=>c.label))];l.nearbySources=l.sources.filter(label=>!labels.includes(label));l.inBandSources=labels;l.sources=labels;l.role=k.startsWith("support")?(Math.abs(l.distance)<=.10?"near":"medium"):k==="mediumResistance"?"medium":"near";}
+ a.reviewStatus={status:"not-published",referenceFormulaKnown:false,missingCandidatePolicy:"diagnostics-only; no artificial level generation",supportSelectionPolicy:"unchanged-pending-original-definition",scorePolicy:"unchanged; not calibrated probability"};
+ delete a._candidates;return a;
+}
+
+// Research model. Same rule for every stock; targets are never calculation inputs.
+// Both tolerance options are hypotheses, not a recovered proprietary formula.
+function calibratePhotoResearch(inputRows,toleranceModel="atr-half"){
+ if(!["atr-half","fixed-3pct"].includes(toleranceModel))throw new Error("Invalid research tolerance");
+ const rows=inputRows.map(r=>({...r}));
+ const a=analyze(rows),end=rows.length-1,cur=a.current,window=120;
+ let candidates=analysisCandidates.get(a).filter(c=>c.age<=window&&c.type!=="volume");
+ const add=(price,type,label,age,base=2)=>{if(Number.isFinite(price)&&price>0)candidates.push({price,type,label,age,base,side:price<cur?"support":price>cur?"resistance":"current",score:base,sources:[label],low:price,high:price})};
+ for(let i=Math.max(2,end-window);i<=end;i++)if(rows[i].volRatio>=1.5){for(const[field,label]of[["close","爆量K收盤"],["low","爆量K低點"],["high","爆量K高點"]])add(rows[i][field],"volume",label,end-i)}
+ const previous=rows[end-1];if(previous.close>cur)add(previous.close,"recentClose","前一交易日收盤轉壓力〔推定〕",1);
+ // A volume candle high cannot independently establish resistance. A confirmed
+ // pivot at the same price remains eligible through its own candidate.
+ candidates=candidates.filter(c=>c.side!=="resistance"||c.label!=="爆量K高點");
+ a.support2=null;a.tolerance=.0125;
+ const keys=candidates.filter(c=>c.side==="resistance"&&(c.type==="pivotHigh"||c.label==="缺口上緣")&&(c.price-cur)/cur<=.04).sort((x,y)=>x.price-y.price);
+ a.breakout=keys[0]?{price:keys[0].price}:null;
+ let out=calibrateVisibleRules(a,rows,candidates);
+ const pack=g=>g?{price:tradePrice(g.price),bandLow:tradePrice(g.low,"floor"),bandHigh:tradePrice(g.high,"ceil"),sources:g.sources,distance:(tradePrice(g.price)-cur)/cur,confidence:null,strength:"研究推定結構"}:null;
+ if(out.support1&&out.support1.sources.every(label=>label==="爆量K收盤")){
+  const lower=structuralBands(candidates,cur,"support",.0125).filter(g=>g.price<out.support1.bandLow&&(cur-g.price)/cur<=.20);
+  out.support1=expandSupportConfluence(pack(lower[0]),candidates,cur,.0125);
+  out.support2=pack(lower.find(g=>out.support1&&g.high<out.support1.bandLow&&!g.sources.every(label=>label==="爆量K收盤")));
+ }
+ const pressureTolerance=toleranceModel==="atr-half"?atr(rows,14)*.5/cur:.03;
+ const bands=structuralBands(candidates,cur,"resistance",pressureTolerance),first=pack(bands[0]);
+ let second=pack(bands.find(g=>first&&g.low>first.bandHigh&&candidates.some(c=>c.type==="pivotHigh"&&c.price>=g.low&&c.price<=g.high)));
+ if(second){const pivots=candidates.filter(c=>c.type==="pivotHigh"&&c.price>=second.bandLow&&c.price<=second.bandHigh).sort((x,y)=>x.age-y.age);if(pivots.length){second.price=tradePrice(pivots[0].price);second.distance=(second.price-cur)/cur}}
+ const breakout=first&&keys.some(k=>k.price>=first.bandLow&&k.price<=first.bandHigh);
+ out.breakout=breakout?first:null;out.resistance1=breakout?null:first&&first.distance<=.10?first:null;out.resistance2=second&&second.distance<=.10?second:null;
+ out.mediumResistance=first&&first.distance>.10?first:second&&second.distance>.10?second:null;
+ out.pressureMode=out.breakout?"breakout":out.resistance1?"ordinary":out.mediumResistance?"medium":"unconfirmed";
+ out.resistance2Role=out.resistance2?"second":null;out.pressureNote=out.mediumResistance?"超過10%的獨立結構另列中期壓力。":!second?"尚未形成下一個有確認樞紐支持的獨立壓力帶。":"";
+ out.support2Note=out.support2?"":"20%內未找到下一個合格獨立支撐。";
+ out.remoteSupports=structuralBands(candidates,cur,"support",.0125).filter(g=>(cur-g.price)/cur>.20).map(pack);
+ const levelKeys=["support1","support2","breakout","resistance1","resistance2","mediumResistance"];
+ out.levelStatus=Object.fromEntries(levelKeys.map(k=>[k,out[k]?"已形成":"尚未形成"]));
+ out.selectionAudit={status:"research-only",levels:Object.fromEntries(levelKeys.map(k=>{const l=out[k];if(!l)return[k,null];const inBand=candidates.filter(c=>c.type!=="round"&&tradePrice(c.price)>=l.bandLow-1e-8&&tradePrice(c.price)<=l.bandHigh+1e-8);l.inBandSources=[...new Set(inBand.map(c=>c.label))];l.nearbySources=(l.sources||[]).filter(x=>!l.inBandSources.includes(x));l.role=k.startsWith("support")?(Math.abs(l.distance)<=.10?"near":"medium"):k==="mediumResistance"?"medium":"near";return[k,{price:l.price,bandLow:l.bandLow,bandHigh:l.bandHigh,candidates:inBand.map(c=>({price:c.price,type:c.type,label:c.label,age:c.age,date:candidateSourceDate(c,rows)}))}]})),gaps:gapStructures(rows)};
+ out.researchPolicy={status:"hypothesis-not-original-formula",candidateWindow:120,volumeRatioMinimum:1.5,pressureVolumeHighStandalone:false,previousCloseResistance:true,isolatedVolumeCloseFirstSupport:false,secondSupport:"nearest-independent-band",secondResistance:"next-band-containing-confirmed-pivot-high",secondMain:"most-recent-confirmed-pivot-high-in-band",supportTolerance:.0125,pressureTolerance,pressureToleranceModel:toleranceModel,pressureToleranceFactor:toleranceModel==="atr-half"?.5:null,referencePricesAsInputs:false};
+ return out;
+}
+
+// Review-only V3: candidate qualification and event independence are hypotheses.
+// References never enter generation; role-transition mode remains experimental.
+function calibratePhotoResearchV3(inputRows,mode="qualified"){
+ if(!["qualified","role-transition-experiment"].includes(mode))throw new Error("Invalid V3 research mode");
+ const toleranceModel="atr-half",p={expandSecond:true,gapIndependent:true,pressureGaps:true,pressureLow:true,brokenHigh:mode==="role-transition-experiment",secondLow:mode==="role-transition-experiment"};
+ const rows=inputRows.map(r=>({...r}));
+ const a=analyze(rows),end=rows.length-1,cur=a.current,window=120;
+ const rejectedCandidates=[];let support2Rejected=null;
+ let candidates=analysisCandidates.get(a).filter(c=>c.age<=window&&c.type!=="volume");
+ const add=(price,type,label,age,base=2)=>{if(Number.isFinite(price)&&price>0)candidates.push({price,type,label,age,base,side:price<cur?"support":price>cur?"resistance":"current",score:base,sources:[label],low:price,high:price})};
+ for(let i=Math.max(2,end-window);i<=end;i++)if(rows[i].volRatio>=1.5){for(const[field,label]of[["close","爆量K收盤"],["low","爆量K低點"],["high","爆量K高點"]])add(rows[i][field],"volume",label,end-i)}
+ const previous=rows[end-1];if(previous.close>cur)add(previous.close,"recentClose","前一交易日收盤轉壓力〔推定〕",1);
+ // A volume candle high cannot independently establish resistance. A confirmed
+ // pivot at the same price remains eligible through its own candidate.
+ candidates=candidates.filter(c=>c.side!=="resistance"||c.label!=="爆量K高點");
+ if(p.pressureGaps){const filled=gapStructures(rows).filter(g=>g.direction==='up'&&g.filled);candidates=candidates.filter(x=>{const reject=x.side==='resistance'&&x.type==='gap'&&filled.some(g=>g.date===rows[end-x.age]?.date);if(reject)rejectedCandidates.push({price:x.price,type:x.type,label:x.label,date:candidateSourceDate(x,rows),reason:'filled-gap-not-standalone-pressure'});return !reject})}
+ if(p.pressureLow)candidates=candidates.filter(x=>{const reject=x.side==='resistance'&&x.label==='爆量K低點';if(reject)rejectedCandidates.push({price:x.price,type:x.type,label:x.label,date:candidateSourceDate(x,rows),reason:'volume-low-requires-independent-pressure-structure'});return !reject});
+ if(p.brokenHigh)candidates=candidates.filter(x=>{const reject=x.side==='resistance'&&x.type==='pivotHigh'&&rows.slice(end-x.age+1).some(r=>r.close>x.price);if(reject)rejectedCandidates.push({price:x.price,type:x.type,label:x.label,date:candidateSourceDate(x,rows),reason:'historically-closed-above-high-experimental-exclusion'});return !reject});
+ a.support2=null;a.tolerance=.0125;
+ const keys=candidates.filter(c=>c.side==="resistance"&&(c.type==="pivotHigh"||c.label==="缺口上緣")&&(c.price-cur)/cur<=.04).sort((x,y)=>x.price-y.price);
+ a.breakout=keys[0]?{price:keys[0].price}:null;
+ let out=calibrateVisibleRules(a,rows,candidates);
+ const pack=g=>g?{price:tradePrice(g.price),bandLow:tradePrice(g.low,"floor"),bandHigh:tradePrice(g.high,"ceil"),sources:g.sources,distance:(tradePrice(g.price)-cur)/cur,confidence:null,strength:"研究推定結構"}:null;
+ if(out.support1&&out.support1.sources.every(label=>label==="爆量K收盤")){
+  const lower=structuralBands(candidates,cur,"support",.0125).filter(g=>g.price<out.support1.bandLow&&(cur-g.price)/cur<=.20);
+  out.support1=expandSupportConfluence(pack(lower[0]),candidates,cur,.0125);
+  out.support2=pack(lower.find(g=>out.support1&&g.high<out.support1.bandLow&&!g.sources.every(label=>label==="爆量K收盤")));
+ }
+ if(p.expandSecond&&out.support2){const expanded=expandSupportConfluence(out.support2,candidates,cur,.0125);if(expanded.bandHigh<out.support1.bandLow)out.support2=expanded}
+ // Event independence is a hypothesis: two edges of one gap share one event.
+ // Keep the rejected edge for review, then look for a genuinely separate lower band.
+ if(p.gapIndependent&&out.support1&&out.support2){
+  const peersFor=l=>candidates.filter(x=>x.type!=="ma"&&x.type!=="round"&&tradePrice(x.price)>=l.bandLow&&tradePrice(x.price)<=l.bandHigh);
+  const sameGapOnly=l=>{const peers=peersFor(l);return peers.length>0&&peers.every(x=>x.type==="gap"&&x.label==="缺口下緣"&&candidates.some(y=>y.type==="gap"&&y.label==="缺口上緣"&&y.age===x.age&&tradePrice(y.price)>=out.support1.bandLow&&tradePrice(y.price)<=out.support1.bandHigh))};
+  if(sameGapOnly(out.support2)){
+   const rejected=out.support2;support2Rejected={price:rejected.price,bandLow:rejected.bandLow,bandHigh:rejected.bandHigh,reason:"same-gap-event-as-first-support",status:"hypothesis-requires-more-samples",candidates:peersFor(rejected).map(x=>({price:x.price,type:x.type,label:x.label,date:candidateSourceDate(x,rows),gapDate:rows[end-x.age]?.date}))};
+   out.support2=null;
+   for(const g of structuralBands(candidates,cur,"support",.0125)){if(g.high>=rejected.bandLow||(cur-g.price)/cur>.20||g.sources.every(x=>x==="爆量K收盤"))continue;const next=expandSupportConfluence(pack(g),candidates,cur,.0125);if(next.bandHigh<out.support1.bandLow&&!sameGapOnly(next)){out.support2=next;break}}
+  }
+ }
+
+ const pressureTolerance=toleranceModel==="atr-half"?atr(rows,14)*.5/cur:.03;
+ const bands=structuralBands(candidates,cur,"resistance",pressureTolerance),first=pack(bands[0]);
+ let second=pack(bands.find(g=>first&&g.low>first.bandHigh&&candidates.some(c=>(c.type==="pivotHigh"||(p.secondLow&&c.type==="pivotLow"))&&c.price>=g.low&&c.price<=g.high)));
+ if(second){const pivots=candidates.filter(c=>(c.type==="pivotHigh"||(p.secondLow&&c.type==="pivotLow"))&&c.price>=second.bandLow&&c.price<=second.bandHigh).sort((x,y)=>x.age-y.age);if(pivots.length){second.price=tradePrice(pivots[0].price);second.distance=(second.price-cur)/cur}}
+ const breakout=first&&keys.some(k=>k.price>=first.bandLow&&k.price<=first.bandHigh);
+ out.breakout=breakout?first:null;out.resistance1=breakout?null:first&&first.distance<=.10?first:null;out.resistance2=second&&second.distance<=.10?second:null;
+ out.mediumResistance=first&&first.distance>.10?first:second&&second.distance>.10?second:null;
+ out.pressureMode=out.breakout?"breakout":out.resistance1?"ordinary":out.mediumResistance?"medium":"unconfirmed";
+ out.resistance2Role=out.resistance2?"second":null;out.pressureNote=out.mediumResistance?"超過10%的獨立結構另列中期壓力。":!second?"尚未形成下一個有確認樞紐支持的獨立壓力帶。":"";
+ out.support2Note=out.support2?"":support2Rejected?"同一缺口下緣另記為第一支撐的風險邊界，不重複列為獨立第二支撐〔研究假設〕。":"20%內未找到下一個合格獨立支撐。";
+ out.remoteSupports=structuralBands(candidates,cur,"support",.0125).filter(g=>(cur-g.price)/cur>.20).map(pack);
+ const levelKeys=["support1","support2","breakout","resistance1","resistance2","mediumResistance"];
+ out.levelStatus=Object.fromEntries(levelKeys.map(k=>[k,out[k]?"已形成":"尚未形成"]));
+ out.selectionAudit={status:"research-only",levels:Object.fromEntries(levelKeys.map(k=>{const l=out[k];if(!l)return[k,null];l.confidence=null;const inBand=candidates.filter(c=>c.type!=="round"&&tradePrice(c.price)>=l.bandLow-1e-8&&tradePrice(c.price)<=l.bandHigh+1e-8);l.inBandSources=[...new Set(inBand.map(c=>c.label))];l.nearbySources=(l.sources||[]).filter(x=>!l.inBandSources.includes(x));l.role=k.startsWith("support")?(Math.abs(l.distance)<=.10?"near":"medium"):k==="mediumResistance"?"medium":"near";return[k,{price:l.price,bandLow:l.bandLow,bandHigh:l.bandHigh,candidates:inBand.map(c=>({price:c.price,type:c.type,label:c.label,age:c.age,date:candidateSourceDate(c,rows)}))}]})),gaps:gapStructures(rows)};
+ out.selectionAudit.confluenceIndependence=confluenceIndependenceAudit(out.selectionAudit.levels);
+ out.selectionAudit.rejectedCandidates=rejectedCandidates;out.selectionAudit.support2Rejected=support2Rejected;
+ out.rulePolicy={...out.rulePolicy,version:"research-v3-review-only",movingAverages:"第一與第二支撐採相同均線上緣規則；不得與第一支撐重疊",confidenceFormulaStatus:"not-calibrated-confidence-hidden"};
+ out.researchPolicy={status:"hypothesis-not-original-formula",version:"v3-review-only",mode,candidateWindow:120,usedRows:rows.length,secondSupportConfluence:true,sameGapIndependentSecond:false,filledGapStandalonePressure:false,pressureVolumeLowStandalone:false,brokenHighExclusion:p.brokenHigh,secondResistanceAllowsPivotLow:p.secondLow,volumeRatioMinimum:1.5,pressureVolumeHighStandalone:false,previousCloseResistance:true,isolatedVolumeCloseFirstSupport:false,secondSupport:"nearest-independent-band",secondResistance:p.secondLow?"next-band-containing-confirmed-pivot":"next-band-containing-confirmed-pivot-high",secondMain:p.secondLow?"most-recent-confirmed-pivot-in-band":"most-recent-confirmed-pivot-high-in-band",supportTolerance:.0125,pressureTolerance,pressureToleranceModel:toleranceModel,pressureToleranceFactor:toleranceModel==="atr-half"?.5:null,referencePricesAsInputs:false};
+ return out;
+}
+
+// Offline research: AV equations are arithmetic overlays, not new historical evidence.
+function calculateAvReview(close){
+ if(!Number.isFinite(close)||close<=0)throw new Error("Invalid AV close");
+ const formulas=[['A4',close*1.045*1.018*1.018,'C × 1.045 × 1.018 × 1.018'],['A3',close*1.045*1.018,'C × 1.045 × 1.018'],['A2',close*1.045,'C × 1.045'],['A1',close*1.018,'C × 1.018'],['AQ',close*1.012,'C × 1.012'],['VQ',close/1.012,'C ÷ 1.012'],['V1',close/1.018,'C ÷ 1.018'],['V抓',close/1.035,'C ÷ 1.035'],['V2',close/1.045,'C ÷ 1.045']];
+ return [...formulas.map(([key,raw,formula])=>({key,raw,display:raw.toFixed(2),tradePrice:tradePrice(raw),formula,side:raw>close?'resistance':'support',isHistoricalEvidence:false})),{key:'V3',raw:null,display:'—',tradePrice:null,formula:null,side:'support',status:'formula-not-provided',isHistoricalEvidence:false}];
+}
+function calibrateAvReview(inputRows,mode="guarded-breakout"){
+ if(!['overlay','guarded-breakout'].includes(mode))throw new Error("Invalid AV review mode");
+ const out=calibratePhotoResearchV3(inputRows),points=calculateAvReview(out.current),a1=points.find(x=>x.key==='A1'),level=out.breakout;
+ const audit={status:'research-hypothesis',mode,basis:out.current,date:out.date,points,bandRuleChanged:false,referenceTargetsAsInputs:false,adjustment:null,qualification:null};
+ if(mode==='guarded-breakout'&&level){
+  const sourcePivots=out.selectionAudit.levels.breakout.candidates.filter(x=>x.type==='pivotHigh');
+  const price=a1.tradePrice,tick=tickSize(price),peers=sourcePivots.filter(x=>Math.abs(tradePrice(x.price)-price)<=tick+1e-8);
+  const inBand=price>=level.bandLow&&price<=level.bandHigh;
+  audit.qualification={formula:'A1',price,raw:a1.raw,inBand,maximumPivotGap:tick,qualifyingPivots:peers,accepted:inBand&&peers.length>0,reason:!inBand?'AV-outside-existing-band':!peers.length?'no-confirmed-high-within-one-tick':'AV-and-confirmed-high-confluence'};
+  if(inBand&&peers.length&&level.price!==price){
+   audit.adjustment={field:'breakout',before:level.price,after:price,bandLow:level.bandLow,bandHigh:level.bandHigh,sources:peers};
+   level.price=price;level.distance=(price-out.current)/out.current;level.sources=[...new Set([...level.sources,'AV A1〔算術參考，非獨立歷史訊號〕'])];
+   out.selectionAudit.levels.breakout.price=price;
+   level.avReference={key:'A1',raw:a1.raw,tradePrice:price,isHistoricalEvidence:false};
+  }
+ }else audit.qualification={accepted:false,reason:mode==='overlay'?'overlay-only':'no-existing-breakout-role'};
+ out.avReview=audit;out.researchPolicy={...out.researchPolicy,version:'av-review-only',avMode:mode,avAdjustment:'existing-breakout-A1-only-with-confirmed-high-within-one-tick',bandRuleChanged:false};
+ return out;
+}

@@ -166,7 +166,9 @@
           "key": "resistance2",
           "price": 554,
           "bandLow": null,
-          "bandHigh": null
+          "bandHigh": null,
+          "verificationStatus": "uncertain-blurred",
+          "excludeFromCalibration": true
         }
       ],
       "visibleMetrics": {
@@ -403,7 +405,9 @@
           "key": "resistance1",
           "price": 259,
           "bandLow": null,
-          "bandHigh": null
+          "bandHigh": null,
+          "verificationStatus": "uncertain-obscured",
+          "excludeFromCalibration": true
         },
         {
           "key": "resistance2",
@@ -624,13 +628,17 @@
           "key": "resistance1",
           "price": 240.5,
           "bandLow": null,
-          "bandHigh": null
+          "bandHigh": null,
+          "verificationStatus": "uncertain-blurred",
+          "excludeFromCalibration": true
         },
         {
           "key": "resistance2",
           "price": 247.5,
           "bandLow": null,
-          "bandHigh": null
+          "bandHigh": null,
+          "verificationStatus": "uncertain-blurred",
+          "excludeFromCalibration": true
         }
       ],
       "visibleMetrics": {
@@ -1117,5 +1125,17 @@
         "同圖另含盤中報價，拍攝日期未核驗，不可視為10/8收盤"
       ]
     }
-  ]
+  ],
+  "calibrationPolicy": {
+    "purpose": "out-of-sample reference only",
+    "date": "2026-10-08",
+    "forecastDate": "2026-10-12",
+    "excludeUncertainVisibleValues": true,
+    "excludeNullBandEndpoints": true,
+    "neverUseReferenceAsFeature": true,
+    "absolutePriceTolerance": 1.5,
+    "requireDatedOhlcvForEngineComparison": true
+  },
+  "verifiedReferencePriceCount": 96,
+  "uncertainReferencePriceCount": 4
 }

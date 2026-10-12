@@ -14,4 +14,10 @@ for(const [code,expected] of Object.entries(fixtures))test('production pipeline 
  const actual=Object.fromEntries(Object.keys(expected).map(key=>[key,output[key]?.price??null]));
  assert.deepEqual(actual,expected,'This test freezes the existing engine output, not photo target prices. Any intentional formula change requires a cross-date A/B report before updating this baseline.');
  assert.ok(!(output.breakout&&output.resistance1),'breakout and first resistance are mutually exclusive');
+ for(const key of ['support1','support2','breakout','resistance1','resistance2']){
+  const level=output[key];if(!level)continue;
+  assert.ok(level.bandLow<=level.price&&level.price<=level.bandHigh,key+' main price must be inside its band');
+ }
+ if(output.support1&&output.support2)assert.ok(output.support2.bandHigh<output.support1.bandLow,'independent second support must not overlap first');
+ if(output.resistance2&&(output.breakout||output.resistance1))assert.ok(output.resistance2.bandLow>(output.breakout||output.resistance1).bandHigh,'independent second resistance must not overlap first');
 });

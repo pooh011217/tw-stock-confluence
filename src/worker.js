@@ -473,7 +473,7 @@ function calibratePhotoResearchV3(inputRows,mode="qualified"){
  const bands=structuralBands(candidates,cur,"resistance",pressureTolerance),first=pack(bands[0]);
  let second=pack(bands.find(g=>first&&g.low>first.bandHigh&&candidates.some(c=>(c.type==="pivotHigh"||(p.secondLow&&c.type==="pivotLow"))&&c.price>=g.low&&c.price<=g.high)));
  if(second){const pivots=candidates.filter(c=>(c.type==="pivotHigh"||(p.secondLow&&c.type==="pivotLow"))&&c.price>=second.bandLow&&c.price<=second.bandHigh).sort((x,y)=>x.age-y.age);if(pivots.length){second.price=tradePrice(pivots[0].price);second.distance=(second.price-cur)/cur}}
- const breakout=first&&keys.some(k=>k.price>=first.bandLow&&k.price<=first.bandHigh&&candidates.some(peer=>peer!==k&&peer.side==="resistance"&&peer.type!=="ma"&&peer.type!=="round"&&peer.type!=="volumeProfile"&&peer.label!==k.label&&peer.price>=first.bandLow&&peer.price<=first.bandHigh&&Math.abs(peer.price-k.price)<=cur*.0125));
+ const breakout=first&&keys.some(k=>k.price>=first.bandLow&&k.price<=first.bandHigh);
  out.breakout=breakout?first:null;out.resistance1=breakout?null:first&&first.distance<=.10?first:null;out.resistance2=second&&second.distance<=.10?second:null;
  out.mediumResistance=first&&first.distance>.10?first:second&&second.distance>.10?second:null;
  out.pressureMode=out.breakout?"breakout":out.resistance1?"ordinary":out.mediumResistance?"medium":"unconfirmed";

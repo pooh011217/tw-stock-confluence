@@ -493,8 +493,8 @@ function calibratePhotoResearchV3(inputRows,mode="qualified"){
 // Offline research: AV equations are arithmetic overlays, not new historical evidence.
 function calculateAvReview(close){
  if(!Number.isFinite(close)||close<=0)throw new Error("Invalid AV close");
- const formulas=[['A4',close*1.045*1.018*1.018,'C × 1.045 × 1.018 × 1.018'],['A3',close*1.045*1.018,'C × 1.045 × 1.018'],['A2',close*1.045,'C × 1.045'],['A1',close*1.018,'C × 1.018'],['AQ',close*1.012,'C × 1.012'],['VQ',close/1.012,'C ÷ 1.012'],['V1',close/1.018,'C ÷ 1.018'],['V抓',close/1.035,'C ÷ 1.035'],['V2',close/1.045,'C ÷ 1.045']];
- return [...formulas.map(([key,raw,formula])=>({key,raw,display:raw.toFixed(2),tradePrice:tradePrice(raw),formula,side:raw>close?'resistance':'support',isHistoricalEvidence:false})),{key:'V3',raw:null,display:'—',tradePrice:null,formula:null,side:'support',status:'formula-not-provided',isHistoricalEvidence:false}];
+ const formulas=[['A4',close*1.045*1.018*1.018,'C × 1.045 × 1.018 × 1.018'],['A3',close*1.045*1.018,'C × 1.045 × 1.018'],['A2',close*1.045,'C × 1.045'],['A抓',close*1.035,'C × 1.035'],['A1',close*1.018,'C × 1.018'],['AQ',close*1.012,'C × 1.012'],['VQ',close/1.012,'C ÷ 1.012'],['V1',close/1.018,'C ÷ 1.018'],['V抓',close/1.035,'C ÷ 1.035'],['V2',close/1.045,'C ÷ 1.045'],['V3',close/1.045/1.018,'C ÷ 1.045 ÷ 1.018'],['V4',close/1.045/1.018/1.018,'C ÷ 1.045 ÷ 1.018 ÷ 1.018']];
+ return formulas.map(([key,raw,formula])=>({key,raw,display:raw.toFixed(2),tradePrice:tradePrice(raw),formula,side:raw>close?'resistance':'support',isHistoricalEvidence:false}));
 }
 function calibrateAvReview(inputRows,mode="guarded-breakout"){
  if(!['overlay','guarded-breakout'].includes(mode))throw new Error("Invalid AV review mode");

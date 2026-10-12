@@ -168,7 +168,7 @@ function tradePrice(value,mode="nearest"){
  return Number((result*tick).toFixed(2));
 }
 function structuralBands(candidates,cur,side,tolerance){
- const ordered=candidates.filter(c=>c.type!=="ma"&&c.type!=="round"&&Number.isFinite(c.price)&&c.price>0&&(side==="support"?c.price<cur:c.price>cur)).map(c=>({...c,price:tradePrice(c.price)})).filter(c=>side==="support"?c.price<cur:c.price>cur).sort((a,b)=>side==="support"?b.price-a.price||a.age-b.age:a.price-b.price||a.age-b.age),out=[];
+ const ordered=candidates.filter(c=>c.type!=="ma"&&c.type!=="round"&&c.type!=="volumeProfile"&&Number.isFinite(c.price)&&c.price>0&&(side==="support"?c.price<cur:c.price>cur)).map(c=>({...c,price:tradePrice(c.price)})).filter(c=>side==="support"?c.price<cur:c.price>cur).sort((a,b)=>side==="support"?b.price-a.price||a.age-b.age:a.price-b.price||a.age-b.age),out=[];
  for(const c of ordered){const containing=out.find(g=>c.price>=g.low&&c.price<=g.high);if(containing){containing.sources=[...new Set([...containing.sources,c.label])];containing.score=Math.max(containing.score,c.base||1);continue}const last=out.at(-1);if(last&&Math.abs(c.price-last.anchor)<=cur*tolerance+1e-8){last.low=Math.min(last.low,c.price);last.high=Math.max(last.high,c.price);last.sources=[...new Set([...last.sources,c.label])];last.score=Math.max(last.score,c.base||1)+1;continue}
  const low=c.type==="volumeProfile"?tradePrice(c.low,"floor"):c.price;
  out.push({anchor:c.price,price:c.price,low:Math.min(low??c.price,c.price),high:c.price,score:c.base||1,sources:[c.label],age:c.age,type:c.type});

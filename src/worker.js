@@ -447,7 +447,7 @@ function calibratePhotoResearchV3(inputRows,mode="qualified"){
  if(p.pressureLow)candidates=candidates.filter(x=>{const reject=x.side==='resistance'&&x.label==='爆量K低點';if(reject)rejectedCandidates.push({price:x.price,type:x.type,label:x.label,date:candidateSourceDate(x,rows),reason:'volume-low-requires-independent-pressure-structure'});return !reject});
  if(p.brokenHigh)candidates=candidates.filter(x=>{const reject=x.side==='resistance'&&x.type==='pivotHigh'&&rows.slice(end-x.age+1).some(r=>r.close>x.price);if(reject)rejectedCandidates.push({price:x.price,type:x.type,label:x.label,date:candidateSourceDate(x,rows),reason:'historically-closed-above-high-experimental-exclusion'});return !reject});
  a.support2=null;a.tolerance=.0125;
- const keys=candidates.filter(c=>c.side==="resistance"&&(c.type==="pivotHigh"||c.label==="缺口上緣")&&(c.price-cur)/cur<=.04).sort((x,y)=>x.price-y.price);
+ const keys=candidates.filter(c=>c.side==="resistance"&&(c.type==="pivotHigh"||c.label==="缺口上緣")&&(c.price-cur)/cur<=.04&&candidates.some(peer=>peer!==c&&peer.side==="resistance"&&peer.type!=="ma"&&peer.type!=="round"&&peer.type!=="volumeProfile"&&Math.abs(peer.price-c.price)<=cur*.0125&&peer.label!==c.label)).sort((x,y)=>x.price-y.price);
  a.breakout=keys[0]?{price:keys[0].price}:null;
  let out=calibrateVisibleRules(a,rows,candidates);
  const pack=g=>g?{price:tradePrice(g.price),bandLow:tradePrice(g.low,"floor"),bandHigh:tradePrice(g.high,"ceil"),sources:g.sources,distance:(tradePrice(g.price)-cur)/cur,confidence:null,strength:"研究推定結構"}:null;

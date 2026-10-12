@@ -139,7 +139,7 @@ function selectPressureLevels({cur,tol,key,shelf,resist,cands,recentFloorLows}){
 // Support2 is a lower independent band; preserve original priority order.
 function selectSecondSupport(first,raw,zones){
  if(!first)return null;
- const independent=c=>c&&c!==first&&Number.isFinite(c.price)&&c.price>0&&c.price<first.price&&c.price<first.low&&c.low<=c.price;
+ const independent=c=>c&&c!==first&&Number.isFinite(c.price)&&c.price>0&&c.price<first.price&&c.price<first.low&&Number.isFinite(c.low)&&Number.isFinite(c.high)&&c.low<=c.price&&c.price<=c.high&&c.high<first.low;
  return raw.find(c=>independent(c)&&c.type==="rangeLow"&&c.price>=first.price*.97)
   ||raw.find(c=>independent(c)&&c.price<=first.price*.982&&c.age<=40)
   ||raw.find(c=>independent(c)&&c.price<=first.price*.982)

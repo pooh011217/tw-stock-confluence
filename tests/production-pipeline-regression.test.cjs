@@ -14,6 +14,8 @@ for(const [code,expected] of Object.entries(fixtures))test('production pipeline 
  const actual=Object.fromEntries(Object.keys(expected).map(key=>[key,output[key]?.price??null]));
  assert.deepEqual(actual,expected,'This test freezes the existing engine output, not photo target prices. Any intentional formula change requires a cross-date A/B report before updating this baseline.');
  assert.ok(!(output.breakout&&output.resistance1),'breakout and first resistance are mutually exclusive');
+ if(code==='2368')assert.equal(output.pressureMode,'breakout','2368 photo-aligned breakout role must not regress to ordinary resistance');
+ if(code==='8299')assert.equal(output.pressureMode,'ordinary','8299 ordinary resistance role must not regress to breakout');
  for(const key of ['support1','support2','breakout','resistance1','resistance2']){
   const level=output[key];if(!level)continue;
   assert.ok(level.bandLow<=level.price&&level.price<=level.bandHigh,key+' main price must be inside its band');

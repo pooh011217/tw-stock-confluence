@@ -1,0 +1,1121 @@
+{
+  "source": "使用者提供60張照片之人工核讀彙整；非官方行情，僅供獨立核對",
+  "date": "2026-10-08",
+  "predictionFor": "2026-10-12",
+  "photoCount": 60,
+  "photoStockCount": 26,
+  "formulaStatus": "原始圖片沒有完整揭露位點計算公式；不能視為已破解",
+  "coverageNote": "26檔照片；目前GitHub可離線驗證10/8完整日線僅有2368、8299兩檔，其他須以同日完整官方日線核對。未辨識價帶為null，不代表0；無第二壓力的照片不視為必須預測null。",
+  "items": [
+    {
+      "code": "3406",
+      "name": "玉晶光",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 1045,
+          "bandLow": 1040,
+          "bandHigh": 1045
+        },
+        {
+          "key": "support2",
+          "price": 1005,
+          "bandLow": 993,
+          "bandHigh": 1005
+        },
+        {
+          "key": "resistance1",
+          "price": 1080,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 1125,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.5,
+        "foreignNetLots": 385
+      },
+      "photoFiles": [
+        "IMG_6956.jpeg",
+        "IMG_6958.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 1260,
+          "bandLow": 1245,
+          "bandHigh": 1260
+        },
+        {
+          "key": "support2",
+          "price": 1220,
+          "bandLow": 1216,
+          "bandHigh": 1220
+        },
+        {
+          "key": "breakout",
+          "price": 1300,
+          "bandLow": 1300,
+          "bandHigh": 1335
+        },
+        {
+          "key": "resistance2",
+          "price": 1400,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.55,
+        "foreignNetLots": 285
+      },
+      "photoFiles": [
+        "IMG_6959.jpeg",
+        "IMG_6960.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 2055,
+          "bandLow": 2050,
+          "bandHigh": 2055
+        },
+        {
+          "key": "support2",
+          "price": 2020,
+          "bandLow": 1995,
+          "bandHigh": 2020
+        },
+        {
+          "key": "resistance1",
+          "price": 2080,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 2145,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.68,
+        "foreignNetLots": 248
+      },
+      "photoFiles": [
+        "IMG_6961.jpeg",
+        "IMG_6962.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 531,
+          "bandLow": 525,
+          "bandHigh": 531
+        },
+        {
+          "key": "support2",
+          "price": 519,
+          "bandLow": 514,
+          "bandHigh": 519
+        },
+        {
+          "key": "breakout",
+          "price": 540,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 554,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 1.5,
+        "foreignNetLots": 21773
+      },
+      "photoFiles": [
+        "IMG_6964.jpeg",
+        "IMG_6965.jpeg"
+      ],
+      "flags": [
+        "第二壓力554畫面略模糊"
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 154.5,
+          "bandLow": 154,
+          "bandHigh": 154.5
+        },
+        {
+          "key": "support2",
+          "price": 151.5,
+          "bandLow": 150,
+          "bandHigh": 151.5
+        },
+        {
+          "key": "resistance1",
+          "price": 158,
+          "bandLow": 158,
+          "bandHigh": 162.5
+        },
+        {
+          "key": "resistance2",
+          "price": 168.5,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.94,
+        "foreignNetLots": 700
+      },
+      "photoFiles": [
+        "IMG_6966.jpeg",
+        "IMG_6967.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 735,
+          "bandLow": 729,
+          "bandHigh": 735
+        },
+        {
+          "key": "support2",
+          "price": 717,
+          "bandLow": 711,
+          "bandHigh": 717
+        },
+        {
+          "key": "breakout",
+          "price": 758,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 1.04,
+        "foreignNetLots": 1050
+      },
+      "photoFiles": [
+        "IMG_6968.jpeg",
+        "IMG_6969.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 176.5,
+          "bandLow": 175,
+          "bandHigh": 176.5
+        },
+        {
+          "key": "support2",
+          "price": 172.5,
+          "bandLow": 171,
+          "bandHigh": 172.5
+        },
+        {
+          "key": "breakout",
+          "price": 179.5,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 184,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.85,
+        "foreignNetLots": 14221
+      },
+      "photoFiles": [
+        "IMG_6970.jpeg",
+        "IMG_6971.jpeg",
+        "IMG_6972.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "6197",
+      "name": "佳必琪",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 371,
+          "bandLow": 368,
+          "bandHigh": 371
+        },
+        {
+          "key": "support2",
+          "price": 363,
+          "bandLow": 360.5,
+          "bandHigh": 363
+        },
+        {
+          "key": "breakout",
+          "price": 385.5,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 2.3,
+        "foreignNetLots": 851
+      },
+      "photoFiles": [
+        "IMG_6973.jpeg",
+        "IMG_6974.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "1560",
+      "name": "中砂",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 996,
+          "bandLow": 992,
+          "bandHigh": 996
+        },
+        {
+          "key": "support2",
+          "price": 955,
+          "bandLow": 947,
+          "bandHigh": 955
+        },
+        {
+          "key": "resistance1",
+          "price": 1035,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.25,
+        "foreignNetLots": 141
+      },
+      "photoFiles": [
+        "IMG_6975.jpeg",
+        "IMG_6976.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 256,
+          "bandLow": 253.5,
+          "bandHigh": 256
+        },
+        {
+          "key": "support2",
+          "price": 250.5,
+          "bandLow": 248.5,
+          "bandHigh": 250.5
+        },
+        {
+          "key": "resistance1",
+          "price": 259,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 265.5,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.76,
+        "foreignNetLots": 155
+      },
+      "photoFiles": [
+        "IMG_6977.jpeg",
+        "IMG_6978.jpeg",
+        "IMG_6979.jpeg"
+      ],
+      "flags": [
+        "第一壓力259局部遮擋，待複核"
+      ]
+    },
+    {
+      "code": "2359",
+      "name": "所羅門",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 126.5,
+          "bandLow": 126,
+          "bandHigh": 126.5
+        },
+        {
+          "key": "support2",
+          "price": 125,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance1",
+          "price": 128,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 130,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.88,
+        "foreignNetLots": 205
+      },
+      "photoFiles": [
+        "IMG_6980.jpeg",
+        "IMG_6981.jpeg",
+        "IMG_6982.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 186.5,
+          "bandLow": 184.5,
+          "bandHigh": 186.5
+        },
+        {
+          "key": "support2",
+          "price": 181.5,
+          "bandLow": 179,
+          "bandHigh": 181.5
+        },
+        {
+          "key": "breakout",
+          "price": 190.5,
+          "bandLow": 190.5,
+          "bandHigh": 195
+        },
+        {
+          "key": "resistance2",
+          "price": 203.5,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.53,
+        "foreignNetLots": 2033
+      },
+      "photoFiles": [
+        "IMG_6984.jpeg",
+        "IMG_6985.jpeg",
+        "IMG_6986.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 188,
+          "bandLow": 186.5,
+          "bandHigh": 188
+        },
+        {
+          "key": "support2",
+          "price": 184,
+          "bandLow": 182.5,
+          "bandHigh": 184
+        },
+        {
+          "key": "resistance1",
+          "price": 191,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 194,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 1.13,
+        "foreignNetLots": 15509
+      },
+      "photoFiles": [
+        "IMG_6987.jpeg",
+        "IMG_6988.jpeg",
+        "IMG_6989.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 1735,
+          "bandLow": 1710,
+          "bandHigh": 1735
+        },
+        {
+          "key": "support2",
+          "price": 1680,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "breakout",
+          "price": 1775,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 1830,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": null,
+        "foreignNetLots": 924
+      },
+      "photoFiles": [
+        "IMG_6990.jpeg",
+        "IMG_6991.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "2486",
+      "name": "一詮",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 238,
+          "bandLow": 237,
+          "bandHigh": 238
+        },
+        {
+          "key": "support2",
+          "price": 234,
+          "bandLow": 233,
+          "bandHigh": 234
+        },
+        {
+          "key": "resistance1",
+          "price": 240.5,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 247.5,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.66,
+        "foreignNetLots": 165
+      },
+      "photoFiles": [
+        "IMG_6994.jpeg",
+        "IMG_6995.jpeg"
+      ],
+      "flags": [
+        "第一壓力240.5與第二壓力247.5畫面模糊，待複核"
+      ]
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 573,
+          "bandLow": 566,
+          "bandHigh": 573
+        },
+        {
+          "key": "support2",
+          "price": 554,
+          "bandLow": 546,
+          "bandHigh": 554
+        },
+        {
+          "key": "resistance1",
+          "price": 590,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 625,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.58,
+        "foreignNetLots": 4286
+      },
+      "photoFiles": [
+        "IMG_6996.jpeg",
+        "IMG_6997.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 50.5,
+          "bandLow": 49.95,
+          "bandHigh": 50.5
+        },
+        {
+          "key": "support2",
+          "price": 49.25,
+          "bandLow": 49.05,
+          "bandHigh": 49.25
+        },
+        {
+          "key": "breakout",
+          "price": 52,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 54.3,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": null,
+        "foreignNetLots": null
+      },
+      "photoFiles": [
+        "IMG_6998.jpeg",
+        "IMG_6999.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "6217",
+      "name": "中探針",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 165.5,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "support2",
+          "price": 160,
+          "bandLow": 159.5,
+          "bandHigh": 160
+        },
+        {
+          "key": "resistance1",
+          "price": 172,
+          "bandLow": 172,
+          "bandHigh": 176
+        },
+        {
+          "key": "resistance2",
+          "price": 183,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.87,
+        "foreignNetLots": 26
+      },
+      "photoFiles": [
+        "IMG_7001.jpeg",
+        "IMG_7002.jpeg",
+        "IMG_7003.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "6683",
+      "name": "雍智科技",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 1400,
+          "bandLow": 1385,
+          "bandHigh": 1400
+        },
+        {
+          "key": "support2",
+          "price": 1360,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "breakout",
+          "price": 1460,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 1505,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": null,
+        "foreignNetLots": 24
+      },
+      "photoFiles": [
+        "IMG_7004.jpeg",
+        "IMG_7006.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "6834",
+      "name": "天二科技",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 131,
+          "bandLow": 129.5,
+          "bandHigh": 131
+        },
+        {
+          "key": "support2",
+          "price": 127.5,
+          "bandLow": 126.5,
+          "bandHigh": 127.5
+        },
+        {
+          "key": "breakout",
+          "price": 135.5,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 141,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 2.24,
+        "foreignNetLots": 663
+      },
+      "photoFiles": [
+        "IMG_7007.jpeg",
+        "IMG_7008.jpeg",
+        "IMG_7009.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 580,
+          "bandLow": 575,
+          "bandHigh": 580
+        },
+        {
+          "key": "support2",
+          "price": 561,
+          "bandLow": 555,
+          "bandHigh": 561
+        },
+        {
+          "key": "breakout",
+          "price": 601,
+          "bandLow": 601,
+          "bandHigh": 617
+        },
+        {
+          "key": "resistance2",
+          "price": 654,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 1.05,
+        "foreignNetLots": 2140
+      },
+      "photoFiles": [
+        "IMG_7010.jpeg",
+        "IMG_7011.jpeg",
+        "IMG_7012.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "2313",
+      "name": "華通",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 247,
+          "bandLow": 245,
+          "bandHigh": 247
+        },
+        {
+          "key": "support2",
+          "price": 241.5,
+          "bandLow": 239,
+          "bandHigh": 241.5
+        },
+        {
+          "key": "resistance1",
+          "price": 251,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 259,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 1,
+        "foreignNetLots": 4036
+      },
+      "photoFiles": [
+        "IMG_7013.jpeg",
+        "IMG_7015.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 185.5,
+          "bandLow": 183.5,
+          "bandHigh": 185.5
+        },
+        {
+          "key": "support2",
+          "price": 180,
+          "bandLow": 178,
+          "bandHigh": 180
+        },
+        {
+          "key": "breakout",
+          "price": 190.5,
+          "bandLow": 190.5,
+          "bandHigh": 195
+        },
+        {
+          "key": "resistance2",
+          "price": 202,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 0.56,
+        "foreignNetLots": 1087
+      },
+      "photoFiles": [
+        "IMG_7016.jpeg",
+        "IMG_7017.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "6257",
+      "name": "矽格",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 279.5,
+          "bandLow": 278,
+          "bandHigh": 279.5
+        },
+        {
+          "key": "support2",
+          "price": 273,
+          "bandLow": 272,
+          "bandHigh": 273
+        },
+        {
+          "key": "breakout",
+          "price": 289,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 1.47,
+        "foreignNetLots": 945
+      },
+      "photoFiles": [
+        "IMG_7018.jpeg",
+        "IMG_7019.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 236.5,
+          "bandLow": 234,
+          "bandHigh": 236.5
+        },
+        {
+          "key": "support2",
+          "price": 231,
+          "bandLow": 229.5,
+          "bandHigh": 231
+        },
+        {
+          "key": "breakout",
+          "price": 247,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 255.5,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": 2.15,
+        "foreignNetLots": 2020
+      },
+      "photoFiles": [
+        "IMG_7020.jpeg",
+        "IMG_7022.jpeg",
+        "IMG_7024.jpeg"
+      ],
+      "flags": []
+    },
+    {
+      "code": "6226",
+      "name": "光鼎",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "levels": [
+        {
+          "key": "support1",
+          "price": 43,
+          "bandLow": 42.65,
+          "bandHigh": 43
+        },
+        {
+          "key": "support2",
+          "price": 41.25,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance1",
+          "price": 45,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 46.4,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "visibleMetrics": {
+        "volumeRatio": null,
+        "foreignNetLots": null
+      },
+      "photoFiles": [
+        "IMG_7025.jpeg"
+      ],
+      "flags": [
+        "同圖另含盤中報價，拍攝日期未核驗，不可視為10/8收盤"
+      ]
+    }
+  ]
+}

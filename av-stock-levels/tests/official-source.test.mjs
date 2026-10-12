@@ -7,6 +7,7 @@ const original=globalThis.fetch;
 globalThis.fetch=async(url)=>{url=String(url);calls.push(url);assert.ok(!url.includes('finmind'));const u=new URL(url),code=u.searchParams.get('stockNo')||u.searchParams.get('code')||u.searchParams.get('stkno');
  if(code==='1303'&&u.hostname==='www.twse.com.tw')return new Response('unavailable',{status:503});
  if(code==='6223'&&u.hostname==='tpex-official-relay.onrender.com')return new Response('unavailable',{status:503});
+ if(code==='2408')return Response.json({stat:'OK',data:u.hostname==='www.twse.com.tw'?[raw('2026-10-08',532)]:[raw('2026-10-08',532),raw('2026-10-12',527)]});
  const month=u.searchParams.get('date')?.includes('09')?'09':'10';
  const rows=month==='09'?[raw('2026-09-30',90)]:[raw('2026-10-01'),raw('2026-10-02',101),raw('2026-10-05',102),raw('2026-10-08',105)];
  if(code==='4979')return Response.json({tables:[{data:[['115/10/08','1000','100000','200','100','90','110']]}]});
@@ -20,3 +21,5 @@ test('holiday is rejected instead of substituting another close',async()=>{await
 test('invalid OHLC never becomes a usable result',async()=>{await assert.rejects(()=>historical('4979','2026-10-08'),{status:502});});
 test('latest verified data and unchanged AV formula',async()=>{const x=await latestStock('2454');assert.equal(x.date,'2026-10-08');assert.equal(x.close,105);assert.equal(levels(100).find(x=>x[0]==='A2')[1],104.5);});
 test('route errors preserve status and no stock value',async()=>{const r=await worker.fetch(new Request('https://test/api/history?code=2454&date=2026-02-30'));assert.equal(r.status,400);assert.equal((await r.json()).stock,undefined);});
+
+test('latest rejects old primary month as final and checks relay for newer close',async()=>{const x=await latestStock('2408');assert.equal(x.date,'2026-10-12');assert.equal(x.close,527);assert.ok(calls.some(x=>x.includes('/twse/month?code=2408')));});

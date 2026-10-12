@@ -3,9 +3,9 @@
   "date": "2026-10-08",
   "predictionFor": "2026-10-12",
   "photoCount": 60,
-  "photoStockCount": 26,
+  "photoStockCount": 29,
   "formulaStatus": "原始圖片沒有完整揭露位點計算公式；不能視為已破解",
-  "coverageNote": "26檔照片；目前GitHub可離線驗證10/8完整日線僅有2368、8299兩檔，其他須以同日完整官方日線核對。未辨識價帶為null，不代表0；無第二壓力的照片不視為必須預測null。",
+  "coverageNote": "26檔照片；目前GitHub可離線驗證10/8完整日線僅有2368、8299兩檔，其他須以同日完整官方日線核對。未辨識價帶為null，不代表0；無第二壓力的照片不視為必須預測null。 Supplemental IMG_6950–6953 received: 6257 corrected 279.5→278.5, new 6488/3583, 2303 inferred from overlay (verify ticker); intraday 10/12 quotes never used for 10/08 prediction.",
   "items": [
     {
       "code": "3406",
@@ -1010,9 +1010,9 @@
       "levels": [
         {
           "key": "support1",
-          "price": 279.5,
+          "price": 278.5,
           "bandLow": 278,
-          "bandHigh": 279.5
+          "bandHigh": 278.5
         },
         {
           "key": "support2",
@@ -1033,9 +1033,12 @@
       },
       "photoFiles": [
         "IMG_7018.jpeg",
-        "IMG_7019.jpeg"
+        "IMG_7019.jpeg",
+        "IMG_6950.png"
       ],
-      "flags": []
+      "flags": [
+        "2026-10-12 new image confirms first support 278.50, not prior 279.50; reference corrected, requires historical OHLCV to validate model"
+      ]
     },
     {
       "code": "2472",
@@ -1124,6 +1127,123 @@
       "flags": [
         "同圖另含盤中報價，拍攝日期未核驗，不可視為10/8收盤"
       ]
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": 1130,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 1120,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "support2",
+          "price": 1095,
+          "bandLow": 1085,
+          "bandHigh": 1095
+        },
+        {
+          "key": "breakout",
+          "price": 1140,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 1185,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "photoFiles": [
+        "IMG_6951.png"
+      ],
+      "flags": [
+        "2026-10-12 screenshot: market quote 1140/1145/1110 is 10/12 intraday actual; do not feed it into 10/08 forecast"
+      ]
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": 736,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 733,
+          "bandLow": 727,
+          "bandHigh": 733
+        },
+        {
+          "key": "support2",
+          "price": 719,
+          "bandLow": 712,
+          "bandHigh": 719
+        },
+        {
+          "key": "resistance1",
+          "price": 743,
+          "bandLow": null,
+          "bandHigh": null
+        },
+        {
+          "key": "resistance2",
+          "price": 766,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "photoFiles": [
+        "IMG_6953.png"
+      ],
+      "flags": [
+        "2026-10-12 screenshot quote 744/744/719 is 10/12 intraday actual; validation only"
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "date": "2026-10-08",
+      "predictionFor": "2026-10-12",
+      "current": null,
+      "levels": [
+        {
+          "key": "support1",
+          "price": 146,
+          "bandLow": 145,
+          "bandHigh": 146
+        },
+        {
+          "key": "support2",
+          "price": 140,
+          "bandLow": 138.5,
+          "bandHigh": 140
+        },
+        {
+          "key": "breakout",
+          "price": 150.5,
+          "bandLow": 150.5,
+          "bandHigh": 154.5
+        },
+        {
+          "key": "resistance2",
+          "price": 159,
+          "bandLow": null,
+          "bandHigh": null
+        }
+      ],
+      "photoFiles": [
+        "IMG_6952.jpeg"
+      ],
+      "flags": [
+        "Stock code 2303 inferred from user overlay 聯電; underlying screenshot has no visible ticker, verify before official comparison"
+      ]
     }
   ],
   "calibrationPolicy": {
@@ -1136,6 +1256,6 @@
     "absolutePriceTolerance": 1.5,
     "requireDatedOhlcvForEngineComparison": true
   },
-  "verifiedReferencePriceCount": 96,
+  "verifiedReferencePriceCount": 108,
   "uncertainReferencePriceCount": 4
 }

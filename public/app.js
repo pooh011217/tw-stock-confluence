@@ -53,11 +53,12 @@ async function analyze(q=$("#query").value){q=String(q||"").trim();if(!q){$("#er
 function toggleWatch(code){watch=watch.includes(code)?watch.filter(x=>x!==code):[code,...watch].slice(0,30);localStorage.setItem("tw-v335-watch",JSON.stringify(watch));renderWatch();if(current?.stock?.code===code)$("#watchBtn").textContent=watch.includes(code)?"已加入自選":"加入自選"}
 function renderWatch(){const g=$("#watchGrid");g.innerHTML=watch.length?watch.map(c=>`<button class="watch" data-code="${c}"><b>${stockNames[c]||c}${stockNames[c]?" <small>"+c+"</small>":""}</b><span>點一下完整分析</span></button>`).join(""):"<p>尚未加入自選股。</p>";g.querySelectorAll("[data-code]").forEach(b=>b.onclick=()=>{showTab("analysis");$("#query").value=b.dataset.code;analyze(b.dataset.code)})}
 async function loadWatchNames(){await Promise.all(watch.filter(c=>!stockNames[c]&&!pendingNames.has(c)).map(async c=>{pendingNames.add(c);try{const d=await api({action:"search",q:c});rememberStocks((d.results||[]).filter(s=>s.code===c))}catch{}finally{pendingNames.delete(c)}}));renderWatch()}
-let scanRequest=0;
+let scanRequest=0,scanSnapshot=null,scanImageUrl=null,scanImageFile=null;
 const escapeText=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function scanColumns(results){const ok=results.filter(r=>r.ok),cols=[["support1","第一支撐"],["support2","第二支撐"],["breakout","突破／壓力共振區"]];if(ok.some(r=>!r.levels?.breakout&&r.levels?.resistance1))cols.push(["resistance1","第一壓力"]);cols.push(["resistance2","第二壓力"]);if(ok.some(r=>r.levels?.mediumResistance))cols.push(["mediumResistance","中期壓力"]);if(ok.some(r=>r.levels?.limitUpReference))cols.push(["limitUpReference","漲停參考〔非結構〕"]);return cols}
 function scanLevel(r,key){const levels=r.levels||{support1:r.support,breakout:r.breakout};return levels.breakout&&key==="resistance1"?null:levels[key]}
 function renderScan(results,done,total){
+ if(scanSnapshot){scanSnapshot.results=JSON.parse(JSON.stringify(results));scanSnapshot.complete=done===total}$("#scanImageBtn").disabled=done!==total;$("#scanImageStatus").textContent=done===total?"可將全部結果與價格帶儲存成一張圖":"掃描完成後可儲存全部資料";
  rememberStocks(results.filter(r=>r.ok).map(r=>r.stock));renderWatch();const cols=scanColumns(results),dates=[...new Set(results.filter(r=>r.ok).map(r=>r.date))];
  const rows=results.map(r=>{if(!r.ok)return `<tr class="scan-failed"><td>${escapeText(r.query)}</td><td colspan="${cols.length+1}">${escapeText(r.error)}</td></tr>`;
  const main=cols.map(([key])=>{const l=scanLevel(r,key);return `<td class="${key.startsWith("support")?"scan-support":"scan-pressure"}">${l?money(l.price)+(key.startsWith("support")&&l.distance<-.10?' <small>〔中期〕</small>':""):'<span class="scan-pending">尚未形成</span>'}</td>`}).join("");
@@ -68,12 +69,20 @@ function renderScan(results,done,total){
 }
 
 async function scan(raw=$("#scanText").value){
+ scanSnapshot=null;$("#scanImageBtn").disabled=true;$("#scanImageStatus").textContent="掃描完成後可儲存全部資料";closeScanImage();
  const id=++scanRequest,codes=[...new Set(String(raw||"").split(/[\s,，;；]+/).map(q=>q.trim()).filter(Boolean))].slice(0,12);
  if(!codes.length){$("#scanResult").innerHTML='<div class="error">請輸入至少一檔股票代碼或名稱</div>';return}
  const asOf=$("#asOf").value||undefined,model=$("#model")?.value||"standard",results=[];let cursor=0;
+ scanSnapshot={results:[],complete:false,total:codes.length,asOf,modelLabel:$("#model")?.selectedOptions?.[0]?.textContent||(model==="photo-inferred"?"照片推定":"共振＋AV交叉校正（推定）")};
  $("#scanResult").innerHTML=`<div class="empty">掃描中…已完成 0/${codes.length} 檔</div>`;
  async function next(){while(id===scanRequest&&cursor<codes.length){const q=codes[cursor++];let row;try{const d=await api({action:"scan",codes:q,asOf,model});row=d.results?.[0]||{ok:false,query:q,error:"資料服務未回傳此檔結果"}}catch(e){row={ok:false,query:q,error:e?.message||"此檔分析失敗"}}if(id!==scanRequest)return;results.push(row);results.sort((a,b)=>(b.ok?b.observation:-1)-(a.ok?a.observation:-1));renderScan(results,results.length,codes.length)}}
  await Promise.all(Array.from({length:Math.min(2,codes.length)},next));
+}
+function closeScanImage(){if($("#scanImageDialog").open)$("#scanImageDialog").close();if(scanImageUrl)URL.revokeObjectURL(scanImageUrl);scanImageUrl=null;scanImageFile=null;$("#scanImagePreview").removeAttribute?.("src")}
+async function saveScanImage(){
+ const snapshot=scanSnapshot;if(!snapshot?.complete)return;const button=$("#scanImageBtn");button.disabled=true;$("#scanImageStatus").textContent="正在產生完整圖片…";
+ try{const now=new Date(),meta={...snapshot,generatedAt:now.toLocaleString("zh-TW",{timeZone:"Asia/Taipei",hour12:false}),fileStamp:now.getTime()},data=scanImageData(snapshot.results,scanColumns(snapshot.results),meta),image=await createScanImage(data);if(snapshot!==scanSnapshot)return;closeScanImage();scanImageUrl=URL.createObjectURL(image.blob);scanImageFile=new File([image.blob],data.filename,{type:"image/png"});$("#scanImagePreview").src=scanImageUrl;const link=$("#scanImageDownload");link.href=scanImageUrl;link.download=data.filename;$("#scanImageShare").hidden=!(navigator.canShare?.({files:[scanImageFile]}));$("#scanImageDialog").showModal();$("#scanImageStatus").textContent=`完整圖片已產生：${snapshot.results.length}檔，${image.width} × ${image.height}`}
+ catch(e){$("#scanImageStatus").textContent=e?.message||"圖片產生失敗，請重試"}finally{button.disabled=!scanSnapshot?.complete}
 }
 function showTab(name){document.querySelectorAll(".tabpane").forEach(x=>x.classList.add("hidden"));$("#"+name+"Tab").classList.remove("hidden");document.querySelectorAll(".tabs button").forEach(x=>x.classList.toggle("active",x.dataset.tab===name))}
 async function share(){const s=current?.stock,a=current?.analysis;if(!s)return;const text=`${s.name} ${s.code}｜現價 ${money(a.current)}｜第一支撐 ${money(a.support1?.price)}｜第二支撐 ${money(a.support2?.price)}`;try{if(navigator.share)await navigator.share({title:"台股支撐壓力共振",text,url:location.href});else await navigator.clipboard.writeText(text+" "+location.href)}catch{}}
@@ -83,10 +92,13 @@ function showSuggestions(rows){rememberStocks(rows);const box=$("#suggestions");
 function suggest(){const q=$("#query").value.trim();clearTimeout(searchTimer);const seq=++searchSeq;if(!q){$("#suggestions").innerHTML="";hideSuggestions();return}searchTimer=setTimeout(async()=>{try{const d=await api({action:"search",q});if(seq!==searchSeq||$("#query").value.trim()!==q)return;showSuggestions(d.results||[])}catch(e){if(seq===searchSeq)showSuggestions([])}},120)}
 if($("#model"))$("#model").onchange=()=>{if($("#query").value.trim())analyze()};
 $("#analyze").onclick=()=>{hideSuggestions();analyze()};
+$("#scanImageBtn").onclick=saveScanImage;$("#scanImageClose").onclick=closeScanImage;$("#scanImageDialog").addEventListener("close",()=>{if(scanImageUrl)URL.revokeObjectURL(scanImageUrl);scanImageUrl=null;scanImageFile=null});
+$("#scanImageShare").onclick=async()=>{if(!scanImageFile)return;try{await navigator.share({files:[scanImageFile],title:"台股共振完整掃描截圖"})}catch(e){if(e.name!=="AbortError")$("#scanImageStatus").textContent="分享未完成，可使用下載或長按圖片儲存"}};
+
 $("#query").addEventListener("input",suggest);
 $("#query").addEventListener("focus",()=>{if($("#query").value.trim())suggest()});
 $("#query").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();hideSuggestions();analyze()}if(e.key==="Escape")hideSuggestions()});
-$("#clearDate").onclick=()=>{$("#asOf").value=""};$("#scanBtn").onclick=()=>scan();$("#scanWatch").onclick=()=>{showTab("scan");$("#scanText").value=watch.join(" ");scan(watch.join(" "))};document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));$("#asOf").max=new Date().toISOString().slice(0,10);renderWatch();loadWatchNames();if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js?v=3.3.44.19",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{}));
+$("#clearDate").onclick=()=>{$("#asOf").value=""};$("#scanBtn").onclick=()=>scan();$("#scanWatch").onclick=()=>{showTab("scan");$("#scanText").value=watch.join(" ");scan(watch.join(" "))};document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));$("#asOf").max=new Date().toISOString().slice(0,10);renderWatch();loadWatchNames();if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js?v=3.3.44.20",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{}));
 
 if(typeof location!=="undefined"){
  const start=new URLSearchParams(location.search);

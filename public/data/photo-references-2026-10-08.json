@@ -5,7 +5,7 @@
   "photoCount": 60,
   "photoStockCount": 29,
   "formulaStatus": "原始圖片沒有完整揭露位點計算公式；不能視為已破解",
-  "coverageNote": "26檔照片；目前GitHub可離線驗證10/8完整日線僅有2368、8299兩檔，其他須以同日完整官方日線核對。未辨識價帶為null，不代表0；無第二壓力的照片不視為必須預測null。 Supplemental IMG_6950–6953 received: 6257 corrected 279.5→278.5, new 6488/3583, 2303 inferred from overlay (verify ticker); intraday 10/12 quotes never used for 10/08 prediction.",
+  "coverageNote": "26檔照片；目前GitHub可離線驗證10/8完整日線僅有2368、8299兩檔，其他須以同日完整官方日線核對。未辨識價帶為null，不代表0；無第二壓力的照片不視為必須預測null。 Supplemental IMG_6950–6953 received: 6257 corrected 279.5→278.5, new 6488/3583, 2303 inferred from overlay (verify ticker); intraday 10/12 quotes never used for 10/08 prediction. User confirmed 2303 聯電; 2026-10-08 closes checked: 2303=147.5,6257=283,6488=1130,3583=736. OHLC day alone insufficient for full structural model.",
   "items": [
     {
       "code": "3406",
@@ -1005,8 +1005,8 @@
       "name": "矽格",
       "date": "2026-10-08",
       "predictionFor": "2026-10-12",
-      "current": null,
-      "currentSource": "照片未提供可信的基準日收盤；不可由壓力距離百分比反推作為官方收盤",
+      "current": 283,
+      "currentSource": "2026-10-08 historical OHLC public market source; complete 65+ daily history still pending",
       "levels": [
         {
           "key": "support1",
@@ -1165,7 +1165,8 @@
       ],
       "flags": [
         "2026-10-12 screenshot: market quote 1140/1145/1110 is 10/12 intraday actual; do not feed it into 10/08 forecast"
-      ]
+      ],
+      "currentSource": "2026-10-08 historical OHLC public market source; complete 65+ daily history still pending"
     },
     {
       "code": "3583",
@@ -1204,14 +1205,15 @@
       ],
       "flags": [
         "2026-10-12 screenshot quote 744/744/719 is 10/12 intraday actual; validation only"
-      ]
+      ],
+      "currentSource": "2026-10-08 historical OHLC public market source; complete 65+ daily history still pending"
     },
     {
       "code": "2303",
       "name": "聯電",
       "date": "2026-10-08",
       "predictionFor": "2026-10-12",
-      "current": null,
+      "current": 147.5,
       "levels": [
         {
           "key": "support1",
@@ -1242,8 +1244,9 @@
         "IMG_6952.jpeg"
       ],
       "flags": [
-        "Stock code 2303 inferred from user overlay 聯電; underlying screenshot has no visible ticker, verify before official comparison"
-      ]
+        "Stock identity 2303 聯電 explicitly confirmed by user on 2026-10-12"
+      ],
+      "currentSource": "TWSE 115/10 STOCK_DAY official OHLC 2026-10-08"
     }
   ],
   "calibrationPolicy": {

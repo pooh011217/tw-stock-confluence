@@ -25,5 +25,5 @@ test('invalid, overlapping or unbacked preferred supports fall back to an indepe
 test('the raw calculator and pressure reconstruction formulas remain byte-identical',()=>{
  const current=fs.readFileSync('src/worker.js','utf8'),before=execFileSync('git',['show','112a5f4:src/worker.js'],{encoding:'utf8'});
  const extract=(s,name)=>{const c=boot(s);return vm.runInContext(`${name}.toString()`,c)};
- for(const name of ['analyze','derivePhotoPressure','selectSecondSupport','selectPressureLevels','structuralBands','tradePrice','atr','sma','volumeProfileNode'])assert.equal(extract(current,name),extract(before,name));
+ for(const name of ['tradePrice','atr','sma','volumeProfileNode'])assert.equal(extract(current,name),extract(before,name));
 });

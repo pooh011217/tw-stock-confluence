@@ -18,3 +18,9 @@
 驗證：`cd av-stock-levels && npm test`，16 項測試通過。涵蓋公式、欄位、來源備援、單一基準日、截圖內容及瀏覽器腳本語法。未實測 iPhone 相簿操作。
 
 本目錄為獨立 AV Worker，保留既有 wrangler.jsonc 與部署設定。
+
+## 程式碼入口與校正流程
+
+主畫面「程式碼 · GitHub」連至 https://github.com/pooh011217/tw-stock-confluence/tree/main/av-stock-levels 。
+
+後續校正以此目錄的 main 分支為來源：先讀取最新 GitHub 程式碼、修改及執行測試，更新 GitHub，再同步發布至現有 AV 網址。網站發布服務仍保留必要的部署副本。

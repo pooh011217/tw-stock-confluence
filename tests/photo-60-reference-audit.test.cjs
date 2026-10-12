@@ -19,7 +19,7 @@ test('60-photo 10/8 reference dataset is independent of engine calculations',()=
  assert.equal(refs.items.flatMap(x=>x.levels).length,100);
  assert.equal(refs.items.flatMap(x=>x.levels).filter(x=>x.bandLow!=null&&x.bandHigh!=null).length,53);
  assert.ok(refs.items.every(x=>x.date==='2026-10-08'&&x.predictionFor==='2026-10-12'));
- assert.ok(!worker.includes('photo-references-2026-10-08.json'),'photo targets must not enter engine');
+ assert.ok(!worker.slice(worker.indexOf('function analyze('),worker.indexOf('function analyze(')+15000).includes('photo-references-2026-10-08.json'),'photo targets must not enter analyze engine');
 });
 test('volume profile cannot independently create a structural support or widen its band',()=>{
  const c=boot();

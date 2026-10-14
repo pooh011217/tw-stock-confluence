@@ -10,15 +10,15 @@ globalThis.fetch=async(url)=>{url=String(url);calls.push(url);assert.ok(!url.inc
  if(code==='2408')return Response.json({stat:'OK',data:u.hostname==='www.twse.com.tw'?[raw('2026-10-08',532)]:[raw('2026-10-08',532),raw('2026-10-12',527)]});
  const month=u.searchParams.get('date')?.includes('09')?'09':'10';
  const rows=month==='09'?[raw('2026-09-30',90)]:[raw('2026-10-01'),raw('2026-10-02',101),raw('2026-10-05',102),raw('2026-10-08',105)];
- if(code==='4979')return Response.json({tables:[{data:[['115/10/08','1000','100000','200','100','90','110']]}]});
+ if(code==='8054')return Response.json({tables:[{data:[['115/10/08','1000','100000','200','100','90','110']]}]});
  return Response.json(u.hostname==='www.twse.com.tw'||u.pathname==='/twse/month'?{stat:'OK',data:rows}:{rows});};
 test('2454 uses TWSE official monthly route and exact next trading date',async()=>{const x=await historical('2454','2026-10-02');assert.equal(x.close,101);assert.equal(x.next.date,'2026-10-05');assert.match(x.source,/TWSE/);assert.equal(x.backup,false);});
 test('1303 falls back to the same TWSE relay as confluence',async()=>{const x=await historical('1303','2026-10-08');assert.equal(x.close,105);assert.ok(calls.some(x=>x.includes('/twse/month?code=1303')));});
-test('3217 races TPEx sources and merges duplicate simultaneous requests',async()=>{const before=calls.length;const out=await Promise.all([historical('3217','2026-10-02'),historical('3217','2026-10-02')]);assert.equal(calls.length-before,3);assert.match(calls[before],/tpex-official-relay.*\/tpex\/month/);assert.deepEqual(out[0],out[1]);assert.match(out[0].source,/TPEx/);});
+test('3217 races TPEx sources and merges duplicate simultaneous requests',async()=>{const before=calls.length;const out=await Promise.all([historical('3217','2026-10-02'),historical('3217','2026-10-02')]);assert.equal(calls.length-before,3);assert.match(calls[before],/www.tpex.org.tw.*tradingStock/);assert.deepEqual(out[0],out[1]);assert.match(out[0].source,/TPEx/);});
 test('TPEx failure falls back to official legacy endpoint',async()=>{const x=await historical('6223','2026-10-02');assert.equal(x.close,101);assert.ok(calls.some(x=>x.includes('st43_result.php')));});
 test('month boundary loads following month',async()=>{const x=await historical('2454','2026-09-30');assert.equal(x.next.date,'2026-10-01');assert.equal(x.close,90);});
 test('holiday is rejected instead of substituting another close',async()=>{await assert.rejects(()=>historical('2454','2026-10-03'),{status:404});});
-test('invalid OHLC never becomes a usable result',async()=>{await assert.rejects(()=>historical('4979','2026-10-08'),{status:502});});
+test('invalid OHLC never becomes a usable result',async()=>{await assert.rejects(()=>historical('8054','2026-10-08'),{status:502});});
 test('latest verified data and unchanged AV formula',async()=>{const x=await latestStock('2454');assert.equal(x.date,'2026-10-08');assert.equal(x.close,105);assert.equal(levels(100).find(x=>x[0]==='A2')[1],104.5);});
 test('route errors preserve status and no stock value',async()=>{const r=await worker.fetch(new Request('https://test/api/history?code=2454&date=2026-02-30'));assert.equal(r.status,400);assert.equal((await r.json()).stock,undefined);});
 

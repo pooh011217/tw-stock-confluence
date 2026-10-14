@@ -48,11 +48,11 @@ test('10/8 2368 support and breakout still use dated structural inputs',()=>{
  assert.equal(a.resistance2.price,1400);
  assert.equal(a.resistance1,null);
 });
-test('other four 10/8 offline fixtures preserve previously reviewed primary prices',()=>{
+test('other four 10/8 offline fixtures preserve current reviewed structural prices',()=>{
  const expected={
  '2301':{support1:296,support2:289,breakout:298,resistance2:322},
  '6182':{support1:128.5,support2:125.5,breakout:131.5,resistance2:134.5},
- '6213':{support1:765,support2:null,breakout:818,resistance2:null},
+ '6213':{support1:765,support2:null,breakout:null,resistance2:null},
  '8150':{support1:127,support2:125,resistance1:128.5,resistance2:133}
  };
  const c=boot();

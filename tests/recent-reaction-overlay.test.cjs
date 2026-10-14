@@ -4,6 +4,10 @@ function boot(){
  const c=vm.createContext({console});vm.runInContext(src,c);return c;
 }
 function shell(rows,extra={}){return {analysis:{current:100,atr14:2,date:'2026-10-14',rows,support1:null,support2:null,breakout:null,resistance1:null,resistance2:null,mediumResistance:null,selectionAudit:{levels:{}},rulePolicy:{},...extra}}}
+function baseAnalysis(code){
+ const c=vm.createContext({Response,Request,URL,Headers,setTimeout,console});vm.runInContext(fs.readFileSync('src/worker.js','utf8').replace('export default','globalThis.worker='),c);
+ c.rows=JSON.parse(fs.readFileSync(`tests/fixtures/2026-10-08/${code}.json`));return JSON.parse(JSON.stringify(vm.runInContext('calibrateVisibleRules(analyze(rows),rows)',c)));
+}
 test('recent reaction band requires repeated distinct sessions and ignores future rows',()=>{
  const c=boot();
  c.a={current:100,atr14:2,date:'2026-10-14',rows:[
@@ -72,9 +76,22 @@ test('a qualified near pressure fills first resistance even when the old engine 
  vm.runInContext('applyRecentReactionOverlay(p)',c);
  assert.equal(c.p.analysis.resistance1.price,104);assert.equal(c.p.analysis.resistance2,null);assert.equal(c.p.analysis.mediumResistance.price,115);
 });
-test('standard production pipeline applies reaction overlay before guarded Pivot',()=>{
+test('archived production fixtures keep side, distance, independence and breakout invariants after reaction ranking',()=>{
+ for(const code of ['2301','2368','8299','6213','8150','6182']){
+  const c=boot();c.p={analysis:baseAnalysis(code)};vm.runInContext('applyRecentReactionOverlay(p)',c);const a=c.p.analysis;
+  assert.equal(a.reactionReview.noLookahead,true,code);
+  for(const k of ['support1','support2'])if(a[k]){assert.ok(a[k].price<a.current,`${code} ${k} side`);assert.ok((a.current-a[k].price)/a.current<=.20+1e-8,`${code} ${k} distance`)}
+  for(const k of ['breakout','resistance1','resistance2','mediumResistance'])if(a[k]){assert.ok(a[k].price>a.current,`${code} ${k} side`);assert.ok((a[k].price-a.current)/a.current<=.20+1e-8,`${code} ${k} distance`)}
+  if(a.support1&&a.support2)assert.ok(a.support2.bandHigh<a.support1.bandLow,`${code} support bands independent`);
+  if(a.breakout)assert.equal(a.resistance1,null,`${code} breakout hides first resistance`);
+  const first=a.breakout||a.resistance1;if(first&&a.resistance2)assert.ok(a.resistance2.bandLow>first.bandHigh,`${code} pressure bands independent`);
+ }
+});
+test('standard production pipeline applies reaction overlay before guarded Pivot and parses as executable JavaScript after import stubs',()=>{
  const src=fs.readFileSync('src/main.js','utf8');
  assert.match(src,/import \{applyRecentReactionOverlay\} from '\.\/reaction\.js'/);
  assert.match(src,/function finalizeStandard\(payload\)\{applyRecentReactionOverlay\(payload\);applyClassicPivotOverlay\(payload\)/);
  assert.match(src,/3\.3\.44\.23/);
+ const transformed=src.replace("import base from './worker.js';","const base={fetch:async()=>new Response('{}')};").replace("import {applyRecentReactionOverlay} from './reaction.js';","const applyRecentReactionOverlay=x=>x;").replace('export default','globalThis.main=');
+ new vm.Script(transformed);
 });

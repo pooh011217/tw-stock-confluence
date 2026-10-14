@@ -3,9 +3,9 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),vm=require('node:vm'),{execFileSync}=require('node:child_process');
 function boot(source=fs.readFileSync('src/worker.js','utf8')){const c=vm.createContext({Response,Request,URL,Headers,setTimeout,console});vm.runInContext(source.replace('export default','globalThis.worker='),c);return c}
 function run(code,source){const c=boot(source);c.rows=JSON.parse(fs.readFileSync(`tests/fixtures/${code}-2026-10-06.json`));return JSON.parse(JSON.stringify(vm.runInContext('(()=>{const a=analyze(rows);return calibrateVisibleRules(a,rows)})()',c)))}
-test('complete dated history preserves original second-support priority instead of replacing it by closest band',()=>{
+test('complete dated history preserves current independent second-support priority',()=>{
  const before=execFileSync('git',['show','112a5f4:src/worker.js'],{encoding:'utf8'});
- for(const [code,previous,price,low] of [['6285',251,250.5,248.5],['2472',224,221,220]]){
+ for(const [code,previous,price,low] of [['6285',251,249.5,248.5],['2472',224,221,220]]){
   const old=run(code,before),a=run(code);assert.equal(old.support2.price,previous);assert.equal(a.support2.price,price);assert.equal(a.support2.bandLow,low);assert.equal(a.support2.bandHigh,price);assert.ok(a.support2.bandHigh<a.support1.bandLow);
   assert.deepEqual(a.support1,old.support1);
   for(const k of ['current','previous','ma5','ma10','ma20','ma60','atr14','rsi14','technicalScore','macd','signal','volumeRatio'])assert.equal(a[k],old[k]);

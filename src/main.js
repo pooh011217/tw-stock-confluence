@@ -1,6 +1,7 @@
 import base from './worker.js';
 
 const VERSION='3.3.44.22';
+const LEVEL_KEYS=['support1','support2','breakout','resistance1','resistance2','mediumResistance'];
 
 function tickSize(p){return p<10?.01:p<50?.05:p<100?.1:p<500?.5:p<1000?1:5}
 function tradePrice(value){
@@ -38,6 +39,56 @@ function applyPivotToLevel(a,key,label,raw){
  audit.after=rounded;audit.bandAfter=[level.bandLow,level.bandHigh];
  return audit;
 }
+function pointInBand(value,low,high){return Number.isFinite(value)&&value>=low&&value<=high}
+function levelCheck(level,actual,kind){
+ if(!level||!actual)return null;
+ const ref=kind==='support'?actual.low:actual.high,price=level.price,bandLow=level.bandLow??price,bandHigh=level.bandHigh??price,touched=actual.low<=price&&actual.high>=price,bandTouched=actual.low<=bandHigh&&actual.high>=bandLow,rangeGap=price<actual.low?actual.low-price:price>actual.high?price-actual.high:0;
+ return {kind,price,bandLow,bandHigh,reference:ref,error:price-ref,errorPct:(price-ref)/ref,absError:Math.abs(price-ref),absErrorPct:Math.abs(price-ref)/ref,referenceInBand:pointInBand(ref,bandLow,bandHigh),points:Object.fromEntries(['open','close','high','low'].map(k=>[k,pointInBand(actual[k],bandLow,bandHigh)])),touched,bandTouched,rangeGap,rangeGapPct:rangeGap/price};
+}
+function ohlcBandChecks(actual,a){
+ const bands=LEVEL_KEYS.map(k=>[k,a[k]]).filter(([,l])=>l&&l.isStructural!==false);
+ return Object.fromEntries(['open','close','high','low'].map(k=>[k,{value:actual[k],inAnyBand:bands.some(([,l])=>pointInBand(actual[k],l.bandLow??l.price,l.bandHigh??l.price)),matchedLevels:bands.filter(([,l])=>pointInBand(actual[k],l.bandLow??l.price,l.bandHigh??l.price)).map(([key])=>key)}]));
+}
+function refreshBacktest(payload){
+ const bt=payload?.backtest,a=payload?.analysis,actual=bt?.actual;if(!bt||!a||!actual)return;
+ const checks={support1:levelCheck(a.support1,actual,'support'),support2:levelCheck(a.support2,actual,'support'),breakout:levelCheck(a.breakout,actual,'breakout'),resistance1:levelCheck(a.resistance1,actual,'resistance'),resistance2:levelCheck(a.resistance2,actual,'resistance'),mediumResistance:levelCheck(a.mediumResistance,actual,'resistance')},list=Object.values(checks).filter(Boolean);
+ bt.checks=checks;
+ bt.maePct=list.length?list.reduce((s,x)=>s+x.absErrorPct,0)/list.length:null;
+ bt.bandHitRate=list.length?list.filter(x=>x.bandTouched).length/list.length:null;
+ bt.referenceInBandRate=list.length?list.filter(x=>x.referenceInBand).length/list.length:null;
+ bt.ohlc=ohlcBandChecks(actual,a);
+ bt.validationUsesFinalPublishedLevels=true;
+}
+function refreshPhotoComparison(payload){
+ const c=payload?.photoComparison,a=payload?.analysis;if(!c?.comparisons||!a)return;
+ for(const row of c.comparisons){
+  const level=a[row.actualKey]||null,distancePct=level?(level.price/a.current-1)*100:null;
+  row.actual=level?{price:level.price,bandLow:level.bandLow,bandHigh:level.bandHigh,distancePct}:null;
+  row.priceMatches=!!level&&level.price===row.reference.price;
+  row.bandMatches=row.bandProvided?!!level&&level.bandLow===row.reference.bandLow&&level.bandHigh===row.reference.bandHigh:null;
+  row.referenceInSystemBand=!!level&&pointInBand(row.reference.price,level.bandLow??level.price,level.bandHigh??level.price);
+  row.priceDifference=level?level.price-row.reference.price:null;
+  row.nameMatches=!!level&&row.nameMatches!==false;
+  row.fields=(row.fields||[]).map(field=>{
+   let actual=null,reference=field.reference;
+   if(level){
+    if(field.key==='price')actual=level.price;
+    else if(field.key==='bandLow')actual=level.bandLow;
+    else if(field.key==='bandHigh')actual=level.bandHigh;
+    else if(field.key==='distancePct')actual=Number(distancePct.toFixed(1));
+   }
+   return {...field,actual,matches:actual==null?null:actual===reference};
+  });
+  row.allVisibleFieldsMatch=row.fields.every(f=>f.matches===true)&&row.nameMatches;
+  if(row.evidence&&row.priceMatches)row.evidence={...row.evidence,reason:'selected-price'};
+ }
+ const primary=c.comparisons.filter(x=>x.comparisonScope!=='earlier-photo'),fields=[...primary.flatMap(x=>x.fields),...(c.metrics||[])];
+ c.matchedPrices=primary.filter(x=>x.priceMatches).length;c.totalPrices=primary.length;
+ c.matchedBands=primary.filter(x=>x.bandMatches===true).length;c.totalBands=primary.filter(x=>x.bandProvided).length;
+ c.matchedFullLevels=primary.filter(x=>x.allVisibleFieldsMatch).length;
+ c.numericSummary={matched:fields.filter(f=>f.matches===true).length,different:fields.filter(f=>f.matches===false).length,unavailable:fields.filter(f=>f.matches==null).length,total:fields.length};
+ c.calculationStage='post-pivot-published-levels';
+}
 function applyClassicPivotOverlay(payload){
  const a=payload?.analysis,pivot=classicPivot(a);
  if(!a||!pivot)return payload;
@@ -49,6 +100,8 @@ function applyClassicPivotOverlay(payload){
  a.classicPivot={...Object.fromEntries(Object.entries(pivot).filter(([k])=>['P','S1','S2','R1','R2'].includes(k)).map(([k,v])=>[k,Number(v.toFixed(4))])),formula:'P=(H+L+C)/3；S1=2P-H；S2=P-(H-L)；R1=2P-L；R2=P+(H-L)',basis:{date:a.date,high:a.high,low:a.low,close:a.current},status:'10/14照片確認的經典Floor Pivot；只校正既有結構帶內或相鄰一個跳動單位的主價，不單獨創建位點',noLookahead:true};
  a.pivotReview={version:'classic-pivot-guard-v1',checks,accepted:checks.filter(x=>x.accepted).map(x=>x.key),referenceTargetsAsInputs:false,createsNewLevels:false,roleChanged:false,bandExpansionMaximum:'one legal trading tick'};
  if(a.rulePolicy)a.rulePolicy={...a.rulePolicy,pivotOverlay:'經典Pivot僅作既有結構主價校正；不建立新位點、不改角色，最多擴帶一個合法跳動單位'};
+ refreshBacktest(payload);
+ refreshPhotoComparison(payload);
  payload.version=VERSION;
  return payload;
 }

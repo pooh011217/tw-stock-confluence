@@ -10,13 +10,13 @@
   <meta name="description" content="台股共振系統：隔日核心位點預估與歷史回測工具">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="icon" href="/icon.svg">
-  <title>台股共振系統 V3.3.44.22</title>
-  <link rel="stylesheet" href="/styles.css?v=3.3.44.22">
+  <title>台股共振系統 V3.3.44.23</title>
+  <link rel="stylesheet" href="/styles.css?v=3.3.44.23">
 </head>
 <body>
 <main class="page">
   <header>
-    <div><div class="eyebrow">TW STOCK CONFLUENCE</div><h1>台股共振系統 <span>V3.3.44.22</span></h1><p>隔日位點預估 × 歷史回測｜手機與電腦共用</p></div>
+    <div><div class="eyebrow">TW STOCK CONFLUENCE</div><h1>台股共振系統 <span>V3.3.44.23</span></h1><p>隔日位點預估 × 歷史回測｜手機與電腦共用</p></div>
     <div class="status">● TWSE / TPEx 公開資料</div>
   </header>
 
@@ -25,7 +25,7 @@
     <button id="analyze">分析</button>
   </section>
   <section class="backtest">
-    <label>計算規則 <select id="model"><option value="standard">共振＋AV＋Pivot交叉校正（推定）</option><option value="photo-inferred">照片校準（推定）</option></select></label>
+    <label>計算規則 <select id="model"><option value="standard">共振＋近期反應＋AV＋Pivot交叉校正（推定）</option><option value="photo-inferred">照片校準（推定）</option></select></label>
     <label>隔日預估歷史回測 <input id="asOf" type="date"></label>
     <button id="clearDate" class="ghost">回到最新</button>
     <small>選「預估基準日」；例如 10/1 會驗證下一交易日。</small>
@@ -55,11 +55,11 @@
     <div id="scanResult" class="scanresults"></div>
   </section>
 
-  <section class="panel"><h2>位點篩選與命名規則</h2><ol class="rule-list"><li>位點是歷史價格結構的觀察位置，不是目標價或買賣建議，也不表示適合追價。</li><li>優先選最近的有效獨立結構；同一波動容差內合併為價格帶，不重複列出同一帶。預設支撐基本合併容差為收盤×1.25%，壓力為ATR14／2；均線可延伸既有支撐上緣，同一缺口不重複計為兩層支撐。</li><li>AV只校正符合樞紐條件的既有突破主價；經典Pivot只使用基準日H/L/C，且只能校正既有結構帶內或相鄰一個合法跳動單位的主價，不單獨創建位點、不改角色。</li><li>主價與價格帶依台股升降單位校準；Pivot原始小數另保留於系統稽核資料。</li><li>支撐距現價0～10%為近端、超過10%至20%為中期；超過20%為遠端，不列第一／第二支撐。</li><li>第二壓力須在第一壓力帶之上且獨立；超過現價+10%改列中期壓力。找不到結構就留白。</li><li>創新高且無上方歷史結構時，另列10%理論漲停參考〔非結構價位〕；實際漲停須依交易所公告基準與適用限制。</li><li>「尚未形成」表示資料足夠但沒有對應結構；「資料不足」表示行情不足以計算。</li></ol></section>
-  <footer>V3.3.44.22｜台股共振系統｜隔日位點預估＋歷史日期誤差驗證｜結構候選＋ATR壓力合併＋AV突破校正＋10/14確認經典Pivot交叉校正｜嚴守 No-look-ahead｜僅供研究與結構觀察，不構成投資建議。</footer>
+  <section class="panel"><h2>位點篩選與命名規則</h2><ol class="rule-list"><li>位點是歷史價格結構的觀察位置，不是目標價或買賣建議，也不表示適合追價。</li><li>原始結構仍優先選最近的有效獨立結構；同一波動容差內合併為價格帶，不重複列出同一帶。原始支撐基本合併容差為收盤×1.25%；均線可延伸既有支撐上緣，同一缺口不重複計為兩層支撐。</li><li>新增「近期OHLC反應區」：只看基準日以前最近12個交易日；至少要有2個不同交易日的重複反應，且必須含直接低點（支撐）或直接高點（壓力）才可成立。已突破前高／跌破前低只作角色轉換輔助證據，不能單獨創建位點。</li><li>近期反應容差＝max(現價×0.6%、ATR14×0.30、2個合法跳動單位)，並限制最高不超過現價×1.75%；反應帶依台股合法跳動單位校準，避免單一長影線或孤立價位製造假結構。</li><li>AV只校正符合樞紐條件的既有突破主價；經典Pivot只使用基準日H/L/C，並在原始結構＋近期反應區形成後才交叉校正；Pivot只能校正既有結構帶內或相鄰一個合法跳動單位的主價，不單獨創建位點、不改角色。</li><li>主價與價格帶依台股升降單位校準；Pivot原始小數另保留於系統稽核資料。</li><li>支撐距現價0～10%為近端、超過10%至20%為中期；超過20%為遠端，不列第一／第二支撐。</li><li>第二壓力須在第一壓力帶之上且獨立；超過現價+10%改列中期壓力。找不到結構就留白；若已有「關鍵突破／壓力共振區」，第一壓力保持留白。</li><li>創新高且無上方歷史結構時，另列10%理論漲停參考〔非結構價位〕；實際漲停須依交易所公告基準與適用限制。</li><li>「尚未形成」表示資料足夠但沒有對應結構；「資料不足」表示行情不足以計算。</li></ol></section>
+  <footer>V3.3.44.23｜台股共振系統｜隔日位點預估＋歷史日期誤差驗證｜原始結構＋最近12交易日重複OHLC反應區＋AV突破校正＋經典Pivot交叉校正｜嚴守 No-look-ahead｜僅供研究與結構觀察，不構成投資建議。</footer>
 </main>
 <dialog id="scanImageDialog"><div class="scan-image-head"><h2>完整掃描截圖</h2><button id="scanImageClose" class="ghost">關閉</button></div><p>全部股票與價格帶均已包含。手機可點分享儲存圖片，或長按圖片儲存。</p><div class="scan-image-actions"><a id="scanImageDownload" class="image-download">下載 PNG 圖片</a><button id="scanImageShare" class="ghost" hidden>分享／存到照片</button></div><img id="scanImagePreview" alt="完整多檔掃描結果截圖"></dialog>
-<script src="/scan-export.js?v=3.3.44.22"></script>
-<script src="/app.js?v=3.3.44.22"></script>
+<script src="/scan-export.js?v=3.3.44.23"></script>
+<script src="/app.js?v=3.3.44.23"></script>
 </body>
 </html>

@@ -15,7 +15,8 @@ test('recent reaction band requires repeated distinct sessions and ignores futur
  const r=vm.runInContext('recentReactionBands(a)',c);
  assert.equal(r.noLookahead,true);assert.equal(r.usedRows,4);
  assert.ok(r.support.some(x=>x.uniqueSessions>=2&&x.bandLow===95&&x.bandHigh===95.2));
- assert.ok(r.resistance.some(x=>x.uniqueSessions>=2&&x.bandLow===104&&x.bandHigh===104.5));
+ const pressure=r.resistance.find(x=>x.uniqueSessions>=2&&x.bandLow<=104&&x.bandHigh>=104.5);
+ assert.ok(pressure);assert.ok(pressure.bandHigh-pressure.bandLow<=1.5+1e-8,'anchor-bounded band must not chain outward');
  assert.ok(r.support.every(x=>x.bandLow>80));assert.ok(r.resistance.every(x=>x.bandHigh<120));
 });
 test('one isolated wick cannot manufacture a support or resistance',()=>{

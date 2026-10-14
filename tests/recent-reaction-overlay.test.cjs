@@ -8,31 +8,31 @@ test('recent reaction band requires repeated distinct sessions and ignores futur
  c.a={current:100,atr14:2,date:'2026-10-14',rows:[
   {date:'2026-10-09',low:95,high:103,close:99},
   {date:'2026-10-12',low:95.2,high:104,close:100},
-  {date:'2026-10-13',low:97,high:104.2,close:101},
-  {date:'2026-10-14',low:98,high:105,close:100},
+  {date:'2026-10-13',low:97,high:104.5,close:101},
+  {date:'2026-10-14',low:99.5,high:106,close:100},
   {date:'2026-10-15',low:80,high:120,close:110}
  ]};
  const r=vm.runInContext('recentReactionBands(a)',c);
  assert.equal(r.noLookahead,true);assert.equal(r.usedRows,4);
  assert.ok(r.support.some(x=>x.uniqueSessions>=2&&x.bandLow===95&&x.bandHigh===95.2));
- assert.ok(r.resistance.some(x=>x.uniqueSessions>=2&&x.bandLow===104&&x.bandHigh===104.2));
+ assert.ok(r.resistance.some(x=>x.uniqueSessions>=2&&x.bandLow===104&&x.bandHigh===104.5));
  assert.ok(r.support.every(x=>x.bandLow>80));assert.ok(r.resistance.every(x=>x.bandHigh<120));
 });
 test('one isolated wick cannot manufacture a support or resistance',()=>{
  const c=boot();c.a={current:100,atr14:2,date:'2026-10-14',rows:[
   {date:'2026-10-12',low:94,high:102,close:99},
   {date:'2026-10-13',low:97,high:106,close:101},
-  {date:'2026-10-14',low:99,high:108,close:100}
+  {date:'2026-10-14',low:99.5,high:108,close:100}
  ]};
  const r=vm.runInContext('recentReactionBands(a)',c);assert.equal(r.support.length,0);assert.equal(r.resistance.length,0);
 });
 test('overlay creates only qualified repeated reaction zones and preserves breakout/first-pressure exclusivity',()=>{
  const c=boot();c.p={analysis:{current:100,atr14:2,date:'2026-10-14',rows:[
   {date:'2026-10-09',low:95,high:104,close:99},
-  {date:'2026-10-12',low:95.2,high:104.2,close:100},
+  {date:'2026-10-12',low:95.2,high:104.5,close:100},
   {date:'2026-10-13',low:97,high:107,close:101},
-  {date:'2026-10-14',low:98,high:108,close:100}
- ],support1:null,support2:null,breakout:{price:104,bandLow:104,bandHigh:104.2,distance:.04,sources:['前高']},resistance1:{price:103,bandLow:103,bandHigh:103,distance:.03,sources:['舊壓力']},resistance2:null,mediumResistance:null,selectionAudit:{levels:{}},rulePolicy:{}}};
+  {date:'2026-10-14',low:99.5,high:108,close:100}
+ ],support1:null,support2:null,breakout:{price:104,bandLow:104,bandHigh:104.5,distance:.04,sources:['前高']},resistance1:{price:103,bandLow:103,bandHigh:103,distance:.03,sources:['舊壓力']},resistance2:null,mediumResistance:null,selectionAudit:{levels:{}},rulePolicy:{}}};
  vm.runInContext('applyRecentReactionOverlay(p)',c);
  assert.ok(c.p.analysis.support1);assert.equal(c.p.analysis.support1.bandLow,95);assert.equal(c.p.analysis.support1.bandHigh,95.2);
  assert.ok(c.p.analysis.breakout);assert.equal(c.p.analysis.resistance1,null);

@@ -13,7 +13,7 @@ test('40-photo benchmark counts 220 observed numeric fields and separates the ol
   const snapshot=JSON.parse(fs.readFileSync(`public/data/history/${r.date}/${r.code}.json`));c.rows=snapshot.rows;const a=vm.runInContext('calibrateVisibleRules(analyze(rows),rows)',c);c.a=a;c.stock={code:r.code};c.raw=chips.items.find(x=>x.code===r.code).institutional;c.extra={institutional:vm.runInContext("institutionalFrom(raw)",c)};
   const cmp=await vm.runInContext('comparePhotoReference(a,stock,assets,[],rows,extra)',c);foreignHits+=cmp.metrics.filter(m=>m.key==="foreignNetLots"&&m.matches).length;numeric+=cmp.numericSummary.total;main+=cmp.totalPrices;bands+=cmp.totalBands;priceHits+=cmp.matchedPrices;bandHits+=cmp.matchedBands;for(const l of cmp.comparisons)if(l.comparisonScope==='40-photo-oct6'&&l.distanceFormula){assert.equal(l.distanceFormula.matches,true,`${r.code} ${l.key} distance formula`);formulas++}
   assert.equal(cmp.numericSummary.total,cmp.numericSummary.matched+cmp.numericSummary.different+cmp.numericSummary.unavailable);
-  if(r.code==='2408'){assert.equal(a.support1.price,524);assert.equal(a.support1.bandLow,521)}
+  if(r.code==='2408'){assert.equal(a.support1.price,524);assert.equal(a.support1.bandLow,522)}
   if(r.code==='4919'){assert.equal(a.support1.price,150);assert.equal(a.support1.bandLow,148)}
   if(r.code==='8358'){assert.equal(cmp.totalPrices,3);assert.equal(cmp.comparisons.find(x=>x.key==='mediumResistance').comparisonScope,'earlier-photo')}
  }

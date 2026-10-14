@@ -1,6 +1,7 @@
 import base from './worker.js';
+import {applyRecentReactionOverlay} from './reaction.js';
 
-const VERSION='3.3.44.22';
+const VERSION='3.3.44.23';
 const LEVEL_KEYS=['support1','support2','breakout','resistance1','resistance2','mediumResistance'];
 
 function tickSize(p){return p<10?.01:p<50?.05:p<100?.1:p<500?.5:p<1000?1:5}
@@ -87,7 +88,7 @@ function refreshPhotoComparison(payload){
  c.matchedBands=primary.filter(x=>x.bandMatches===true).length;c.totalBands=primary.filter(x=>x.bandProvided).length;
  c.matchedFullLevels=primary.filter(x=>x.allVisibleFieldsMatch).length;
  c.numericSummary={matched:fields.filter(f=>f.matches===true).length,different:fields.filter(f=>f.matches===false).length,unavailable:fields.filter(f=>f.matches==null).length,total:fields.length};
- c.calculationStage='post-pivot-published-levels';
+ c.calculationStage='post-reaction-and-pivot-published-levels';
 }
 function applyClassicPivotOverlay(payload){
  const a=payload?.analysis,pivot=classicPivot(a);
@@ -97,14 +98,15 @@ function applyClassicPivotOverlay(payload){
  checks.push(applyPivotToLevel(a,'support2','S2',pivot.S2));
  if(first)checks.push(applyPivotToLevel(a,first,'R1',pivot.R1));
  if(second)checks.push(applyPivotToLevel(a,second,'R2',pivot.R2));
- a.classicPivot={...Object.fromEntries(Object.entries(pivot).filter(([k])=>['P','S1','S2','R1','R2'].includes(k)).map(([k,v])=>[k,Number(v.toFixed(4))])),formula:'P=(H+L+C)/3；S1=2P-H；S2=P-(H-L)；R1=2P-L；R2=P+(H-L)',basis:{date:a.date,high:a.high,low:a.low,close:a.current},status:'10/14照片確認的經典Floor Pivot；只校正既有結構帶內或相鄰一個跳動單位的主價，不單獨創建位點',noLookahead:true};
- a.pivotReview={version:'classic-pivot-guard-v1',checks,accepted:checks.filter(x=>x.accepted).map(x=>x.key),referenceTargetsAsInputs:false,createsNewLevels:false,roleChanged:false,bandExpansionMaximum:'one legal trading tick'};
- if(a.rulePolicy)a.rulePolicy={...a.rulePolicy,pivotOverlay:'經典Pivot僅作既有結構主價校正；不建立新位點、不改角色，最多擴帶一個合法跳動單位'};
+ a.classicPivot={...Object.fromEntries(Object.entries(pivot).filter(([k])=>['P','S1','S2','R1','R2'].includes(k)).map(([k,v])=>[k,Number(v.toFixed(4))])),formula:'P=(H+L+C)/3；S1=2P-H；S2=P-(H-L)；R1=2P-L；R2=P+(H-L)',basis:{date:a.date,high:a.high,low:a.low,close:a.current},status:'10/14照片確認的經典Floor Pivot；在近期反應區與原結構完成後，只校正既有結構帶內或相鄰一個跳動單位的主價，不單獨創建位點',noLookahead:true};
+ a.pivotReview={version:'classic-pivot-guard-v2',checks,accepted:checks.filter(x=>x.accepted).map(x=>x.key),referenceTargetsAsInputs:false,createsNewLevels:false,roleChanged:false,bandExpansionMaximum:'one legal trading tick'};
+ if(a.rulePolicy)a.rulePolicy={...a.rulePolicy,pivotOverlay:'經典Pivot在近期OHLC反應區與原結構完成後才交叉校正；不建立新位點、不改角色，最多擴帶一個合法跳動單位'};
  refreshBacktest(payload);
  refreshPhotoComparison(payload);
  payload.version=VERSION;
  return payload;
 }
+function finalizeStandard(payload){applyRecentReactionOverlay(payload);applyClassicPivotOverlay(payload);return payload}
 function scanResultFromAnalyze(x){
  const {stock,analysis,extra,score}=x,supportGap=analysis.support1?Math.abs(analysis.support1.distance):null,breakoutGap=analysis.breakout?analysis.breakout.distance:null,inst=extra?.institutional||{},tags=[];
  if(supportGap!=null&&supportGap<=.015)tags.push('接近支撐');
@@ -121,7 +123,7 @@ async function baseAnalyze(request,input,env,ctx){
  const url=new URL(request.url),body={action:'analyze',q:input.q||input.codes||'',asOf:input.asOf,model:input.model||'standard'};
  const req=new Request(url.toString(),{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});
  const response=await base.fetch(req,env,ctx);if(!response.ok)return {response};
- const data=await response.json();if(body.model==='standard')applyClassicPivotOverlay(data);else data.version=VERSION;
+ const data=await response.json();if(body.model==='standard')finalizeStandard(data);else data.version=VERSION;
  return {data};
 }
 export default {async fetch(request,env,ctx){
@@ -129,7 +131,7 @@ export default {async fetch(request,env,ctx){
  if(u.pathname!=='/api/stock'||request.method!=='POST')return base.fetch(request,env,ctx);
  let input;try{input=await request.clone().json()}catch{return base.fetch(request,env,ctx)}
  if(input.action==='analyze'){
-  const response=await base.fetch(request,env,ctx);if(!response.ok)return response;const data=await response.json();if((input.model||'standard')==='standard')applyClassicPivotOverlay(data);else data.version=VERSION;return new Response(JSON.stringify(data),{headers:{'content-type':'application/json;charset=UTF-8','cache-control':'no-store'}});
+  const response=await base.fetch(request,env,ctx);if(!response.ok)return response;const data=await response.json();if((input.model||'standard')==='standard')finalizeStandard(data);else data.version=VERSION;return new Response(JSON.stringify(data),{headers:{'content-type':'application/json;charset=UTF-8','cache-control':'no-store'}});
  }
  if(input.action==='scan'){
   const q=String(input.codes||'').split(/[\s,，;；]+/).map(x=>x.trim()).filter(Boolean)[0]||'';

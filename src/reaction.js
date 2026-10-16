@@ -70,8 +70,8 @@ function distinctLevels(levels,side){
  for(const level of ordered){if(out.some(x=>overlaps(x,level)))continue;out.push(level)}return out;
 }
 function selectSupportLevels(a,supportBands,checks){
- mergeExistingWithReaction(a,'support1',supportBands,'support',checks);
- mergeExistingWithReaction(a,'support2',supportBands,'support',checks);
+ mergeExistingWithReaction(a,'support1',supportBands,'support',checks,{preservePrice:true});
+ mergeExistingWithReaction(a,'support2',supportBands,'support',checks,{preservePrice:true});
  const existing=[cloneLevel(a.support1),cloneLevel(a.support2)],reaction=supportBands.filter(b=>!existing.some(l=>l&&overlaps(l,b))).map(b=>reactionLevel(a,b,'support'));
  const pool=distinctLevels([...existing,...reaction].filter(l=>l&&l.price<a.current&&(a.current-l.price)/a.current<=.20+1e-8),'support');
  const originalFirst=existing[0],originalSecond=existing[1];

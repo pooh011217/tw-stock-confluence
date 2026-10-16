@@ -74,7 +74,10 @@ function selectSupportLevels(a,supportBands,checks){
  mergeExistingWithReaction(a,'support2',supportBands,'support',checks);
  const existing=[cloneLevel(a.support1),cloneLevel(a.support2)],reaction=supportBands.filter(b=>!existing.some(l=>l&&overlaps(l,b))).map(b=>reactionLevel(a,b,'support'));
  const pool=distinctLevels([...existing,...reaction].filter(l=>l&&l.price<a.current&&(a.current-l.price)/a.current<=.20+1e-8),'support');
- const first=pool[0]||null,second=first?pool.find(l=>independentBelow(l,first))||null:null;
+ const originalSecond=existing[1];
+ const first=pool[0]||null;
+ const keepOriginalSecond=first&&originalSecond&&originalSecond.price<first.price&&independentBelow(originalSecond,first)&&originalSecond.price<a.current;
+ const second=keepOriginalSecond?originalSecond:(first?pool.find(l=>independentBelow(l,first))||null:null);
  const before={support1:a.support1?.price??null,support2:a.support2?.price??null};
  a.support1=first;a.support2=second;
  if(first&&!second)a.support2Note='尚未找到低於第一支撐價格帶的獨立第二支撐，待確認。';else if(!first)a.support2Note='第一支撐結構不足，第二支撐待確認。';else a.support2Note='';

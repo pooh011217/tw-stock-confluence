@@ -20,22 +20,28 @@ if(process.argv.length<3){console.error('Usage: node scripts/compare-photo-20261
 const data=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
 const arr=Array.isArray(data)?data:Array.isArray(data.results)?data.results:[data];
 const byCode=new Map(arr.map(x=>[String(x.stock?.code||x.code||x.analysis?.code||x.stockCode||''),x]));
-let total=0,matched=0,missing=0,roleDiff=0;
+const expectedCodes=new Set(reference.map(x=>x[0]));
+const absent=[...expectedCodes].filter(code=>!byCode.has(code));
+if(absent.length)throw Error('Missing stock output: '+absent.join(','));
+if(byCode.size!==arr.length)throw Error('Duplicate stock code or missing code in system export');
+let total=0,matched=0,missing=0,roleDiff=0,sumAbsPct=0,compared=0;
 console.log('stock,field,reference,system,delta,absolute_pct,role_mismatch,band_low,band_high');
 for(const [code,name,s1,s2,p1,p2,pressureKey,upperKey] of reference){
- const entry=byCode.get(code),a=entry?.analysis||entry;
- if(a&&a.date!=='2026-10-15')throw Error(code+': invalid D date '+a.date);
+ const entry=byCode.get(code),a=entry?.analysis||entry?.levels||entry;
+ const baseDate=entry?.analysis?.date||entry?.date;
+ if(baseDate!=='2026-10-15')throw Error(code+': invalid D date '+baseDate);
  const expected=[['support1',s1],['support2',s2],[pressureKey,p1],[upperKey||'resistance2',p2]];
  for(const [key,value] of expected){
   const level=a?.[key]||null;
   const other=key==='breakout'?'resistance1':key==='resistance1'?'breakout':key==='mediumResistance'?'resistance2':key==='resistance2'?'mediumResistance':null;
   const actual=level?.price;
+  if(actual!=null&&!Number.isFinite(actual))throw Error(code+': invalid numeric price for '+key);
   const mismatch=!level&&!!other&&!!a?.[other];
   total++;if(mismatch)roleDiff++;
-  if(actual==null)missing++;else if(Math.abs(actual-value)<1e-8)matched++;
+  if(actual==null)missing++;else {compared++;sumAbsPct+=Math.abs(actual-value)/value*100;if(Math.abs(actual-value)<1e-8)matched++;}
   const diff=actual==null?'':Number((actual-value).toFixed(4));
   const pct=actual==null?'':Number((Math.abs(actual-value)/value*100).toFixed(4));
   console.log([code+' '+name,key,value,actual??'',diff,pct,mismatch,level?.bandLow??'',level?.bandHigh??''].join(','));
  }
 }
-console.error(JSON.stringify({total,matched,missing,roleDiff,priceMatchRate:matched/total},null,2));
+console.error(JSON.stringify({total,matched,missing,roleDiff,priceMatchRate:matched/total,meanAbsPhotoPct:compared?sumAbsPct/compared:null},null,2));

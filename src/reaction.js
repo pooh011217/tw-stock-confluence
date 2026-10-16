@@ -74,8 +74,9 @@ function selectSupportLevels(a,supportBands,checks){
  mergeExistingWithReaction(a,'support2',supportBands,'support',checks);
  const existing=[cloneLevel(a.support1),cloneLevel(a.support2)],reaction=supportBands.filter(b=>!existing.some(l=>l&&overlaps(l,b))).map(b=>reactionLevel(a,b,'support'));
  const pool=distinctLevels([...existing,...reaction].filter(l=>l&&l.price<a.current&&(a.current-l.price)/a.current<=.20+1e-8),'support');
- const originalSecond=existing[1];
- const first=pool[0]||null;
+ const originalFirst=existing[0],originalSecond=existing[1];
+ const originalFirstValid=originalFirst&&originalFirst.price<a.current&&(a.current-originalFirst.price)/a.current<=.20+1e-8;
+ const first=originalFirstValid?originalFirst:pool[0]||null;
  const keepOriginalSecond=first&&originalSecond&&originalSecond.price<first.price&&independentBelow(originalSecond,first)&&originalSecond.price<a.current;
  const second=keepOriginalSecond?originalSecond:(first?pool.find(l=>independentBelow(l,first))||null:null);
  const before={support1:a.support1?.price??null,support2:a.support2?.price??null};

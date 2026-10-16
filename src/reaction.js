@@ -12,8 +12,8 @@ function reactionTolerance(a){
 }
 function recentReactionBands(a,sessions=12){
  const cur=a?.current,tolerance=reactionTolerance(a),all=Array.isArray(a?.rows)?a.rows:[];
- const baseDate=typeof a?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(a.date)?a.date:null;
- const rows=baseDate?all.filter(r=>typeof r?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&r.date<=baseDate).sort((x,y)=>x.date.localeCompare(y.date)).slice(-sessions):[];
+ const baseDate=typeof a?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(a.date)&&!Number.isNaN(Date.parse(a.date+'T00:00:00Z'))&&new Date(a.date+'T00:00:00Z').toISOString().slice(0,10)===a.date?a.date:null;
+ const rows=baseDate?all.filter(r=>typeof r?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&r.date<=baseDate&&Number.isFinite(r.low)&&Number.isFinite(r.high)&&Number.isFinite(r.close)&&r.low>0&&r.high>=r.low&&r.close>=r.low-1e-8&&r.close<=r.high+1e-8).sort((x,y)=>x.date.localeCompare(y.date)).slice(-sessions):[];
  if(!Number.isFinite(cur)||cur<=0||!Number.isFinite(tolerance)||rows.length<2)return {support:[],resistance:[],tolerance,window:sessions,usedRows:rows.length};
  const points=[];
  const add=(raw,kind,side,role,date,age)=>{if(!Number.isFinite(raw)||raw<=0)return;const price=tradePrice(raw);if(!price||price===cur)return;points.push({raw,price,kind,side,role,date,age})};

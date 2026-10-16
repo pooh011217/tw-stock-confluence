@@ -77,7 +77,7 @@ function selectSupportLevels(a,supportBands,checks){
  const originalFirst=existing[0],originalSecond=existing[1];
  const originalFirstValid=originalFirst&&originalFirst.price<a.current&&(a.current-originalFirst.price)/a.current<=.20+1e-8;
  const first=originalFirstValid?originalFirst:pool[0]||null;
- const keepOriginalSecond=first&&originalSecond&&originalSecond.price<first.price&&independentBelow(originalSecond,first)&&originalSecond.price<a.current;
+ const keepOriginalSecond=first&&originalSecond&&originalSecond.price<first.price&&independentBelow(originalSecond,first)&&originalSecond.price<a.current&&(a.current-originalSecond.price)/a.current<=.20+1e-8;
  const second=keepOriginalSecond?originalSecond:(first?pool.find(l=>independentBelow(l,first))||null:null);
  const before={support1:a.support1?.price??null,support2:a.support2?.price??null};
  a.support1=first;a.support2=second;

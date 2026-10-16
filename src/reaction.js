@@ -86,9 +86,9 @@ function selectSupportLevels(a,supportBands,checks){
 }
 function selectPressureLevels(a,resistanceBands,checks){
  mergeExistingWithReaction(a,'breakout',resistanceBands,'resistance',checks,{preservePrice:true});
- mergeExistingWithReaction(a,'resistance1',resistanceBands,'resistance',checks);
- mergeExistingWithReaction(a,'resistance2',resistanceBands,'resistance',checks);
- mergeExistingWithReaction(a,'mediumResistance',resistanceBands,'resistance',checks);
+ mergeExistingWithReaction(a,'resistance1',resistanceBands,'resistance',checks,{preservePrice:true});
+ mergeExistingWithReaction(a,'resistance2',resistanceBands,'resistance',checks,{preservePrice:true});
+ mergeExistingWithReaction(a,'mediumResistance',resistanceBands,'resistance',checks,{preservePrice:true});
  const existing=[cloneLevel(a.resistance1),cloneLevel(a.resistance2),cloneLevel(a.mediumResistance)],reaction=resistanceBands.filter(b=>![a.breakout,...existing].some(l=>l&&overlaps(l,b))).map(b=>reactionLevel(a,b,'resistance'));
  const before={breakout:a.breakout?.price??null,resistance1:a.resistance1?.price??null,resistance2:a.resistance2?.price??null,mediumResistance:a.mediumResistance?.price??null};
  if(a.breakout){

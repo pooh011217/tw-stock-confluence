@@ -90,9 +90,9 @@ function selectPressureLevels(a,resistanceBands,checks){
  if(a.breakout){
   a.resistance1=null;
   const above=distinctLevels([...existing,...reaction].filter(l=>l&&l.price>a.current&&independentAbove(l,a.breakout)&&(l.price-a.current)/a.current<=.20+1e-8),'resistance');
-  const second=above[0]||null;
-  a.resistance2=second&&(second.price-a.current)/a.current<=.10+1e-8?second:null;
-  a.mediumResistance=second&&(second.price-a.current)/a.current>.10+1e-8?second:null;
+  const second=above.find(l=>(l.price-a.current)/a.current<=.10+1e-8)||null;
+  a.resistance2=second;
+  a.mediumResistance=above.find(l=>(l.price-a.current)/a.current>.10+1e-8&&independentAbove(l,second||a.breakout))||null;
  }else{
   const pool=distinctLevels([...existing,...reaction].filter(l=>l&&l.price>a.current&&(l.price-a.current)/a.current<=.20+1e-8),'resistance'),first=pool[0]||null;
   if(!first){a.resistance1=null;a.resistance2=null;a.mediumResistance=null}

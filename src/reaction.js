@@ -12,8 +12,8 @@ function reactionTolerance(a){
 }
 function recentReactionBands(a,sessions=12){
  const cur=a?.current,tolerance=reactionTolerance(a),all=Array.isArray(a?.rows)?a.rows:[];
- const baseDate=typeof a?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(a.date)?a.date:null;
- const rows=baseDate?all.filter(r=>typeof r?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&r.date<=baseDate).sort((x,y)=>x.date.localeCompare(y.date)).slice(-sessions):[];
+ const baseDate=typeof a?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(a.date)&&!Number.isNaN(Date.parse(a.date+'T00:00:00Z'))&&new Date(a.date+'T00:00:00Z').toISOString().slice(0,10)===a.date?a.date:null;
+ const rows=baseDate?all.filter(r=>typeof r?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&r.date<=baseDate&&Number.isFinite(r.low)&&Number.isFinite(r.high)&&Number.isFinite(r.close)&&r.low>0&&r.high>=r.low&&r.close>=r.low-1e-8&&r.close<=r.high+1e-8).sort((x,y)=>x.date.localeCompare(y.date)).slice(-sessions):[];
  if(!Number.isFinite(cur)||cur<=0||!Number.isFinite(tolerance)||rows.length<2)return {support:[],resistance:[],tolerance,window:sessions,usedRows:rows.length};
  const points=[];
  const add=(raw,kind,side,role,date,age)=>{if(!Number.isFinite(raw)||raw<=0)return;const price=tradePrice(raw);if(!price||price===cur)return;points.push({raw,price,kind,side,role,date,age})};
@@ -70,11 +70,15 @@ function distinctLevels(levels,side){
  for(const level of ordered){if(out.some(x=>overlaps(x,level)))continue;out.push(level)}return out;
 }
 function selectSupportLevels(a,supportBands,checks){
- mergeExistingWithReaction(a,'support1',supportBands,'support',checks);
- mergeExistingWithReaction(a,'support2',supportBands,'support',checks);
+ mergeExistingWithReaction(a,'support1',supportBands,'support',checks,{preservePrice:true});
+ mergeExistingWithReaction(a,'support2',supportBands,'support',checks,{preservePrice:true});
  const existing=[cloneLevel(a.support1),cloneLevel(a.support2)],reaction=supportBands.filter(b=>!existing.some(l=>l&&overlaps(l,b))).map(b=>reactionLevel(a,b,'support'));
  const pool=distinctLevels([...existing,...reaction].filter(l=>l&&l.price<a.current&&(a.current-l.price)/a.current<=.20+1e-8),'support');
- const first=pool[0]||null,second=first?pool.find(l=>independentBelow(l,first))||null:null;
+ const originalFirst=existing[0],originalSecond=existing[1];
+ const originalFirstValid=originalFirst&&originalFirst.price<a.current&&(a.current-originalFirst.price)/a.current<=.20+1e-8;
+ const first=originalFirstValid?originalFirst:pool[0]||null;
+ const keepOriginalSecond=first&&originalSecond&&originalSecond.price<first.price&&independentBelow(originalSecond,first)&&originalSecond.price<a.current&&(a.current-originalSecond.price)/a.current<=.20+1e-8;
+ const second=keepOriginalSecond?originalSecond:(first?pool.find(l=>independentBelow(l,first))||null:null);
  const before={support1:a.support1?.price??null,support2:a.support2?.price??null};
  a.support1=first;a.support2=second;
  if(first&&!second)a.support2Note='尚未找到低於第一支撐價格帶的獨立第二支撐，待確認。';else if(!first)a.support2Note='第一支撐結構不足，第二支撐待確認。';else a.support2Note='';
@@ -82,9 +86,9 @@ function selectSupportLevels(a,supportBands,checks){
 }
 function selectPressureLevels(a,resistanceBands,checks){
  mergeExistingWithReaction(a,'breakout',resistanceBands,'resistance',checks,{preservePrice:true});
- mergeExistingWithReaction(a,'resistance1',resistanceBands,'resistance',checks);
- mergeExistingWithReaction(a,'resistance2',resistanceBands,'resistance',checks);
- mergeExistingWithReaction(a,'mediumResistance',resistanceBands,'resistance',checks);
+ mergeExistingWithReaction(a,'resistance1',resistanceBands,'resistance',checks,{preservePrice:true});
+ mergeExistingWithReaction(a,'resistance2',resistanceBands,'resistance',checks,{preservePrice:true});
+ mergeExistingWithReaction(a,'mediumResistance',resistanceBands,'resistance',checks,{preservePrice:true});
  const existing=[cloneLevel(a.resistance1),cloneLevel(a.resistance2),cloneLevel(a.mediumResistance)],reaction=resistanceBands.filter(b=>![a.breakout,...existing].some(l=>l&&overlaps(l,b))).map(b=>reactionLevel(a,b,'resistance'));
  const before={breakout:a.breakout?.price??null,resistance1:a.resistance1?.price??null,resistance2:a.resistance2?.price??null,mediumResistance:a.mediumResistance?.price??null};
  if(a.breakout){

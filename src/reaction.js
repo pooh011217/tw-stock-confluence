@@ -12,7 +12,7 @@ function reactionTolerance(a){
 }
 function recentReactionBands(a,sessions=12){
  const cur=a?.current,tolerance=reactionTolerance(a),all=Array.isArray(a?.rows)?a.rows:[];
- const rows=all.filter(r=>!a?.date||!r?.date||r.date<=a.date).slice(-sessions);
+ const rows=all.filter(r=>typeof r?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&(!a?.date||r.date<=a.date)).sort((x,y)=>x.date.localeCompare(y.date)).slice(-sessions);
  if(!Number.isFinite(cur)||cur<=0||!Number.isFinite(tolerance)||rows.length<2)return {support:[],resistance:[],tolerance,window:sessions,usedRows:rows.length};
  const points=[];
  const add=(raw,kind,side,role,date,age)=>{if(!Number.isFinite(raw)||raw<=0)return;const price=tradePrice(raw);if(!price||price===cur)return;points.push({raw,price,kind,side,role,date,age})};

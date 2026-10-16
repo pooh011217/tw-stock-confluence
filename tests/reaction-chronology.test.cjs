@@ -43,3 +43,13 @@ test('missing or malformed base date cannot admit any reaction rows', () => {
   assert.equal(actual.resistance.length,0);
  }
 });
+
+test('breakout preserves independent second and medium resistance', () => {
+ const level=price=>({price,bandLow:price,bandHigh:price,distance:(price-100)/100,sources:[]});
+ const analysis={date:'2026-10-15',current:100,rows:[],breakout:level(105),resistance2:level(108),mediumResistance:level(115)};
+ vm.runInContext('this.applyRecentReactionOverlay=applyRecentReactionOverlay;',ctx);
+ ctx.applyRecentReactionOverlay({analysis});
+ assert.equal(analysis.breakout.price,105);
+ assert.equal(analysis.resistance2.price,108);
+ assert.equal(analysis.mediumResistance.price,115);
+});

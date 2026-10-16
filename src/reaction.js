@@ -12,7 +12,8 @@ function reactionTolerance(a){
 }
 function recentReactionBands(a,sessions=12){
  const cur=a?.current,tolerance=reactionTolerance(a),all=Array.isArray(a?.rows)?a.rows:[];
- const rows=all.filter(r=>!a?.date||!r?.date||r.date<=a.date).slice(-sessions);
+ const baseDate=typeof a?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(a.date)?a.date:null;
+ const rows=baseDate?all.filter(r=>typeof r?.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&r.date<=baseDate).sort((x,y)=>x.date.localeCompare(y.date)).slice(-sessions):[];
  if(!Number.isFinite(cur)||cur<=0||!Number.isFinite(tolerance)||rows.length<2)return {support:[],resistance:[],tolerance,window:sessions,usedRows:rows.length};
  const points=[];
  const add=(raw,kind,side,role,date,age)=>{if(!Number.isFinite(raw)||raw<=0)return;const price=tradePrice(raw);if(!price||price===cur)return;points.push({raw,price,kind,side,role,date,age})};
@@ -89,9 +90,9 @@ function selectPressureLevels(a,resistanceBands,checks){
  if(a.breakout){
   a.resistance1=null;
   const above=distinctLevels([...existing,...reaction].filter(l=>l&&l.price>a.current&&independentAbove(l,a.breakout)&&(l.price-a.current)/a.current<=.20+1e-8),'resistance');
-  const second=above[0]||null;
-  a.resistance2=second&&(second.price-a.current)/a.current<=.10+1e-8?second:null;
-  a.mediumResistance=second&&(second.price-a.current)/a.current>.10+1e-8?second:null;
+  const second=above.find(l=>(l.price-a.current)/a.current<=.10+1e-8)||null;
+  a.resistance2=second;
+  a.mediumResistance=above.find(l=>(l.price-a.current)/a.current>.10+1e-8&&independentAbove(l,second||a.breakout))||null;
  }else{
   const pool=distinctLevels([...existing,...reaction].filter(l=>l&&l.price>a.current&&(l.price-a.current)/a.current<=.20+1e-8),'resistance'),first=pool[0]||null;
   if(!first){a.resistance1=null;a.resistance2=null;a.mediumResistance=null}
